@@ -1,0 +1,24 @@
+# Security & performance defaults (Apache)
+Options -Indexes
+
+<IfModule mod_dir.c>
+    DirectoryIndex index.php index.html
+</IfModule>
+
+# Optional: legacy .html URLs → .php (after migration)
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^(.+)\.html$ $1.php [R=301,L]
+</IfModule>
+
+# Block access to configuration and one-off build tooling
+<FilesMatch "^(config\.php|build-.*\.php)$">
+    <IfModule mod_authz_core.c>
+        Require all denied
+    </IfModule>
+    <IfModule !mod_authz_core.c>
+        Deny from all
+    </IfModule>
+</FilesMatch>
