@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -35,7 +34,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member1.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Aqeel, Lead Developer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -58,15 +57,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Darrell Steward</a></h4>
-                            <span class="fs-seven fw-medium">Ui/Ux Designer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Aqeel</a></h4>
+                            <span class="fs-seven fw-medium">Lead Developer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".5s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member2.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -89,15 +88,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Harshil Achayra</a></h4>
-                            <span class="fs-seven fw-medium">Engineer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Syed Ali Asad Jafri</a></h4>
+                            <span class="fs-seven fw-medium">DevOps Engineer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".6s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member3.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -120,15 +119,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Nisha Gurain</a></h4>
-                            <span class="fs-seven fw-medium">Mechanic</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Naima Shahzadi</a></h4>
+                            <span class="fs-seven fw-medium">Project Manager</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".7s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member7.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/mehroz.jpg" alt="Mehroz Alam, Senior Data Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -151,15 +150,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Andrew Russel</a></h4>
-                            <span class="fs-seven fw-medium">Ui/Ux Designer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Mehroz Alam</a></h4>
+                            <span class="fs-seven fw-medium">Senior Data Engineer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".8s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member8.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/hajra.jpg" alt="Hajra Batool, Sales and Marketing Specialist" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -182,15 +181,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Nuha Jingle</a></h4>
-                            <span class="fs-seven fw-medium">Engineer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Hajra Batool</a></h4>
+                            <span class="fs-seven fw-medium">Sales &amp; Marketing Specialist</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".9s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member9.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/hamza.jpg" alt="Meer Hamza, Digital Marketing" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -213,8 +212,8 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Alisa Borman</a></h4>
-                            <span class="fs-seven fw-medium">Mechanic</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Meer Hamza</a></h4>
+                            <span class="fs-seven fw-medium">Digital Marketing</span>
                         </div>
                     </div>
                 </div>
@@ -227,11 +226,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

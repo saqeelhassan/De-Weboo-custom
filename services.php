@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -18,9 +17,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a href="index.php" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li class="white">Our service</li>
+                    <li class="white">Our Services</li>
                 </ul>
-                <h1 class="white visible-from-right">Our service</h1>
+                <h1 class="white visible-from-right">Our Services</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -35,11 +34,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-7">
                     <div class="section-title text-center">
                         <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
-                            EXPLORE OUR EXPERTISE
+                            SOFTWARE & IT EXPERTISE
                         </span>
-                        <h2 class="wow fadeInUp black fw-bold" data-wow-delay=".3s">
-                            Service for your development
-                        </h2>
+                        <p class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
+                            Development &amp; AI Engineering · Secondary — Growth &amp; Infrastructure
+                        </p>
                     </div>
                 </div>
             </div>
@@ -49,16 +48,16 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">IT consulting</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Web &amp; Mobile Development</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">IT
-                                        consulting</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Web
+                                        &amp; Mobile Development</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+custom web apps, e-commerce, and secure B2B/B2C/B2A portals under NAICS 541511. Includes high-security medical websites and patient portals.
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -72,17 +71,17 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">AI machine learning</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Mobile App Engineering</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">AI
-                                        machine learning</a>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Mobile
+                                        App Engineering</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+native and cross-platform mobile applications with secure APIs for enterprise, consumer, and public-sector workflows (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -96,16 +95,16 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">IT development</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Web &amp; Mobile — E-commerce</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">IT
-                                        development</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">E-commerce
+                                        &amp; Custom Apps</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+custom software, business logic, and scalable e-commerce backends for B2B, B2C, and B2A delivery models (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -119,18 +118,64 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Data security</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Medical Websites &amp; Portals</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Data
-                                        security</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Medical Websites
+                                        &amp; Portals</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+high-security medical websites, HIPAA-aligned patient portals, and clinical workflows under Web &amp; Mobile Development (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items bg-img2 d-center border style2 service-development-item rounded-4 w-100">
+                        <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
+                            <a href="contact.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="contact.php" class="white">AI Automation</a>
+                                </h5>
+                                <p class="white mb-3">
+custom AI integrations, workflow automations, and LLM configurations. NAICS 541511 (custom programming for AI integrations and automations).
+                                </p>
+                                <a href="contact.php" class="arrosses d-center rounded-circle whitebg">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items bg-img3 d-center border style2 service-development-item rounded-4 w-100">
+                        <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">Data Engineering</h5>
+                            <a href="contact.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="contact.php" class="white">Data Engineering</a>
+                                </h5>
+                                <p class="white mb-3">
+secure data pipelines, data architecture, and administrative dashboards. NAICS 541512 (data architecture &amp; pipeline systems design).
+                                </p>
+                                <a href="contact.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -142,17 +187,17 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Data visualization</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Cloud Services</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Data
-                                        visualization</a>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Cloud
+                                        Services</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Secondary — Growth &amp; Infrastructure: secure cloud architecture, migration, and HIPAA-friendly hosting solutions that scale the platforms we engineer.
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -166,19 +211,65 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Improve IT planning</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Digital Marketing</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
                                 <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php"
-                                        class="white">Improve IT planning</a>
+                                        class="white">Digital Marketing</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Secondary — Growth &amp; Infrastructure: consumer marketing, lead generation, and campaign strategy. NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items bg-img4 d-center border style2 service-development-item rounded-4 w-100">
+                        <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">SEO</h5>
+                            <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php"
+                                        class="white">SEO</a>
+                                </h5>
+                                <p class="white mb-3">
+                                    Secondary — Growth &amp; Infrastructure: technical SEO, AEO content strategy, and specialized medical and healthcare SEO. NAICS 541810 &amp; 541910.
+                                </p>
+                                <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items bg-img7 d-center border style2 service-development-item rounded-4 w-100">
+                        <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">SLED Bidder</h5>
+                            <a href="contact.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="contact.php" class="white">SLED Bidder</a></h5>
+                                <p class="white mb-3">
+                                    Contract-ready SLED bidder for state, local, and education authorities—NAICS-mapped software, web, mobile, and IT with Section 508 / WCAG accessibility.
+                                </p>
+                                <a href="contact.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -200,10 +291,9 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-2">
                                 TECHNOLOGY GROWTH
                             </span>
-                            <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                                We’re the stand
-                                out expert tech
-                                in business
+                            <h2 class="wow fadeInUp black fw-bold visible-slowly-right tech-growth-heading" data-wow-delay=".3s">
+                                Enterprise delivery<br>
+                                SLED-ready execution
                             </h2>
                         </div>
                     </div>
@@ -212,12 +302,10 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="growth-path-item">
                         <div class="boxes">
                             <p class="pra mb-md-4 mb-2 pb-xl-1">
-                                An IT firm or MSP who keeps your IT running smoothly at all times is like a plumber who
-                                fixes your pipes; that’s what
-                                they are
+                                <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development, AI Automation, and Data Engineering—for B2B, B2C, and B2A frameworks.
                             </p>
                             <p class="pra">
-                                supposed to do. Many IT firms struggle. Below is just a small sample of some
+                                <strong>Secondary — Growth &amp; Infrastructure:</strong> Digital Marketing, SEO, and Cloud Services—as a contract-ready SLED bidder (NAICS 541810, 541910 &amp; 541512).
                             </p>
                         </div>
                     </div>
@@ -227,29 +315,65 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="progress_bar d-grid gap-xxl-4 gap-3">
                             <div class="progress_bar_item">
                                 <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                    <div class="item_label black fw-semibold">Software</div>
+                                    <div class="item_label black fw-semibold">Web &amp; Mobile Development</div>
+                                    <div class="item_value p1-clr fw-semibold">90%</div>
+                                </div>
+                                <div class="item_bar">
+                                    <div class="progress" data-progress="90" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress_bar_item">
+                                <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
+                                    <div class="item_label black fw-semibold">AI Automation</div>
                                     <div class="item_value p1-clr fw-semibold">85%</div>
                                 </div>
                                 <div class="item_bar">
-                                    <div class="progress" data-progress="90" style="width: 85%;"></div>
+                                    <div class="progress" data-progress="85" style="width: 85%;"></div>
                                 </div>
                             </div>
                             <div class="progress_bar_item">
                                 <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                    <div class="item_label black fw-semibold">Development</div>
-                                    <div class="item_value p1-clr fw-semibold">55%</div>
+                                    <div class="item_label black fw-semibold">Data Engineering</div>
+                                    <div class="item_value p1-clr fw-semibold">85%</div>
                                 </div>
                                 <div class="item_bar">
-                                    <div class="progress" data-progress="75" style="width: 55%;"></div>
+                                    <div class="progress" data-progress="85" style="width: 85%;"></div>
                                 </div>
                             </div>
                             <div class="progress_bar_item">
                                 <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                    <div class="item_label black fw-semibold">Technology</div>
-                                    <div class="item_value p1-clr fw-semibold">95%</div>
+                                    <div class="item_label black fw-semibold">Digital Marketing</div>
+                                    <div class="item_value p1-clr fw-semibold">80%</div>
                                 </div>
                                 <div class="item_bar">
-                                    <div class="progress" data-progress="80" style="width: 95%;"></div>
+                                    <div class="progress" data-progress="80" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress_bar_item">
+                                <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
+                                    <div class="item_label black fw-semibold">SEO</div>
+                                    <div class="item_value p1-clr fw-semibold">80%</div>
+                                </div>
+                                <div class="item_bar">
+                                    <div class="progress" data-progress="80" style="width: 80%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress_bar_item">
+                                <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
+                                    <div class="item_label black fw-semibold">SLED Bidder</div>
+                                    <div class="item_value p1-clr fw-semibold">90%</div>
+                                </div>
+                                <div class="item_bar">
+                                    <div class="progress" data-progress="90" style="width: 90%;"></div>
+                                </div>
+                            </div>
+                            <div class="progress_bar_item">
+                                <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
+                                    <div class="item_label black fw-semibold">Cloud Services</div>
+                                    <div class="item_value p1-clr fw-semibold">80%</div>
+                                </div>
+                                <div class="item_bar">
+                                    <div class="progress" data-progress="80" style="width: 80%;"></div>
                                 </div>
                             </div>
                         </div>
@@ -265,7 +389,7 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="section-title pb-md-5 mb-4 pb-1 text-center">
                 <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
-                    WHY CHOOSE OUR TECGON
+                    WHY CHOOSE DE-WEBOO
                 </span>
                 <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
                     Why we are different from <br>
@@ -282,31 +406,28 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="techgon-content">
                         <div class="mb-lg-5 mb-4">
                             <h3 class="black mb-lg-3 mb-2 wow fadeInUp" data-wow-delay=".3s">
-                                IT solution that soar the
-                                technology for work tomorrow
+                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
-                                Design studio founded in London and expanded our services
+                                Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services. Contract-ready SLED bidder.
                             </p>
                         </div>
                         <ul class="d-grid gap-3">
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".5s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> 24/7 Availability Across
-                                Time Zones
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> 24/7 delivery across time zones
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".6s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Agile Teams with Direct
-                                Access
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Direct access to senior engineers & strategists
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".7s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Rapid Talent Acquisition
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Rapid mobilization for RFP & sprint timelines
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".8s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Building Scalable Teams
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Scalable teams for enterprise & SLED programs
                             </li>
                         </ul>
                     </div>
@@ -363,11 +484,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

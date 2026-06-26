@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -42,7 +41,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <a href="services-details.php"
                                     class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
                                     data-wow-delay=".3s">
-                                    Data visualization <i class="fa-solid fa-angle-right"></i>
+                                    Managed IT & infrastructure <i class="fa-solid fa-angle-right"></i>
                                 </a>
                                 <a href="services-details.php"
                                     class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
@@ -102,22 +101,13 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="mb-xl-5 mb-4 pb-2">
                             <h3 class="black mb-xl-4 mb-lg-4 mb-3 wow fadeInUp" data-wow-delay=".3s">
-                                Working in the fields of UX design
+                                Custom web design & development
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                IT company content is important for a number of reasons. First, it can help you attract
-                                potential customers. When you
-                                create content that is relevant to your target audience, you position yourself as an
-                                expert in your field and increase
-                                the chances that potential customers will find you. IT company content can help you
-                                educate potential customers about
-                                your products and services.
+                                De-Weboo builds fast, mobile-friendly websites that reflect your brand and convert visitors into customers. We handle strategy, UI/UX, development, and launch—so you get a professional site without the technical headaches.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
-                                We are committed to providing our clients with the highest quality IT services and
-                                support. We understand that IT is
-                                essential for your business, and we will work tirelessly to help you achieve your
-                                business goals.
+                                From landing pages to full e-commerce platforms, we use modern frameworks, clean code, and SEO best practices. Every project includes responsive design, performance optimization, and post-launch support options.
                             </p>
                         </div>
                         <div class="mb-xl-5 mb-4 pb-sm-2 mb-1">
@@ -134,7 +124,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             Product quality:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            Automatically syncs across all your devices. You can also access
+                                            Pixel-perfect layouts, accessible components, and designs tested on real users before build.
                                         </p>
                                     </div>
                                 </li>
@@ -147,7 +137,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             On demand design:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            Images, videos, PDFs and audio files are supported.
+                                            Flexible design systems that scale as your product and marketing needs grow.
                                         </p>
                                     </div>
                                 </li>
@@ -160,7 +150,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             Choice of service:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            Whatever your business needs, you can choose a service.
+                                            Web design, development, SEO, and maintenance packages tailored to your goals and budget.
                                         </p>
                                     </div>
                                 </li>
@@ -170,19 +160,17 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    Tech systems require minimal maintenance, yet for peace of mind and optimal
-                                    performance, our main expert technicians
-                                    offer routine check-ups, performance assessments
+                                    De-Weboo delivers reliable websites with ongoing support, performance monitoring, and clear communication throughout your project.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Ralph Edwards</h5> <span class="fs-eight pra">Developer</span>
+                                    <h5 class="black">Aqeel</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>
                         <div class="mb-0">
                             <div class="section-title text-start mb-lg-5 mb-4">
                                 <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                                    Have any question?
+                                    Frequently asked questions
                                 </h2>
                             </div>
                             <div class="accordion accordion-custom05 border-0 d-flex flex-column"
@@ -192,18 +180,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne001" aria-expanded="true"
                                             aria-controls="collapseOne001">
-                                            I don't have a traditional AI background, can I still find an AI job?
+                                            Can De-Weboo help improve my Google rankings?
                                         </button>
                                         <div id="collapseOne001" class="accordion-collapse collapse show"
                                             aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Nor is there anyone who loves or pursues or desires to obtain pain
-                                                    of
-                                                    itself, because it is pain, occasionally
-                                                    circumstances occur in which toil and pain can procure him some
-                                                    great
-                                                    pleasure.
+                                                    Yes. We improve site speed, on-page SEO, structured data, and content strategy to help you rank for keywords that drive qualified leads.
                                                 </p>
                                             </div>
                                         </div>
@@ -214,18 +197,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseTwo001"
                                             aria-expanded="false" aria-controls="collapseTwo001">
-                                            I don't have a traditional AI background, can I still find an AI job?
+                                            How long does a typical website project take?
                                         </button>
                                         <div id="collapseTwo001" class="accordion-collapse collapse"
                                             aria-labelledby="headingTwo001" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Nor is there anyone who loves or pursues or desires to obtain pain
-                                                    of
-                                                    itself, because it is pain, occasionally
-                                                    circumstances occur in which toil and pain can procure him some
-                                                    great
-                                                    pleasure.
+                                                    Most projects take 4–12 weeks depending on pages, features, and content readiness. We provide a clear timeline after discovery.
                                                 </p>
                                             </div>
                                         </div>
@@ -236,18 +214,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapseThree001"
                                             aria-expanded="false" aria-controls="collapseThree001">
-                                            How do you find different criteria in your process?
+                                            How does your project process work?
                                         </button>
                                         <div id="collapseThree001" class="accordion-collapse collapse"
                                             aria-labelledby="headingThree001" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Nor is there anyone who loves or pursues or desires to obtain pain
-                                                    of
-                                                    itself, because it is pain, occasionally
-                                                    circumstances occur in which toil and pain can procure him some
-                                                    great
-                                                    pleasure.
+                                                    We follow discovery → design → development → QA → launch. You get regular updates, staging previews, and documentation at each milestone.
                                                 </p>
                                             </div>
                                         </div>
@@ -258,18 +231,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#collapsefour001"
                                             aria-expanded="false" aria-controls="collapsefour001">
-                                            What do I need to apply for an account?
+                                            How much does a new website cost?
                                         </button>
                                         <div id="collapsefour001" class="accordion-collapse collapse"
                                             aria-labelledby="headingfour001" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Nor is there anyone who loves or pursues or desires to obtain pain
-                                                    of
-                                                    itself, because it is pain, occasionally
-                                                    circumstances occur in which toil and pain can procure him some
-                                                    great
-                                                    pleasure.
+                                                    Pricing depends on scope—page count, custom features, and integrations. Request a quote and we will send a transparent proposal with no hidden fees.
                                                 </p>
                                             </div>
                                         </div>
@@ -289,11 +257,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

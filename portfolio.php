@@ -3,11 +3,13 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/portfolio-projects.php';
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
+
+$portfolioProjects = dw_portfolio_projects();
 ?>
 <!-- Banner Section Start -->
     <section class="breadcrumb-section position-relative fix">
@@ -32,132 +34,36 @@ require_once __DIR__ . '/includes/navbar.php';
     <section class="gateway-sections section-padding fix">
         <div class="container custom-container">
             <div class="row g-4 justify-content-center">
+                <?php foreach ($portfolioProjects as $project) :
+                    $cardImage = dw_portfolio_image($project['images']['card']);
+                    $detailUrl = dw_portfolio_url($project['slug']);
+                    $titleLines = explode(' ', $project['shortName'], 2);
+                    ?>
                 <div class="col-md-6 col-lg-4">
                     <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/project1.png" alt="Illustration" class="w-100 rounded-4">
+                        <img loading="lazy" src="<?php echo e($cardImage); ?>" alt="<?php echo e($project['shortName']); ?>" class="w-100 rounded-4">
                         <div class="content">
                             <div class="box-inner p1-bg rounded-circle d-center">
                                 <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
+                                    <span class="fs-eight fw-semibold white75 mb-4"><?php echo e($project['category']); ?></span>
                                     <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
+                                        <a href="<?php echo e($detailUrl); ?>" class="white">
+                                            <?php echo e($titleLines[0]); ?>
+                                            <?php if (!empty($titleLines[1])) : ?>
+                                            <br>
+                                            <?php echo e($titleLines[1]); ?>
+                                            <?php endif; ?>
                                         </a>
                                     </h4>
                                 </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
+                                <a href="<?php echo e($detailUrl); ?>" class="arrow d-center rounded-circle p3-bg">
                                     <i class="fa-solid fa-arrow-right white"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/project2.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="content">
-                            <div class="box-inner p1-bg rounded-circle d-center">
-                                <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
-                                    <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
-                                    <i class="fa-solid fa-arrow-right white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/project3.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="content">
-                            <div class="box-inner p1-bg rounded-circle d-center">
-                                <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
-                                    <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
-                                    <i class="fa-solid fa-arrow-right white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/project4.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="content">
-                            <div class="box-inner p1-bg rounded-circle d-center">
-                                <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
-                                    <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
-                                    <i class="fa-solid fa-arrow-right white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/portfolio5.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="content">
-                            <div class="box-inner p1-bg rounded-circle d-center">
-                                <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
-                                    <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
-                                    <i class="fa-solid fa-arrow-right white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/portfolio6.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="content">
-                            <div class="box-inner p1-bg rounded-circle d-center">
-                                <div class="box text-center">
-                                    <span class="fs-eight fw-semibold white75 mb-4">Digital</span>
-                                    <h4 class="white">
-                                        <a href="portfolio-details.php" class="white">
-                                            Platform <br>
-                                            integration
-                                        </a>
-                                    </h4>
-                                </div>
-                                <a href="portfolio-details.php" class="arrow d-center rounded-circle p3-bg">
-                                    <i class="fa-solid fa-arrow-right white"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>

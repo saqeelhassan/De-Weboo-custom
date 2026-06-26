@@ -6,6 +6,11 @@ require_once __DIR__ . '/helpers.php';
 
 $footer_variant = $footer_variant ?? 'default';
 $newsletter_email = $newsletter_email ?? '';
+require_once __DIR__ . '/seo-config.php';
+$dw_contact = dw_org_config();
+$dw_tel = $dw_contact['telephone'];
+$dw_tel_display = $dw_contact['telephoneDisplay'];
+$dw_whatsapp_url = 'https://wa.me/' . preg_replace('/\D+/', '', $dw_tel);
 
 if (($footer_variant ?? 'default') === 'style2') :
     ?>
@@ -19,12 +24,11 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 <img src="assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
                             </a>
                             <p class="white65 mb-4 pb-lg-2">
-                                Our highly skilled development teams
-                                specialized in data analysis.
+                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder. Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services—for B2B, B2C, and B2A frameworks.
                             </p>
                             <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
                                 <i class="fa-regular fa-envelope envelop"></i>
-                                <input type="email" name="newsletter_email" autocomplete="email" placeholder="Enter your mail" value="<?php echo e($newsletter_email ?? ''); ?>">
+                                <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
                                 <button type="button" class="arrow"><i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
@@ -39,6 +43,11 @@ if (($footer_variant ?? 'default') === 'style2') :
                                     <li>
                                         <a href="about.php">
                                             About us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="collaboration.php">
+                                            Collaboration
                                         </a>
                                     </li>
                                     <li>
@@ -123,7 +132,11 @@ if (($footer_variant ?? 'default') === 'style2') :
                                                 d="M7.70841 4.68653L8.42954 5.97867C9.08031 7.14475 8.81907 8.67446 7.7941 9.69943C7.7941 9.69944 7.7941 9.69943 7.7941 9.69944C7.79398 9.69955 6.55095 10.9428 8.80499 13.1968C11.0584 15.4502 12.3016 14.2086 12.3024 14.2077C12.3024 14.2077 12.3024 14.2077 12.3024 14.2077C13.3274 13.1828 14.8571 12.9215 16.0232 13.5723L17.3153 14.2934C19.0761 15.2761 19.2841 17.7455 17.7364 19.2932C16.8064 20.2232 15.6671 20.9468 14.4076 20.9946C12.2875 21.0749 8.68695 20.5384 5.07521 16.9266C1.46347 13.3149 0.926905 9.71435 1.00728 7.5942C1.05502 6.33478 1.77867 5.19549 2.70867 4.26549C4.25638 2.71777 6.72573 2.92572 7.70841 4.68653Z"
                                                 stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
                                         </svg>
-                                        <a href="tel:+923367770349" class="white65 fw-semibold">PK +92-336-7770349</a>
+                                        <a href="tel:<?php echo e($dw_tel); ?>" class="white65 fw-semibold"><?php echo e($dw_tel_display); ?></a>
+                                    </div>
+                                    <div class="list-info-item d-flex align-items-center gap-2">
+                                        <i class="fa-brands fa-whatsapp fs-five" style="color:#FF5455;"></i>
+                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white65 fw-semibold">WhatsApp us · <?php echo e($dw_tel_display); ?></a>
                                     </div>
                                     <div class="list-info-item d-flex align-items-center gap-2">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -165,7 +178,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                 <div
                     class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                     <p class="white65">
-                        &copy;2025 <a href="index.php" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
+                        &copy;<?php echo date('Y'); ?> <a href="index.php" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -186,7 +199,7 @@ if (($footer_variant ?? 'default') === 'style2') :
             <div class="search-cell">
                 <form method="get" action="#">
                     <div class="search-field-holder">
-                        <input type="search" name="q" class="main-search-input" placeholder="Search..." value="<?php echo e($_GET['q'] ?? ''); ?>">
+                        <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>
                 </form>
             </div>
@@ -229,6 +242,12 @@ if (($footer_variant ?? 'default') === 'style2') :
     <script src="assets/js/circle-progress.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+<?php
+$extra_scripts = $extra_scripts ?? [];
+foreach ($extra_scripts as $script) :
+    ?>
+    <script src="<?php echo e($script); ?>"></script>
+<?php endforeach; ?>
     <script>
         // Custom Progress bar
         let options = {
@@ -295,11 +314,10 @@ if (($footer_variant ?? 'default') === 'style2') :
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="top-rated-pragraph">
                             <h5 class="white mb-lg-5 mb-4">
-                                <span class="p3-clr">Top-rated</span> technology
-                                business idea for your success
+                                <span class="p3-clr">Stay ahead</span> with digital tips and project updates
                             </h5>
                             <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>" class="form-style1 d-flex align-items-center justify-content-between">
-                                <input type="email" name="newsletter_email" autocomplete="email" placeholder="Enter your mail" value="<?php echo e($newsletter_email ?? ''); ?>">
+                                <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
                                 <button type="button"><i class="fa-regular fa-envelope"></i></button>
                             </form>
                             <div class="form-check cmn-checkbox mt-3">
@@ -320,6 +338,11 @@ if (($footer_variant ?? 'default') === 'style2') :
                                     <li>
                                         <a href="about.php">
                                             About us
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="collaboration.php">
+                                            Collaboration
                                         </a>
                                     </li>
                                     <li>
@@ -393,11 +416,11 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 <div class="list-info d-grid gap-3 mb-4">
                                     <div class="list-info-item">
                                         <span class="fs-eight white65 d-block">Call Us Directly</span>
-                                        <a href="tel:+923367770349" class="white fw-semibold">PK +92-336-7770349</a>
+                                        <a href="tel:<?php echo e($dw_tel); ?>" class="white fw-semibold"><?php echo e($dw_tel_display); ?></a>
                                     </div>
                                     <div class="list-info-item">
-                                        <span class="fs-eight white65 d-block">Whatsapp</span>
-                                        <a href="https://wa.me/15512023922" class="white fw-semibold">+1(551) 202-3922</a>
+                                        <span class="fs-eight white65 d-block">WhatsApp us</span>
+                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white fw-semibold"><?php echo e($dw_tel_display); ?></a>
                                     </div>
                                 </div>
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
@@ -419,8 +442,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                         <img src="assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
                     </a>
                     <p class="white65">
-                        &copy;2025 <a href="index.php" class="white fw_500">De-Weboo.</a> All images are for demo purposes
-                        only.
+                        &copy;<?php echo date('Y'); ?> <a href="index.php" class="white fw_500">De-Weboo.</a> All Rights Reserved.
                     </p>
                 </div>
             </div>
@@ -435,7 +457,7 @@ if (($footer_variant ?? 'default') === 'style2') :
             <div class="search-cell">
                 <form method="get" action="#">
                     <div class="search-field-holder">
-                        <input type="search" name="q" class="main-search-input" placeholder="Search..." value="<?php echo e($_GET['q'] ?? ''); ?>">
+                        <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>
                 </form>
             </div>
@@ -476,6 +498,12 @@ if (($footer_variant ?? 'default') === 'style2') :
     <script src="assets/js/vanilla-tilt.min.js"></script>
     <!--<< Main.js >>-->
     <script src="assets/js/main.js"></script>
+<?php
+$extra_scripts = $extra_scripts ?? [];
+foreach ($extra_scripts as $script) :
+    ?>
+    <script src="<?php echo e($script); ?>"></script>
+<?php endforeach; ?>
 </body>
 </html>
 <?php endif; ?>

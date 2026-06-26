@@ -1509,7 +1509,7 @@ footer {
   width: 100%;
 }
 .contact-info-content .content {
-  max-width: 230px;
+  max-width: 360px;
 }
 @media (max-width: 991px) {
   .contact-info-content {

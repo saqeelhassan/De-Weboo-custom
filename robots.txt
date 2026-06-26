@@ -1,0 +1,64 @@
+# De-Weboo — robots.txt
+# Allows search engines and AI crawlers for SEO, GEO, and AEO indexing.
+
+User-agent: *
+Allow: /
+
+# Google
+User-agent: Googlebot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Googlebot-Image
+Allow: /
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+
+# OpenAI
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Apple Intelligence
+User-agent: Applebot-Extended
+Allow: /
+
+# Cohere & other AI research crawlers
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+# Block internal tooling from crawlers (not public pages)
+Disallow: /tools/
+Disallow: /build-all-pages.php
+Disallow: /build-assemble-footer.php
+Disallow: /build-extract-footer.php
+Disallow: /build-extract-nav.php
+Disallow: /build-navbar-final.php
+
+Sitemap: https://deweboo.com/sitemap.xml

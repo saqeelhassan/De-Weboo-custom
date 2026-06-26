@@ -3,9 +3,17 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
+require_once __DIR__ . '/includes/blog-posts.php';
+require_once __DIR__ . '/includes/seo.php';
 
+dw_load_page_seo('blog');
+$page_title = 'Blog | Software, Healthcare IT & SLED Insights | De-Weboo';
+$page_description = 'Expert articles on web development, AI automation, data engineering, SLED procurement, cloud, SEO, AEO, GEO, and HIPAA medical systems from De-Weboo.';
+
+$posts = dw_blog_posts_sorted();
+$byService = dw_blog_posts_by_service();
+
+require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -20,193 +28,61 @@ require_once __DIR__ . '/includes/navbar.php';
                     <li class="p3-clr">/</li>
                     <li class="white">Our blog</li>
                 </ul>
-                <h1 class="white visible-from-right">Our blog</h1>
+                <h1 class="white visible-from-right">Insights &amp; Resources</h1>
             </div>
         </div>
-        <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
-    <!-- Banner Section Start -->
 
-    <!-- Blog Section Start -->
     <section class="blog-section fix section-padding">
         <div class="container">
+            <div class="row justify-content-center mb-lg-5 mb-4">
+                <div class="col-lg-8 text-center">
+                    <p class="pra fs-six mb-0">
+                        SEO, AEO, and GEO-friendly guides on enterprise software, SLED procurement, healthcare IT, and growth infrastructure—written by the De-Weboo engineering team in Hyderabad, Pakistan for worldwide B2B, B2C, and B2A buyers.
+                    </p>
+                </div>
+            </div>
             <div class="news-wrapper">
                 <div class="row justify-content-center g-4">
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
+<?php
+$delay = 0.3;
+foreach ($posts as $post) :
+    $cardImage = dw_blog_image($post['images']['card']);
+    $postUrl = dw_blog_url($post['slug']);
+    ?>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo e((string) $delay); ?>s">
+                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1 h-100">
+                            <a href="<?php echo e($postUrl); ?>"
                                 class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid1.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
+                                <img loading="lazy" src="<?php echo e($cardImage); ?>"
+                                    alt="<?php echo e($post['title']); ?>"
+                                    class="rounded-3 overflow-hidden w-100 blog-cover-img">
                                 <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
+                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black"><?php echo e($post['category']); ?></span>
                             </a>
                             <div class="news-content">
                                 <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        The highly creative workflow
-                                        from a silicon valley
+                                    <a href="<?php echo e($postUrl); ?>" class="black visible-slowly-right">
+                                        <?php echo e($post['title']); ?>
                                     </a>
                                 </h4>
+                                <p class="pra fs-eight mb-3"><?php echo e($post['excerpt']); ?></p>
                                 <div class="d-flex align-items-center justify-content-between">
                                     <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author1.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Vanman Paul</span>
+                                        <span class="fs-seven fw_500 black"><?php echo e($post['author']); ?></span>
                                     </div>
                                     <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
+                                        <i class="fa-regular fa-clock black"></i> <?php echo e(dw_blog_format_date($post['published'])); ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".4s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid2.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
-                            </a>
-                            <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        Corporate agencies bring a
-                                        wealth of knowledge
-                                    </a>
-                                </h4>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author2.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Richard Pitter</span>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid3.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
-                            </a>
-                            <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        A leading global marketing and
-                                        communications agency
-                                    </a>
-                                </h4>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author3.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Vishal Pandey</span>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".6s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-gridm1.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
-                            </a>
-                            <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        The highly creative workflow
-                                        from a silicon valley
-                                    </a>
-                                </h4>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author1.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Vanman Paul</span>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-gridm2.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
-                            </a>
-                            <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        Corporate agencies bring a
-                                        wealth of knowledge
-                                    </a>
-                                </h4>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author2.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Richard Pitter</span>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".8s">
-                        <div class="news-single-items rounded-3 p-xxl-2 p-1 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-gridm3.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black">TECHNOLOGY</span>
-                            </a>
-                            <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        A leading global marketing and
-                                        communications agency
-                                    </a>
-                                </h4>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
-                                        <img loading="lazy" src="assets/img/blog/blog-author3.png" alt="Illustration"
-                                            class="rounded-circle author-img">
-                                        <span class="fs-seven fw_500 black">Vishal Pandey</span>
-                                    </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 14 July, 2024
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php
+    $delay += 0.1;
+endforeach;
+?>
                 </div>
             </div>
         </div>

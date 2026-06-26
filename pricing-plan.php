@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -136,23 +135,12 @@ require_once __DIR__ . '/includes/navbar.php';
                             OUR QUESTIONS AND ANSWER
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Things you need to
-                            know about us
+                            Answers about working with De-Weboo
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
                         <img loading="lazy" src="assets/img/faq/faq-customer.png" alt="Illustration" class="img rounded-circle">
-                        <div class="about-call d-flex align-items-center gap-3">
-                            <div class="icon p3-bg d-center rounded-circle">
-                                <i class="fa-solid fa-phone-volume fs-six white"></i>
-                            </div>
-                            <div class="cont">
-                                <span class="fs-seven pra d-block">Call us free</span>
-                                <a href="#0" class="fs-six black fw-semibold">
-                                    019 25648 62598
-                                </a>
-                            </div>
-                        </div>
+                        <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -161,14 +149,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How does it generate make responses?
+                                    What services does De-Weboo offer?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -178,14 +165,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do I get all the demos and templates with?
+                                    Do you provide website maintenance after launch?
                                 </button>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -195,14 +181,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How do you find different criteria in your process?
+                                    How does your project process work?
                                 </button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -212,14 +197,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingfour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                    What do I need to apply for an account?
+                                    How much does a new website cost?
                                 </button>
                                 <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -236,11 +220,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

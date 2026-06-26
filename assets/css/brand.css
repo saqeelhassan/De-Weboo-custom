@@ -1,0 +1,346 @@
+/* De-Weboo logo sizing — navbar, mobile menu & footer */
+.header-1 .logo {
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.header-1 .header-logo {
+  display: inline-flex;
+  align-items: center;
+}
+
+.offcanvas__logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.header-1 .header-logo img,
+.offcanvas__logo img,
+.footer-section .top-rated-pragraph > a img,
+.footer-section .footer-logo img {
+  height: 52px;
+  width: auto;
+  max-width: 210px;
+  object-fit: contain;
+  display: block;
+}
+
+.header-1 .header-logo img,
+.offcanvas__logo img,
+.footer-section .top-rated-pragraph > a img {
+  object-position: left center;
+}
+
+.footer-section .footer-logo {
+  display: inline-flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.footer-section .top-rated-pragraph > a {
+  display: inline-flex;
+  line-height: 0;
+}
+
+.footer-section .footer-logo img {
+  object-position: center center;
+}
+
+.techgon-author {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.faq-stresh .img.rounded-circle {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.techlogy-groth-section .tech-growth-heading {
+  font-size: clamp(1.625rem, 2.1vw, 2.25rem);
+  line-height: 1.28;
+  hyphens: none;
+  word-break: normal;
+}
+
+.service-development-item.bg-img7 {
+  background: url(../img/services/se-img2.png) no-repeat center center;
+  background-size: cover;
+}
+
+.wirefram-content .tech-solutions-heading {
+  font-size: clamp(1.625rem, 2.2vw, 2.375rem);
+  line-height: 1.28;
+  hyphens: none;
+  word-break: normal;
+}
+
+.about-agency-heading {
+  font-size: clamp(1.625rem, 2.2vw, 2.375rem);
+  line-height: 1.28;
+  hyphens: none;
+  word-break: normal;
+}
+
+.contact-info-content .contact-info-heading {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+  .contact-info-content .contact-info-heading {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 991px) {
+  .header-1 .header-logo img,
+  .offcanvas__logo img,
+  .footer-section .top-rated-pragraph > a img,
+  .footer-section .footer-logo img {
+    height: 46px;
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 575px) {
+  .header-1 .header-logo img,
+  .offcanvas__logo img,
+  .footer-section .top-rated-pragraph > a img,
+  .footer-section .footer-logo img {
+    height: 40px;
+    max-width: 155px;
+  }
+}
+
+.consultation-modal-trigger {
+  cursor: pointer;
+}
+
+.portfolio-discuss-modal .modal-content {
+  padding: 0.25rem 0.5rem 0.5rem;
+}
+
+.portfolio-discuss-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--p1-clr);
+  background: rgba(81, 53, 255, 0.08);
+  border-radius: 999px;
+  padding: 0.35rem 0.75rem;
+}
+
+.portfolio-discuss-modal .contact-from-grp .form-label {
+  margin-bottom: 0.35rem;
+}
+
+.portfolio-discuss-select {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 999px;
+  padding: 0.85rem 1.25rem;
+  font-size: 0.95rem;
+  color: #111;
+  background: #fff;
+}
+
+.portfolio-discuss-honeypot {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.portfolio-discuss-success-icon {
+  width: 4rem;
+  height: 4rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(81, 53, 255, 0.1);
+  color: var(--p1-clr);
+  font-size: 1.5rem;
+}
+
+/* Topic cluster cards — equal heights and aligned CTAs */
+.event-work-section .event-work-row > [class*="col-"] {
+  display: flex;
+}
+
+.event-work-section .event-work-items {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.event-work-section .event-work-items .boxes {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  width: 100%;
+  max-width: 100%;
+}
+
+.event-work-section .event-work-items .boxes > span.pra {
+  min-height: 2.75em;
+  line-height: 1.35;
+}
+
+.event-work-section .event-work-items .boxes h4 {
+  flex: 1 1 auto;
+  min-height: 6.5em;
+  line-height: 1.4;
+}
+
+.event-work-section .event-work-items .boxes h4 a {
+  display: block;
+}
+
+.event-work-section .event-work-items .arrow-area {
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+@media (min-width: 992px) {
+  .event-work-section .event-work-items {
+    padding: 48px 14px 32px;
+  }
+
+  .event-work-section .event-work-items .boxes h4 {
+    font-size: 1.05rem;
+    min-height: 6.75em;
+  }
+}
+
+/* Solution tabs — four main categories in one row */
+.solutio-section .solutio-tabs-main {
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  gap: 0;
+}
+
+.solutio-section .solutio-tabs-main .nav-item {
+  flex: 1 1 0;
+  text-align: center;
+}
+
+.solutio-section .solutio-tabs-main .nav-item:not(:last-child) {
+  padding-right: 0 !important;
+}
+
+.solutio-section .solutio-tabs-main .nav-item .nav-link {
+  width: 100%;
+  font-size: clamp(0.875rem, 1.15vw, 1.05rem);
+  white-space: normal;
+  line-height: 1.3;
+  min-height: 2.6em;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.solutio-section .solutio-tabs-main .nav-item .nav-link::before {
+  width: min(100%, 120px);
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+@media (max-width: 575px) {
+  .solutio-section .solutio-tabs-main {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px 20px;
+  }
+
+  .solutio-section .solutio-tabs-main .nav-item {
+    flex: 0 1 auto;
+  }
+}
+
+/* Blog listing & detail — constrain cover images (sidebar thumbs + grid cards) */
+.blog-section .news-single-items .news-image,
+.news-section .news-single-items .news-image {
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  display: block;
+}
+
+.blog-section .news-single-items .news-image img,
+.news-section .news-single-items .news-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.blog-details-left .thumb1 {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  display: block;
+}
+
+.blog-details-left .thumb1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.blog-details-right {
+  overflow: hidden;
+  min-width: 0;
+}
+
+.blog-details-right .blog-latest .blog-latest-item {
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.blog-details-right .blog-latest .blog-latest-item .thumb {
+  flex-shrink: 0;
+  overflow: hidden;
+  min-width: 90px;
+}
+
+.blog-details-right .blog-latest .blog-latest-item .thumb img {
+  width: 100%;
+  height: 100%;
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.blog-details-right .blog-latest .blog-latest-item .content {
+  min-width: 0;
+  flex: 1 1 auto;
+  max-width: none;
+}
+
+.blog-details-right .details-common,
+.blog-details-right .common-left-barbox {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 991px) {
+  .blog-details-right .blog-latest .blog-latest-item {
+    gap: 16px;
+  }
+}

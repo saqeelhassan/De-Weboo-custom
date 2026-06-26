@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -34,20 +33,19 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row g-4 align-items-xxl-center space-bottom">
                 <div class="col-md-6">
                     <div class="team-details-thumb rounded-3 w-100">
-                        <img loading="lazy" src="assets/img/team/team-details.png" alt="Illustration" class="rounded-3 w-100">
+                        <img loading="lazy" src="assets/img/team/team-details-aqeel.jpg" alt="Aqeel, Lead Developer" class="rounded-3 w-100">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="team-details-content ps-xl-5">
                         <div class="mb-xl-5 mb-4 wow fadeInUp" data-wow-delay=".4s">
-                            <span class="fs-eight text-uppercase fw_500 d-block mb-1 p1-clr">Founder-CO</span>
-                            <h2 class="black mb-2">Hazard William</h2>
+                            <span class="fs-eight text-uppercase fw_500 d-block mb-1 p1-clr">Lead Developer</span>
+                            <h2 class="black mb-2">Aqeel</h2>
                             <h5 class="mb-3">
                                 <a href="#" class="p1-clr">hello@website.com</a>
                             </h5>
                             <p class="pra fs-seven">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vulputate pellentesque
-                                commodo. Lorem ipsum dolor sit
+                                Aqeel leads software development projects, focusing on secure web, mobile, and enterprise architecture for B2B, B2C, and B2A delivery.
                                 amet, consectetur adipiscing elit.
                             </p>
                         </div>
@@ -128,29 +126,23 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="team-all-info">
                 <div class="section-title mb-xxl-5 mb-4">
                     <h2 class="wow fadeInUp black mb-sm-3 mb-2 fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Hazard William
+                        Aqeel
                     </h2>
                     <p class="pra fs-seven mb-xl-4 mb-3 wow fadeInUp" data-wow-delay=".4s">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing
-                        praesent velit viverra sit
-                        semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet
-                        donec sed sit mi
-                        dignissim at ante massa mattis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Maecenas varius tortor nibh,
-                        sit amet tempor nibh finibus et. Aenean eu enim justo.
+                        Aqeel is Lead Developer at De-Weboo with 8+ years of experience building secure web applications, mobile apps, and custom software for enterprise and public-sector clients.
                     </p>
                     <ul class="listing d-grid gap-2 wow fadeInUp" data-wow-delay=".4s">
                         <li class="pra fs-seven">
-                            1 Neque sodales ut etiam sit amet nisl purus.
+                            Expert in Figma, responsive UI, and accessibility (WCAG) best practices.
                         </li>
                         <li class="pra fs-seven">
-                            2 Adipiscing elit aliquam purus viverra suspendisse
+                            Leads user research, wireframing, and prototype testing before development.
                         </li>
                         <li class="pra fs-seven">
-                            3 Mauris commodo quis imperdiet tincidunt
+                            Collaborates with developers to deliver pixel-perfect, performance-ready interfaces.
                         </li>
                         <li class="pra fs-seven">
-                            4 Adipiscing elit ut aliquam purus
+                            Passionate about clean design that supports SEO and measurable business outcomes.
                         </li>
                     </ul>
                 </div>
@@ -224,11 +216,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

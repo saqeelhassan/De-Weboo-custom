@@ -22,8 +22,9 @@ if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['contact_form'
     ];
 }
 
-$page_title = 'Contact – De-Weboo Digital Agency';
-$page_description = 'Get in touch with De-Weboo for digital services, support, and project inquiries.';
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
+$dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
 
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
@@ -37,9 +38,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a href="index.php" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li class="white">Contact us</li>
+                    <li class="white">Contact</li>
                 </ul>
-                <h1 class="white visible-from-right">Contact us</h1>
+                <h1 class="white visible-from-right">Contact De-Weboo</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -58,30 +59,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <div class="mb-xxl-4 mb-4 pb-xxl-2">
-                                <h4 class="black mb-xl-3 mb-2">
-                                    Canada - Techlo
-                                </h4>
-                                <p class="pra">
-                                    Pakistan
-                                </p>
+                                <h4 class="black mb-0 contact-info-heading">Enterprise software · SLED-ready bidder</h4>
                             </div>
+                            <?php
+                            $call_wrapper_class = 'about-call d-flex align-items-center gap-3 mb-xxl-4 mb-4 pb-xxl-2';
+                            require __DIR__ . '/includes/contact-call-block.php';
+                            ?>
                             <div class="d-grid gap-1 mb-xxl-4 mb-4 pb-xxl-2">
-                                <a href="#" class="d-inline-flex align-items-center gap-2 black fw_500">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9.88672 1C9.88672 1 11.8421 1.17776 14.3307 3.6664C16.8194 6.15504 16.9971 8.11039 16.9971 8.11039"
-                                            stroke="#5135FF" stroke-width="2" stroke-linecap="round" />
-                                        <path
-                                            d="M10.0703 4.14233C10.0703 4.14233 10.9502 4.39372 12.27 5.71352C13.5898 7.03332 13.8412 7.91319 13.8412 7.91319"
-                                            stroke="#5135FF" stroke-width="2" stroke-linecap="round" />
-                                        <path
-                                            d="M6.3662 3.94886L6.94305 4.98247C7.46362 5.91525 7.25464 7.1389 6.43475 7.95879C6.43475 7.9588 6.43475 7.9588 6.43475 7.9588C6.43463 7.95891 5.44034 8.95342 7.24338 10.7565C9.04576 12.5588 10.0402 11.5659 10.041 11.5651C10.0411 11.5651 10.0411 11.5651 10.0411 11.5651C10.861 10.7452 12.0846 10.5362 13.0174 11.0568L14.051 11.6336C15.4595 12.4197 15.6258 14.395 14.3878 15.633C13.6438 16.377 12.7325 16.9558 11.7251 16.994C10.0291 17.0583 7.14896 16.6291 4.25985 13.74C1.37074 10.8509 0.94153 7.97073 1.00582 6.27478C1.04402 5.26733 1.62287 4.35599 2.3668 3.61206C3.60485 2.37401 5.58014 2.54035 6.3662 3.94886Z"
-                                            stroke="#5135FF" stroke-width="2" stroke-linecap="round" />
-                                    </svg>
-                                    PK +92-336-7770349
-                                </a>
-                                <a href="#" class="d-inline-flex align-items-center gap-2 black fw_500">
+                                <a href="mailto:Info@deweboo.com" class="d-inline-flex align-items-center gap-2 black fw_500">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -97,7 +82,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                             <a href="contact.php"
                                 class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
-                                Get Decision
+                                Get a Consultation
                             </a>
                         </div>
                     </div>
@@ -110,53 +95,53 @@ require_once __DIR__ . '/includes/navbar.php';
     <section class="map-section fix section-padding">
         <div class="map-area">
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52808140.21705447!2d-161.46429918210544!3d36.11412792251988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1740418796595!5m2!1sen!2sbd"
+                title="De-Weboo — Hyderabad HQ &amp; global digital delivery"
+                src="https://www.google.com/maps?q=Lucky+Shanghai+Trade+Centre,+Auto+Bhan+Road,+Hyderabad,+Sindh,+Pakistan&amp;hl=en&amp;z=16&amp;output=embed"
                 style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <div class="container">
             <div class="contact-help-box">
                 <h2 class="black text-center mb-lg-5 mb-4">
-                    How can we help?
+                    How can we support your business or bid?
                 </h2>
                 <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>"
                     class="row g-4" id="contact-main-form" autocomplete="on" novalidate>
                     <input type="hidden" name="contact_form" value="1">
                     <div class="col-lg-6 contact-from-grp">
-                        <label class="visually-hidden" for="contact_name">Your name</label>
-                        <input type="text" name="contact_name" id="contact_name" placeholder="Your Name"
+                        <label class="visually-hidden" for="contact_name">Full name</label>
+                        <input type="text" name="contact_name" id="contact_name" placeholder="Full name"
                             value="<?php echo e($contact_form['name']); ?>">
                     </div>
                     <div class="col-lg-6 contact-from-grp">
-                        <label class="visually-hidden" for="contact_phone">Your phone</label>
-                        <input type="text" name="contact_phone" id="contact_phone" placeholder="Your phone"
+                        <label class="visually-hidden" for="contact_phone">Phone number</label>
+                        <input type="text" name="contact_phone" id="contact_phone" placeholder="<?php echo e($dw_phone_placeholder); ?>"
                             value="<?php echo e($contact_form['phone']); ?>" autocomplete="tel">
                     </div>
                     <div class="col-lg-6 contact-from-grp">
-                        <label class="visually-hidden" for="contact_email">Your email</label>
-                        <input type="email" name="contact_email" id="contact_email" placeholder="Your email address"
+                        <label class="visually-hidden" for="contact_email">Work email</label>
+                        <input type="email" name="contact_email" id="contact_email" placeholder="Work email address"
                             value="<?php echo e($contact_form['email']); ?>" autocomplete="email">
                     </div>
                     <div class="col-lg-6 contact-from-grp">
-                        <label class="visually-hidden" for="contact_subject">Your subject</label>
-                        <input type="text" name="contact_subject" id="contact_subject" placeholder="Your subject"
+                        <label class="visually-hidden" for="contact_subject">Project or RFP subject</label>
+                        <input type="text" name="contact_subject" id="contact_subject" placeholder="Project type, RFP reference, or NAICS scope"
                             value="<?php echo e($contact_form['subject']); ?>">
                     </div>
                     <div class="col-lg-12 contact-from-grp">
-                        <label class="visually-hidden" for="contact_message">Your message</label>
+                        <label class="visually-hidden" for="contact_message">Project or procurement details</label>
                         <textarea name="contact_message" id="contact_message" rows="5"
-                            placeholder="Write your message"><?php echo e($contact_form['message']); ?></textarea>
+                            placeholder="Share your goals—B2B platforms, B2C e-commerce, B2A/SLED procurement, or healthcare IT requirements."><?php echo e($contact_form['message']); ?></textarea>
                     </div>
                     <div class="col-lg-12">
                         <div
                             class="d-flex flex-lg-nowrap flex-wrap justify-content-lg-between justify-content-center align-items-center gap-3">
                             <p class="pra pragraph">
-                                We are committed to protecting your privacy. We will never collect
-                                information about you without your explicit consent.
+                                Enterprise IT solutions with HIPAA-aligned security—for commercial brands, SLED buyers, and healthcare organizations. We protect your data and never share information without your explicit consent.
                             </p>
                             <button type="submit"
                                 class="border-0 common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
-                                Send Message
+                                Send Inquiry
                             </button>
                         </div>
                     </div>

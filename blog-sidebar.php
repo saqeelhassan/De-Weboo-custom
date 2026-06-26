@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -165,7 +164,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="blog-details-right ps-xl-5">
                         <div class=" border-0 search-box">
                             <form action="#" class="rounded-2">
-                                <input type="text" placeholder="Enter your keywords...">
+                                <input type="text" placeholder="Search articles...">
                                 <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </div>
@@ -222,7 +221,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <a href="blog-details.php"
                                     class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
                                     data-wow-delay=".3s">
-                                    Data visualization <i class="fa-solid fa-angle-right"></i>
+                                    Managed IT & infrastructure <i class="fa-solid fa-angle-right"></i>
                                 </a>
                                 <a href="blog-details.php"
                                     class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"

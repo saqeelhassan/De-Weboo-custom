@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -43,22 +42,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/customer1.png" alt="Illustration" class="rounded-circle">
-                                </div>
                                 <div class="cont">
                                     <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
                                     <h6 class="black fw-six">Raw Material</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
@@ -72,22 +64,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/goyela.png" alt="Illustration" class="rounded-circle">
-                                </div>
                                 <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Designer</p>
+                                    <p class="fs-eight mb-1 p1-clr d-block">Lead Designer</p>
                                     <h6 class="black fw-six">Nick Jonas</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
@@ -101,22 +86,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/author7.png" alt="Illustration" class="rounded-circle">
-                                </div>
                                 <div class="cont">
                                     <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
                                     <h6 class="black fw-six">Jibon Pilsberg</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
@@ -130,23 +108,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/testimonial-m3.png" alt="Illustration"
-                                        class="rounded-circle">
-                                </div>
                                 <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Designer</p>
+                                    <p class="fs-eight mb-1 p1-clr d-block">Lead Designer</p>
                                     <h6 class="black fw-six">Richard Noverl</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
@@ -160,23 +130,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/testimonial-m2.png" alt="Illustration"
-                                        class="rounded-circle">
-                                </div>
                                 <div class="cont">
                                     <p class="fs-eight mb-1 p1-clr d-block">CEO</p>
                                     <h6 class="black fw-six">Harish Bhimol</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
@@ -190,23 +152,15 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <i class="fa-solid fa-star fs-six p2-clr"></i>
                             </div>
                             <p class="pra">
-                                We've been working with Evolve for
-                                over a year now and we're happy
-                                with the results.
+                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
                             </p>
                             <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="author rounded-circle">
-                                    <img loading="lazy" src="assets/img/testimonial/testimonial-m1.png" alt="Illustration"
-                                        class="rounded-circle">
-                                </div>
                                 <div class="cont">
                                     <p class="fs-eight mb-1 p1-clr d-block">Manager</p>
                                     <h6 class="black fw-six">Robert Pitterson</h6>
                                 </div>
                             </div>
                         </div>
-                        <!-- Ele -->
-                        <img loading="lazy" src="assets/img/testimonial/testimonial-mask.png" alt="Illustration" class="testimonial-mask">
                     </div>
                 </div>
             </div>
@@ -218,11 +172,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

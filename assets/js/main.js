@@ -192,7 +192,24 @@ CSS TABLE OF CONTENTS
 
 		$(".video-popup").magnificPopup({
 			type: "iframe",
-			callbacks: {},
+			mainClass: "mfp-fade",
+			removalDelay: 160,
+			preloader: false,
+			fixedContentPos: false,
+			iframe: {
+				patterns: {
+					youtube: {
+						index: "youtube.com/",
+						id: "v=",
+						src: "https://www.youtube.com/embed/%id%?autoplay=1",
+					},
+					youtube_short: {
+						index: "youtu.be/",
+						id: "/",
+						src: "https://www.youtube.com/embed/%id%?autoplay=1",
+					},
+				},
+			},
 		});
 
 		//>> Counterup Start <<//
@@ -205,7 +222,7 @@ CSS TABLE OF CONTENTS
 		new WOW().init();
 
 		//>> Nice Select Start <<//
-		$("select").niceSelect();
+		$("select").not(".portfolio-discuss-select").niceSelect();
 
 		//>> Testimonial Slider Start <<//
 		const bannerSectionWrap = new Swiper(".banner-section-wrap", {

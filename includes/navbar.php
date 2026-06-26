@@ -3,6 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/helpers.php';
+require_once __DIR__ . '/seo-config.php';
+$dw_contact = dw_org_config();
 
 $show_header_top = $show_header_top ?? true;
 $header_nav_class = $header_nav_class ?? 'header-1 w-100';
@@ -134,7 +136,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="https://wa.me/15512023922">Whatsapp +1(551) 202-3922</a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/<?php echo e(preg_replace('/\D+/', '', $dw_contact['telephone'])); ?>">WhatsApp us · <?php echo e($dw_contact['telephoneDisplay']); ?></a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -142,7 +144,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:+923367770349">PK +92-336-7770349</a>
+                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>"><?php echo e($dw_contact['telephoneDisplay']); ?></a>
                                 </div>
                             </li>
                         </ul>
@@ -193,47 +195,18 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                             <a href="about.php">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="services.php">
-                                                Services
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="services.php">Service</a></li>
-                                                <li><a href="services-details.php">Service Details</a></li>
-                                            </ul>
+                                            <a href="collaboration.php">Collaboration</a>
+                                        </li>
+                                        <li>
+                                            <a href="services.php">Services</a>
                                         </li>
 
                                         <li>
-                                            <a href="blog.php">
-                                                Blog
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="blog.php">Blog</a></li>
-                                                <li><a href="blog-sidebar.php">Blog Sidebar</a></li>
-                                                <li><a href="blog-details.php">Blog Details</a></li>
-                                            </ul>
+                                            <a href="portfolio.php">Portfolio</a>
                                         </li>
-                                        <li class="has-dropdown">
-                                            <a href="#0">
-                                                Pages
-                                                <i class="fas fa-angle-down"></i>
-                                            </a>
-                                            <ul class="submenu">
-                                                <li><a href="team.php">Team</a></li>
-                                                <li><a href="team-details.php">Team Details</a></li>
-                                                <li><a href="testimonials.php">Testimonial</a></li>
-                                                <li><a href="faqs.php">Faqs</a></li>
-                                                <li><a href="pricing-plan.php">Pricing Plan</a></li>
-                                                <li><a href="portfolio.php">Portfolio</a></li>
-                                                <li><a href="portfolio-details.php">Portfolio Details</a></li>
-                                                <li><a href="error.php">Error 404</a></li>
-                                            </ul>
-                                        </li>
+
                                         <li>
-                                            <a href="contact.php">
-                                                Contact
-                                            </a>
+                                            <a href="blog.php">Blog</a>
                                         </li>
 
                                     </ul>

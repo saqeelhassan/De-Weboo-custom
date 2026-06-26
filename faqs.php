@@ -3,9 +3,8 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -18,9 +17,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a href="index.php" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li class="white">Our faq’s</li>
+                    <li class="white">FAQs</li>
                 </ul>
-                <h1 class="white visible-from-right">Our faq’s</h1>
+                <h1 class="white visible-from-right">FAQs</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -38,23 +37,12 @@ require_once __DIR__ . '/includes/navbar.php';
                             OUR QUESTIONS AND ANSWER
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Things you need to
-                            know about us
+                            Answers about working with De-Weboo
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
                         <img loading="lazy" src="assets/img/faq/faq-customer.png" alt="Illustration" class="img rounded-circle">
-                        <div class="about-call d-flex align-items-center gap-3">
-                            <div class="icon p3-bg d-center rounded-circle">
-                                <i class="fa-solid fa-phone-volume fs-six white"></i>
-                            </div>
-                            <div class="cont">
-                                <span class="fs-seven pra d-block">Call us free</span>
-                                <a href="#0" class="fs-six black fw-semibold">
-                                    019 25648 62598
-                                </a>
-                            </div>
-                        </div>
+                        <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -63,14 +51,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    How does it generate make responses?
+                                    What services does De-Weboo offer?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations under NAICS 541511), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards under NAICS 541512). <strong>Secondary — Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO under NAICS 541810 &amp; 541910), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>
@@ -80,14 +67,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do I get all the demos and templates with?
+                                    Do you provide website maintenance after launch?
                                 </button>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            Yes. After we build your platform, we provide managed hosting, security patching, and monitoring under NAICS 541519—secondary lifecycle support that scales the software and web systems we engineer.
                                         </p>
                                     </div>
                                 </div>
@@ -97,14 +83,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How do you find different criteria in your process?
+                                    How does your project process work?
                                 </button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            We follow discovery, secure architecture, design, development, accessibility testing (Section 508/WCAG), QA, and launch—with documented milestones suitable for commercial and procurement reviews.
                                         </p>
                                     </div>
                                 </div>
@@ -114,14 +99,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingfour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                    What do I need to apply for an account?
+                                    How much does a new website cost?
                                 </button>
                                 <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Our tools are easy to use and affordable, so you can start improving your
-                                            website's SEO today.
+                                            Pricing depends on scope, integrations, and compliance requirements. Contact us for a transparent proposal—whether you need a growth-focused commercial site or a procurement-ready healthcare portal.
                                         </p>
                                     </div>
                                 </div>
@@ -140,7 +124,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-9">
                     <div class="section-title text-center mb-lg-5 mb-4">
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Have any question?
+                            Frequently asked questions
                         </h2>
                     </div>
                     <div class="accordion accordion-custom05 border-0 d-flex flex-column" id="accordionExample1">
@@ -149,16 +133,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne001" aria-expanded="true"
                                     aria-controls="collapseOne001">
-                                    I don't have a traditional AI background, can I still find an AI job?
+                                    Are you qualified for SLED procurement?
                                 </button>
                                 <div id="collapseOne001" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Nor is there anyone who loves or pursues or desires to obtain pain of
-                                            itself, because it is pain, occasionally
-                                            circumstances occur in which toil and pain can procure him some great
-                                            pleasure.
+                                            Yes. De-Weboo is a contract-ready SLED bidder. <strong>AI Automation</strong> maps to NAICS 541511 (custom programming for AI integrations, workflow automations, and LLM configurations). <strong>Data Engineering</strong> maps to NAICS 541512 (data architecture and secure data pipeline systems design). <strong>Digital Marketing</strong> and <strong>SEO</strong> map to NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research). Request our capabilities statement via the contact page.
                                         </p>
                                     </div>
                                 </div>
@@ -169,16 +150,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo001" aria-expanded="false"
                                     aria-controls="collapseTwo001">
-                                    I don't have a traditional AI background, can I still find an AI job?
+                                    Do you build HIPAA-compliant healthcare websites?
                                 </button>
                                 <div id="collapseTwo001" class="accordion-collapse collapse"
                                     aria-labelledby="headingTwo001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Nor is there anyone who loves or pursues or desires to obtain pain of
-                                            itself, because it is pain, occasionally
-                                            circumstances occur in which toil and pain can procure him some great
-                                            pleasure.
+                                            Yes. Web &amp; Mobile Development under NAICS 541511 includes high-security medical websites, patient portals, clinical workflows, and HIPAA-aligned healthcare infrastructure.
                                         </p>
                                     </div>
                                 </div>
@@ -189,16 +167,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree001" aria-expanded="false"
                                     aria-controls="collapseThree001">
-                                    How do you find different criteria in your process?
+                                    Can you improve SEO and lead generation?
                                 </button>
                                 <div id="collapseThree001" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Nor is there anyone who loves or pursues or desires to obtain pain of
-                                            itself, because it is pain, occasionally
-                                            circumstances occur in which toil and pain can procure him some great
-                                            pleasure.
+                                            Yes. <strong>Digital Marketing</strong> and <strong>SEO</strong> are separate secondary Growth &amp; Infrastructure services under NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research)—Digital Marketing covers consumer marketing and lead generation; SEO covers technical SEO, AEO content strategy, and specialized medical and healthcare SEO to scale the platforms we engineer.
                                         </p>
                                     </div>
                                 </div>
@@ -209,16 +184,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour001" aria-expanded="false"
                                     aria-controls="collapsefour001">
-                                    What do I need to apply for an account?
+                                    How much does a new website cost?
                                 </button>
                                 <div id="collapsefour001" class="accordion-collapse collapse"
                                     aria-labelledby="headingfour001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Nor is there anyone who loves or pursues or desires to obtain pain of
-                                            itself, because it is pain, occasionally
-                                            circumstances occur in which toil and pain can procure him some great
-                                            pleasure.
+                                            Pricing varies by scope, compliance, and integrations. We provide clear proposals for commercial builds and can supply NAICS-mapped capability summaries for SLED inquiries.
                                         </p>
                                     </div>
                                 </div>
@@ -235,11 +207,10 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="customer-touch-wrap">
                 <div class="section-title">
-                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Get to meet Your Next
-                        Agency</span>
+                    <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
+                        digital delivery?</span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        We’re delivering the best
-                        customer experience
+                        Commercial speed. Healthcare security. SLED-ready capabilities.
                     </h2>
                 </div>
                 <a href="contact.php"

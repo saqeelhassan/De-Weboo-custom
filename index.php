@@ -3,14 +3,37 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
-$page_title = 'De-Weboo – Digital Agency';
-$page_description = 'De-Weboo – Digital Agency';
-
+require_once __DIR__ . '/includes/portfolio-projects.php';
+require_once __DIR__ . '/includes/blog-posts.php';
+$homepageBlogPosts = array_slice(dw_blog_posts_sorted(), 0, 3);
+require_once __DIR__ . '/includes/seo.php';
+dw_load_page_seo(basename(__FILE__, '.php'));
+$featuredPortfolioSlots = [
+    ['image' => 'assets/img/services/select1.png', 'category' => 'DESIGN', 'title' => 'Technology solution', 'url' => 'portfolio-details.php'],
+    ['image' => 'assets/img/services/select2.png', 'category' => 'TECHNOLOGY', 'title' => 'Platform integration', 'url' => 'portfolio-details.php'],
+    ['image' => 'assets/img/services/select3.png', 'category' => 'TECHNOLOGY', 'title' => 'Web development', 'url' => 'portfolio-details.php'],
+    ['image' => 'assets/img/services/select4.png', 'category' => 'IDEAS', 'title' => 'Smart vision', 'url' => 'portfolio-details.php'],
+];
+$portfolioSlotIndex = 0;
+foreach (dw_portfolio_projects() as $project) {
+    if ($portfolioSlotIndex >= count($featuredPortfolioSlots)) {
+        break;
+    }
+    $featuredPortfolioSlots[$portfolioSlotIndex] = [
+        'image' => dw_portfolio_image($project['images']['card'], $featuredPortfolioSlots[$portfolioSlotIndex]['image']),
+        'category' => $project['category'],
+        'title' => $project['shortName'],
+        'url' => dw_portfolio_url($project['slug']),
+        'alt' => $project['shortName'],
+    ];
+    $portfolioSlotIndex++;
+}
 $show_header_top = false;
 $header_nav_class = 'header-1 style3 w-100';
 $header_logo_src = 'assets/img/logo/logo-white.png';
 $nav_search_icon_color_inner = 'white';
 $footer_variant = 'style2';
+$extra_stylesheets = ['assets/css/home-hero.css'];
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -21,12 +44,17 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="banner-bg-slide">
                     <div class="container">
                         <div class="banner-content text-center">
-                            <span class="hero-badge3 mb-xxl-4 mb-4 d-block white fs-seven fw_600 text-uppercase">
-                                How to Create a Successful IT Strategy
+                            <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">
+                                Software Engineering · SLED Ready
                             </span>
-                            <h1 class="white mb-md-4 mb-3 pb-lg-2 d-block">
-                                We offer a wide range of IT solutions.
+                            <h1 class="white mb-xxl-3 mb-3 d-block hero-headline-lines">
+                                Custom software &amp; IT solutions,<br>
+                                contract-ready SLED bidder &amp;<br>
+                                secure enterprise IT solutions.
                             </h1>
+                            <p class="white75 fs-five fw_500 mb-xxl-4 mb-4 mx-auto hero-lead">
+                                Development &amp; AI Engineering. Secondary — Growth &amp; Infrastructure. B2B, B2C &amp; B2A delivery.
+                            </p>
                             <div class="d-flex justify-content-center align-items-center gap-sm-3 gap-1">
                                 <div class="">
                                     <a href="about.php"
@@ -37,7 +65,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <div class="">
                                     <a href="contact.php"
                                         class="common-btn box-style cmn-style1 w-100 white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-transparent rounded-5 n0-border">
-                                        Contact With Us
+                                        Contact Us
                                     </a>
                                 </div>
                             </div>
@@ -52,12 +80,17 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="banner-bg-slide style2">
                     <div class="container">
                         <div class="banner-content text-center">
-                            <span class="hero-badge3 mb-xxl-4 mb-4 d-block white fs-seven fw_600 text-uppercase">
-                                How to Create a Successful IT Strategy
+                            <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">
+                                Mobile &amp; Web Development
                             </span>
-                            <h1 class="white mb-md-4 mb-3 pb-lg-2 d-block">
-                                We offer a wide range of IT solutions.
+                            <h1 class="white mb-xxl-3 mb-3 d-block hero-headline-lines">
+                                Custom web apps, mobile apps,<br>
+                                e-commerce &amp; high-security<br>
+                                medical websites &amp; portals.
                             </h1>
+                            <p class="white75 fs-five fw_500 mb-xxl-4 mb-4 mx-auto hero-lead">
+                                Web Development under Development &amp; AI Engineering.
+                            </p>
                             <div class="d-flex justify-content-center align-items-center gap-sm-3 gap-1">
                                 <div class="">
                                     <a href="about.php"
@@ -68,7 +101,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <div class="">
                                     <a href="contact.php"
                                         class="common-btn box-style cmn-style1 w-100 white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-transparent rounded-5 n0-border">
-                                        Contact With Us
+                                        Contact Us
                                     </a>
                                 </div>
                             </div>
@@ -83,12 +116,17 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="banner-bg-slide style3">
                     <div class="container">
                         <div class="banner-content text-center">
-                            <span class="hero-badge3 mb-xxl-4 mb-4 d-block white fs-seven fw_600 text-uppercase">
-                                How to Create a Successful IT Strategy
+                            <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">
+                                Growth &amp; Infrastructure
                             </span>
-                            <h1 class="white mb-md-4 mb-3 pb-lg-2 d-block">
-                                We offer a wide range of IT solutions.
+                            <h1 class="white mb-xxl-3 mb-3 d-block hero-headline-lines">
+                                Digital Marketing, SEO,<br>
+                                and secure Cloud Services,<br>
+                                HIPAA-friendly hosting &amp; migration.
                             </h1>
+                            <p class="white75 fs-five fw_500 mb-xxl-4 mb-4 mx-auto hero-lead">
+                                Secondary lifecycle support — four distinct services: Digital Marketing, SEO, and Cloud, separate from development.
+                            </p>
                             <div class="d-flex justify-content-center align-items-center gap-sm-3 gap-1">
                                 <div class="">
                                     <a href="about.php"
@@ -99,7 +137,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <div class="">
                                     <a href="contact.php"
                                         class="common-btn box-style cmn-style1 w-100 white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-transparent rounded-5 n0-border">
-                                        Contact With Us
+                                        Contact Us
                                     </a>
                                 </div>
                             </div>
@@ -122,25 +160,23 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row mb-lg-5 mb-sm-5 mb-4 pb-lg-1">
                 <div class="col-lg-7">
                     <div class="section-title">
-                        <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">WHAT WE SOLVED
-                            What we do.
+                        <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">TOPIC CLUSTERS
                         </span>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            How does it even work?
+                            What we build first—and what scales it after launch
                         </h2>
                     </div>
                 </div>
             </div>
-            <div class="row g-4">
-                <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="event-work-items text-center">
+            <div class="row g-4 event-work-row">
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
+                    <div class="event-work-items text-center h-100">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
-                            <span class="pra fs-seven text-uppercase d-block mb-3">The Process</span>
+                            <span class="pra fs-seven text-uppercase d-block mb-3">Development &amp; AI</span>
                             <h4 class="mb-5">
-                                <a href="portfolio-details.php" class="black">
-                                    Get all digital solution
-                                    from our expert
+                                <a href="services.php" class="black">
+                                    Web Development
                                 </a>
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
@@ -152,15 +188,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="event-work-items text-center">
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
+                    <div class="event-work-items text-center h-100">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
-                            <span class="pra fs-seven text-uppercase d-block mb-3">UI Design</span>
+                            <span class="pra fs-seven text-uppercase d-block mb-3">AI Automation</span>
                             <h4 class="mb-5">
-                                <a href="portfolio-details.php" class="black">
-                                    User-friendly interface
-                                    makes it easy
+                                <a href="services.php" class="black">
+                                    AI Automation
                                 </a>
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
@@ -172,15 +207,33 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="event-work-items text-center">
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
+                    <div class="event-work-items text-center h-100">
+                        <div class="boxes">
+                            <img loading="lazy" src="assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
+                            <span class="pra fs-seven text-uppercase d-block mb-3">Data Engineering</span>
+                            <h4 class="mb-5">
+                                <a href="services.php" class="black">
+                                    Data Engineering
+                                </a>
+                            </h4>
+                            <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
+                                <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
+                                <a href="portfolio-details.php" class="d-center arrows rounded-circle">
+                                    <i class="fa-solid fa-arrow-right black"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
+                    <div class="event-work-items text-center h-100">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
-                            <span class="pra fs-seven text-uppercase d-block mb-3">Update</span>
+                            <span class="pra fs-seven text-uppercase d-block mb-3">Secondary — Growth &amp; Infrastructure</span>
                             <h4 class="mb-5">
-                                <a href="portfolio-details.php" class="black">
-                                    Track progress with
-                                    real-time updates.
+                                <a href="services.php" class="black">
+                                    Digital Marketing, SEO &amp; Cloud
                                 </a>
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
@@ -202,18 +255,24 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="vission-wrapper">
                 <div class="vission-left">
                     <p class="white65 fs-seven mb-4 pb-xxl-1 wow fadeInUp" data-wow-delay=".2s">
-                        Since 1985 Reed has pioneered specialist recruitment
-                        sourcing knowledgeable, skilled professionals for
-                        jobs across the UK looking finance.
+                        What is De-Weboo? An enterprise software engineering firm that engineers custom, secure, and compliant web software for B2B, B2C, and B2A frameworks—and operates as a contract-ready SLED bidder for state, local, and education authorities.
                     </p>
                     <ul class="d-grid gap-2 mb-xl-5 mb-4">
                         <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
                             data-wow-delay=".3s">
-                            <i class="fa-solid fa-circle-check p3-clr"></i> Redefining energy with solar technology
+                            <i class="fa-solid fa-circle-check p3-clr"></i> Web Development: custom web apps, mobile apps, e-commerce &amp; medical patient portals
+                        </li>
+                        <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
+                            data-wow-delay=".35s">
+                            <i class="fa-solid fa-circle-check p3-clr"></i> AI Automation: custom AI integrations, workflow automations &amp; LLM configs (NAICS 541511)
+                        </li>
+                        <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
+                            data-wow-delay=".38s">
+                            <i class="fa-solid fa-circle-check p3-clr"></i> Data Engineering: secure data pipelines &amp; administrative dashboards (NAICS 541512)
                         </li>
                         <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
                             data-wow-delay=".4s">
-                            <i class="fa-solid fa-circle-check p3-clr"></i> Solar solutions for a brighter tommorow
+                            <i class="fa-solid fa-circle-check p3-clr"></i> Secondary — Digital Marketing, SEO (NAICS 541810 &amp; 541910) &amp; Cloud Services
                         </li>
                     </ul>
                     <div class="btn-area wow fadeInUp" data-wow-delay=".5s">
@@ -231,13 +290,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             Our Vision
                         </span>
                         <p class="white65 fs-seven mb-xxl-5 mb-4 wow fadeInUp" data-wow-delay=".3s">
-                            When you design products and services in close partnership with clients, you are creating a
-                            solution that is tailored to
-                            their specific needs.
+                            We engineer platforms first, then scale them—Development &amp; AI Engineering first, Growth &amp; Infrastructure second—mapped to NAICS 541511 through 541910.
                         </p>
                         <p class="fs-seven white65 mb-3 wow fadeInUp" data-wow-delay=".5s">
-                            Over <span class="white fw_600">5Ok+ Client</span>
-                            all over the world
+                            Trusted by <span class="white fw_600">200+ clients</span> worldwide
                         </p>
                         <div class="avatar-customer-wrap d-flex align-items-center">
                             <img loading="lazy" src="assets/img/about/vision-customer1.png" alt="Illustration" class="rounded-circle">
@@ -256,22 +312,22 @@ require_once __DIR__ . '/includes/navbar.php';
     <!-- Solutio Section -->
     <section class="solutio-section fix section-padding">
         <div class="container">
-            <ul class="nav nav-tabs mb-xxl-5 mb-4" id="myTab" role="tablist">
+            <ul class="nav nav-tabs solutio-tabs-main mb-xxl-5 mb-4" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">IT Security</button>
+                        type="button" role="tab" aria-controls="home" aria-selected="true">Web</button>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile"
-                        type="button" role="tab" aria-controls="profile" aria-selected="false">Solutions</button>
+                    <button class="nav-link" id="sled-tab" data-bs-toggle="tab" data-bs-target="#sled"
+                        type="button" role="tab" aria-controls="sled" aria-selected="false">SLED Bidder</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai-automation"
+                        type="button" role="tab" aria-controls="ai-automation" aria-selected="false">AI Automation</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">SEO Management</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab2" data-bs-toggle="tab" data-bs-target="#contact2"
-                        type="button" role="tab" aria-controls="contact2" aria-selected="false">Mobile Apps</button>
+                        type="button" role="tab" aria-controls="contact" aria-selected="false">Medical</button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -295,35 +351,33 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="col-xxl-5 col-lg-6">
                             <div class="solutio-content">
                                 <h3 class="white mb-xxl-3 mb-2">
-                                    IT solutio
-                                    your business.
+                                    Web Development
                                 </h3>
                                 <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    We work closely with you to understand business goals and objectives, and then we
-                                    develop customized IT
-                                    solutions that
-                                    help you
+                                    Under NAICS 541511, we deliver custom web apps, e-commerce platforms, and high-security medical websites and patient portals—responsive B2B/B2C/B2A platforms built for performance, accessibility, and audit-ready documentation.
                                 </p>
                                 <ul class="d-grid gap-3 mb-xxl-5 mb-4">
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Dall-E, GPT or Ada
+                                        <i class="fa-solid fa-circle-check"></i> Custom web applications &amp; enterprise portals (NAICS 541511)
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Unlimited Generation
+                                        <i class="fa-solid fa-circle-check"></i> Section 508 / WCAG accessibility on every build
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Multilingual
+                                        <i class="fa-solid fa-circle-check"></i> SLED-ready web assets for state, local &amp; education procurement
                                     </li>
                                 </ul>
-                                <a href="contact.php"
-                                    class="common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5">
-                                    Why We Different
-                                </a>
+                                <button type="button"
+                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
+                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
+                                    data-consultation-service="Web Development">
+                                    Request a Consultation
+                                </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                <div class="tab-pane fade" id="sled" role="tabpanel" aria-labelledby="sled-tab">
                     <div class="row g-4 align-items-center justify-content-between">
                         <div class="col-xxl-6 col-lg-6">
                             <div class="solutio-thumb position-relative rounded-3 w-100">
@@ -343,30 +397,74 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="col-xxl-5 col-lg-6">
                             <div class="solutio-content">
                                 <h3 class="white mb-xxl-3 mb-2">
-                                    IT solutio
-                                    your business.
+                                    SLED Bidder
                                 </h3>
                                 <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    We work closely with you to understand business goals and objectives, and then we
-                                    develop customized IT
-                                    solutions that
-                                    help you
+                                    De-Weboo is a contract-ready SLED bidder for state, local, and education authorities. We deliver NAICS-mapped software, web, mobile, and IT solutions with Section 508 / WCAG accessibility and audit-ready documentation for public-sector RFPs and RFQs.
                                 </p>
                                 <ul class="d-grid gap-3 mb-xxl-5 mb-4">
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Dall-E, GPT or Ada
+                                        <i class="fa-solid fa-circle-check"></i> Contract-ready SLED bidder for state, local &amp; education authorities
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Unlimited Generation
+                                        <i class="fa-solid fa-circle-check"></i> NAICS 541511, 541512, 541519, 541810 &amp; 541910 capabilities
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Multilingual
+                                        <i class="fa-solid fa-circle-check"></i> Procurement-ready deliverables with HIPAA &amp; Section 508 compliance
                                     </li>
                                 </ul>
-                                <a href="contact.php"
-                                    class="common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5">
-                                    Why We Different
-                                </a>
+                                <button type="button"
+                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
+                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
+                                    data-consultation-service="SLED Bidder">
+                                    Request a Consultation
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ai-automation" role="tabpanel" aria-labelledby="ai-tab">
+                    <div class="row g-4 align-items-center justify-content-between">
+                        <div class="col-xxl-6 col-lg-6">
+                            <div class="solutio-thumb position-relative rounded-3 w-100">
+                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
+                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
+                                    <div class="cont d-flex align-items-center gap-0 mb-2">
+                                        <span class="count fs-two black fw-semibold">76</span>
+                                        <span class="fs-two black fw-semibold">+</span>
+                                    </div>
+                                    <h5 class="fw_500 black">
+                                        Wireframe & Prototype
+                                        UX Design.
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xxl-5 col-lg-6">
+                            <div class="solutio-content">
+                                <h3 class="white mb-xxl-3 mb-2">
+                                    AI Automation
+                                </h3>
+                                <p class="white65 fs-six mb-xxl-5 mb-4">
+                                    Under NAICS 541511, we deliver custom AI integrations, workflow automations, and LLM configurations—enterprise AI workflows for B2B, B2C, B2A, and medical environments.
+                                </p>
+                                <ul class="d-grid gap-3 mb-xxl-5 mb-4">
+                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
+                                        <i class="fa-solid fa-circle-check"></i> Custom AI integrations, workflow automations &amp; LLM configurations (NAICS 541511)
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
+                                        <i class="fa-solid fa-circle-check"></i> LLM deployment, prompt engineering &amp; enterprise AI workflows
+                                    </li>
+                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
+                                        <i class="fa-solid fa-circle-check"></i> Audit-ready AI frameworks for B2B/B2C, B2A &amp; medical environments
+                                    </li>
+                                </ul>
+                                <button type="button"
+                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
+                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
+                                    data-consultation-service="AI Automation">
+                                    Request a Consultation
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -391,78 +489,28 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="col-xxl-5 col-lg-6">
                             <div class="solutio-content">
                                 <h3 class="white mb-xxl-3 mb-2">
-                                    IT solutio
-                                    your business.
+                                    Custom Medical Systems
                                 </h3>
                                 <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    We work closely with you to understand business goals and objectives, and then we
-                                    develop customized IT
-                                    solutions that
-                                    help you
+                                    High-security medical websites and HIPAA-aligned patient portals—clinical workflows and secure healthcare infrastructure for providers, payers, and public-health authorities under NAICS 541511.
                                 </p>
                                 <ul class="d-grid gap-3 mb-xxl-5 mb-4">
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Dall-E, GPT or Ada
+                                        <i class="fa-solid fa-circle-check"></i> HIPAA-aligned architecture &amp; audit-ready controls
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Unlimited Generation
+                                        <i class="fa-solid fa-circle-check"></i> Clinical dashboards, patient portals &amp; EHR integrations
                                     </li>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Multilingual
+                                        <i class="fa-solid fa-circle-check"></i> B2B, B2C &amp; B2A healthcare delivery models
                                     </li>
                                 </ul>
-                                <a href="contact.php"
-                                    class="common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5">
-                                    Why We Different
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact2" role="tabpanel" aria-labelledby="contact-tab2">
-                    <div class="row g-4 align-items-center justify-content-between">
-                        <div class="col-xxl-6 col-lg-6">
-                            <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
-                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
-                                    <div class="cont d-flex align-items-center gap-0 mb-2">
-                                        <span class="count fs-two black fw-semibold">76</span>
-                                        <span class="fs-two black fw-semibold">+</span>
-                                    </div>
-                                    <h5 class="fw_500 black">
-                                        Wireframe & Prototype
-                                        UX Design.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-5 col-lg-6">
-                            <div class="solutio-content">
-                                <h3 class="white mb-xxl-3 mb-2">
-                                    IT solutio
-                                    your business.
-                                </h3>
-                                <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    We work closely with you to understand business goals and objectives, and then we
-                                    develop customized IT
-                                    solutions that
-                                    help you
-                                </p>
-                                <ul class="d-grid gap-3 mb-xxl-5 mb-4">
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Dall-E, GPT or Ada
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Unlimited Generation
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Multilingual
-                                    </li>
-                                </ul>
-                                <a href="contact.php"
-                                    class="common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5">
-                                    Why We Different
-                                </a>
+                                <button type="button"
+                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
+                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
+                                    data-consultation-service="Custom Medical Systems">
+                                    Request a Consultation
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -478,27 +526,15 @@ require_once __DIR__ . '/includes/navbar.php';
                 class="text-lg-start text-center d-lg-flex d-grid gap-3 flex-lg-nowrap flex-wrap align-items-end justify-content-lg-between justify-content-center pb-md-5 mb-4 pb-2">
                 <div class="section-title">
                     <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
-                        WHY CHOOSE OUR TECGON
+                        WHY CHOOSE DE-WEBOO
                     </span>
                     <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Why we are different from <br>
-                        others company
+                        Enterprise IT solutions. Contract-ready SLED delivery.
                     </h2>
                 </div>
                 <div
                     class="faq-stresh d-flex text-start justify-content-center justify-content-lg-start align-items-center">
-                    <img loading="lazy" src="assets/img/services/techgon-author.png" alt="Illustration" class="img rounded-circle">
-                    <div class="about-call d-flex align-items-center gap-3">
-                        <div class="icon blackbg d-center rounded-circle">
-                            <i class="fa-solid fa-phone-volume fs-six white"></i>
-                        </div>
-                        <div class="cont">
-                            <span class="fs-six black fw-semibold">
-                                Richard Martines
-                            </span>
-                            <span class="fs-seven pra d-block">Designer</span>
-                        </div>
-                    </div>
+                    <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
                 </div>
             </div>
             <div class="row g-6 align-items-xxl-center">
@@ -511,31 +547,28 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="techgon-content">
                         <div class="mb-lg-5 mb-4">
                             <h3 class="black mb-lg-3 mb-2 wow fadeInUp" data-wow-delay=".3s">
-                                IT solution that soar the
-                                technology for work tomorrow
+                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
-                                Design studio founded in London and expanded our services
+                                Development &amp; AI Engineering: Web Development, AI Automation, and Data Engineering. Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
                             </p>
                         </div>
                         <ul class="d-grid gap-3">
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".5s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> 24/7 Availability Across
-                                Time Zones
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> 24/7 delivery across time zones
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".6s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Agile Teams with Direct
-                                Access
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Direct access to senior engineers & strategists
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".7s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Rapid Talent Acquisition
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Rapid mobilization for RFP & sprint timelines
                             </li>
                             <li class="d-flex align-items-center gap-2 fs-six fw_500 black wow fadeInUp"
                                 data-wow-delay=".8s">
-                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Building Scalable Teams
+                                <span class="d-center"><i class="fa-solid fa-plus"></i></span> Scalable teams for enterprise & SLED programs
                             </li>
                         </ul>
                     </div>
@@ -553,11 +586,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-7">
                     <div class="section-title text-center">
                         <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
-                            EXPLORE OUR EXPERTISE
+                            SOFTWARE & IT EXPERTISE
                         </span>
-                        <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Service for your development
-                        </h2>
+                        <p class="pra fs-six fw-semibold wow fadeInUp visible-slowly-right mb-0" data-wow-delay=".3s">
+                            Development &amp; AI Engineering · Secondary — Growth &amp; Infrastructure
+                        </p>
                     </div>
                 </div>
             </div>
@@ -567,16 +600,16 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">IT consulting</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">IT
-                                        consulting</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Web
+                                        Development</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Custom web apps, e-commerce, and secure B2B/B2C/B2A portals, including high-security medical websites (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -590,17 +623,17 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">AI machine learning</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Mobile App Engineering</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">AI
-                                        machine learning</a>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Mobile
+                                        App Engineering</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Native and cross-platform mobile applications with secure APIs (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -614,18 +647,17 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">IT development</h5>
-                            <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <h5 class="white mb-3 fs-five fw_500">Data Engineering</h5>
+                            <a href="services.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">IT
-                                        development</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services.php" class="white">Data Engineering</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Data Engineering: secure data pipelines, data architecture, and administrative dashboards. NAICS 541512.
                                 </p>
-                                <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                <a href="services.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -637,16 +669,16 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Data security</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Custom Medical Systems</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Data
-                                        security</a></h5>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Custom
+                                        Medical Systems</a></h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    High-security medical websites, HIPAA-aligned patient portals, and clinical workflows (NAICS 541511).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -660,19 +692,18 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Data visualization</h5>
-                            <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
+                            <a href="services.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Data
-                                        visualization</a>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services.php" class="white">AI Automation</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    AI Automation: custom AI integrations, workflow automations, and LLM configurations. NAICS 541511.
                                 </p>
-                                <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                <a href="services.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -684,25 +715,31 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Improve IT planning</h5>
-                            <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <h5 class="white mb-3 fs-five fw_500">SEO</h5>
+                            <a href="services.php" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php"
-                                        class="white">Improve IT planning</a>
+                                <h5 class="white mb-3 fs-five fw_500"><a href="services.php"
+                                        class="white">SEO</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Our goal is to propel your to best business forward tech
+                                    Secondary — SEO: technical SEO, AEO content strategy, and specialized medical/healthcare SEO. NAICS 541810 &amp; 541910. See services page for Digital Marketing.
                                 </p>
-                                <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
+                                <a href="services.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="text-center mt-lg-5 mt-4">
+                <a href="services.php"
+                    class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-5 whitebg border">
+                    View all services
+                </a>
             </div>
         </div>
     </section>
@@ -729,74 +766,25 @@ require_once __DIR__ . '/includes/navbar.php';
         </div>
         <div class="container-fluid px-4">
             <div class="row g-2">
+                <?php foreach ($featuredPortfolioSlots as $slot) : ?>
                 <div class="col-lg-3">
                     <div class="gateway-items style2 style3 rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/select1.png" alt="Illustration" class="w-100 rounded-4">
+                        <img loading="lazy" src="<?php echo e($slot['image']); ?>" alt="<?php echo e($slot['alt'] ?? $slot['title']); ?>" class="w-100 rounded-4">
                         <div class="cont static">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">DESIGN</span>
-                            <h5 class="white">Technology solution</h5>
+                            <span class="text-uppercase white75 fs-eight d-block mb-1"><?php echo e($slot['category']); ?></span>
+                            <h5 class="white"><?php echo e($slot['title']); ?></h5>
                         </div>
                         <div class="content2">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">DESIGN</span>
-                            <h5 class="white mb-3">Technology solution</h5>
-                            <a href="portfolio-details.php"
+                            <span class="text-uppercase white75 fs-eight d-block mb-1"><?php echo e($slot['category']); ?></span>
+                            <h5 class="white mb-3"><?php echo e($slot['title']); ?></h5>
+                            <a href="<?php echo e($slot['url']); ?>"
                                 class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                 Explore More <span class="icon d-center"><i class="fas fa-arrow-right"></i></span>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <div class="gateway-items style2 style3 rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/select2.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="cont static">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">TECHNOLOGY</span>
-                            <h5 class="white">Platform integration</h5>
-                        </div>
-                        <div class="content2">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">TECHNOLOGY</span>
-                            <h5 class="white mb-3">Platform integration</h5>
-                            <a href="portfolio-details.php"
-                                class="d-flex align-items-center gap-2 fs-seven fw_500 white">
-                                Explore More <span class="icon d-center"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="gateway-items style2 style3 rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/select3.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="cont static">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">TECHNOLOGY</span>
-                            <h5 class="white">Web development</h5>
-                        </div>
-                        <div class="content2">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">TECHNOLOGY</span>
-                            <h5 class="white mb-3">Web development</h5>
-                            <a href="portfolio-details.php"
-                                class="d-flex align-items-center gap-2 fs-seven fw_500 white">
-                                Explore More <span class="icon d-center"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="gateway-items style2 style3 rounded-4 w-100">
-                        <img loading="lazy" src="assets/img/services/select4.png" alt="Illustration" class="w-100 rounded-4">
-                        <div class="cont static">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">IDEAS</span>
-                            <h5 class="white">Smart vision</h5>
-                        </div>
-                        <div class="content2">
-                            <span class="text-uppercase white75 fs-eight d-block mb-1">IDEAS</span>
-                            <h5 class="white mb-3">Smart vision</h5>
-                            <a href="portfolio-details.php"
-                                class="d-flex align-items-center gap-2 fs-seven fw_500 white">
-                                Explore More <span class="icon d-center"><i class="fas fa-arrow-right"></i></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+                <?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -811,8 +799,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span>+</span>
                     </div>
                     <p class="fs-six pra">
-                        Winning awards
-                        on solar
+                        SLED & healthcare
+                        projects delivered
                     </p>
                 </div>
                 <div class="counter-items d-md-flex d-grid align-items-center gap-3">
@@ -821,8 +809,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span>K</span>
                     </div>
                     <p class="fs-six pra">
-                        We have completed
-                        projects
+                        Commercial & public-sector
+                        engagements
                     </p>
                 </div>
                 <div class="counter-items d-md-flex d-grid align-items-center gap-3">
@@ -831,8 +819,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span>%</span>
                     </div>
                     <p class="fs-six pra">
-                        Genuine positive
-                        feedback
+                        Client satisfaction
+                        on secure builds
                     </p>
                 </div>
             </div>
@@ -849,14 +837,12 @@ require_once __DIR__ . '/includes/navbar.php';
                         INDUSTRY WE ARE SERVING
                     </span>
                     <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        IT service customized <br>
-                        for you industry
+                        Custom development tailored <br>
+                        for your industry
                     </h2>
                 </div>
                 <p class="white75">
-                    We shows only the best websites and portfolios built completely with passion, simplicity &
-                    creativity. Our team have
-                    designed game changing product
+                    We engineer software, web, mobile, and medical systems for B2B, B2C, and B2A audiences—then apply lifecycle cloud, SEO, and marketing to scale the platforms we build.
                 </p>
             </div>
             <div class="row g-6 justify-content-between">
@@ -925,48 +911,41 @@ require_once __DIR__ . '/includes/navbar.php';
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="3.5" stroke="white" stroke-opacity="0.2" />
                                     </svg>
-                                    Business growth
+                                    Software development
                                 </li>
                                 <li class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="3.5" stroke="white" stroke-opacity="0.2" />
                                     </svg>
-                                    Business solution
+                                    Medical systems
                                 </li>
                                 <li class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="4" fill="white" />
                                     </svg>
-                                    Search optimization
+                                    Mobile engineering
                                 </li>
                                 <li class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="3.5" stroke="white" stroke-opacity="0.2" />
                                     </svg>
-                                    Technology solution
+                                    Cloud lifecycle
                                 </li>
                                 <li class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="3.5" stroke="white" stroke-opacity="0.2" />
                                     </svg>
-                                    It has root in peace
+                                    SLED procurement
                                 </li>
                             </ul>
-                            <div class="about-call d-flex align-items-center gap-3">
-                                <div class="icon p3-bg d-center rounded-circle">
-                                    <i class="fa-solid fa-phone-volume fs-six white"></i>
-                                </div>
-                                <div class="cont">
-                                    <span class="fs-seven white75 d-block">Call us free</span>
-                                    <a href="#0" class="fs-six white fw-semibold">
-                                        +(602) 762 472 96
-                                    </a>
-                                </div>
-                            </div>
+                            <?php
+                            $call_theme = 'dark';
+                            require __DIR__ . '/includes/contact-call-block.php';
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -981,11 +960,10 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row justify-content-center mb-lg-5 mb-sm-5 mb-4 pb-lg-1">
                 <div class="col-lg-7">
                     <div class="section-title text-center">
-                        <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">WHAT WE SOLVED
-                            OUR TEAM MEMBERS
+                        <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">OUR EXPERT TEAM
                         </span>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Meet with tech specialist
+                            Meet our digital specialists
                         </h2>
                     </div>
                 </div>
@@ -994,7 +972,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member1.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Aqeel, Lead Developer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -1017,15 +995,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Darrell Steward</a></h4>
-                            <span class="fs-seven fw-medium">Ui/Ux Designer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Aqeel</a></h4>
+                            <span class="fs-seven fw-medium">Lead Developer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member2.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -1048,15 +1026,15 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Harshil Achayra</a></h4>
-                            <span class="fs-seven fw-medium">Engineer</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Syed Ali Asad Jafri</a></h4>
+                            <span class="fs-seven fw-medium">DevOps Engineer</span>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/member3.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="#" class="rounded-2">
@@ -1079,8 +1057,8 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Nisha Gurain</a></h4>
-                            <span class="fs-seven fw-medium">Mechanic</span>
+                            <h4 class="black mb-1"><a href="team-details.php" class="black">Naima Shahzadi</a></h4>
+                            <span class="fs-seven fw-medium">Project Manager</span>
                         </div>
                     </div>
                 </div>
@@ -1118,8 +1096,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Discussion</a></h4>
                         <p class="fs-seven pra">
-                            Since 1985 Reed has pioneered
-                            cialist recruitment, sour
+                            We align on goals, scope, and timelines in a structured discovery session.
                         </p>
                     </div>
                 </div>
@@ -1135,8 +1112,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Ideas & concept</a></h4>
                         <p class="fs-seven pra">
-                            Since 1985 Reed has pioneered
-                            cialist recruitment, sour
+                            We create wireframes and visual concepts tailored to your brand and users.
                         </p>
                     </div>
                 </div>
@@ -1152,8 +1128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Testing & trying</a></h4>
                         <p class="fs-seven pra">
-                            Since 1985 Reed has pioneered
-                            cialist recruitment, sour
+                            We test across devices, fix bugs, and optimize performance before go-live.
                         </p>
                     </div>
                 </div>
@@ -1169,8 +1144,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Execute & install</a></h4>
                         <p class="fs-seven pra">
-                            Since 1985 Reed has pioneered
-                            cialist recruitment, sour
+                            We deploy, monitor, and provide training so your team can manage content confidently.
                         </p>
                     </div>
                 </div>
@@ -1204,14 +1178,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
                                 TECHNOLOGY SOLUTIONS
                             </span>
-                            <h2 class="mb-xxl-4 mb-3 wow fadeInUp black fw-bold visible-slowly-right"
+                            <h2 class="mb-xxl-4 mb-3 wow fadeInUp black fw-bold visible-slowly-right tech-solutions-heading"
                                 data-wow-delay=".3s">
-                                Helping businesess around the world
+                                Enterprise delivery.<br class="d-none d-md-block">
+                                SLED-ready execution.
                             </h2>
                             <p class="pra fs-seven">
-                                Whether it's on a website, an app, a search engine, this simple
-                                can evoke a mix of emotions from confusion to exasper
-                                But fear not, for in these moments, there are
+                                Software, web, mobile &amp; medical systems with Section 508 / WCAG and HIPAA-aligned security for healthcare and public-sector procurement.
                             </p>
                         </div>
                         <div class="row g-4 justify-content-center justify-content-lg-start text-lg-start text-center">
@@ -1222,8 +1195,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <a href="#0" class="black">Ideas & concept</a>
                                     </h4>
                                     <p class="pra fs-seven">
-                                        Since 1985 Reed has pionee
-                                        cialist recruitment, sour
+                                        Discovery, architecture &amp; UX for software, web, mobile &amp; medical systems
                                     </p>
                                 </div>
                             </div>
@@ -1231,11 +1203,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <div class="business-items">
                                     <img loading="lazy" src="assets/img/icon/ware2.png" alt="Illustration" class="mb-3">
                                     <h4 class="black mb-md-2 mb-2">
-                                        <a href="#0" class="black">Optimize technology</a>
+                                        <a href="#0" class="black">Cloud &amp; SEO</a>
                                     </h4>
                                     <p class="pra fs-seven">
-                                        Since 1985 Reed has pionee
-                                        cialist recruitment, sour
+                                        Cloud, SEO &amp; marketing under NAICS 541512, 541810 &amp; 541910
                                     </p>
                                 </div>
                             </div>
@@ -1296,112 +1267,63 @@ require_once __DIR__ . '/includes/navbar.php';
                     OUR LATEST BLOG POST
                 </span>
                 <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                    Our interesting articles
+                    Latest insights from our team
                 </h2>
             </div>
             <div class="news-wrapper">
                 <div class="row justify-content-center g-4">
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".3s">
-                        <div class="news-single-items style3 rounded-3 p-xxl-0 p-0 border overflow-hidden style1">
-                            <a href="blog-details.php"
+<?php
+$blogDelay = 0.3;
+foreach ($homepageBlogPosts as $blogPost) :
+    $blogCardImage = dw_blog_image($blogPost['images']['card']);
+    $blogPostUrl = dw_blog_url($blogPost['slug']);
+    $publishedTs = strtotime($blogPost['published']);
+    $dayLabel = $publishedTs !== false ? date('j', $publishedTs) : '';
+    $monthLabel = $publishedTs !== false ? date('M', $publishedTs) : '';
+    ?>
+                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo e((string) $blogDelay); ?>s">
+                        <div class="news-single-items style3 rounded-3 p-xxl-0 p-0 border overflow-hidden style1 h-100">
+                            <a href="<?php echo e($blogPostUrl); ?>"
                                 class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid7.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
+                                <img loading="lazy" src="<?php echo e($blogCardImage); ?>"
+                                    alt="<?php echo e($blogPost['title']); ?>"
+                                    class="rounded-3 overflow-hidden w-100 blog-cover-img">
                                 <span
                                     class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-2 px-3 rounded-1 text-uppercase fs-eight black">
-                                    26
-                                    <span>Mar</span>
+                                    <?php echo e($dayLabel); ?>
+                                    <span><?php echo e($monthLabel); ?></span>
                                 </span>
                             </a>
                             <div class="news-content pb-4 mb-lg-2 px-4">
                                 <h4 class="mb-xxl-3 mb-3">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        Geography affect solar energy potential greenhouse
+                                    <a href="<?php echo e($blogPostUrl); ?>" class="black visible-slowly-right">
+                                        <?php echo e($blogPost['title']); ?>
                                     </a>
                                 </h4>
                                 <p class="fs-seven pra mb-4 pb-1">
-                                    It amet consectetur adipiscing elit duis an tristique. Nulla aliquet enim tortor
+                                    <?php echo e($blogPost['excerpt']); ?>
                                 </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="blog-details.php"
+                                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+                                    <a href="<?php echo e($blogPostUrl); ?>"
                                         class="common-btn box-style py-2 fs-seven cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-1 bg-color">
                                         Read More
                                     </a>
                                     <div class="d-flex fw_500 align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 2 hours ago
+                                        <i class="fa-regular fa-clock black"></i> <?php echo e(dw_blog_format_date($blogPost['published'])); ?>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".5s">
-                        <div class="news-single-items style3 rounded-3 p-xxl-0 p-0 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid68.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-2 px-3 rounded-1 text-uppercase fs-eight black">
-                                    26
-                                    <span>Mar</span>
-                                </span>
-                            </a>
-                            <div class="news-content pb-4 mb-lg-2 px-4">
-                                <h4 class="mb-xxl-3 mb-3">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        We are very fussy about which installers we allow provide
-                                    </a>
-                                </h4>
-                                <p class="fs-seven pra mb-4 pb-1">
-                                    It amet consectetur adipiscing elit duis an tristique. Nulla aliquet enim tortor
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="blog-details.php"
-                                        class="common-btn box-style py-2 fs-seven cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-1 bg-color">
-                                        Read More
-                                    </a>
-                                    <div class="d-flex fw_500 align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 2 hours ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay=".7s">
-                        <div class="news-single-items style3 rounded-3 p-xxl-0 p-0 border overflow-hidden style1">
-                            <a href="blog-details.php"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="assets/img/blog/blog-grid69.png" alt="Blog post thumbnail"
-                                    class="rounded-3 overflow-hidden">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-2 px-3 rounded-1 text-uppercase fs-eight black">
-                                    26
-                                    <span>Mar</span>
-                                </span>
-                            </a>
-                            <div class="news-content pb-4 mb-lg-2 px-4">
-                                <h4 class="mb-xxl-3 mb-3">
-                                    <a href="blog-details.php" class="black visible-slowly-right">
-                                        We have published 81,194 uncensored reviews
-                                    </a>
-                                </h4>
-                                <p class="fs-seven pra mb-4 pb-1">
-                                    It amet consectetur adipiscing elit duis an tristique. Nulla aliquet enim tortor
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <a href="blog-details.php"
-                                        class="common-btn box-style py-2 fs-seven cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-1 bg-color">
-                                        Read More
-                                    </a>
-                                    <div class="d-flex fw_500 align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> 2 hours ago
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php
+    $blogDelay += 0.2;
+endforeach;
+?>
                 </div>
             </div>
         </div>
     </section>
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php
+require __DIR__ . '/includes/consultation-modal.php';
+$extra_scripts = ['assets/js/consultation-modal.js'];
+require_once __DIR__ . '/includes/footer.php'; ?>
