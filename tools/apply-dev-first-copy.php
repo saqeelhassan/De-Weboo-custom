@@ -22,7 +22,7 @@ $replacements = [
     'SLED-ready assets with rigorous
                                     compliance &amp; accessibility' => 'Contract-ready SLED bidding for state, local &amp; education authorities',
     'Elite engineering for brands that cannot afford downtime' => 'De-Weboo is a development-first agency and contract-ready SLED bidder',
-    'We operate across B2B, B2C, and B2A models—delivering consumer-grade UX, enterprise-grade architecture, and authority-grade compliance from a single partner.' => 'We engineer custom, secure, and compliant web software for B2B, B2C, and B2A frameworks. Primary work: software, web, mobile, and medical systems. Secondary lifecycle services: cloud, SEO, and marketing.',
+    'We operate across B2B, B2C, and B2A models—delivering consumer-grade UX, enterprise-grade architecture, and authority-grade compliance from a single partner.' => 'We engineer custom, secure, and compliant web software for B2B, B2C, and B2A frameworks. Primary work: software, web, mobile, and medical systems. Growth & infrastructure services: cloud, SEO, and marketing.',
 ];
 
 foreach ($files as $file) {

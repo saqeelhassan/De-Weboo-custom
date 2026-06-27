@@ -79,7 +79,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 </a>
                 <div class="right-top-cont d-flex align-items-center gap-5">
                     <div class="social-custom d-flex align-items-center gap-xl-3 gap-3">
-                        <a href="#" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
                         <a href="#" class=" black"><i class="fa-brands fa-twitter white65 fs-six"></i></a>
                         <a href="#" class=" black"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
                         <a href="#" class=" black"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
@@ -159,7 +159,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                             </a>
                         </div>
                         <div class="social-icon d-flex align-items-center">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>

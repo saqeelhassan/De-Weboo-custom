@@ -139,8 +139,10 @@ require_once __DIR__ . '/includes/navbar.php';
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
-                        <img loading="lazy" src="assets/img/faq/faq-customer.png" alt="Illustration" class="img rounded-circle">
-                        <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
+                        <?php
+                        $call_show_rep = true;
+                        require __DIR__ . '/includes/contact-call-block.php';
+                        ?>
                     </div>
                 </div>
                 <div class="col-lg-6">

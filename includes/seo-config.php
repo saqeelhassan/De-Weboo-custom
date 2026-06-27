@@ -41,6 +41,10 @@ function dw_org_config(): array
         'url' => dw_site_url(),
         'logo' => dw_site_url() . '/assets/img/logo/logo.png',
         'email' => 'Info@deweboo.com',
+        /** Addresses that receive contact, consultation, portfolio, feedback, and teaming form submissions. */
+        'inboundEmails' => [
+            'Info@deweboo.com',
+        ],
         'telephone' => '+923367770349',
         'telephoneDisplay' => '+92 (336) 7770349',
         'address' => [
@@ -82,8 +86,21 @@ function dw_org_config(): array
             '541910' => 'Marketing research and public opinion polling: SEO analytics, campaign research, and AEO content strategy',
         ],
         'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services, SLED bidder, NAICS 541511, NAICS 541512, NAICS 541810, NAICS 541910',
+        'facebook' => 'https://www.facebook.com/deweboo',
         'sameAs' => [
             'https://caddsight.com/',
+            'https://www.facebook.com/deweboo',
+        ],
+        'primaryContactRep' => [
+            'name' => 'Syed Aqeel Hassan Gillani',
+            'title' => 'Lead Developer, CEO & Founder',
+            'image' => 'assets/img/services/techgon-author.jpg',
         ],
     ];
+}
+
+/** Primary sales / engineering contact shown beside call & WhatsApp blocks. */
+function dw_contact_rep(): array
+{
+    return dw_org_config()['primaryContactRep'];
 }

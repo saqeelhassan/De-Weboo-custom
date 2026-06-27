@@ -254,6 +254,7 @@
                             <h2 class="black fw-bold mb-2">Request group teaming &amp; capabilities</h2>
                             <p class="pra fs-seven mb-4 pb-2">Share your bid parameters and our business development team will follow up with CaddSight Group division capabilities materials.</p>
                             <form id="collab-intake-form" class="row g-4" onsubmit="handleCollabFormSubmit(event)" novalidate>
+                                <input type="text" name="website" value="" class="portfolio-discuss-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                                 <div class="col-md-6 contact-from-grp">
                                     <label class="visually-hidden" for="collab_name">Full name</label>
                                     <input type="text" id="collab_name" name="collab_name" required placeholder="Full name / capture manager">

@@ -16,12 +16,13 @@ if ($project === null) {
 dw_load_page_seo('portfolio-details');
 $page_title = $project['shortName'] . ' | De-Weboo Portfolio';
 $page_description = mb_substr($project['overview'], 0, 155) . (mb_strlen($project['overview']) > 155 ? '…' : '');
-$page_keywords = 'Sindh WDD Dashboard, government web application, Laravel dashboard, De-Weboo portfolio, B2A public sector';
+$page_keywords = $project['shortName'] . ', ' . $project['techStack'] . ', ' . $project['category'] . ', De-Weboo portfolio, custom web development';
 
 $coverImage = dw_portfolio_image($project['images']['cover'], 'assets/img/services/portfolio-details.png');
 $gallery1 = dw_portfolio_image($project['images']['gallery1'], 'assets/img/services/portfolio-middle1.png');
 $gallery2 = dw_portfolio_image($project['images']['gallery2'], 'assets/img/services/portfolio-middle2.png');
-$detailUrl = dw_portfolio_url($project['slug']);
+$gallery1Alt = $project['images']['gallery1Alt'] ?? ($project['shortName'] . ' — project showcase');
+$gallery2Alt = $project['images']['gallery2Alt'] ?? ($project['shortName'] . ' — interface showcase');
 $extra_scripts = ['assets/js/portfolio-discuss.js'];
 
 require_once __DIR__ . '/includes/helpers.php';
@@ -130,15 +131,15 @@ require_once __DIR__ . '/includes/navbar.php';
                     <?php endforeach; ?>
                 </ul>
             </div>
-            <div class="row g-4">
+            <div class="row g-4 portfolio-details-gallery">
                 <div class="col-md-5">
                     <div class="thumb w-100 h-100 wow fadeInUp" data-wow-delay=".3s">
-                        <img loading="lazy" src="<?php echo e($gallery1); ?>" alt="<?php echo e($project['shortName']); ?> — dashboard view" class="rounded-3 w-100 h-100">
+                        <img loading="lazy" src="<?php echo e($gallery1); ?>" alt="<?php echo e($gallery1Alt); ?>" class="rounded-3 w-100 portfolio-gallery-img">
                     </div>
                 </div>
                 <div class="col-md-7">
                     <div class="thumb w-100 h-100 wow fadeInUp" data-wow-delay=".5s">
-                        <img loading="lazy" src="<?php echo e($gallery2); ?>" alt="<?php echo e($project['shortName']); ?> — data entry interface" class="rounded-3 w-100 h-100">
+                        <img loading="lazy" src="<?php echo e($gallery2); ?>" alt="<?php echo e($gallery2Alt); ?>" class="rounded-3 w-100 portfolio-gallery-img">
                     </div>
                 </div>
             </div>
@@ -162,8 +163,10 @@ require_once __DIR__ . '/includes/navbar.php';
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
-                        <img loading="lazy" src="assets/img/faq/faq-customer.png" alt="Illustration" class="img rounded-circle">
-                        <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
+                        <?php
+                        $call_show_rep = true;
+                        require __DIR__ . '/includes/contact-call-block.php';
+                        ?>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -178,7 +181,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Secondary — Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
+                                            De-Weboo is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>

@@ -51,21 +51,45 @@
     function handleFormSubmit(event) {
         event.preventDefault();
 
+        var form = document.getElementById('collab-intake-form');
         var submitBtn = document.getElementById('collab-submit-btn');
         var modal = document.getElementById('collab-success-modal');
 
-        if (!submitBtn || !modal) {
+        if (!form || !submitBtn || !modal) {
             return;
         }
 
         submitBtn.disabled = true;
         submitBtn.innerHTML = '<i class="fas fa-circle-notch fa-spin me-2"></i><span>Submitting request...</span>';
 
-        window.setTimeout(function () {
-            modal.classList.add('is-visible');
-            submitBtn.disabled = false;
-            submitBtn.innerHTML = '<span>Submit Group Capabilities Request</span><i class="fas fa-paper-plane ms-2"></i>';
-        }, 1200);
+        fetch('handlers/collaboration-inquiry.php', {
+            method: 'POST',
+            body: new FormData(form),
+            headers: {
+                Accept: 'application/json',
+            },
+        })
+            .then(function (response) {
+                return response.json().then(function (data) {
+                    return { ok: response.ok, data: data };
+                });
+            })
+            .then(function (result) {
+                if (!result.ok || !result.data.success) {
+                    throw new Error(result.data.message || 'Unable to send teaming request.');
+                }
+
+                modal.classList.add('is-visible');
+                form.reset();
+                calculateRFPScore();
+            })
+            .catch(function (error) {
+                window.alert(error.message || 'Unable to send teaming request. Please try again or email us directly.');
+            })
+            .finally(function () {
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span>Submit Group Capabilities Request</span><i class="fas fa-paper-plane ms-2"></i>';
+            });
     }
 
     function resetIntakeForm() {

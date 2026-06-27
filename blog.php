@@ -62,18 +62,19 @@ foreach ($posts as $post) :
                                     class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-1 px-3 rounded-5 text-uppercase fs-eight black"><?php echo e($post['category']); ?></span>
                             </a>
                             <div class="news-content">
-                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1">
-                                    <a href="<?php echo e($postUrl); ?>" class="black visible-slowly-right">
-                                        <?php echo e($post['title']); ?>
+                                <h4 class="mb-xxl-4 mb-3 pb-xxl-1 blog-card-title">
+                                    <a href="<?php echo e($postUrl); ?>" class="black">
+                                        <?php echo dw_blog_card_title($post['title']); ?>
                                     </a>
                                 </h4>
-                                <p class="pra fs-eight mb-3"><?php echo e($post['excerpt']); ?></p>
-                                <div class="d-flex align-items-center justify-content-between">
-                                    <div class="author d-flex align-items-center gap-2">
+                                <p class="pra fs-eight mb-3 blog-card-excerpt"><?php echo e($post['excerpt']); ?></p>
+                                <div class="d-flex align-items-center justify-content-between gap-3 blog-post-meta">
+                                    <div class="author d-flex align-items-center gap-2 blog-post-meta-author">
                                         <span class="fs-seven fw_500 black"><?php echo e($post['author']); ?></span>
                                     </div>
-                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> <?php echo e(dw_blog_format_date($post['published'])); ?>
+                                    <div class="d-flex align-items-center gap-1 pra fs-eight heading-font blog-post-meta-date">
+                                        <i class="fa-regular fa-clock black"></i>
+                                        <time datetime="<?php echo e($post['published']); ?>"><?php echo e(dw_blog_format_date($post['published'])); ?></time>
                                     </div>
                                 </div>
                             </div>

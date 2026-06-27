@@ -43,6 +43,7 @@ CSS TABLE OF CONTENTS
 		$(".sidebar__toggle").on("click", function () {
 			$(".offcanvas__info").addClass("info-open");
 			$(".offcanvas__overlay").addClass("overlay-open");
+			$(".mobile-menu .mean-nav > ul").show();
 		});
 
 		//>> Body Overlay Js Start <<//
@@ -507,7 +508,7 @@ CSS TABLE OF CONTENTS
 			closeSearch();
 		});
 
-		$(".search-trigger, .main-search-input").on("click", function (e) {
+		$(".search-trigger, .main-search-input, .search-wrap").on("click", function (e) {
 			e.stopPropagation();
 		});
 

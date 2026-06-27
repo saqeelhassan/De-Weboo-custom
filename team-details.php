@@ -3,8 +3,20 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/team-members.php';
 require_once __DIR__ . '/includes/seo.php';
+
+$member = dw_team_member($_GET['member'] ?? null);
+
+if ($member === null) {
+    header('Location: team.php', true, 302);
+    exit;
+}
+
 dw_load_page_seo(basename(__FILE__, '.php'));
+$page_title = $member['name'] . ' | ' . $member['role'] . ' | De-Weboo';
+$dw_org = dw_org_config();
+
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -17,9 +29,11 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a href="index.php" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li class="white">Team details</li>
+                    <li><a href="team.php" class="p3-clr">Our team</a></li>
+                    <li class="p3-clr">/</li>
+                    <li class="white"><?php echo e($member['name']); ?></li>
                 </ul>
-                <h1 class="white visible-from-right">Team details</h1>
+                <h1 class="white visible-from-right"><?php echo e($member['name']); ?></h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -33,20 +47,16 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row g-4 align-items-xxl-center space-bottom">
                 <div class="col-md-6">
                     <div class="team-details-thumb rounded-3 w-100">
-                        <img loading="lazy" src="assets/img/team/team-details-aqeel.jpg" alt="Aqeel, Lead Developer" class="rounded-3 w-100">
+                        <img loading="lazy" src="<?php echo e($member['detail_image']); ?>" alt="<?php echo e($member['name']); ?>, <?php echo e($member['role']); ?>" class="rounded-3 w-100">
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="team-details-content ps-xl-5">
                         <div class="mb-xl-5 mb-4 wow fadeInUp" data-wow-delay=".4s">
-                            <span class="fs-eight text-uppercase fw_500 d-block mb-1 p1-clr">Lead Developer</span>
-                            <h2 class="black mb-2">Aqeel</h2>
-                            <h5 class="mb-3">
-                                <a href="#" class="p1-clr">hello@website.com</a>
-                            </h5>
+                            <span class="fs-eight text-uppercase fw_500 d-block mb-1 p1-clr"><?php echo e($member['role']); ?></span>
+                            <h2 class="black mb-2"><?php echo e($member['name']); ?></h2>
                             <p class="pra fs-seven">
-                                Aqeel leads software development projects, focusing on secure web, mobile, and enterprise architecture for B2B, B2C, and B2A delivery.
-                                amet, consectetur adipiscing elit.
+                                <?php echo e($member['intro']); ?>
                             </p>
                         </div>
                         <div class="more-details mb-xl-5 mb-4 wow fadeInUp" data-wow-delay=".4s">
@@ -54,38 +64,30 @@ require_once __DIR__ . '/includes/navbar.php';
                             <ul class="d-grid gap-xl-3 gap-2">
                                 <li>
                                     <span class="title">Location:</span>
-                                    <span class="text">Germany</span>
+                                    <span class="text"><?php echo e($member['location']); ?></span>
                                 </li>
                                 <li>
                                     <span class="title">Position:</span>
-                                    <span class="text">Founder & CEO</span>
+                                    <span class="text"><?php echo e($member['role']); ?></span>
                                 </li>
                                 <li>
                                     <span class="title">Email:</span>
-                                    <span class="text">Info@deweboo.com</span>
-                                </li>
-                                <li>
-                                    <span class="title">Age:</span>
-                                    <span class="text">34</span>
+                                    <span class="text"><a href="mailto:<?php echo e($dw_org['email']); ?>" class="p1-clr"><?php echo e($dw_org['email']); ?></a></span>
                                 </li>
                                 <li>
                                     <span class="title">Qualification:</span>
-                                    <span class="text">Master Degree</span>
-                                </li>
-                                <li>
-                                    <span class="title">Gender:</span>
-                                    <span class="text">Male</span>
+                                    <span class="text"><?php echo e($member['qualification']); ?></span>
                                 </li>
                             </ul>
                         </div>
                         <div class="d-flex flex-lg-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
                             <div class="social-icon d-flex align-items-center gap-2">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="<?php echo e($dw_org['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="<?php echo e($member['linkedin'] ?? '#'); ?>"<?php echo !empty($member['linkedin']) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="#"><i class="fa-brands fa-instagram"></i></a>
                             </div>
-                            <a href="#" class="rounded-5 share-cmn-icon">
+                            <a href="mailto:<?php echo e($dw_org['email']); ?>?subject=<?php echo rawurlencode('Message for ' . $member['name'] . ' — De-Weboo'); ?>" class="rounded-5 share-cmn-icon">
                                 <svg width="17" height="13" viewBox="0 0 17 13" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -97,28 +99,6 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </svg>
                                 Message
                             </a>
-                            <a href="#" class="rounded-5 share-cmn-icon">
-                                <svg width="13" height="15" viewBox="0 0 13 15" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M10.1 4.90001C11.1281 4.90001 11.9616 4.02696 11.9616 2.95001C11.9616 1.87305 11.1281 1 10.1 1C9.07178 1 8.23828 1.87305 8.23828 2.95001C8.23828 4.02696 9.07178 4.90001 10.1 4.90001Z"
-                                        stroke="#49577A" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M2.65465 9.45006C3.68282 9.45006 4.51632 8.57701 4.51632 7.50006C4.51632 6.4231 3.68282 5.55005 2.65465 5.55005C1.62647 5.55005 0.792969 6.4231 0.792969 7.50006C0.792969 8.57701 1.62647 9.45006 2.65465 9.45006Z"
-                                        stroke="#49577A" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path
-                                        d="M10.1 14.0001C11.1281 14.0001 11.9616 13.1271 11.9616 12.0501C11.9616 10.9731 11.1281 10.1001 10.1 10.1001C9.07178 10.1001 8.23828 10.9731 8.23828 12.0501C8.23828 13.1271 9.07178 14.0001 10.1 14.0001Z"
-                                        stroke="#49577A" stroke-width="1.5" stroke-linecap="round"
-                                        stroke-linejoin="round" />
-                                    <path d="M4.26172 8.48145L8.50014 11.0685" stroke="#49577A" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M8.49393 3.93164L4.26172 6.51865" stroke="#49577A" stroke-width="1.5"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                                Share
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -126,32 +106,24 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="team-all-info">
                 <div class="section-title mb-xxl-5 mb-4">
                     <h2 class="wow fadeInUp black mb-sm-3 mb-2 fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Aqeel
+                        <?php echo e($member['name']); ?>
                     </h2>
                     <p class="pra fs-seven mb-xl-4 mb-3 wow fadeInUp" data-wow-delay=".4s">
-                        Aqeel is Lead Developer at De-Weboo with 8+ years of experience building secure web applications, mobile apps, and custom software for enterprise and public-sector clients.
+                        <?php echo e($member['bio']); ?>
                     </p>
                     <ul class="listing d-grid gap-2 wow fadeInUp" data-wow-delay=".4s">
+<?php foreach ($member['highlights'] as $highlight) : ?>
                         <li class="pra fs-seven">
-                            Expert in Figma, responsive UI, and accessibility (WCAG) best practices.
+                            <?php echo e($highlight); ?>
                         </li>
-                        <li class="pra fs-seven">
-                            Leads user research, wireframing, and prototype testing before development.
-                        </li>
-                        <li class="pra fs-seven">
-                            Collaborates with developers to deliver pixel-perfect, performance-ready interfaces.
-                        </li>
-                        <li class="pra fs-seven">
-                            Passionate about clean design that supports SEO and measurable business outcomes.
-                        </li>
+<?php endforeach; ?>
                     </ul>
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 pe-xxl-5">
                         <h2 class="black mb-xxl-4 mb-sm-3 mb-2 visible-from-right">Check my skills</h2>
                         <p class="pra fs-seven mb-md-4 mb-3 pb-xxl-2 wow fadeInUp">
-                            We will help you identify your target market, develop a marketing plan, and grow your
-                            customer base.
+                            Core strengths <?php echo e($member['name']); ?> brings to De-Weboo <?php echo e(strtolower($member['role'])); ?> engagements.
                         </p>
                         <div class="teco-mail-box d-flex align-items-center gap-xxl-3 gap-2">
                             <div class="icon d-center rounded-circle">
@@ -165,41 +137,25 @@ require_once __DIR__ . '/includes/navbar.php';
                                         fill="white" />
                                 </svg>
                             </div>
-                            <a href="#0" class="fs-seven fw_600 black">
-                                Info@deweboo.com
+                            <a href="mailto:<?php echo e($dw_org['email']); ?>" class="fs-seven fw_600 black">
+                                <?php echo e($dw_org['email']); ?>
                             </a>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-5">
                         <div class="growth-path-item company-infowrapper p-0 m-0 bg-transparent">
                             <div class="progress_bar d-grid gap-xxl-4 gap-3">
+<?php foreach ($member['skills'] as $skill) : ?>
                                 <div class="progress_bar_item">
                                     <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                        <div class="item_label black fw-semibold">Software</div>
-                                        <div class="item_value p1-clr fw-semibold">85%</div>
+                                        <div class="item_label black fw-semibold"><?php echo e($skill['label']); ?></div>
+                                        <div class="item_value p1-clr fw-semibold"><?php echo e((string) $skill['percent']); ?>%</div>
                                     </div>
                                     <div class="item_bar">
-                                        <div class="progress" data-progress="90" style="width: 85%;"></div>
+                                        <div class="progress" data-progress="<?php echo e((string) $skill['percent']); ?>" style="width: <?php echo e((string) $skill['percent']); ?>%;"></div>
                                     </div>
                                 </div>
-                                <div class="progress_bar_item">
-                                    <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                        <div class="item_label black fw-semibold">Development</div>
-                                        <div class="item_value p1-clr fw-semibold">55%</div>
-                                    </div>
-                                    <div class="item_bar">
-                                        <div class="progress" data-progress="75" style="width: 55%;"></div>
-                                    </div>
-                                </div>
-                                <div class="progress_bar_item">
-                                    <div class="d-flex align-items-center justify-content-between mb-xxl-2 mb-2">
-                                        <div class="item_label black fw-semibold">Technology</div>
-                                        <div class="item_value p1-clr fw-semibold">95%</div>
-                                    </div>
-                                    <div class="item_bar">
-                                        <div class="progress" data-progress="80" style="width: 95%;"></div>
-                                    </div>
-                                </div>
+<?php endforeach; ?>
                             </div>
                         </div>
                     </div>
@@ -230,4 +186,3 @@ require_once __DIR__ . '/includes/navbar.php';
         </div>
     </section>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>
-

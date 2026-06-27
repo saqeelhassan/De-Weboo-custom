@@ -1,0 +1,25 @@
+<?php
+
+declare(strict_types=1);
+
+/**
+ * Server mail credentials — copy this file to mail-config.local.php on your hosting server.
+ * Do not commit mail-config.local.php (it contains your mailbox password).
+ *
+ * Typical cPanel / hosting settings:
+ *   Host: mail.deweboo.com (or smtp.deweboo.com)
+ *   Port: 587 (TLS) or 465 (SSL)
+ *   Username: full email address (Info@deweboo.com)
+ */
+return [
+    'transport' => 'smtp',
+    'fromEmail' => 'Info@deweboo.com',
+    'fromName' => 'De-Weboo',
+    'smtp' => [
+        'host' => 'mail.deweboo.com',
+        'port' => 587,
+        'encryption' => 'tls',
+        'username' => 'Info@deweboo.com',
+        'password' => 'L^6T4c$m[jIB',
+    ],
+];

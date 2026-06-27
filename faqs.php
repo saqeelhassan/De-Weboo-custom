@@ -41,8 +41,10 @@ require_once __DIR__ . '/includes/navbar.php';
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
-                        <img loading="lazy" src="assets/img/faq/faq-customer.png" alt="Illustration" class="img rounded-circle">
-                        <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
+                        <?php
+                        $call_show_rep = true;
+                        require __DIR__ . '/includes/contact-call-block.php';
+                        ?>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -57,7 +59,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations under NAICS 541511), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards under NAICS 541512). <strong>Secondary — Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO under NAICS 541810 &amp; 541910), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
+                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations under NAICS 541511), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards under NAICS 541512). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO under NAICS 541810 &amp; 541910), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>

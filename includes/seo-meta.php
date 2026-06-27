@@ -14,7 +14,7 @@ return [
     ],
     'index' => [
         'title' => 'De-Weboo | Development, AI Engineering & SLED Bidder',
-        'description' => 'Web & Mobile Development, AI Automation & Data Engineering. Secondary: Digital Marketing, SEO & Cloud. SLED bidder. NAICS 541511, 541512, 541810 & 541910.',
+        'description' => 'Web & Mobile Development, AI Automation & Data Engineering. Growth & Infrastructure: Digital Marketing, SEO & Cloud. SLED bidder. NAICS 541511, 541512, 541810 & 541910.',
         'keywords' => 'web mobile development, AI automation, LLM integration, workflow automation, data pipelines, healthcare SEO, cloud services, SLED bidder, NAICS 541511',
     ],
     'about' => [
@@ -24,7 +24,7 @@ return [
     ],
     'services' => [
         'title' => 'Services | Development, AI, Marketing & Cloud',
-        'description' => 'Web & Mobile Development, AI Automation & Data Engineering. Secondary: Digital Marketing, SEO & Cloud Services. NAICS 541511, 541512, 541810 & 541910.',
+        'description' => 'Web & Mobile Development, AI Automation & Data Engineering. Growth & Infrastructure: Digital Marketing, SEO & Cloud Services. NAICS 541511, 541512, 541810 & 541910.',
         'keywords' => 'web mobile development, AI automation, data engineering, digital marketing, SEO, medical healthcare SEO, cloud services, NAICS 541511, NAICS 541512, NAICS 541810, NAICS 541910',
     ],
     'services-details' => [
@@ -76,6 +76,41 @@ return [
         'title' => 'FAQs | Software, AI Automation & SLED Bidder',
         'description' => 'Answers on custom development, AI automation, data pipeline engineering, NAICS capabilities, HIPAA medical systems, SLED procurement & how to work with De-Weboo.',
         'keywords' => 'De-Weboo FAQ, AI automation FAQ, generative AI integration, NAICS 541511 FAQ, data pipeline engineering, SLED bidder questions',
+    ],
+    'privacy-policy' => [
+        'title' => 'Privacy Policy | De-Weboo',
+        'description' => 'How De-Weboo collects, uses, and protects personal information from website visitors, clients, healthcare organizations, and public-sector buyers.',
+        'keywords' => 'De-Weboo privacy policy, data protection, HIPAA-aligned security, website privacy',
+    ],
+    'search' => [
+        'title' => 'Search | De-Weboo',
+        'description' => 'Search De-Weboo for services, blog articles, portfolio case studies, team profiles, FAQs, and support pages.',
+        'keywords' => 'De-Weboo search, find services, site search',
+    ],
+    'client-support' => [
+        'title' => 'Client Support | De-Weboo',
+        'description' => 'Support for active De-Weboo clients: production issues, releases, hosting, integrations, and post-launch care under your service agreement.',
+        'keywords' => 'De-Weboo client support, software support, managed hosting support, SLED client care',
+    ],
+    'help-center' => [
+        'title' => 'Help Center | De-Weboo',
+        'description' => 'Resources and quick answers for services, FAQs, portfolio, procurement documentation, and how to work with De-Weboo.',
+        'keywords' => 'De-Weboo help center, software FAQ, SLED documentation, project inquiry help',
+    ],
+    'system-status' => [
+        'title' => 'System Status | De-Weboo',
+        'description' => 'Operational status for De-Weboo-managed platforms, hosting, deployment pipelines, backups, and public website services.',
+        'keywords' => 'De-Weboo system status, uptime, service status, hosting status',
+    ],
+    'feedback' => [
+        'title' => 'Feedback | De-Weboo',
+        'description' => 'Share feedback on De-Weboo delivery, communication, and website experience. Client testimonials welcome with approval.',
+        'keywords' => 'De-Weboo feedback, client review, testimonial submission',
+    ],
+    'terms-and-conditions' => [
+        'title' => 'Terms & Condition | De-Weboo',
+        'description' => 'Terms governing use of the De-Weboo website and general engagement with our software, AI, marketing, and cloud services.',
+        'keywords' => 'De-Weboo terms and conditions, website terms, service terms',
     ],
     'testimonials' => [
         'title' => 'Testimonials | De-Weboo Client Reviews',

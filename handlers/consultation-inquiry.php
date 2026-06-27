@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once dirname(__DIR__) . '/config.php';
 require_once dirname(__DIR__) . '/includes/helpers.php';
-require_once dirname(__DIR__) . '/includes/seo-config.php';
+require_once dirname(__DIR__) . '/includes/mail.php';
 
 header('Content-Type: application/json; charset=utf-8');
 
@@ -52,8 +52,6 @@ if ($errors !== []) {
     exit;
 }
 
-$org = dw_org_config();
-$to = $org['email'];
 $subject = 'Consultation request — ' . $interest;
 
 $bodyLines = [
@@ -77,21 +75,14 @@ $bodyLines = [
 ];
 
 $body = implode("\n", $bodyLines);
-$replyTo = 'Reply-To: ' . $name . ' <' . $email . '>';
-$headers = implode("\r\n", [
-    'MIME-Version: 1.0',
-    'Content-Type: text/plain; charset=UTF-8',
-    'From: De-Weboo Consultation <' . $to . '>',
-    $replyTo,
-]);
 
-$sent = @mail($to, $subject, $body, $headers);
+$sent = dw_send_inbound_mail($subject, $body, $name, $email, 'De-Weboo Consultation');
 
 if (!$sent) {
     http_response_code(500);
     echo json_encode([
         'success' => false,
-        'message' => 'We could not send your request right now. Please email us at ' . $org['email'] . ' directly.',
+        'message' => 'We could not send your request right now. Please email us at ' . dw_primary_inbound_email() . ' directly.',
     ]);
     exit;
 }

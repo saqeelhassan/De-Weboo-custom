@@ -3,6 +3,9 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/testimonials-data.php';
+require_once __DIR__ . '/includes/blog-posts.php';
+require_once __DIR__ . '/includes/team-members.php';
 require_once __DIR__ . '/includes/seo.php';
 dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
@@ -104,7 +107,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     SLED-ready delivery
                                 </h2>
                                 <p class="pra fs-seven">
-                                    Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation, and Data Engineering. Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
+                                    Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation, and Data Engineering. Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
                                 </p>
                                 <p class="pra fs-seven mt-3">
                                     De-Weboo operates as a specialized division of <a href="https://caddsight.com/" target="_blank" rel="noopener noreferrer" class="p1-clr fw-semibold">CaddSight</a>, our parent company—delivering government-ready CAD drafting, BIM, and SLED construction documentation alongside our digital engineering services.
@@ -133,19 +136,19 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Secondary — Digital Marketing: consumer marketing &amp; lead generation (NAICS 541810 &amp; 541910)
+                                        Digital Marketing: consumer marketing &amp; lead generation (NAICS 541810 &amp; 541910)
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Secondary — SEO: technical SEO &amp; medical/healthcare SEO (NAICS 541810 &amp; 541910)
+                                        SEO: technical SEO &amp; medical/healthcare SEO (NAICS 541810 &amp; 541910)
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Secondary — Cloud Services: secure architecture, migration &amp; HIPAA-friendly hosting
+                                        Cloud Services: secure architecture, migration &amp; HIPAA-friendly hosting
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
@@ -185,7 +188,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                     <div class="col-xl-6 col-lg-5">
                         <div class="about-thumb position-relative reveal-left w-100">
-                            <img loading="lazy" src="assets/img/about/about2-thumb.png" alt="Illustration" class="w-100">
+                            <img loading="lazy" src="assets/img/about/about2-thumb.png" alt="SLED procurement team and CaddSight government-ready CAD documentation" class="w-100">
                             <!-- Ele -->
                             <img loading="lazy" src="assets/img/element/dot-grp1.png" alt="Illustration" class="about-ele">
                             <img loading="lazy" src="assets/img/about/about2-ele.png" alt="Illustration" class="about-ele2">
@@ -205,7 +208,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <i class="fa-solid fa-play"></i>
                 </a>
                 <h2 class="text-center white">
-                    Enterprise-grade engineering.
+                    Enterprise-grade development.
                     Contract-ready SLED delivery.
                 </h2>
             </div>
@@ -233,10 +236,10 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Aqeel, Lead Developer" class="w-100">
+                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -247,7 +250,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -256,8 +259,9 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Aqeel</a></h4>
-                            <span class="fs-seven fw-medium">Lead Developer</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
+                            <span class="fs-seven fw-medium d-block">Lead Developer, CEO &amp; Founder</span>
+                            <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
@@ -267,7 +271,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -278,7 +282,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -287,18 +291,19 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Syed Ali Asad Jafri</a></h4>
-                            <span class="fs-seven fw-medium">DevOps Engineer</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('asad')); ?>" class="black">Syed Ali Asad Jafri</a></h4>
+                            <span class="fs-seven fw-medium d-block">DevOps Engineer</span>
+                            <?php $team_view_href = dw_team_member_url('asad'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
+                            <img loading="lazy" src="assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -309,7 +314,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -318,8 +323,9 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Naima Shahzadi</a></h4>
-                            <span class="fs-seven fw-medium">Project Manager</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('hajra')); ?>" class="black">Syeda Hajra Batool</a></h4>
+                            <span class="fs-seven fw-medium d-block">Project Manager</span>
+                            <?php $team_view_href = dw_team_member_url('hajra'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
@@ -388,7 +394,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author1.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author1.png" alt="Discussion — discovery session with client stakeholders" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 01
@@ -404,7 +410,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author2.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author2.png" alt="Ideas and concept — wireframes and UX planning" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 02
@@ -420,7 +426,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author3.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author3.png" alt="Testing and trying — QA across devices" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 03
@@ -436,10 +442,10 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author4.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author4.png" alt="Execute and install — deployment and go-live" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
-                                02
+                                04
                             </span>
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Execute & install</a></h4>
@@ -452,6 +458,8 @@ require_once __DIR__ . '/includes/navbar.php';
         </div>
     </section>
     <!-- Working Step Section end -->
+
+<?php require __DIR__ . '/includes/blog-cards-section.php'; ?>
 
     <!-- Testimonial Section end -->
     <section class="testimonial-section section-padding fix">
@@ -466,72 +474,9 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
             <div class="testimonial-wrapper05 swiper">
                 <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="testimonial-items05">
-                            <div class="boxes">
-                                <div class="d-flex align-items-center gap-2 mb-4">
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                </div>
-                                <p class="pra">
-                                    De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                                </p>
-                                <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                    <div class="cont">
-                                        <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
-                                        <h6 class="black fw-six">Raw Material</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-items05">
-                            <div class="boxes">
-                                <div class="d-flex align-items-center gap-2 mb-4">
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                </div>
-                                <p class="pra">
-                                    De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                                </p>
-                                <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                    <div class="cont">
-                                        <p class="fs-eight mb-1 p1-clr d-block">Lead Designer</p>
-                                        <h6 class="black fw-six">Nick Jonas</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="testimonial-items05">
-                            <div class="boxes">
-                                <div class="d-flex align-items-center gap-2 mb-4">
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                    <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                </div>
-                                <p class="pra">
-                                    De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                                </p>
-                                <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                    <div class="cont">
-                                        <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
-                                        <h6 class="black fw-six">Jibon Pilsberg</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+<?php foreach (dw_client_testimonials() as $testimonial) {
+    dw_render_testimonial_slide($testimonial);
+} ?>
                 </div>
             </div>
             <div

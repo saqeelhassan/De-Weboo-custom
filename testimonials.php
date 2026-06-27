@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
+require_once __DIR__ . '/includes/testimonials-data.php';
 require_once __DIR__ . '/includes/seo.php';
 dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
@@ -31,138 +32,12 @@ require_once __DIR__ . '/includes/navbar.php';
     <section class="testimonial-section section-padding fix">
         <div class="container">
             <div class="row g-4 justify-content-center">
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
-                                    <h6 class="black fw-six">Raw Material</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Lead Designer</p>
-                                    <h6 class="black fw-six">Nick Jonas</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Co founder</p>
-                                    <h6 class="black fw-six">Jibon Pilsberg</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".9s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Lead Designer</p>
-                                    <h6 class="black fw-six">Richard Noverl</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">CEO</p>
-                                    <h6 class="black fw-six">Harish Bhimol</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="testimonial-items05">
-                        <div class="boxes">
-                            <div class="d-flex align-items-center gap-2 mb-4">
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                                <i class="fa-solid fa-star fs-six p2-clr"></i>
-                            </div>
-                            <p class="pra">
-                                De-Weboo delivered a secure, high-performance platform with the polish of a top commercial agency and the rigor we expect from healthcare IT.
-                            </p>
-                            <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
-                                <div class="cont">
-                                    <p class="fs-eight mb-1 p1-clr d-block">Manager</p>
-                                    <h6 class="black fw-six">Robert Pitterson</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php
+$testimonialDelays = ['.3s', '.5s', '.7s', '.9s', '.3s', '.5s', '.7s', '.9s', '.3s', '.5s'];
+foreach (dw_client_testimonials() as $i => $testimonial) {
+    dw_render_testimonial_card($testimonial, 'col-md-6 col-lg-4', $testimonialDelays[$i] ?? '.3s');
+}
+?>
             </div>
         </div>
     </section>

@@ -5,8 +5,10 @@ declare(strict_types=1);
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/portfolio-projects.php';
 require_once __DIR__ . '/includes/blog-posts.php';
-$homepageBlogPosts = array_slice(dw_blog_posts_sorted(), 0, 3);
+require_once __DIR__ . '/includes/team-members.php';
 require_once __DIR__ . '/includes/seo.php';
+require_once __DIR__ . '/includes/home-solution-tabs.php';
+$dw_solution_tabs = dw_home_solution_tabs();
 dw_load_page_seo(basename(__FILE__, '.php'));
 $featuredPortfolioSlots = [
     ['image' => 'assets/img/services/select1.png', 'category' => 'DESIGN', 'title' => 'Technology solution', 'url' => 'portfolio-details.php'],
@@ -52,8 +54,11 @@ require_once __DIR__ . '/includes/navbar.php';
                                 contract-ready SLED bidder &amp;<br>
                                 secure enterprise IT solutions.
                             </h1>
-                            <p class="white75 fs-five fw_500 mb-xxl-4 mb-4 mx-auto hero-lead">
-                                Development &amp; AI Engineering. Secondary — Growth &amp; Infrastructure. B2B, B2C &amp; B2A delivery.
+                            <p class="mb-xxl-4 mb-4 mx-auto hero-lead">
+                                <span class="d-block hero-lead-support">Development &amp; AI Engineering. Growth &amp; Infrastructure.</span>
+                                <span class="d-block hero-lead-markets">
+                                    <span class="hero-market-highlight text-nowrap">B2B, B2C &amp; B2A</span><span class="hero-lead-delivery"> delivery.</span>
+                                </span>
                             </p>
                             <div class="d-flex justify-content-center align-items-center gap-sm-3 gap-1">
                                 <div class="">
@@ -125,7 +130,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 HIPAA-friendly hosting &amp; migration.
                             </h1>
                             <p class="white75 fs-five fw_500 mb-xxl-4 mb-4 mx-auto hero-lead">
-                                Secondary lifecycle support — four distinct services: Digital Marketing, SEO, and Cloud, separate from development.
+                                Lifecycle support — Digital Marketing, SEO, and Cloud, separate from development.
                             </p>
                             <div class="d-flex justify-content-center align-items-center gap-sm-3 gap-1">
                                 <div class="">
@@ -170,11 +175,11 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
             <div class="row g-4 event-work-row">
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="event-work-items text-center h-100">
+                    <div class="event-work-items text-center">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">Development &amp; AI</span>
-                            <h4 class="mb-5">
+                            <h4 class="mb-3">
                                 <a href="services.php" class="black">
                                     Web Development
                                 </a>
@@ -189,11 +194,11 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="event-work-items text-center h-100">
+                    <div class="event-work-items text-center">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">AI Automation</span>
-                            <h4 class="mb-5">
+                            <h4 class="mb-3">
                                 <a href="services.php" class="black">
                                     AI Automation
                                 </a>
@@ -208,11 +213,11 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
-                    <div class="event-work-items text-center h-100">
+                    <div class="event-work-items text-center">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">Data Engineering</span>
-                            <h4 class="mb-5">
+                            <h4 class="mb-3">
                                 <a href="services.php" class="black">
                                     Data Engineering
                                 </a>
@@ -227,11 +232,11 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
-                    <div class="event-work-items text-center h-100">
+                    <div class="event-work-items text-center">
                         <div class="boxes">
                             <img loading="lazy" src="assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
-                            <span class="pra fs-seven text-uppercase d-block mb-3">Secondary — Growth &amp; Infrastructure</span>
-                            <h4 class="mb-5">
+                            <span class="pra fs-seven text-uppercase d-block mb-3">Growth &amp; Infrastructure</span>
+                            <h4 class="mb-3">
                                 <a href="services.php" class="black">
                                     Digital Marketing, SEO &amp; Cloud
                                 </a>
@@ -272,7 +277,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </li>
                         <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
                             data-wow-delay=".4s">
-                            <i class="fa-solid fa-circle-check p3-clr"></i> Secondary — Digital Marketing, SEO (NAICS 541810 &amp; 541910) &amp; Cloud Services
+                            <i class="fa-solid fa-circle-check p3-clr"></i> Digital Marketing, SEO (NAICS 541810 &amp; 541910) &amp; Cloud Services
                         </li>
                     </ul>
                     <div class="btn-area wow fadeInUp" data-wow-delay=".5s">
@@ -313,208 +318,46 @@ require_once __DIR__ . '/includes/navbar.php';
     <section class="solutio-section fix section-padding">
         <div class="container">
             <ul class="nav nav-tabs solutio-tabs-main mb-xxl-5 mb-4" id="myTab" role="tablist">
+<?php foreach ($dw_solution_tabs as $index => $tab) : ?>
                 <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home"
-                        type="button" role="tab" aria-controls="home" aria-selected="true">Web</button>
+                    <button class="nav-link<?php echo $index === 0 ? ' active' : ''; ?>" id="<?php echo e($tab['tab_id']); ?>" data-bs-toggle="tab" data-bs-target="#<?php echo e($tab['pane_id']); ?>"
+                        type="button" role="tab" aria-controls="<?php echo e($tab['pane_id']); ?>" aria-selected="<?php echo $index === 0 ? 'true' : 'false'; ?>"><?php echo e($tab['tab_label']); ?></button>
                 </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="sled-tab" data-bs-toggle="tab" data-bs-target="#sled"
-                        type="button" role="tab" aria-controls="sled" aria-selected="false">SLED Bidder</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="ai-tab" data-bs-toggle="tab" data-bs-target="#ai-automation"
-                        type="button" role="tab" aria-controls="ai-automation" aria-selected="false">AI Automation</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact"
-                        type="button" role="tab" aria-controls="contact" aria-selected="false">Medical</button>
-                </li>
+<?php endforeach; ?>
             </ul>
             <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+<?php foreach ($dw_solution_tabs as $index => $tab) : ?>
+                <div class="tab-pane fade<?php echo $index === 0 ? ' show active' : ''; ?>" id="<?php echo e($tab['pane_id']); ?>" role="tabpanel" aria-labelledby="<?php echo e($tab['tab_id']); ?>">
                     <div class="row g-4 align-items-center justify-content-between">
                         <div class="col-xxl-6 col-lg-6">
-                            <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
-                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
-                                    <div class="cont d-flex align-items-center gap-0 mb-2">
-                                        <span class="count fs-two black fw-semibold">76</span>
-                                        <span class="fs-two black fw-semibold">+</span>
-                                    </div>
-                                    <h5 class="fw_500 black">
-                                        Wireframe & Prototype
-                                        UX Design.
-                                    </h5>
-                                </div>
-                            </div>
+<?php dw_render_solution_tab_thumb($tab); ?>
                         </div>
                         <div class="col-xxl-5 col-lg-6">
                             <div class="solutio-content">
                                 <h3 class="white mb-xxl-3 mb-2">
-                                    Web Development
+                                    <?php echo e($tab['title']); ?>
                                 </h3>
                                 <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    Under NAICS 541511, we deliver custom web apps, e-commerce platforms, and high-security medical websites and patient portals—responsive B2B/B2C/B2A platforms built for performance, accessibility, and audit-ready documentation.
+                                    <?php echo e($tab['description']); ?>
                                 </p>
                                 <ul class="d-grid gap-3 mb-xxl-5 mb-4">
+<?php foreach ($tab['bullets'] as $bullet) : ?>
                                     <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Custom web applications &amp; enterprise portals (NAICS 541511)
+                                        <i class="fa-solid fa-circle-check"></i> <?php echo e($bullet); ?>
                                     </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Section 508 / WCAG accessibility on every build
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> SLED-ready web assets for state, local &amp; education procurement
-                                    </li>
+<?php endforeach; ?>
                                 </ul>
                                 <button type="button"
                                     class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
                                     data-bs-toggle="modal" data-bs-target="#consultationModal"
-                                    data-consultation-service="Web Development">
+                                    data-consultation-service="<?php echo e($tab['consultation_service']); ?>">
                                     Request a Consultation
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="sled" role="tabpanel" aria-labelledby="sled-tab">
-                    <div class="row g-4 align-items-center justify-content-between">
-                        <div class="col-xxl-6 col-lg-6">
-                            <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
-                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
-                                    <div class="cont d-flex align-items-center gap-0 mb-2">
-                                        <span class="count fs-two black fw-semibold">76</span>
-                                        <span class="fs-two black fw-semibold">+</span>
-                                    </div>
-                                    <h5 class="fw_500 black">
-                                        Wireframe & Prototype
-                                        UX Design.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-5 col-lg-6">
-                            <div class="solutio-content">
-                                <h3 class="white mb-xxl-3 mb-2">
-                                    SLED Bidder
-                                </h3>
-                                <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    De-Weboo is a contract-ready SLED bidder for state, local, and education authorities. We deliver NAICS-mapped software, web, mobile, and IT solutions with Section 508 / WCAG accessibility and audit-ready documentation for public-sector RFPs and RFQs.
-                                </p>
-                                <ul class="d-grid gap-3 mb-xxl-5 mb-4">
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Contract-ready SLED bidder for state, local &amp; education authorities
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> NAICS 541511, 541512, 541519, 541810 &amp; 541910 capabilities
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Procurement-ready deliverables with HIPAA &amp; Section 508 compliance
-                                    </li>
-                                </ul>
-                                <button type="button"
-                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
-                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
-                                    data-consultation-service="SLED Bidder">
-                                    Request a Consultation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="ai-automation" role="tabpanel" aria-labelledby="ai-tab">
-                    <div class="row g-4 align-items-center justify-content-between">
-                        <div class="col-xxl-6 col-lg-6">
-                            <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
-                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
-                                    <div class="cont d-flex align-items-center gap-0 mb-2">
-                                        <span class="count fs-two black fw-semibold">76</span>
-                                        <span class="fs-two black fw-semibold">+</span>
-                                    </div>
-                                    <h5 class="fw_500 black">
-                                        Wireframe & Prototype
-                                        UX Design.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-5 col-lg-6">
-                            <div class="solutio-content">
-                                <h3 class="white mb-xxl-3 mb-2">
-                                    AI Automation
-                                </h3>
-                                <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    Under NAICS 541511, we deliver custom AI integrations, workflow automations, and LLM configurations—enterprise AI workflows for B2B, B2C, B2A, and medical environments.
-                                </p>
-                                <ul class="d-grid gap-3 mb-xxl-5 mb-4">
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Custom AI integrations, workflow automations &amp; LLM configurations (NAICS 541511)
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> LLM deployment, prompt engineering &amp; enterprise AI workflows
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Audit-ready AI frameworks for B2B/B2C, B2A &amp; medical environments
-                                    </li>
-                                </ul>
-                                <button type="button"
-                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
-                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
-                                    data-consultation-service="AI Automation">
-                                    Request a Consultation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <div class="row g-4 align-items-center justify-content-between">
-                        <div class="col-xxl-6 col-lg-6">
-                            <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="assets/img/services/solutio-thumb.png" alt="Illustration" class="rounded-3 w-100">
-                                <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
-                                    <div class="cont d-flex align-items-center gap-0 mb-2">
-                                        <span class="count fs-two black fw-semibold">76</span>
-                                        <span class="fs-two black fw-semibold">+</span>
-                                    </div>
-                                    <h5 class="fw_500 black">
-                                        Wireframe & Prototype
-                                        UX Design.
-                                    </h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xxl-5 col-lg-6">
-                            <div class="solutio-content">
-                                <h3 class="white mb-xxl-3 mb-2">
-                                    Custom Medical Systems
-                                </h3>
-                                <p class="white65 fs-six mb-xxl-5 mb-4">
-                                    High-security medical websites and HIPAA-aligned patient portals—clinical workflows and secure healthcare infrastructure for providers, payers, and public-health authorities under NAICS 541511.
-                                </p>
-                                <ul class="d-grid gap-3 mb-xxl-5 mb-4">
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> HIPAA-aligned architecture &amp; audit-ready controls
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> Clinical dashboards, patient portals &amp; EHR integrations
-                                    </li>
-                                    <li class="d-flex align-items-center gap-3 white fs-eight fw_600">
-                                        <i class="fa-solid fa-circle-check"></i> B2B, B2C &amp; B2A healthcare delivery models
-                                    </li>
-                                </ul>
-                                <button type="button"
-                                    class="consultation-modal-trigger common-btn box-style cmn-style1 box-bg white d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden rounded-5 border-0"
-                                    data-bs-toggle="modal" data-bs-target="#consultationModal"
-                                    data-consultation-service="Custom Medical Systems">
-                                    Request a Consultation
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<?php endforeach; ?>
             </div>
         </div>
     </section>
@@ -532,10 +375,6 @@ require_once __DIR__ . '/includes/navbar.php';
                         Enterprise IT solutions. Contract-ready SLED delivery.
                     </h2>
                 </div>
-                <div
-                    class="faq-stresh d-flex text-start justify-content-center justify-content-lg-start align-items-center">
-                    <?php require __DIR__ . '/includes/contact-call-block.php'; ?>
-                </div>
             </div>
             <div class="row g-6 align-items-xxl-center">
                 <div class="col-xxl-8 col-xl-6 col-lg-6">
@@ -550,7 +389,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
-                                Development &amp; AI Engineering: Web Development, AI Automation, and Data Engineering. Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
+                                Development &amp; AI Engineering: Web Development, AI Automation, and Data Engineering. Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
                             </p>
                         </div>
                         <ul class="d-grid gap-3">
@@ -589,14 +428,14 @@ require_once __DIR__ . '/includes/navbar.php';
                             SOFTWARE & IT EXPERTISE
                         </span>
                         <p class="pra fs-six fw-semibold wow fadeInUp visible-slowly-right mb-0" data-wow-delay=".3s">
-                            Development &amp; AI Engineering · Secondary — Growth &amp; Infrastructure
+                            Development &amp; AI Engineering · Growth &amp; Infrastructure
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row g-xl-4 g-3">
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items d-center border style2 service-development-item service-bg-web rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -619,18 +458,18 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img2 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-mobile d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Mobile App Engineering</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
                                 <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Mobile
-                                        App Engineering</a>
+                                        App Development</a>
                                 </h5>
                                 <p class="white mb-3">
                                     Native and cross-platform mobile applications with secure APIs (NAICS 541511).
@@ -643,7 +482,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img3 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-data d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -665,7 +504,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img4 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-medical d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -688,7 +527,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img5 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-ai d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -711,7 +550,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img6 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-seo d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -725,7 +564,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                         class="white">SEO</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Secondary — SEO: technical SEO, AEO content strategy, and specialized medical/healthcare SEO. NAICS 541810 &amp; 541910. See services page for Digital Marketing.
+                                    SEO: technical SEO, AEO content strategy, and specialized medical/healthcare SEO. NAICS 541810 &amp; 541910. See services page for Digital Marketing.
                                 </p>
                                 <a href="services.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -925,7 +764,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                         xmlns="http://www.w3.org/2000/svg">
                                         <circle cx="4" cy="4" r="4" fill="white" />
                                     </svg>
-                                    Mobile engineering
+                                    Mobile App Development
                                 </li>
                                 <li class="d-flex align-items-center gap-2 fs-seven fw_500 white">
                                     <svg width="8" height="8" viewBox="0 0 8 8" fill="none"
@@ -942,10 +781,6 @@ require_once __DIR__ . '/includes/navbar.php';
                                     SLED procurement
                                 </li>
                             </ul>
-                            <?php
-                            $call_theme = 'dark';
-                            require __DIR__ . '/includes/contact-call-block.php';
-                            ?>
                         </div>
                     </div>
                 </div>
@@ -972,10 +807,10 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Aqeel, Lead Developer" class="w-100">
+                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -986,7 +821,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -995,8 +830,9 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Aqeel</a></h4>
-                            <span class="fs-seven fw-medium">Lead Developer</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
+                            <span class="fs-seven fw-medium d-block">Lead Developer, CEO &amp; Founder</span>
+                            <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
@@ -1006,7 +842,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -1017,7 +853,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -1026,18 +862,19 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Syed Ali Asad Jafri</a></h4>
-                            <span class="fs-seven fw-medium">DevOps Engineer</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('asad')); ?>" class="black">Syed Ali Asad Jafri</a></h4>
+                            <span class="fs-seven fw-medium d-block">DevOps Engineer</span>
+                            <?php $team_view_href = dw_team_member_url('asad'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
+                            <img loading="lazy" src="assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -1048,7 +885,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
                                 <a href="#" class="rounded-2">
@@ -1057,8 +894,9 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                         <div class="content">
-                            <h4 class="black mb-1"><a href="team-details.php" class="black">Naima Shahzadi</a></h4>
-                            <span class="fs-seven fw-medium">Project Manager</span>
+                            <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('hajra')); ?>" class="black">Syeda Hajra Batool</a></h4>
+                            <span class="fs-seven fw-medium d-block">Project Manager</span>
+                            <?php $team_view_href = dw_team_member_url('hajra'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
                 </div>
@@ -1088,7 +926,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author1.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author1.png" alt="Discussion — discovery session with client stakeholders" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 01
@@ -1104,7 +942,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author2.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author2.png" alt="Ideas and concept — wireframes and UX planning" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 02
@@ -1120,7 +958,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author3.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author3.png" alt="Testing and trying — QA across devices" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 03
@@ -1136,10 +974,10 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author4.png" alt="Illustration" class="rounded-circle">
+                                <img loading="lazy" src="assets/img/team/work-author4.png" alt="Execute and install — deployment and go-live" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
-                                02
+                                04
                             </span>
                         </div>
                         <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Execute & install</a></h4>
@@ -1159,15 +997,14 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row g-0 align-items-xl-end justify-content-center">
                 <div class="col-lg-6 order-lg-0 order-1">
                     <div class="contact-thumb1 w-100 position-relative">
-                        <img loading="lazy" src="assets/img/services/wire-frame.png" alt="Illustration" class="w-100">
+                        <img loading="lazy" src="assets/img/services/solutio-sled.jpg" alt="SLED procurement team reviewing contract-ready IT capabilities for state, local and education authorities" class="w-100">
                         <div class="tesology-info-box">
                             <div class="content d-flex align-items-center gap-0 mb-sm-4 mb-2">
-                                <span class="count">76</span>
-                                <span>+</span>
+                                <span class="count">5</span>
                             </div>
                             <p>
-                                Wireframe & Prototype
-                                UX Design.
+                                NAICS codes on
+                                capability statements.
                             </p>
                         </div>
                     </div>
@@ -1259,70 +1096,7 @@ require_once __DIR__ . '/includes/navbar.php';
     </section>
     <!-- Sponsor Section end -->
 
-    <!-- News Section Start -->
-    <section class="news-section section-padding fix">
-        <div class="container">
-            <div class="section-title mb-60 text-center">
-                <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-2">
-                    OUR LATEST BLOG POST
-                </span>
-                <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                    Latest insights from our team
-                </h2>
-            </div>
-            <div class="news-wrapper">
-                <div class="row justify-content-center g-4">
-<?php
-$blogDelay = 0.3;
-foreach ($homepageBlogPosts as $blogPost) :
-    $blogCardImage = dw_blog_image($blogPost['images']['card']);
-    $blogPostUrl = dw_blog_url($blogPost['slug']);
-    $publishedTs = strtotime($blogPost['published']);
-    $dayLabel = $publishedTs !== false ? date('j', $publishedTs) : '';
-    $monthLabel = $publishedTs !== false ? date('M', $publishedTs) : '';
-    ?>
-                    <div class="col-xl-4 col-md-6 wow fadeInUp" data-wow-delay="<?php echo e((string) $blogDelay); ?>s">
-                        <div class="news-single-items style3 rounded-3 p-xxl-0 p-0 border overflow-hidden style1 h-100">
-                            <a href="<?php echo e($blogPostUrl); ?>"
-                                class="news-image position-relative d-block rounded-3 overflow-hidden">
-                                <img loading="lazy" src="<?php echo e($blogCardImage); ?>"
-                                    alt="<?php echo e($blogPost['title']); ?>"
-                                    class="rounded-3 overflow-hidden w-100 blog-cover-img">
-                                <span
-                                    class="m-lg-3 m-sm-2 m-1 trns blog-badge1 position-absolute top-0 start-0 z-1 fw_500 bg-white d-inline-block py-xl-2 py-2 px-3 rounded-1 text-uppercase fs-eight black">
-                                    <?php echo e($dayLabel); ?>
-                                    <span><?php echo e($monthLabel); ?></span>
-                                </span>
-                            </a>
-                            <div class="news-content pb-4 mb-lg-2 px-4">
-                                <h4 class="mb-xxl-3 mb-3">
-                                    <a href="<?php echo e($blogPostUrl); ?>" class="black visible-slowly-right">
-                                        <?php echo e($blogPost['title']); ?>
-                                    </a>
-                                </h4>
-                                <p class="fs-seven pra mb-4 pb-1">
-                                    <?php echo e($blogPost['excerpt']); ?>
-                                </p>
-                                <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
-                                    <a href="<?php echo e($blogPostUrl); ?>"
-                                        class="common-btn box-style py-2 fs-seven cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden rounded-1 bg-color">
-                                        Read More
-                                    </a>
-                                    <div class="d-flex fw_500 align-items-center gap-1 pra fs-eight heading-font">
-                                        <i class="fa-regular fa-clock black"></i> <?php echo e(dw_blog_format_date($blogPost['published'])); ?>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-<?php
-    $blogDelay += 0.2;
-endforeach;
-?>
-                </div>
-            </div>
-        </div>
-    </section>
+<?php require __DIR__ . '/includes/blog-cards-section.php'; ?>
 <?php
 require __DIR__ . '/includes/consultation-modal.php';
 $extra_scripts = ['assets/js/consultation-modal.js'];

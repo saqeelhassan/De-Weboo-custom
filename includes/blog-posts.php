@@ -123,7 +123,7 @@ function dw_blog_posts(): array
             'category' => 'SLED BIDDER',
             'naics' => '541511',
             'author' => 'De-Weboo Procurement Desk',
-            'published' => '2025-06-10',
+            'published' => '2026-06-24',
             'tags' => ['SLED', 'Government Contracting', 'NAICS', 'Procurement', 'Public Sector'],
             'keywords' => 'SLED bidder, NAICS 541511, government IT contractor, state local education procurement, De-Weboo SLED',
             'images' => [
@@ -179,7 +179,7 @@ function dw_blog_posts(): array
             'category' => 'SLED BIDDER',
             'naics' => '541511',
             'author' => 'De-Weboo Accessibility Practice',
-            'published' => '2025-06-12',
+            'published' => '2026-06-25',
             'tags' => ['Section 508', 'WCAG', 'SLED', 'RFP', 'Accessibility'],
             'keywords' => 'Section 508 RFP, WCAG compliance, SLED web accessibility, government website procurement, De-Weboo',
             'images' => [
@@ -526,5 +526,17 @@ function dw_blog_format_date(string $isoDate): string
 {
     $ts = strtotime($isoDate);
 
-    return $ts !== false ? date('j F, Y', $ts) : $isoDate;
+    return $ts !== false ? date('j M Y', $ts) : $isoDate;
+}
+
+/** Safe HTML for blog card titles (keeps B2B, B2C & B2A on one line). */
+function dw_blog_card_title(string $title): string
+{
+    $safe = e($title);
+
+    return str_replace(
+        'B2B, B2C &amp; B2A',
+        '<span class="text-nowrap">B2B, B2C &amp; B2A</span>',
+        $safe
+    );
 }

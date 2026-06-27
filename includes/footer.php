@@ -24,7 +24,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 <img src="assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
                             </a>
                             <p class="white65 mb-4 pb-lg-2">
-                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder. Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services—for B2B, B2C, and B2A frameworks.
+                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder. Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services—for B2B, B2C, and B2A frameworks.
                             </p>
                             <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
                                 <i class="fa-regular fa-envelope envelop"></i>
@@ -83,27 +83,37 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="faqs.php">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.php">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="client-support.php">
                                             Client support
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="help-center.php">
                                             Help center
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="system-status.php">
                                             System status
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="feedback.php">
                                             Feedback
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="terms-and-conditions.php">
                                             Terms & condition
                                         </a>
                                     </li>
@@ -181,7 +191,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                         &copy;<?php echo date('Y'); ?> <a href="index.php" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="#"><i class="fa-brands fa-instagram"></i></a>
@@ -197,7 +207,7 @@ if (($footer_variant ?? 'default') === 'style2') :
         <div class="search-inner">
             <i class="fas fa-times search-close" id="search-close"></i>
             <div class="search-cell">
-                <form method="get" action="#">
+                <form method="get" action="search.php">
                     <div class="search-field-holder">
                         <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>
@@ -378,27 +388,37 @@ foreach ($extra_scripts as $script) :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="faqs.php">
+                                            FAQs
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="privacy-policy.php">
+                                            Privacy Policy
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="client-support.php">
                                             Client support
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="help-center.php">
                                             Help center
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="system-status.php">
                                             System status
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="feedback.php">
                                             Feedback
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="terms-and-conditions.php">
                                             Terms & condition
                                         </a>
                                     </li>
@@ -424,7 +444,7 @@ foreach ($extra_scripts as $script) :
                                     </div>
                                 </div>
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
-                                    <a href="#" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
+                                    <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
                                     <a href="#" class=" black"><i class="fa-brands fa-x white65 fs-six"></i></a>
                                     <a href="#" class=" black"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
                                 </div>
@@ -455,7 +475,7 @@ foreach ($extra_scripts as $script) :
         <div class="search-inner">
             <i class="fas fa-times search-close" id="search-close"></i>
             <div class="search-cell">
-                <form method="get" action="#">
+                <form method="get" action="search.php">
                     <div class="search-field-holder">
                         <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>

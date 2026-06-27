@@ -37,14 +37,14 @@ require_once __DIR__ . '/includes/navbar.php';
                             SOFTWARE & IT EXPERTISE
                         </span>
                         <p class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
-                            Development &amp; AI Engineering · Secondary — Growth &amp; Infrastructure
+                            Development &amp; AI Engineering · Growth &amp; Infrastructure
                         </p>
                     </div>
                 </div>
             </div>
             <div class="row g-xl-4 g-3">
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items d-center border style2 service-development-item service-bg-web rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -67,18 +67,18 @@ custom web apps, e-commerce, and secure B2B/B2C/B2A portals under NAICS 541511. 
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img2 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-mobile d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Mobile App Engineering</h5>
+                            <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
                             <a href="#" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
                                 <h5 class="white mb-3 fs-five fw_500"><a href="services-details.php" class="white">Mobile
-                                        App Engineering</a>
+                                        App Development</a>
                                 </h5>
                                 <p class="white mb-3">
 native and cross-platform mobile applications with secure APIs for enterprise, consumer, and public-sector workflows (NAICS 541511).
@@ -91,7 +91,7 @@ native and cross-platform mobile applications with secure APIs for enterprise, c
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img3 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-ecommerce d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -114,7 +114,7 @@ custom software, business logic, and scalable e-commerce backends for B2B, B2C, 
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img4 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-medical d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -137,7 +137,7 @@ high-security medical websites, HIPAA-aligned patient portals, and clinical work
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img2 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-ai d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -160,7 +160,7 @@ custom AI integrations, workflow automations, and LLM configurations. NAICS 5415
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img3 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-data d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -183,7 +183,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img5 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-cloud d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -197,7 +197,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                                         Services</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Secondary — Growth &amp; Infrastructure: secure cloud architecture, migration, and HIPAA-friendly hosting solutions that scale the platforms we engineer.
+                                    Secure cloud architecture, migration, and HIPAA-friendly hosting solutions that scale the platforms we engineer.
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -207,7 +207,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img6 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-marketing d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -221,7 +221,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                                         class="white">Digital Marketing</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Secondary — Growth &amp; Infrastructure: consumer marketing, lead generation, and campaign strategy. NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research).
+                                    Consumer marketing, lead generation, and campaign strategy. NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research).
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -231,7 +231,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img4 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-seo d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -245,7 +245,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                                         class="white">SEO</a>
                                 </h5>
                                 <p class="white mb-3">
-                                    Secondary — Growth &amp; Infrastructure: technical SEO, AEO content strategy, and specialized medical and healthcare SEO. NAICS 541810 &amp; 541910.
+                                    Technical SEO, AEO content strategy, and specialized medical and healthcare SEO. NAICS 541810 &amp; 541910.
                                 </p>
                                 <a href="services-details.php" class="arrosses d-center rounded-circle whitebg">
                                     <i class="fa-solid fa-arrow-right"></i>
@@ -255,7 +255,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-4">
-                    <div class="gateway-items bg-img7 d-center border style2 service-development-item rounded-4 w-100">
+                    <div class="gateway-items service-bg-sled d-center border style2 service-development-item rounded-4 w-100">
                         <img loading="lazy" src="assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
@@ -304,8 +304,14 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                             <p class="pra mb-md-4 mb-2 pb-xl-1">
                                 <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development, AI Automation, and Data Engineering—for B2B, B2C, and B2A frameworks.
                             </p>
+                            <p class="pra mb-md-4 mb-2 pb-xl-1">
+                                <strong>Growth &amp; Infrastructure:</strong> Digital Marketing, SEO, and Cloud Services—as a contract-ready SLED bidder (NAICS 541810, 541910 &amp; 541512).
+                            </p>
+                            <p class="pra mb-md-4 mb-2 pb-xl-1">
+                                <strong>SLED Bidder:</strong> Contract-ready government procurement, NAICS-aligned capabilities, and Section 508 / WCAG accessibility for public-sector delivery.
+                            </p>
                             <p class="pra">
-                                <strong>Secondary — Growth &amp; Infrastructure:</strong> Digital Marketing, SEO, and Cloud Services—as a contract-ready SLED bidder (NAICS 541810, 541910 &amp; 541512).
+                                <strong>Custom Medical Systems:</strong> HIPAA-aligned websites, patient portals, and healthcare UX for regulated B2B and B2A environments.
                             </p>
                         </div>
                     </div>
@@ -409,7 +415,7 @@ secure data pipelines, data architecture, and administrative dashboards. NAICS 5
                                 De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
-                                Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Secondary — Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services. Contract-ready SLED bidder.
+                                Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services. Contract-ready SLED bidder.
                             </p>
                         </div>
                         <ul class="d-grid gap-3">

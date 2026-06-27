@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/helpers.php';
+require_once __DIR__ . '/includes/mail.php';
 
 $contact_form = [
     'name' => '',
@@ -12,19 +13,14 @@ $contact_form = [
     'subject' => '',
     'message' => '',
 ];
-if (($_SERVER['REQUEST_METHOD'] ?? '') === 'POST' && isset($_POST['contact_form'])) {
-    $contact_form = [
-        'name' => (string) ($_POST['contact_name'] ?? ''),
-        'phone' => (string) ($_POST['contact_phone'] ?? ''),
-        'email' => (string) ($_POST['contact_email'] ?? ''),
-        'subject' => (string) ($_POST['contact_subject'] ?? ''),
-        'message' => (string) ($_POST['contact_message'] ?? ''),
-    ];
-}
+$contact_result = dw_process_contact_form($contact_form);
+$contact_form = $contact_result['form'];
+$contact_alert = $contact_result['alert'];
 
 require_once __DIR__ . '/includes/seo.php';
 dw_load_page_seo(basename(__FILE__, '.php'));
-$dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
+$dw_org = dw_org_config();
+$dw_phone_placeholder = $dw_org['telephoneDisplay'];
 
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
@@ -55,18 +51,20 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-10">
                     <div class="contact-info-content">
                         <div class="thumb rounded-2">
-                            <img loading="lazy" src="assets/img/contact/contact-thumb.png" alt="Illustration" class="rounded-2">
+                            <img loading="lazy" src="assets/img/contact/contact-img.png" alt="Illustration" class="rounded-2">
                         </div>
                         <div class="content">
                             <div class="mb-xxl-4 mb-4 pb-xxl-2">
                                 <h4 class="black mb-0 contact-info-heading">Enterprise software · SLED-ready bidder</h4>
                             </div>
                             <?php
+                            $call_show_rep = false;
+                            $call_show_numbers = true;
                             $call_wrapper_class = 'about-call d-flex align-items-center gap-3 mb-xxl-4 mb-4 pb-xxl-2';
                             require __DIR__ . '/includes/contact-call-block.php';
                             ?>
                             <div class="d-grid gap-1 mb-xxl-4 mb-4 pb-xxl-2">
-                                <a href="mailto:Info@deweboo.com" class="d-inline-flex align-items-center gap-2 black fw_500">
+                                <a href="mailto:<?php echo e($dw_org['email']); ?>" class="d-inline-flex align-items-center gap-2 black fw_500">
                                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -77,7 +75,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <path d="M5.80078 10.6006H10.2008" stroke="#5135FF" stroke-width="1.5"
                                             stroke-linecap="round" />
                                     </svg>
-                                    Info@deweboo.com
+                                    <?php echo e($dw_org['email']); ?>
                                 </a>
                             </div>
                             <a href="contact.php"
@@ -105,9 +103,15 @@ require_once __DIR__ . '/includes/navbar.php';
                 <h2 class="black text-center mb-lg-5 mb-4">
                     How can we support your business or bid?
                 </h2>
+<?php if ($contact_alert !== null) : ?>
+                <div class="alert alert-<?php echo $contact_alert['type'] === 'success' ? 'success' : 'danger'; ?> mb-4" role="alert">
+                    <?php echo e($contact_alert['message']); ?>
+                </div>
+<?php endif; ?>
                 <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>"
                     class="row g-4" id="contact-main-form" autocomplete="on" novalidate>
                     <input type="hidden" name="contact_form" value="1">
+                    <input type="text" name="website" value="" class="portfolio-discuss-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
                     <div class="col-lg-6 contact-from-grp">
                         <label class="visually-hidden" for="contact_name">Full name</label>
                         <input type="text" name="contact_name" id="contact_name" placeholder="Full name"
