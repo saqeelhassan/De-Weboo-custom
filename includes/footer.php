@@ -32,7 +32,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                             <form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
                                 <i class="fa-regular fa-envelope envelop"></i>
                                 <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
-                                <button type="button" class="arrow"><i class="fas fa-chevron-right"></i></button>
+                                <button type="button" class="arrow" aria-label="Subscribe"><i class="fas fa-chevron-right"></i></button>
                             </form>
                         </div>
                     </div>
@@ -219,9 +219,9 @@ if (($footer_variant ?? 'default') === 'style2') :
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                 </div>
             </div>
@@ -279,7 +279,7 @@ foreach ($extra_scripts as $script) :
                             </h5>
                             <form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 d-flex align-items-center justify-content-between">
                                 <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
-                                <button type="button"><i class="fa-regular fa-envelope"></i></button>
+                                <button type="button" aria-label="Subscribe"><i class="fa-regular fa-envelope"></i></button>
                             </form>
                             <div class="form-check cmn-checkbox mt-3">
                                 <input class="form-check-input" type="checkbox" value="" id="mycheck">
@@ -405,8 +405,8 @@ foreach ($extra_scripts as $script) :
                                 </div>
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
                                     <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
-                                    <a href="#" class=" black"><i class="fa-brands fa-x white65 fs-six"></i></a>
-                                    <a href="#" class=" black"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
+                                    <a href="#" class=" black" aria-label="X (Twitter)"><i class="fa-brands fa-x white65 fs-six"></i></a>
+                                    <a href="#" class=" black" aria-label="LinkedIn"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
                                 </div>
                             </div>
                         </div>

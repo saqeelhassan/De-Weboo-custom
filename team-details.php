@@ -88,9 +88,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="d-flex flex-lg-nowrap flex-wrap align-items-center gap-xl-3 gap-2">
                             <div class="social-icon d-flex align-items-center gap-2">
                                 <a href="<?php echo e($dw_org['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
+                                <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
                                 <a href="<?php echo e($member['linkedin'] ?? '#'); ?>"<?php echo !empty($member['linkedin']) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>><i class="fa-brands fa-linkedin"></i></a>
-                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                             <a href="mailto:<?php echo e($dw_org['email']); ?>?subject=<?php echo rawurlencode('Message for ' . $member['name'] . ' — De-Weboo'); ?>" class="rounded-5 share-cmn-icon">
                                 <svg width="17" height="13" viewBox="0 0 17 13" fill="none"

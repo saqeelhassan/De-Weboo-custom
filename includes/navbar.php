@@ -80,9 +80,9 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 <div class="right-top-cont d-flex align-items-center gap-5">
                     <div class="social-custom d-flex align-items-center gap-xl-3 gap-3">
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
-                        <a href="#" class=" black"><i class="fa-brands fa-twitter white65 fs-six"></i></a>
-                        <a href="#" class=" black"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
-                        <a href="#" class=" black"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
+                        <a href="#" class=" black" aria-label="X (Twitter)"><i class="fa-brands fa-twitter white65 fs-six"></i></a>
+                        <a href="#" class=" black" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
+                        <a href="#" class=" black" aria-label="Instagram"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
                     </div>
                 </div>
             </div>
@@ -104,7 +104,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                             </a>
                         </div>
                         <div class="offcanvas__close">
-                            <button>
+                            <button aria-label="Close menu">
                                 <i class="fas fa-times"></i>
                             </button>
                         </div>
@@ -161,9 +161,9 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                         </div>
                         <div class="social-icon d-flex align-items-center">
                             <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
@@ -232,18 +232,18 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                 </nav>
                             </div>
                         </div>
-                        <a href="#0" class="search-trigger search-icon d-xl-none d-block">
+                        <a href="#0" class="search-trigger search-icon d-xl-none d-block" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass black"></i>
                         </a>
                         <div class="header__hamburger d-xl-none d-block my-auto">
-                            <div class="sidebar__toggle">
-                                <img src="/assets/img/icon/menu.png" alt="icon">
+                            <div class="sidebar__toggle" role="button" aria-label="Open menu" tabindex="0">
+                                <img src="/assets/img/icon/menu.png" alt="" aria-hidden="true">
                             </div>
                         </div>
 
                     </div>
                     <div class="header-hamburger-inner d-xl-flex gap-xxl-4 gap-xl-3 align-items-center d-none">
-                        <a href="#0" class="search-trigger search-icon d-xl-block d-none fs-five">
+                        <a href="#0" class="search-trigger search-icon d-xl-block d-none fs-five" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass <?php echo e($nav_search_icon_color_inner); ?>"></i>
                         </a>
                         <a href="/contact"

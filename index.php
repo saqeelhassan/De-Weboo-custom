@@ -185,7 +185,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle">
+                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -204,7 +204,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle">
+                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -223,7 +223,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle">
+                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -242,7 +242,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle">
+                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -439,7 +439,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
-                            <a href="/web-development" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/web-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -449,7 +449,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     Custom web apps, e-commerce, and secure B2B/B2C/B2A portals, including high-security medical websites.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -462,7 +462,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
-                            <a href="/mobile-app-development" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/mobile-app-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -473,7 +473,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     Native and cross-platform mobile applications with secure APIs.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -486,7 +486,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Custom Medical Systems</h5>
-                            <a href="/services-details" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -496,7 +496,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     PACS, RIS, DICOM viewers, teleradiology &amp; medical portals.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -509,7 +509,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
-                            <a href="/ai-machine-learning" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -519,7 +519,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     AI Automation: custom AI integrations, workflow automations, and LLM configurations.
                                 </p>
-                                <a href="/services" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -532,7 +532,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">SEO</h5>
-                            <a href="/seo" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/seo" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -543,7 +543,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     SEO: technical SEO, AEO content strategy, and specialized medical/healthcare SEO.
                                 </p>
-                                <a href="/services" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -556,7 +556,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Real Estate Website Development</h5>
-                            <a href="/real-estate-website-development" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/real-estate-website-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -567,7 +567,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
                                     Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage websites built for lead generation.
                                 </p>
-                                <a href="/real-estate-website-development" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/real-estate-website-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -811,10 +811,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -822,10 +822,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -843,10 +843,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -854,10 +854,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -875,10 +875,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, HR" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -886,10 +886,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>

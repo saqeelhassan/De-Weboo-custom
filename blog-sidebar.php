@@ -76,10 +76,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                     </div>
                                 </div>
                                 <div class="array-button">
-                                    <button type="button" class="array-prev">
+                                    <button type="button" class="array-prev" aria-label="Previous">
                                         <i class="fa-solid fa-arrow-left"></i>
                                     </button>
-                                    <button type="button" class="array-next">
+                                    <button type="button" class="array-next" aria-label="Next">
                                         <i class="fa-solid fa-arrow-right"></i>
                                     </button>
                                 </div>
@@ -116,7 +116,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="thumb1 rounded-3 w-100 mb-4 position-relative d-center">
                                 <img loading="lazy" src="/assets/img/blog/blog-sidebar3.png" alt="Illustration" class="w-100 rounded-3">
                                 <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
-                                    class="portfolio-video rounded-circle d-center video-popup">
+                                    class="portfolio-video rounded-circle d-center video-popup" aria-label="Play video">
                                     <i class="fa-solid fa-play"></i>
                                 </a>
                             </div>
@@ -165,7 +165,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class=" border-0 search-box">
                             <form action="#" class="rounded-2">
                                 <input type="text" placeholder="Search articles...">
-                                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                                <button type="submit" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
                             </form>
                         </div>
                         <div class="details-common">

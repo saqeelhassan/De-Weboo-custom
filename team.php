@@ -38,10 +38,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -49,10 +49,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/aqeel-hassan-gilani/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -70,10 +70,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -81,10 +81,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -102,10 +102,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -113,10 +113,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/naima-shahzadi-5720a7251/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/naima-shahzadi-5720a7251/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -134,10 +134,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/mehroz.jpg" alt="Mehroz Alam, Senior Data Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -145,10 +145,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/mehrozalam/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/mehrozalam/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -166,10 +166,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, HR" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -177,10 +177,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/hajra-batool-syed/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -198,10 +198,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hamza.jpg" alt="Meer Hamza, Digital Marketing" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -209,10 +209,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/meer-hamza-186a98171/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/meer-hamza-186a98171/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -230,10 +230,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/faisal.jpg" alt="Faisal Mukhtar, IT Infrastructure &amp; Cloud Systems Specialist" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -241,10 +241,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="https://www.linkedin.com/in/hfaisal/" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.linkedin.com/in/hfaisal/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="LinkedIn">
                                     <i class="fa-brands fa-linkedin-in"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>
@@ -262,10 +262,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/naimatullah.jpg" alt="Naimat Ullah, Senior PACS &amp; Integration Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
+                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="X (Twitter)">
                                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -273,7 +273,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                             fill="black" />
                                     </svg>
                                 </a>
-                                <a href="#" class="rounded-2">
+                                <a href="#" class="rounded-2" aria-label="Pinterest">
                                     <i class="fa-brands fa-pinterest-p"></i>
                                 </a>
                             </div>

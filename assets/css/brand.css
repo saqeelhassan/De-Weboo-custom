@@ -113,3 +113,39 @@
   max-height: 44px;
   width: auto;
 }
+
+/* Touch target sizing — WCAG 2.5.5 / Lighthouse want at least 24x24 CSS px
+   of clickable area. These elements only had an icon glyph's worth of hit
+   area (~14-16px), so we pad the box out to a proper tap size without
+   changing how the icon looks. */
+.social-custom a {
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-development-item .right-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  min-height: 32px;
+}
+
+/* Swiper pagination dots stay visually small, but the actual clickable
+   area is expanded via a pseudo-element (clicks anywhere in it still
+   register on the real bullet element). */
+.swiper-pagination-bullet {
+  position: relative;
+}
+.swiper-pagination-bullet::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  transform: translate(-50%, -50%);
+}

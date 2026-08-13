@@ -49,7 +49,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
-                            <a href="/services-details" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <p class="white mb-3">
 Full-stack, front-end, and back-end development services using modern frameworks.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -72,7 +72,7 @@ Full-stack, front-end, and back-end development services using modern frameworks
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
-                            <a href="/services-details" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -83,7 +83,7 @@ Full-stack, front-end, and back-end development services using modern frameworks
                                 <p class="white mb-3">
 Native and cross-platform apps for iOS and Android.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -96,7 +96,7 @@ Native and cross-platform apps for iOS and Android.
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">AI and Machine Learning</h5>
-                            <a href="/services-details" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -106,7 +106,7 @@ Native and cross-platform apps for iOS and Android.
                                 <p class="white mb-3">
 Advanced AI solutions to enhance business efficiency.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -119,7 +119,7 @@ Advanced AI solutions to enhance business efficiency.
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Enterprise Software Development</h5>
-                            <a href="/services-details" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -129,7 +129,7 @@ Advanced AI solutions to enhance business efficiency.
                                 <p class="white mb-3">
 ERP, CRM, and custom enterprise-grade applications.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -142,7 +142,7 @@ ERP, CRM, and custom enterprise-grade applications.
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Real Estate Website Development</h5>
-                            <a href="/real-estate-website-development" class="white right-arrow"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/real-estate-website-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
@@ -152,7 +152,7 @@ ERP, CRM, and custom enterprise-grade applications.
                                 <p class="white mb-3">
 Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage websites built for lead generation.
                                 </p>
-                                <a href="/real-estate-website-development" class="arrosses d-center rounded-circle whitebg">
+                                <a href="/real-estate-website-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
