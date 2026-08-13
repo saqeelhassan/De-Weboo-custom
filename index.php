@@ -36,6 +36,9 @@ $header_logo_src = '/assets/img/logo/logo-white.png';
 $nav_search_icon_color_inner = 'white';
 $footer_variant = 'style2';
 $extra_stylesheets = ['/assets/css/home-hero.css'];
+$extra_preloads = [
+    ['href' => '/assets/img/banner/banner3-slide1.webp', 'type' => 'image/webp'],
+];
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -44,6 +47,11 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="swiper-wrapper">
             <div class="swiper-slide">
                 <div class="banner-bg-slide">
+                    <picture>
+                        <source srcset="/assets/img/banner/banner3-slide1.avif" type="image/avif">
+                        <source srcset="/assets/img/banner/banner3-slide1.webp" type="image/webp">
+                        <img src="/assets/img/banner/banner3-slide1.png" alt="" class="banner-bg-media" width="1000" height="495" fetchpriority="high" loading="eager" decoding="async">
+                    </picture>
                     <div class="container">
                         <div class="banner-content text-center">
                             <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">
@@ -82,6 +90,11 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
             <div class="swiper-slide">
                 <div class="banner-bg-slide style2">
+                    <picture>
+                        <source srcset="/assets/img/banner/banner3-slide2.avif" type="image/avif">
+                        <source srcset="/assets/img/banner/banner3-slide2.webp" type="image/webp">
+                        <img src="/assets/img/banner/banner3-slide2.png" alt="" class="banner-bg-media" width="1000" height="495" loading="lazy" decoding="async">
+                    </picture>
                     <div class="container">
                         <div class="banner-content text-center">
                             <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">
@@ -118,6 +131,11 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
             <div class="swiper-slide">
                 <div class="banner-bg-slide style3">
+                    <picture>
+                        <source srcset="/assets/img/banner/banner1-slide1.avif" type="image/avif">
+                        <source srcset="/assets/img/banner/banner1-slide1.webp" type="image/webp">
+                        <img src="/assets/img/banner/banner1-slide1.png" alt="" class="banner-bg-media" width="1000" height="438" loading="lazy" decoding="async">
+                    </picture>
                     <div class="container">
                         <div class="banner-content text-center">
                             <span class="hero-badge3 mb-xxl-4 mb-3 d-block white fw_600 text-uppercase hero-badge-lg">

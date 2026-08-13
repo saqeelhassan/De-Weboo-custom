@@ -22,12 +22,23 @@ $page_author = $page_author ?? 'De-Weboo';
 require_once __DIR__ . '/seo-head.php';
 require_once __DIR__ . '/seo-schema.php';
 ?>
+    <!-- LCP image preload (page-specific, set via $extra_preloads before including header.php) -->
+<?php
+$extra_preloads = $extra_preloads ?? [];
+foreach ($extra_preloads as $preload) :
+    ?>
+    <link rel="preload" as="image" href="<?php echo e($preload['href']); ?>" type="<?php echo e($preload['type']); ?>" fetchpriority="high">
+<?php endforeach; ?>
+
     <!-- Resource hints for third-party origins used at runtime -->
     <link rel="dns-prefetch" href="//www.youtube.com">
     <link rel="preconnect" href="https://www.youtube.com" crossorigin>
     <link rel="dns-prefetch" href="//www.youtube-nocookie.com">
 
     <link rel="shortcut icon" href="/assets/img/logo/favs.png">
+
+    <!-- Self-hosted fonts (Inter, Plus Jakarta Sans) — no Google Fonts CDN -->
+    <link rel="stylesheet" href="/assets/css/fonts.css">
 
     <!-- Critical CSS — render-blocking (above-fold layout & icons) -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">

@@ -7,7 +7,6 @@ Last change:    18/01/2025
 Assigned to:    De-Weboo - IT Solution and Technology HTML Template
 Primary use:    Visa 
 -------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 :root {
   --body: #fff;
   --black: #031740;
@@ -3573,17 +3572,17 @@ footer {
   background: var(--white);
 }
 .banner-section-wrap.style3 .banner-bg-slide {
-  background: url(../../assets/img/banner/banner3-slide1.png) no-repeat top center;
-  background-size: cover;
+  background-color: #031740;
   padding: 320px 0 260px;
 }
-.banner-section-wrap.style3 .banner-bg-slide.style2 {
-  background: url(../../assets/img/banner/banner3-slide2.png) no-repeat top center;
-  background-size: cover;
-}
-.banner-section-wrap.style3 .banner-bg-slide.style3 {
-  background: url(../../assets/img/banner/banner1-slide1.png) no-repeat top center;
-  background-size: cover;
+.banner-section-wrap.style3 .banner-bg-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  z-index: -1;
 }
 @media (max-width: 1399px) {
   .banner-section-wrap.style3 .banner-bg-slide {
