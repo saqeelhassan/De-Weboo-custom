@@ -5,12 +5,37 @@ Options -Indexes
     DirectoryIndex index.php index.html
 </IfModule>
 
-# Optional: legacy .html URLs → .php (after migration)
+# Clean URLs: hide the .php extension
 <IfModule mod_rewrite.c>
     RewriteEngine On
+
+    # Legacy .html URLs → clean URL (after migration)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.+)\.html$ $1.php [R=301,L]
+    RewriteRule ^(.+)\.html$ $1 [R=301,L]
+
+    # Never touch AJAX/handler endpoints — they must keep their real .php path
+    RewriteRule ^handlers/ - [L]
+
+    # Canonicalize: /page.php -> /page (skip POST so form/AJAX submissions aren't redirected)
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+    RewriteRule ^ /? [R=301,L]
+
+    RewriteCond %{REQUEST_METHOD} GET
+    RewriteCond %{THE_REQUEST} \s/+(.+)\.php[\s?] [NC]
+    RewriteRule ^ /%1 [R=301,L]
+
+    # Pretty detail routes
+    RewriteRule ^blog/([^/]+)/?$ blog-details.php?post=$1 [L,QSA]
+    RewriteRule ^portfolio/([^/]+)/?$ portfolio-details.php?project=$1 [L,QSA]
+    RewriteRule ^team/([^/]+)/?$ team-details.php?member=$1 [L,QSA]
+
+    # Internally serve /page as page.php when the clean URL has no matching file/dir
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME}\.php -f
+    RewriteRule ^(.*)$ $1.php [L]
 </IfModule>
 
 # Block access to configuration and one-off build tooling

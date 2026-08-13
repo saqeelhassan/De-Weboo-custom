@@ -10,16 +10,6 @@ $orgId = rtrim($org['url'], '/') . '/#organization';
 $websiteId = rtrim($org['url'], '/') . '/#website';
 $webpageId = $canonical . '#webpage';
 
-$naicsProperties = [];
-foreach ($org['naics'] as $code) {
-    $naicsProperties[] = [
-        '@type' => 'PropertyValue',
-        'name' => 'NAICS',
-        'value' => $code,
-        'description' => $org['naicsCapabilities'][$code] ?? 'North American Industry Classification System code — government procurement eligibility',
-    ];
-}
-
 $serviceOffers = array_map(
     static fn (string $service): array => [
         '@type' => 'Offer',
@@ -27,10 +17,10 @@ $serviceOffers = array_map(
             '@type' => 'Service',
             'name' => $service,
             'provider' => ['@id' => $orgId],
-            'areaServed' => ['Worldwide', 'United States', 'Pakistan'],
+            'areaServed' => ['Worldwide', 'United States'],
             'audience' => [
                 '@type' => 'BusinessAudience',
-                'audienceType' => 'B2B, B2C, B2A, SLED, Healthcare',
+                'audienceType' => 'B2B, B2C, B2A, Healthcare',
             ],
         ],
     ],
@@ -70,33 +60,22 @@ $schema = [
             ],
             'areaServed' => [
                 ['@type' => 'Country', 'name' => 'United States'],
-                ['@type' => 'Country', 'name' => 'Pakistan'],
-                ['@type' => 'AdministrativeArea', 'name' => 'SLED — State, Local & Education authorities'],
             ],
             'knowsAbout' => array_merge($org['coreServices'], $org['aiTerms'], [
-                'SLED Bidder',
-                'Government Contracting',
                 'HIPAA Compliance',
                 'Section 508 Accessibility',
                 'WCAG',
                 'Enterprise Software Engineering',
                 'Database Architecture',
             ]),
-            'naics' => $org['naics'],
-            'additionalProperty' => array_merge($naicsProperties, [
+            'additionalProperty' => [
                 [
                     '@type' => 'PropertyValue',
                     'name' => 'MarketFocus',
                     'value' => implode(', ', $org['markets']),
-                    'description' => 'B2B enterprise, B2C consumer, and B2A business-to-authority public-sector delivery models',
+                    'description' => 'B2B enterprise, B2C consumer, and B2A business-to-authority delivery models',
                 ],
-                [
-                    '@type' => 'PropertyValue',
-                    'name' => 'GovernmentContractor',
-                    'value' => 'Contract-ready SLED bidder',
-                    'description' => 'Eligible for state, local, and education authority procurement under mapped NAICS codes',
-                ],
-            ]),
+            ],
             'parentOrganization' => $org['parentOrganization'],
             'sameAs' => $org['sameAs'],
             'hasOfferCatalog' => [
@@ -128,7 +107,7 @@ $schema = [
             '@id' => $websiteId,
             'url' => $org['url'],
             'name' => $org['name'],
-            'description' => 'Custom web & software development agency, SLED bidder, and healthcare IT specialist.',
+            'description' => 'Custom web & software development agency and healthcare IT specialist.',
             'publisher' => ['@id' => $orgId],
             'inLanguage' => 'en-US',
         ],

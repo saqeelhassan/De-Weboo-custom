@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">Error</li>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -32,12 +32,12 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="error-wrapper w-100 text-center">
                 <div class="error-thumb mb-4">
-                    <img loading="lazy" src="assets/img/error/erro.png" alt="Illustration" class="w-100">
+                    <img loading="lazy" src="/assets/img/error/erro.png" alt="Illustration" class="w-100">
                 </div>
                 <h2 class="black mb-4 pb-xxl-4">
-                    This page could not be found. Return home or contact De-Weboo for web, cloud, healthcare IT, and SLED support.
+                    This page could not be found. Return home or contact De-Weboo for web, cloud, and healthcare IT support.
                 </h2>
-                <a href="index.php"
+                <a href="/"
                     class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
                     Back To Home
                 </a>

@@ -57,7 +57,7 @@
                             <span class="collab-division-tag" style="color:#1E40AF;">Division 03</span>
                         </div>
                         <h4 class="black fw-six mb-1">De-Weboo Digital</h4>
-                        <p class="fs-eight pra text-uppercase fw-semibold mb-3">Web, cloud, healthcare IT &amp; SLED procurement (NAICS 541511–541910)</p>
+                        <p class="fs-eight pra text-uppercase fw-semibold mb-3">Web, cloud, healthcare IT &amp; enterprise delivery</p>
                         <ul class="collab-list list-unstyled mb-4">
                             <li><i class="fas fa-check" style="color:#1E40AF;"></i><span>Custom software &amp; enterprise apps</span></li>
                             <li><i class="fas fa-check" style="color:#1E40AF;"></i><span>Cybersecurity hardening &amp; audits</span></li>
@@ -345,7 +345,7 @@
                         Ready to team up on your next project?
                     </h2>
                 </div>
-                <a href="contact.php"
+                <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
                     Contact De-Weboo
                 </a>

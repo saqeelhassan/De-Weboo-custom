@@ -5,7 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/helpers.php';
 
 /**
- * Homepage solution tabs (Web, SLED, AI, Medical) — image + overlay stats per service.
+ * Homepage solution tabs (Web, AI, Medical) — image + overlay stats per service.
  *
  * @return list<array{
  *     tab_id: string,
@@ -35,31 +35,12 @@ function dw_home_solution_tabs(): array
             'stat_suffix' => '+',
             'stat_label' => 'Web & mobile platforms delivered.',
             'title' => 'Web Development',
-            'description' => 'Under NAICS 541511, we deliver custom web apps, e-commerce platforms, and high-security medical websites and patient portals—responsive B2B/B2C/B2A platforms built for performance, accessibility, and audit-ready documentation.',
+            'description' => 'We deliver custom web apps, e-commerce platforms, and high-security medical websites and patient portals—responsive B2B/B2C/B2A platforms built for performance, accessibility, and audit-ready documentation.',
             'bullets' => [
-                'Custom web applications & enterprise portals (NAICS 541511)',
+                'Custom web applications & enterprise portals',
                 'Section 508 / WCAG accessibility on every build',
-                'SLED-ready web assets for state, local & education procurement',
             ],
             'consultation_service' => 'Web Development',
-        ],
-        [
-            'tab_id' => 'sled-tab',
-            'tab_label' => 'SLED Bidder',
-            'pane_id' => 'sled',
-            'image' => 'assets/img/services/solutio-sled.jpg',
-            'image_alt' => 'Procurement team reviewing SLED RFP and contract-ready IT capabilities',
-            'stat_count' => '5',
-            'stat_suffix' => '',
-            'stat_label' => 'NAICS codes on capability statements.',
-            'title' => 'SLED Bidder',
-            'description' => 'De-Weboo is a contract-ready SLED bidder for state, local, and education authorities. We deliver NAICS-mapped software, web, mobile, and IT solutions with Section 508 / WCAG accessibility and audit-ready documentation for public-sector RFPs and RFQs.',
-            'bullets' => [
-                'Contract-ready SLED bidder for state, local & education authorities',
-                'NAICS 541511, 541512, 541519, 541810 & 541910 capabilities',
-                'Procurement-ready deliverables with HIPAA & Section 508 compliance',
-            ],
-            'consultation_service' => 'SLED Bidder',
         ],
         [
             'tab_id' => 'ai-tab',
@@ -71,9 +52,9 @@ function dw_home_solution_tabs(): array
             'stat_suffix' => '+',
             'stat_label' => 'AI workflows & LLM integrations deployed.',
             'title' => 'AI Automation',
-            'description' => 'Under NAICS 541511, we deliver custom AI integrations, workflow automations, and LLM configurations—enterprise AI workflows for B2B, B2C, B2A, and medical environments.',
+            'description' => 'We deliver custom AI integrations, workflow automations, and LLM configurations—enterprise AI workflows for B2B, B2C, B2A, and medical environments.',
             'bullets' => [
-                'Custom AI integrations, workflow automations & LLM configurations (NAICS 541511)',
+                'Custom AI integrations, workflow automations & LLM configurations',
                 'LLM deployment, prompt engineering & enterprise AI workflows',
                 'Audit-ready AI frameworks for B2B/B2C, B2A & medical environments',
             ],
@@ -89,13 +70,31 @@ function dw_home_solution_tabs(): array
             'stat_suffix' => '+',
             'stat_label' => 'Wireframe & prototype UX design.',
             'title' => 'Custom Medical Systems',
-            'description' => 'High-security medical websites and HIPAA-aligned patient portals—clinical workflows and secure healthcare infrastructure for providers, payers, and public-health authorities under NAICS 541511.',
+            'description' => 'High-security medical websites and HIPAA-aligned patient portals—clinical workflows and secure healthcare infrastructure for providers, payers, and public-health authorities.',
             'bullets' => [
                 'HIPAA-aligned architecture & audit-ready controls',
                 'Clinical dashboards, patient portals & EHR integrations',
                 'B2B, B2C & B2A healthcare delivery models',
             ],
             'consultation_service' => 'Custom Medical Systems',
+        ],
+        [
+            'tab_id' => 'realestate-tab',
+            'tab_label' => 'Real Estate',
+            'pane_id' => 'realestate',
+            'image' => 'assets/img/services/service-detail-enterprise.jpg',
+            'image_alt' => 'Real estate team reviewing a property listing platform dashboard',
+            'stat_count' => '30',
+            'stat_suffix' => '+',
+            'stat_label' => 'Real estate platforms launched.',
+            'title' => 'Real Estate Website Development',
+            'description' => 'Property listing platforms, agent and brokerage websites, and rental portals—IDX/MLS integrations, map-based search, and lead capture built for conversion.',
+            'bullets' => [
+                'IDX/MLS integration & automated listing sync',
+                'Lead capture & CRM routing for agents and teams',
+                'Fast map and filter-based property search',
+            ],
+            'consultation_service' => 'Real Estate Website Development',
         ],
     ];
 }

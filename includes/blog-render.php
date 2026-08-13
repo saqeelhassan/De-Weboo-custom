@@ -104,7 +104,7 @@ function dw_blog_article_schema(array $post): string
 {
     require_once __DIR__ . '/seo-config.php';
     $org = dw_org_config();
-    $url = rtrim(dw_site_url(), '/') . '/' . dw_blog_url($post['slug']);
+    $url = rtrim(dw_site_url(), '/') . dw_blog_url($post['slug']);
     $imagePath = dw_blog_image($post['images']['hero']);
     $imageUrl = rtrim(dw_site_url(), '/') . '/' . ltrim($imagePath, '/');
 

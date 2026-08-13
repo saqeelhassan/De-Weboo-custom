@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0eeff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#e3f6ff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="dbGrad1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5135ff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#3a1fd6;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="dbGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#0097a7;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="dashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f8f6ff;stop-opacity:1"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#5135ff" flood-opacity="0.15"/>
+    </filter>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Background dots pattern -->
+  <g opacity="0.15">
+    <circle cx="50" cy="50" r="3" fill="#5135ff"/>
+    <circle cx="100" cy="50" r="3" fill="#5135ff"/>
+    <circle cx="150" cy="50" r="3" fill="#5135ff"/>
+    <circle cx="50" cy="100" r="3" fill="#5135ff"/>
+    <circle cx="100" cy="100" r="3" fill="#5135ff"/>
+    <circle cx="150" cy="100" r="3" fill="#5135ff"/>
+    <circle cx="50" cy="150" r="3" fill="#5135ff"/>
+    <circle cx="100" cy="150" r="3" fill="#5135ff"/>
+    <circle cx="700" cy="380" r="3" fill="#00bcd4"/>
+    <circle cx="750" cy="380" r="3" fill="#00bcd4"/>
+    <circle cx="700" cy="430" r="3" fill="#00bcd4"/>
+    <circle cx="750" cy="430" r="3" fill="#00bcd4"/>
+    <circle cx="700" cy="460" r="3" fill="#00bcd4"/>
+    <circle cx="750" cy="460" r="3" fill="#00bcd4"/>
+  </g>
+
+  <!-- ===== DATABASE 1 (left) ===== -->
+  <g filter="url(#shadow)">
+    <ellipse cx="160" cy="168" rx="58" ry="18" fill="#6a50ff"/>
+    <rect x="102" y="168" width="116" height="90" fill="url(#dbGrad1)"/>
+    <ellipse cx="160" cy="258" rx="58" ry="18" fill="#3a1fd6"/>
+    <ellipse cx="160" cy="168" rx="58" ry="18" fill="#7c68ff"/>
+    <!-- DB lines -->
+    <line x1="115" y1="195" x2="205" y2="195" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="115" y1="215" x2="205" y2="215" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="115" y1="235" x2="205" y2="235" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <text x="160" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">SOURCE DB</text>
+
+  <!-- ===== DATABASE 2 (center) ===== -->
+  <g filter="url(#shadow)">
+    <ellipse cx="400" cy="148" rx="58" ry="18" fill="#00d4e8"/>
+    <rect x="342" y="148" width="116" height="90" fill="url(#dbGrad2)"/>
+    <ellipse cx="400" cy="238" rx="58" ry="18" fill="#0097a7"/>
+    <ellipse cx="400" cy="148" rx="58" ry="18" fill="#00e5f5"/>
+    <line x1="355" y1="175" x2="445" y2="175" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="355" y1="195" x2="445" y2="195" stroke="white" stroke-width="1.5" opacity="0.3"/>
+    <line x1="355" y1="215" x2="445" y2="215" stroke="white" stroke-width="1.5" opacity="0.3"/>
+  </g>
+  <text x="400" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">DATA LAKE</text>
+
+  <!-- Pipeline arrow 1 (DB1 → DB2) -->
+  <g>
+    <line x1="222" y1="213" x2="338" y2="193" stroke="#5135ff" stroke-width="3" stroke-dasharray="6,4" opacity="0.8"/>
+    <polygon points="338,193 322,185 324,198" fill="#5135ff" opacity="0.8"/>
+    <!-- data dots -->
+    <circle cx="260" cy="205" r="5" fill="#5135ff" opacity="0.9"/>
+    <circle cx="290" cy="200" r="4" fill="#7c68ff" opacity="0.7"/>
+  </g>
+
+  <!-- Pipeline arrow 2 (DB2 → Dashboard) -->
+  <g>
+    <line x1="460" y1="193" x2="530" y2="210" stroke="#00bcd4" stroke-width="3" stroke-dasharray="6,4" opacity="0.8"/>
+    <polygon points="530,210 514,200 518,213" fill="#00bcd4" opacity="0.8"/>
+    <circle cx="488" cy="199" r="5" fill="#00bcd4" opacity="0.9"/>
+    <circle cx="511" cy="204" r="4" fill="#00e5f5" opacity="0.7"/>
+  </g>
+
+  <!-- ===== DASHBOARD PANEL (right) ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="528" y="100" width="220" height="270" rx="14" fill="url(#dashGrad)" stroke="#e0d8ff" stroke-width="1.5"/>
+    <!-- Header bar -->
+    <rect x="528" y="100" width="220" height="40" rx="14" fill="#5135ff"/>
+    <rect x="528" y="125" width="220" height="15" fill="#5135ff"/>
+    <circle cx="550" cy="120" r="5" fill="#ff6b6b" opacity="0.9"/>
+    <circle cx="567" cy="120" r="5" fill="#ffd93d" opacity="0.9"/>
+    <circle cx="584" cy="120" r="5" fill="#6bcb77" opacity="0.9"/>
+    <text x="620" y="125" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">Analytics Dashboard</text>
+
+    <!-- Metric row 1 -->
+    <rect x="545" y="148" width="90" height="52" rx="8" fill="#f0eeff"/>
+    <text x="590" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#5135ff">98%</text>
+    <text x="590" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#666">Pipeline uptime</text>
+
+    <!-- Metric row 2 -->
+    <rect x="648" y="148" width="85" height="52" rx="8" fill="#e3f6ff"/>
+    <text x="690" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#00bcd4">2.1M</text>
+    <text x="690" y="186" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#666">Records/day</text>
+
+    <!-- Line chart (y range 215–270, well below metric cards) -->
+    <polyline points="548,270 570,258 595,248 620,238 645,228 670,220 700,213" stroke="#5135ff" stroke-width="2.5" fill="none" stroke-linejoin="round"/>
+    <circle cx="700" cy="213" r="4" fill="#5135ff"/>
+    <circle cx="548" cy="270" r="3" fill="#7c68ff" opacity="0.7"/>
+
+    <!-- Chart bars (y range 280–325, below line chart) -->
+    <rect x="550" y="285" width="22" height="40" rx="3" fill="#5135ff" opacity="0.8"/>
+    <rect x="578" y="272" width="22" height="53" rx="3" fill="#7c68ff" opacity="0.8"/>
+    <rect x="606" y="258" width="22" height="67" rx="3" fill="#5135ff"/>
+    <rect x="634" y="267" width="22" height="58" rx="3" fill="#00bcd4" opacity="0.9"/>
+    <rect x="662" y="248" width="22" height="77" rx="3" fill="#3a1fd6"/>
+    <!-- Chart baseline -->
+    <line x1="545" y1="325" x2="700" y2="325" stroke="#ddd" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== SECURITY SHIELD (bottom left) ===== -->
+  <g filter="url(#softShadow)" transform="translate(110,310)">
+    <path d="M50,0 L95,20 L95,65 Q95,100 50,115 Q5,100 5,65 L5,20 Z" fill="#5135ff" opacity="0.9"/>
+    <path d="M50,10 L85,26 L85,65 Q85,93 50,106 Q15,93 15,65 L15,26 Z" fill="#7c68ff" opacity="0.6"/>
+    <!-- Lock icon -->
+    <rect x="35" y="55" width="30" height="24" rx="4" fill="white"/>
+    <path d="M38,55 L38,47 Q38,35 50,35 Q62,35 62,47 L62,55" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="50" cy="67" r="4" fill="#5135ff"/>
+    <line x1="50" y1="71" x2="50" y2="75" stroke="#5135ff" stroke-width="2"/>
+  </g>
+  <text x="160" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#5135ff">Secure &amp; Compliant</text>
+
+  <!-- Bottom labels -->
+  <rect x="60" y="455" width="680" height="30" rx="8" fill="white" opacity="0.6"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#3a1fd6">Data Engineering · Pipelines · Dashboards</text>
+
+  <!-- Floating data flow dots (decorative) -->
+  <circle cx="310" cy="340" r="6" fill="#5135ff" opacity="0.2"/>
+  <circle cx="340" cy="360" r="4" fill="#00bcd4" opacity="0.2"/>
+  <circle cx="370" cy="345" r="5" fill="#5135ff" opacity="0.15"/>
+</svg>

@@ -12,31 +12,30 @@ function dw_blog_posts(): array
         'enterprise-web-development-section-508-wcag' => [
             'slug' => 'enterprise-web-development-section-508-wcag',
             'title' => 'Enterprise Web Development with Section 508 & WCAG Built In',
-            'excerpt' => 'How De-Weboo engineers accessible, audit-ready web platforms under NAICS 541511 for B2B, B2C, and public-sector buyers worldwide.',
+            'excerpt' => 'How De-Weboo engineers accessible, audit-ready web platforms for B2B, B2C, and public-sector buyers worldwide.',
             'service' => 'Web Development',
             'category' => 'WEB DEVELOPMENT',
-            'naics' => '541511',
             'author' => 'De-Weboo Engineering Team',
             'published' => '2025-06-02',
-            'tags' => ['Web Development', 'Section 508', 'WCAG', 'NAICS 541511', 'Enterprise'],
-            'keywords' => 'enterprise web development, Section 508, WCAG accessibility, NAICS 541511, custom web applications, De-Weboo',
+            'tags' => ['Web Development', 'Section 508', 'WCAG', 'Enterprise'],
+            'keywords' => 'enterprise web development, Section 508, WCAG accessibility, custom web applications, De-Weboo',
             'images' => [
                 'card' => 'assets/img/blog/enterprise-web-development-section-508-wcag/cover.png',
                 'hero' => 'assets/img/blog/enterprise-web-development-section-508-wcag/cover.png',
             ],
-            'intro' => 'Enterprise web development means building custom web applications that are secure, performant, and accessible from day one—not retrofitting compliance after launch. De-Weboo, headquartered in Hyderabad, Pakistan, delivers NAICS 541511 web engineering for clients in the United States, Pakistan, and worldwide, with Section 508 and WCAG 2.1 AA accessibility embedded in every sprint.',
+            'intro' => 'Enterprise web development means building custom web applications that are secure, performant, and accessible from day one—not retrofitting compliance after launch. De-Weboo delivers web engineering for clients in the United States and worldwide, with Section 508 and WCAG 2.1 AA accessibility embedded in every sprint.',
             'sections' => [
                 [
                     'heading' => 'What is enterprise web development?',
                     'paragraphs' => [
                         'Enterprise web development is the design and engineering of custom web platforms—portals, dashboards, e-commerce systems, and patient-facing sites—that support complex business rules, role-based access, integrations, and long-term maintainability. Unlike template websites, enterprise builds prioritize security architecture, API design, and procurement-ready documentation.',
-                        'De-Weboo maps this work to NAICS 541511 (custom computer programming), which is the classification government buyers and enterprise procurement teams use when sourcing custom web and mobile application vendors.',
+                        'De-Weboo delivers this work using custom computer programming disciplines that government buyers and enterprise procurement teams expect when sourcing custom web and mobile application vendors.',
                     ],
                 ],
                 [
                     'heading' => 'Why accessibility belongs in the first release',
                     'list' => [
-                        'Section 508 compliance is required for U.S. federal and many state, local, and education (SLED) digital deliverables.',
+                        'Section 508 compliance is required for U.S. federal and many public-sector digital deliverables.',
                         'WCAG 2.1 AA reduces legal risk and expands reach for users with visual, motor, and cognitive disabilities.',
                         'Accessible semantic HTML improves SEO and AI answer-engine (AEO) extractability.',
                         'Keyboard navigation, focus states, and alt text are cheaper to implement during build than during remediation.',
@@ -45,69 +44,68 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'How De-Weboo delivers audit-ready web builds',
                     'paragraphs' => [
-                        'Our engineers work in Laravel, React, and modern PHP stacks with automated accessibility checks, structured content models, and version-controlled release notes. For SLED and healthcare clients, we pair technical delivery with VPAT-ready documentation and HIPAA-aligned security controls where required.',
-                        'Whether you are a commercial brand in Karachi or a U.S. education authority evaluating RFP responses, the same engineering discipline applies: measurable performance, documented accessibility, and NAICS-mapped scope statements.',
+                        'Our engineers work in Laravel, React, and modern PHP stacks with automated accessibility checks, structured content models, and version-controlled release notes. For public-sector and healthcare clients, we pair technical delivery with VPAT-ready documentation and HIPAA-aligned security controls where required.',
+                        'Whether you are a commercial brand in Karachi or a U.S. education authority evaluating RFP responses, the same engineering discipline applies: measurable performance, documented accessibility, and clear scope statements.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
-                    'question' => 'What NAICS code covers custom web development?',
-                    'answer' => 'NAICS 541511 covers custom computer programming, including custom web applications, e-commerce platforms, and medical patient portals. De-Weboo lists 541511 on capability statements for government and enterprise procurement.',
+                    'question' => 'What does De-Weboo cover in custom web development?',
+                    'answer' => 'Custom computer programming, including custom web applications, e-commerce platforms, and medical patient portals. De-Weboo lists this capability on statements for government and enterprise procurement.',
                 ],
                 [
                     'question' => 'What is the difference between Section 508 and WCAG?',
-                    'answer' => 'Section 508 is the U.S. federal accessibility standard for ICT. WCAG (Web Content Accessibility Guidelines) provides technical success criteria widely adopted by Section 508 and SLED RFPs. De-Weboo targets WCAG 2.1 AA as the engineering baseline.',
+                    'answer' => 'Section 508 is the U.S. federal accessibility standard for ICT. WCAG (Web Content Accessibility Guidelines) provides technical success criteria widely adopted by Section 508 and public-sector RFPs. De-Weboo targets WCAG 2.1 AA as the engineering baseline.',
                 ],
                 [
                     'question' => 'Where is De-Weboo located?',
-                    'answer' => 'De-Weboo operates from Lucky Shanghai Trade Centre, Office 2016, 2nd Floor, Auto Bhan Road, Hyderabad, Sindh, Pakistan (71000), and serves B2B, B2C, and B2A clients globally—including contract-ready SLED programs in the United States.',
+                    'answer' => 'De-Weboo serves B2B, B2C, and B2A clients globally. See our contact page for full address details.',
                 ],
             ],
         ],
         'custom-web-apps-b2b-b2c-b2a' => [
             'slug' => 'custom-web-apps-b2b-b2c-b2a',
             'title' => 'Custom Web Apps for B2B, B2C & B2A Delivery Models',
-            'excerpt' => 'A practical guide to choosing architecture, integrations, and procurement language for multi-audience web platforms under NAICS 541511.',
+            'excerpt' => 'A practical guide to choosing architecture, integrations, and procurement language for multi-audience web platforms.',
             'service' => 'Web Development',
             'category' => 'WEB DEVELOPMENT',
-            'naics' => '541511',
             'author' => 'De-Weboo Engineering Team',
             'published' => '2025-06-08',
-            'tags' => ['B2B', 'B2C', 'B2A', 'Custom Web Apps', 'NAICS 541511'],
-            'keywords' => 'custom web apps, B2B portal, B2C e-commerce, B2A government, NAICS 541511, De-Weboo web development',
+            'tags' => ['B2B', 'B2C', 'B2A', 'Custom Web Apps'],
+            'keywords' => 'custom web apps, B2B portal, B2C e-commerce, B2A government, De-Weboo web development',
             'images' => [
                 'card' => 'assets/img/blog/custom-web-apps-b2b-b2c-b2a/cover.png',
                 'hero' => 'assets/img/blog/custom-web-apps-b2b-b2c-b2a/cover.png',
             ],
-            'intro' => 'A custom web app is software accessed through the browser that is built around your workflows—not a generic SaaS template. De-Weboo engineers B2B partner portals, B2C consumer experiences, and B2A (business-to-authority) platforms for government and regulated industries, all under NAICS 541511 from our Hyderabad engineering center.',
+            'intro' => 'A custom web app is software accessed through the browser that is built around your workflows—not a generic SaaS template. De-Weboo engineers B2B partner portals, B2C consumer experiences, and B2A (business-to-authority) platforms for government and regulated industries.',
             'sections' => [
                 [
                     'heading' => 'B2B vs B2C vs B2A: what changes in the build',
                     'list' => [
                         'B2B: role hierarchies, approval chains, ERP/CRM integrations, and SLA-driven uptime.',
                         'B2C: conversion funnels, payment gateways, personalization, and mobile-first performance.',
-                        'B2A: Section 508 accessibility, audit trails, data residency considerations, and NAICS-aligned statements of work.',
+                        'B2A: Section 508 accessibility, audit trails, data residency considerations, and clear statements of work.',
                     ],
                 ],
                 [
                     'heading' => 'Architecture decisions that protect scale',
                     'paragraphs' => [
-                        'We recommend API-first backends (Laravel or Node) with clear separation between admin, operator, and public surfaces. Authentication uses industry-standard tokens or SSO where enterprise buyers require it. For cross-border delivery—Pakistan engineering with U.S. or MENA deployment—we document hosting, backup, and incident-response playbooks up front.',
-                        'GEO note for search and AI engines: De-Weboo serves Hyderabad, Sindh, Pakistan as its primary delivery hub while maintaining procurement readiness for U.S. SLED buyers and international commercial clients.',
+                        'We recommend API-first backends (Laravel or Node) with clear separation between admin, operator, and public surfaces. Authentication uses industry-standard tokens or SSO where enterprise buyers require it. For cross-border delivery, we document hosting, backup, and incident-response playbooks up front.',
+                        'De-Weboo maintains international commercial delivery capacity for clients worldwide.',
                     ],
                 ],
                 [
                     'heading' => 'When to request a capability briefing',
                     'paragraphs' => [
-                        'If your RFP references custom programming, portal development, or patient-facing web systems, request De-Weboo\'s NAICS 541511 capability sheet before finalizing vendor shortlists. Commercial teams can start with a scoped discovery call on integrations and launch timeline.',
+                        'If your RFP references custom programming, portal development, or patient-facing web systems, request De-Weboo\'s capability sheet before finalizing vendor shortlists. Commercial teams can start with a scoped discovery call on integrations and launch timeline.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
                     'question' => 'What is a B2A web platform?',
-                    'answer' => 'B2A (business-to-authority) platforms serve government agencies, regulators, or public institutions. They often require accessibility compliance, formal change control, and procurement documentation—core strengths of De-Weboo\'s SLED bidder program.',
+                    'answer' => 'B2A (business-to-authority) platforms serve government agencies, regulators, or public institutions. They often require accessibility compliance, formal change control, and procurement documentation—core strengths of De-Weboo\'s delivery process.',
                 ],
                 [
                     'question' => 'Can one codebase serve B2B and B2C audiences?',
@@ -115,128 +113,21 @@ function dw_blog_posts(): array
                 ],
             ],
         ],
-        'sled-bidder-naics-procurement-guide' => [
-            'slug' => 'sled-bidder-naics-procurement-guide',
-            'title' => 'SLED Bidder Guide: NAICS Codes & Contract-Ready IT Vendors',
-            'excerpt' => 'What state, local, and education buyers should look for in a SLED software bidder—and how De-Weboo maps NAICS 541511, 541512, 541519, 541810, and 541910.',
-            'service' => 'SLED Bidder',
-            'category' => 'SLED BIDDER',
-            'naics' => '541511',
-            'author' => 'De-Weboo Procurement Desk',
-            'published' => '2026-06-24',
-            'tags' => ['SLED', 'Government Contracting', 'NAICS', 'Procurement', 'Public Sector'],
-            'keywords' => 'SLED bidder, NAICS 541511, government IT contractor, state local education procurement, De-Weboo SLED',
-            'images' => [
-                'card' => 'assets/img/blog/sled-bidder-naics-procurement-guide/cover.png',
-                'hero' => 'assets/img/blog/sled-bidder-naics-procurement-guide/cover.png',
-            ],
-            'intro' => 'A SLED bidder is a vendor qualified to respond to state, local, and education authority solicitations for software, web, mobile, and IT services. De-Weboo is a contract-ready SLED bidder offering NAICS-mapped capabilities across custom development, data engineering, managed IT, digital marketing, and SEO—with Section 508 / WCAG accessibility and audit-ready documentation.',
-            'sections' => [
-                [
-                    'heading' => 'What does SLED stand for?',
-                    'paragraphs' => [
-                        'SLED means State, Local, and Education—the public-sector tier below federal contracting where cities, counties, school districts, and state agencies publish RFPs and RFQs for technology services. Buyers filter vendors by NAICS codes, past performance, insurance, and compliance attestations.',
-                    ],
-                ],
-                [
-                    'heading' => 'De-Weboo NAICS capability map',
-                    'list' => [
-                        '541511 — Custom web/mobile apps, AI integrations, workflow automation, medical websites.',
-                        '541512 — Data engineering, cloud architecture, systems design.',
-                        '541519 — Managed IT, dashboards, data lifecycle support.',
-                        '541810 — Digital advertising and campaign services.',
-                        '541910 — Marketing research, SEO analytics, AEO content strategy.',
-                    ],
-                ],
-                [
-                    'heading' => 'How to evaluate a SLED software bidder',
-                    'paragraphs' => [
-                        'Confirm the vendor can produce accessibility documentation (VPAT or equivalent), security policies, and staff resumes aligned to the statement of work. De-Weboo provides structured capability briefings for procurement officers and prime contractors seeking NAICS-aligned subcontractors.',
-                        'Our parent company, CaddSight, supports enterprise governance while De-Weboo executes hands-on engineering from Hyderabad, Pakistan with U.S.-facing procurement support.',
-                    ],
-                ],
-            ],
-            'faqs' => [
-                [
-                    'question' => 'Is De-Weboo a registered government contractor?',
-                    'answer' => 'De-Weboo positions as a contract-ready SLED bidder with NAICS-mapped software, web, mobile, and IT capabilities. Procurement teams should request our capability statement and insurance certificates for their vendor file.',
-                ],
-                [
-                    'question' => 'Which NAICS code is used for custom software RFPs?',
-                    'answer' => 'Most custom software and web development solicitations map to NAICS 541511. Data and cloud-heavy scopes often add 541512 or 541519. Marketing or SEO components may reference 541810 or 541910.',
-                ],
-                [
-                    'question' => 'Does De-Weboo support teaming agreements?',
-                    'answer' => 'Yes. We frequently participate as a NAICS-qualified subcontractor to primes who need development velocity, accessibility expertise, or healthcare IT specialization.',
-                ],
-            ],
-        ],
-        'section-508-wcag-rfp-readiness' => [
-            'slug' => 'section-508-wcag-rfp-readiness',
-            'title' => 'Section 508 & WCAG RFP Readiness for Public-Sector Web Projects',
-            'excerpt' => 'Checklist for SLED procurement teams and vendors: accessibility language, testing evidence, and delivery milestones that survive audit.',
-            'service' => 'SLED Bidder',
-            'category' => 'SLED BIDDER',
-            'naics' => '541511',
-            'author' => 'De-Weboo Accessibility Practice',
-            'published' => '2026-06-25',
-            'tags' => ['Section 508', 'WCAG', 'SLED', 'RFP', 'Accessibility'],
-            'keywords' => 'Section 508 RFP, WCAG compliance, SLED web accessibility, government website procurement, De-Weboo',
-            'images' => [
-                'card' => 'assets/img/blog/section-508-wcag-rfp-readiness/cover.png',
-                'hero' => 'assets/img/blog/section-508-wcag-rfp-readiness/cover.png',
-            ],
-            'intro' => 'Public-sector RFPs increasingly require Section 508–conformant deliverables and WCAG 2.1 AA testing evidence. De-Weboo embeds accessibility acceptance criteria in statements of work, sprint definitions, and release sign-off—so SLED buyers receive audit-ready web assets, not last-minute remediation.',
-            'sections' => [
-                [
-                    'heading' => 'RFP language buyers should include',
-                    'list' => [
-                        'Target standard: WCAG 2.1 Level AA (or agency-specific baseline).',
-                        'Deliverables: accessibility test report, remediated issue log, and component documentation.',
-                        'Acceptance: keyboard-only navigation, screen reader spot checks, color-contrast verification.',
-                        'Maintenance: accessibility regression testing on major releases.',
-                    ],
-                ],
-                [
-                    'heading' => 'Vendor proof points that reduce protest risk',
-                    'paragraphs' => [
-                        'Ask for sample VPATs, named accessibility lead, and tooling (axe, Lighthouse, manual AT passes). De-Weboo documents each release with traceable tickets tied to WCAG success criteria—critical for education authorities and state portals under public scrutiny.',
-                    ],
-                ],
-                [
-                    'heading' => 'GEO: serving U.S. SLED from a global engineering hub',
-                    'paragraphs' => [
-                        'De-Weboo combines Hyderabad-based delivery capacity with U.S. procurement literacy. That model gives SLED agencies competitive pricing while maintaining documentation standards expected in American public-sector contracting.',
-                    ],
-                ],
-            ],
-            'faqs' => [
-                [
-                    'question' => 'Who is responsible for Section 508 compliance—the agency or the vendor?',
-                    'answer' => 'Both. The agency defines requirements; the vendor must engineer, test, and document conformant deliverables. De-Weboo accepts accessibility as a vendor obligation in every SLED web scope.',
-                ],
-                [
-                    'question' => 'Can legacy sites be brought into compliance?',
-                    'answer' => 'Yes. De-Weboo performs accessibility audits, prioritizes critical user flows, and ships remediations in phased releases without full rebuilds when architecture allows.',
-                ],
-            ],
-        ],
         'ai-automation-workflow-llm' => [
             'slug' => 'ai-automation-workflow-llm',
-            'title' => 'AI Automation: Workflow Design, LLM Integration & NAICS 541511',
-            'excerpt' => 'How enterprises deploy secure AI automations—custom integrations, LLM guardrails, and measurable ROI under NAICS 541511.',
+            'title' => 'AI Automation: Workflow Design & LLM Integration',
+            'excerpt' => 'How enterprises deploy secure AI automations—custom integrations, LLM guardrails, and measurable ROI.',
             'service' => 'AI Automation',
             'category' => 'AI AUTOMATION',
-            'naics' => '541511',
             'author' => 'De-Weboo AI Practice',
             'published' => '2025-06-14',
-            'tags' => ['AI Automation', 'LLM', 'Workflow', 'NAICS 541511'],
-            'keywords' => 'AI automation, LLM integration, workflow automation, enterprise AI, NAICS 541511, De-Weboo',
+            'tags' => ['AI Automation', 'LLM', 'Workflow'],
+            'keywords' => 'AI automation, LLM integration, workflow automation, enterprise AI, De-Weboo',
             'images' => [
                 'card' => 'assets/img/blog/ai-automation-workflow-llm/cover.png',
                 'hero' => 'assets/img/blog/ai-automation-workflow-llm/cover.png',
             ],
-            'intro' => 'AI automation connects large language models (LLMs), APIs, and business rules to eliminate repetitive work—without bypassing security or compliance. De-Weboo delivers custom AI integrations and workflow automations mapped to NAICS 541511 for commercial and SLED clients.',
+            'intro' => 'AI automation connects large language models (LLMs), APIs, and business rules to eliminate repetitive work—without bypassing security or compliance. De-Weboo delivers custom AI integrations and workflow automations for commercial and enterprise clients.',
             'sections' => [
                 [
                     'heading' => 'What problems AI automation solves',
@@ -256,8 +147,8 @@ function dw_blog_posts(): array
             ],
             'faqs' => [
                 [
-                    'question' => 'What NAICS code covers AI automation services?',
-                    'answer' => 'Custom AI integrations and automation scripting fall under NAICS 541511 when delivered as bespoke programming services. De-Weboo lists this capability for enterprise and SLED buyers.',
+                    'question' => 'What does De-Weboo cover in AI automation services?',
+                    'answer' => 'Custom AI integrations and automation scripting delivered as bespoke programming services. De-Weboo lists this capability for enterprise buyers.',
                 ],
                 [
                     'question' => 'Which LLM platforms does De-Weboo support?',
@@ -267,20 +158,19 @@ function dw_blog_posts(): array
         ],
         'data-engineering-secure-pipelines' => [
             'slug' => 'data-engineering-secure-pipelines',
-            'title' => 'Data Engineering: Secure Pipelines & Admin Dashboards (NAICS 541512)',
+            'title' => 'Data Engineering: Secure Pipelines & Admin Dashboards',
             'excerpt' => 'Design principles for reliable data architecture, ETL pipelines, and executive dashboards that public-sector and enterprise teams can audit.',
             'service' => 'Data Engineering',
             'category' => 'DATA ENGINEERING',
-            'naics' => '541512',
             'author' => 'De-Weboo Data Team',
             'published' => '2025-06-16',
-            'tags' => ['Data Engineering', 'ETL', 'Dashboards', 'NAICS 541512'],
-            'keywords' => 'data engineering, data pipelines, NAICS 541512, secure dashboards, De-Weboo',
+            'tags' => ['Data Engineering', 'ETL', 'Dashboards'],
+            'keywords' => 'data engineering, data pipelines, secure dashboards, De-Weboo',
             'images' => [
                 'card' => 'assets/img/blog/data-engineering-secure-pipelines/cover.png',
                 'hero' => 'assets/img/blog/data-engineering-secure-pipelines/cover.png',
             ],
-            'intro' => 'Data engineering is the discipline of moving, transforming, and governing data so decision-makers trust what they see on screen. De-Weboo architects pipelines and administrative dashboards under NAICS 541512 for government, healthcare, and commercial enterprises.',
+            'intro' => 'Data engineering is the discipline of moving, transforming, and governing data so decision-makers trust what they see on screen. De-Weboo architects pipelines and administrative dashboards for government, healthcare, and commercial enterprises.',
             'sections' => [
                 [
                     'heading' => 'Core components of a production pipeline',
@@ -292,9 +182,9 @@ function dw_blog_posts(): array
                     ],
                 ],
                 [
-                    'heading' => 'Why NAICS 541512 matters in RFPs',
+                    'heading' => 'Why documented scope matters in RFPs',
                     'paragraphs' => [
-                        'Procurement officers classify systems design, data architecture, and cloud data platforms under 541512. De-Weboo aligns proposals and staffing plans to this code when scopes include analytics platforms, regional reporting, or multi-agency data sharing.',
+                        'Procurement officers evaluate systems design, data architecture, and cloud data platforms on documented scope. De-Weboo aligns proposals and staffing plans accordingly when scopes include analytics platforms, regional reporting, or multi-agency data sharing.',
                     ],
                 ],
             ],
@@ -307,26 +197,25 @@ function dw_blog_posts(): array
         ],
         'digital-marketing-b2b-lead-generation' => [
             'slug' => 'digital-marketing-b2b-lead-generation',
-            'title' => 'Digital Marketing for B2B Lead Generation (NAICS 541810)',
+            'title' => 'Digital Marketing for B2B Lead Generation',
             'excerpt' => 'Campaign architecture, attribution, and compliance-aware marketing for software firms and healthcare brands.',
             'service' => 'Digital Marketing',
             'category' => 'DIGITAL MARKETING',
-            'naics' => '541810',
             'author' => 'De-Weboo Growth Team',
             'published' => '2025-06-18',
-            'tags' => ['Digital Marketing', 'B2B', 'Lead Generation', 'NAICS 541810'],
-            'keywords' => 'digital marketing B2B, lead generation, NAICS 541810, De-Weboo marketing',
+            'tags' => ['Digital Marketing', 'B2B', 'Lead Generation'],
+            'keywords' => 'digital marketing B2B, lead generation, De-Weboo marketing',
             'images' => [
                 'card' => 'assets/img/blog/digital-marketing-b2b-lead-generation/cover.png',
                 'hero' => 'assets/img/blog/digital-marketing-b2b-lead-generation/cover.png',
             ],
-            'intro' => 'B2B digital marketing turns qualified traffic into pipeline—not vanity metrics. De-Weboo plans and executes campaigns under NAICS 541810 for technology, healthcare, and public-sector adjacent brands that need measurable lead generation.',
+            'intro' => 'B2B digital marketing turns qualified traffic into pipeline—not vanity metrics. De-Weboo plans and executes campaigns for technology, healthcare, and public-sector adjacent brands that need measurable lead generation.',
             'sections' => [
                 [
                     'heading' => 'Channels that work for technical buyers',
                     'list' => [
                         'LinkedIn and industry publications for enterprise awareness.',
-                        'Landing pages aligned to NAICS/service-line keywords for procurement researchers.',
+                        'Landing pages aligned to service-line keywords for procurement researchers.',
                         'Retargeting with frequency caps and privacy-conscious tracking.',
                         'Webinars and gated assets for long-cycle B2B sales.',
                     ],
@@ -334,14 +223,14 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'AEO and GEO alignment',
                     'paragraphs' => [
-                        'Campaigns perform better when landing pages answer direct questions (AEO) and declare service geography (GEO). De-Weboo pairs paid media with on-site content that names Hyderabad HQ, U.S. SLED readiness, and worldwide commercial delivery—improving quality scores and AI citation potential.',
+                        'Campaigns perform better when landing pages answer direct questions (AEO) and declare service geography (GEO). De-Weboo pairs paid media with on-site content that names its worldwide commercial delivery—improving quality scores and AI citation potential.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
-                    'question' => 'What NAICS code applies to digital advertising agencies?',
-                    'answer' => 'NAICS 541810 covers advertising agency services, including digital campaign management. De-Weboo maps marketing scopes to 541810 and analytics-heavy work to 541910 where appropriate.',
+                    'question' => 'What does De-Weboo cover in digital advertising campaigns?',
+                    'answer' => 'De-Weboo manages the full campaign lifecycle for advertising agency work, including digital campaign management, marketing scopes, and analytics-heavy work.',
                 ],
             ],
         ],
@@ -351,16 +240,15 @@ function dw_blog_posts(): array
             'excerpt' => 'Technical SEO plus answer-engine and geographic optimization—how De-Weboo helps buyers find you in search and AI summaries.',
             'service' => 'SEO',
             'category' => 'SEO',
-            'naics' => '541910',
             'author' => 'De-Weboo SEO Team',
             'published' => '2025-06-20',
-            'tags' => ['SEO', 'AEO', 'GEO', 'Healthcare SEO', 'NAICS 541910'],
-            'keywords' => 'SEO AEO GEO, answer engine optimization, healthcare SEO, technical SEO, NAICS 541910, De-Weboo',
+            'tags' => ['SEO', 'AEO', 'GEO', 'Healthcare SEO'],
+            'keywords' => 'SEO AEO GEO, answer engine optimization, healthcare SEO, technical SEO, De-Weboo',
             'images' => [
                 'card' => 'assets/img/blog/seo-aeo-geo-enterprise/cover.png',
                 'hero' => 'assets/img/blog/seo-aeo-geo-enterprise/cover.png',
             ],
-            'intro' => 'SEO gets you ranked; AEO (answer engine optimization) gets you cited in AI overviews; GEO (generative engine optimization / geographic SEO) ensures location and service-area signals are clear. De-Weboo delivers all three under NAICS 541810 and 541910 for enterprise and medical clients.',
+            'intro' => 'SEO gets you ranked; AEO (answer engine optimization) gets you cited in AI overviews; GEO (generative engine optimization / geographic SEO) ensures location and service-area signals are clear. De-Weboo delivers all three for enterprise and medical clients.',
             'sections' => [
                 [
                     'heading' => 'Technical SEO foundations',
@@ -379,7 +267,7 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'GEO: local and international signals',
                     'paragraphs' => [
-                        'Declare NAP (name, address, phone) consistently, embed GeoCoordinates in JSON-LD, and mention service regions (United States SLED, Pakistan commercial, worldwide remote delivery). Healthcare SEO adds YMYL-quality sourcing and compliance language.',
+                        'Declare NAP (name, address, phone) consistently, embed GeoCoordinates in JSON-LD, and mention service regions (United States commercial, worldwide remote delivery). Healthcare SEO adds YMYL-quality sourcing and compliance language.',
                     ],
                 ],
             ],
@@ -390,26 +278,25 @@ function dw_blog_posts(): array
                 ],
                 [
                     'question' => 'Does De-Weboo offer medical SEO?',
-                    'answer' => 'Yes. We provide HIPAA-aware content strategy and technical SEO for clinics, health systems, and medical SaaS under NAICS 541810 and 541910.',
+                    'answer' => 'Yes. We provide HIPAA-aware content strategy and technical SEO for clinics, health systems, and medical SaaS.',
                 ],
             ],
         ],
         'cloud-services-secure-infrastructure' => [
             'slug' => 'cloud-services-secure-infrastructure',
-            'title' => 'Cloud Services & Secure Infrastructure (NAICS 541512)',
+            'title' => 'Cloud Services & Secure Infrastructure',
             'excerpt' => 'Hosting architecture, monitoring, and hardening for web apps that must pass enterprise and public-sector security review.',
             'service' => 'Cloud Services',
             'category' => 'CLOUD SERVICES',
-            'naics' => '541512',
             'author' => 'De-Weboo Cloud Team',
             'published' => '2025-06-22',
-            'tags' => ['Cloud Services', 'DevOps', 'Security', 'NAICS 541512'],
-            'keywords' => 'cloud services, secure hosting, NAICS 541512, infrastructure, De-Weboo cloud',
+            'tags' => ['Cloud Services', 'DevOps', 'Security'],
+            'keywords' => 'cloud services, secure hosting, infrastructure, De-Weboo cloud',
             'images' => [
                 'card' => 'assets/img/blog/cloud-services-secure-infrastructure/cover.png',
                 'hero' => 'assets/img/blog/cloud-services-secure-infrastructure/cover.png',
             ],
-            'intro' => 'Cloud services at De-Weboo mean designing, deploying, and operating secure infrastructure—not reselling generic hosting. We map systems design work to NAICS 541512 and pair it with managed lifecycle support under 541519 when clients need ongoing operations.',
+            'intro' => 'Cloud services at De-Weboo mean designing, deploying, and operating secure infrastructure—not reselling generic hosting. We pair systems design work with managed lifecycle support when clients need ongoing operations.',
             'sections' => [
                 [
                     'heading' => 'What we deploy and monitor',
@@ -421,7 +308,7 @@ function dw_blog_posts(): array
                     ],
                 ],
                 [
-                    'heading' => 'Cloud for SLED and healthcare',
+                    'heading' => 'Cloud for enterprise and healthcare',
                     'paragraphs' => [
                         'Public-sector and HIPAA workloads require encryption, access logging, and change control. De-Weboo documents architecture diagrams for assessors and aligns controls to buyer security questionnaires.',
                     ],
@@ -437,19 +324,18 @@ function dw_blog_posts(): array
         'hipaa-patient-portals-medical-web' => [
             'slug' => 'hipaa-patient-portals-medical-web',
             'title' => 'HIPAA-Aligned Patient Portals & Medical Web Development',
-            'excerpt' => 'How De-Weboo builds secure medical websites and patient portals under NAICS 541511 with accessibility and audit trails.',
+            'excerpt' => 'How De-Weboo builds secure medical websites and patient portals with accessibility and audit trails.',
             'service' => 'Medical',
             'category' => 'MEDICAL IT',
-            'naics' => '541511',
             'author' => 'De-Weboo Healthcare Practice',
             'published' => '2025-06-24',
             'tags' => ['HIPAA', 'Patient Portal', 'Medical Web', 'Healthcare IT'],
-            'keywords' => 'HIPAA patient portal, medical web development, healthcare IT, NAICS 541511, De-Weboo medical',
+            'keywords' => 'HIPAA patient portal, medical web development, healthcare IT, De-Weboo medical',
             'images' => [
                 'card' => 'assets/img/blog/hipaa-patient-portals-medical-web/cover.png',
                 'hero' => 'assets/img/blog/hipaa-patient-portals-medical-web/cover.png',
             ],
-            'intro' => 'Medical web development requires HIPAA-aligned security, accessible patient experiences, and integration with clinical workflows. De-Weboo engineers patient portals, provider dashboards, and public health sites under NAICS 541511—with Section 508 / WCAG accessibility for inclusive care access.',
+            'intro' => 'Medical web development requires HIPAA-aligned security, accessible patient experiences, and integration with clinical workflows. De-Weboo engineers patient portals, provider dashboards, and public health sites—with Section 508 / WCAG accessibility for inclusive care access.',
             'sections' => [
                 [
                     'heading' => 'Patient portal essentials',
@@ -463,7 +349,7 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'Bridging commercial healthcare and public programs',
                     'paragraphs' => [
-                        'Clinics in Pakistan and the United States trust De-Weboo for consumer-facing medical SEO sites and secure portals. SLED health departments benefit from the same engineering rigor plus procurement documentation.',
+                        'Clinics and health systems in the United States and worldwide trust De-Weboo for consumer-facing medical SEO sites and secure portals. Public health departments benefit from the same engineering rigor plus procurement documentation.',
                     ],
                 ],
             ],
@@ -474,7 +360,151 @@ function dw_blog_posts(): array
                 ],
                 [
                     'question' => 'Can medical sites also target SEO?',
-                    'answer' => 'Yes. De-Weboo combines HIPAA-aware development with specialized medical SEO (NAICS 541810 / 541910) so compliant sites still earn qualified organic traffic.',
+                    'answer' => 'Yes. De-Weboo combines HIPAA-aware development with specialized medical SEO so compliant sites still earn qualified organic traffic.',
+                ],
+            ],
+        ],
+        'real-estate-website-development-guide' => [
+            'slug' => 'real-estate-website-development-guide',
+            'title' => 'Real Estate Website Development: The Complete Guide for Agents & Brokerages',
+            'excerpt' => 'Everything agents and brokerages need to know about real estate website development—IDX/MLS integration, lead capture, SEO, and what a build actually costs.',
+            'service' => 'Real Estate Website Development',
+            'category' => 'REAL ESTATE',
+            'author' => 'De-Weboo Engineering Team',
+            'published' => '2026-08-11',
+            'tags' => ['Real Estate Website Development', 'IDX', 'MLS', 'Property Listing Website', 'Real Estate Web Design'],
+            'keywords' => 'real estate website development, real estate web design, property listing website, IDX website, MLS integration, real estate agent website, real estate website development company',
+            'images' => [
+                'card' => 'assets/img/blog/real-estate-website-development-guide/cover.png',
+                'hero' => 'assets/img/blog/real-estate-website-development-guide/cover.png',
+            ],
+            'intro' => 'Real estate website development is the process of building a property listing platform, agent portfolio site, or brokerage portal that turns visitors into qualified leads—not just a digital brochure. A modern real estate website needs fast property search, live IDX/MLS listings, mobile-first design, and lead-routing built in from day one. De-Weboo designs and builds real estate websites for single agents, teams, and multi-agent brokerages, for clients across the United States and worldwide.',
+            'sections' => [
+                [
+                    'heading' => 'What makes real estate website development different',
+                    'paragraphs' => [
+                        'Unlike a typical business website, a real estate website has to manage a constantly changing inventory of listings, connect to third-party data feeds, and convert anonymous visitors into leads within a single session. That means real estate website development combines standard web development with data integration (IDX/MLS), search UX, and CRM connectivity.',
+                    ],
+                    'list' => [
+                        'Live property search with map, price, and filter controls.',
+                        'IDX/MLS feed integration so listings stay current automatically.',
+                        'Lead capture forms tied to saved searches and property alerts.',
+                        'Agent and team profile pages with SEO-friendly listing URLs.',
+                        'Mobile-first performance, since most home searches start on a phone.',
+                    ],
+                ],
+                [
+                    'heading' => 'Core features every real estate website needs',
+                    'list' => [
+                        'IDX/MLS integration: automated listing sync, saved searches, and instant property alerts.',
+                        'Lead capture & CRM sync: inquiry forms, scheduling, and agent routing connected to the CRM your team already uses.',
+                        'Map and filter-based search: fast, accurate property discovery by location, price, beds/baths, and status.',
+                        'SEO-friendly listing pages: unique URLs, structured data, and fast load times so listings rank in Google.',
+                        'Virtual tours and 3D walkthroughs: embedded support for the tour providers agents already use.',
+                    ],
+                ],
+                [
+                    'heading' => 'How much does a real estate website cost?',
+                    'paragraphs' => [
+                        'Pricing depends on scope: a single-agent portfolio site with basic IDX is a smaller build than a multi-agent brokerage platform with role-based listing management, custom CRM integration, and multi-market search. De-Weboo scopes real estate website development projects after a discovery call and provides a transparent, fixed-scope proposal—no hidden fees for IDX setup or listing sync.',
+                    ],
+                ],
+                [
+                    'heading' => 'Choosing a real estate website development company',
+                    'paragraphs' => [
+                        'Look for a partner that has actually shipped IDX/MLS integrations, not just template themes with a "Real Estate" label. Ask about listing sync reliability, page speed on mobile, lead-routing setup, and post-launch support. De-Weboo pairs real estate website development with ongoing hosting, monitoring, and support so listings and lead forms keep working after launch.',
+                    ],
+                ],
+            ],
+            'faqs' => [
+                [
+                    'question' => 'How long does real estate website development take?',
+                    'answer' => 'Most single-agent or small-team real estate websites take 4–8 weeks from discovery to launch. Multi-agent brokerage platforms with custom IDX/CRM integrations typically take 8–14 weeks depending on scope.',
+                ],
+                [
+                    'question' => 'Do I need IDX or MLS access before you start?',
+                    'answer' => 'Not necessarily. De-Weboo can help you evaluate and set up an IDX/MLS feed provider as part of the project, or integrate with an existing feed if you already have access.',
+                ],
+                [
+                    'question' => 'Can you migrate my existing listings and content to a new site?',
+                    'answer' => 'Yes. We handle content, listing history, and SEO redirects during migration so you keep existing search rankings and don\'t lose inbound links.',
+                ],
+                [
+                    'question' => 'Will my real estate website work well on mobile?',
+                    'answer' => 'Yes. Every De-Weboo real estate website is built mobile-first, since most property searches start on a phone—map search, filters, and lead forms are all optimized for small screens.',
+                ],
+            ],
+        ],
+        'idx-mls-integration-real-estate-website' => [
+            'slug' => 'idx-mls-integration-real-estate-website',
+            'title' => 'IDX & MLS Integration for Real Estate Websites Explained',
+            'excerpt' => 'What IDX and MLS integration actually do, how they differ, and how to choose the right setup for your real estate website.',
+            'service' => 'Real Estate Website Development',
+            'category' => 'REAL ESTATE',
+            'author' => 'De-Weboo Engineering Team',
+            'published' => '2026-08-13',
+            'tags' => ['IDX Integration', 'MLS Integration', 'Real Estate Website Development', 'Property Listing Website'],
+            'keywords' => 'IDX integration, MLS integration, IDX website, real estate website development, property listing website, IDX vs MLS, real estate feed integration',
+            'images' => [
+                'card' => 'assets/img/blog/idx-mls-integration-real-estate-website/cover.png',
+                'hero' => 'assets/img/blog/idx-mls-integration-real-estate-website/cover.png',
+            ],
+            'intro' => 'IDX and MLS integration is what lets a real estate website display live, accurate property listings instead of a manually updated list. If you are evaluating real estate website development, understanding how IDX and MLS work—and how they are different—helps you scope the right build and avoid stale listings or broken feeds.',
+            'sections' => [
+                [
+                    'heading' => 'What is MLS?',
+                    'paragraphs' => [
+                        'The Multiple Listing Service (MLS) is the database real estate agents and brokers use to share property listing data within a local market. It is the source of truth for listing status, price, and property details—but it is not, by itself, something the public can browse directly.',
+                    ],
+                ],
+                [
+                    'heading' => 'What is IDX?',
+                    'paragraphs' => [
+                        'Internet Data Exchange (IDX) is the technology and set of rules that let a licensed agent or brokerage display MLS listing data on their own website. An IDX integration pulls listings from the MLS (usually through a feed provider) and renders them as searchable property pages on your real estate website, with your branding and your lead capture forms.',
+                    ],
+                ],
+                [
+                    'heading' => 'IDX vs. MLS: the key difference',
+                    'list' => [
+                        'MLS is the shared listings database agents and brokers contribute to and pull from.',
+                        'IDX is the display layer that shows those listings on a public-facing website.',
+                        'You do not choose "IDX or MLS"—you need MLS access (as a licensed agent/broker) and an IDX integration to display that data on your site.',
+                        'IDX feed providers (such as regional MLS-approved vendors) handle the technical sync between the MLS and your website.',
+                    ],
+                ],
+                [
+                    'heading' => 'What a solid IDX integration includes',
+                    'list' => [
+                        'Automated listing sync so new listings, price changes, and sold properties update without manual work.',
+                        'Saved searches and property alerts that email or text buyers when matching listings appear.',
+                        'Map-based and filter-based search built for speed, not just a data dump of listings.',
+                        'SEO-friendly listing URLs and structured data, so individual property pages can rank in search.',
+                        'Lead capture tied to specific listings, routed to the right agent automatically.',
+                    ],
+                ],
+                [
+                    'heading' => 'Common IDX integration mistakes to avoid',
+                    'paragraphs' => [
+                        'The most common issues we see: choosing an IDX provider that is not approved for the local MLS, slow listing pages that hurt both SEO and conversion, and lead forms that capture inquiries but never route them to an agent. De-Weboo scopes IDX/MLS integration as part of real estate website development so the feed, the search experience, and the lead routing are built together—not bolted on after launch.',
+                    ],
+                ],
+            ],
+            'faqs' => [
+                [
+                    'question' => 'Do I need to be a licensed agent to get IDX access?',
+                    'answer' => 'Yes. IDX access requires an active MLS membership, which is tied to a real estate license or brokerage affiliation. De-Weboo integrates with the IDX feed once you have MLS/IDX access set up.',
+                ],
+                [
+                    'question' => 'How much does IDX integration cost?',
+                    'answer' => 'IDX feed providers typically charge a separate monthly fee (paid to the feed provider, not the developer), plus the one-time cost of integrating and designing the search experience on your website. De-Weboo includes IDX integration scope in the real estate website development proposal.',
+                ],
+                [
+                    'question' => 'Can I switch IDX providers later without rebuilding my site?',
+                    'answer' => 'In most cases, yes—if the website is built with a clean separation between the listing display layer and the feed source. De-Weboo architects real estate websites this way so a future provider switch does not require a full rebuild.',
+                ],
+                [
+                    'question' => 'Will IDX-powered listing pages hurt my site\'s SEO?',
+                    'answer' => 'Not if built correctly. De-Weboo builds unique, crawlable listing URLs with structured data and fast load times, so IDX listing pages contribute to SEO instead of creating thin or duplicate content.',
                 ],
             ],
         ],
@@ -493,12 +523,12 @@ function dw_blog_image(string $path, string $fallback = 'assets/img/blog/blog-gr
 {
     $full = DW_ROOT . '/' . ltrim($path, '/');
 
-    return is_file($full) ? $path : $fallback;
+    return '/' . ltrim(is_file($full) ? $path : $fallback, '/');
 }
 
 function dw_blog_url(string $slug): string
 {
-    return 'blog-details.php?post=' . rawurlencode($slug);
+    return '/blog/' . rawurlencode($slug);
 }
 
 /** @return list<array> */

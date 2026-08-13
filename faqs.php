@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">FAQs</li>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations under NAICS 541511), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards under NAICS 541512). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO under NAICS 541810 &amp; 541910), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
+                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We deliver for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>
@@ -75,7 +75,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            Yes. After we build your platform, we provide managed hosting, security patching, and monitoring under NAICS 541519—secondary lifecycle support that scales the software and web systems we engineer.
+                                            Yes. After we build your platform, we provide managed hosting, security patching, and monitoring—secondary lifecycle support that scales the software and web systems we engineer.
                                         </p>
                                     </div>
                                 </div>
@@ -135,13 +135,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne001" aria-expanded="true"
                                     aria-controls="collapseOne001">
-                                    Are you qualified for SLED procurement?
+                                    Can you provide capability documentation?
                                 </button>
                                 <div id="collapseOne001" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Yes. De-Weboo is a contract-ready SLED bidder. <strong>AI Automation</strong> maps to NAICS 541511 (custom programming for AI integrations, workflow automations, and LLM configurations). <strong>Data Engineering</strong> maps to NAICS 541512 (data architecture and secure data pipeline systems design). <strong>Digital Marketing</strong> and <strong>SEO</strong> map to NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research). Request our capabilities statement via the contact page.
+                                            Yes. <strong>AI Automation</strong> covers custom programming for AI integrations, workflow automations, and LLM configurations. <strong>Data Engineering</strong> covers data architecture and secure data pipeline systems design. Request our capabilities statement via the contact page.
                                         </p>
                                     </div>
                                 </div>
@@ -158,7 +158,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingTwo001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Yes. Web &amp; Mobile Development under NAICS 541511 includes high-security medical websites, patient portals, clinical workflows, and HIPAA-aligned healthcare infrastructure.
+                                            Yes. Web &amp; Mobile Development includes high-security medical websites, patient portals, clinical workflows, and HIPAA-aligned healthcare infrastructure.
                                         </p>
                                     </div>
                                 </div>
@@ -175,7 +175,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingThree001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Yes. <strong>Digital Marketing</strong> and <strong>SEO</strong> are separate secondary Growth &amp; Infrastructure services under NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research)—Digital Marketing covers consumer marketing and lead generation; SEO covers technical SEO, AEO content strategy, and specialized medical and healthcare SEO to scale the platforms we engineer.
+                                            Yes. <strong>Digital Marketing</strong> and <strong>SEO</strong> are separate secondary Growth &amp; Infrastructure services—Digital Marketing covers consumer marketing and lead generation; SEO covers technical SEO, AEO content strategy, and specialized medical and healthcare SEO to scale the platforms we engineer.
                                         </p>
                                     </div>
                                 </div>
@@ -192,7 +192,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingfour001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Pricing varies by scope, compliance, and integrations. We provide clear proposals for commercial builds and can supply NAICS-mapped capability summaries for SLED inquiries.
+                                            Pricing varies by scope, compliance, and integrations. We provide clear proposals for commercial builds and can supply capability summaries on request.
                                         </p>
                                     </div>
                                 </div>
@@ -211,11 +211,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="section-title">
                     <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
                         digital delivery?</span>
-                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Commercial speed. Healthcare security. SLED-ready capabilities.
+                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        Commercial speed. Healthcare security. Enterprise-ready capabilities.
                     </h2>
                 </div>
-                <a href="contact.php"
+                <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
                     Get In Touch
                 </a>

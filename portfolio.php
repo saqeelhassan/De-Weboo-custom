@@ -17,7 +17,7 @@ $portfolioProjects = dw_portfolio_projects();
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">Our portfolio</li>
@@ -26,7 +26,7 @@ $portfolioProjects = dw_portfolio_projects();
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 

@@ -14,7 +14,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">Pricing plans</li>
@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -43,7 +43,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
                                 <span class="fs-two">$</span>180
                             </h2>
-                            <a href="pricing-plan.php"
+                            <a href="/pricing-plan"
                                 class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
                                 Choose Package
                             </a>
@@ -73,7 +73,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
                                 <span class="fs-two">$</span>280
                             </h2>
-                            <a href="pricing-plan.php"
+                            <a href="/pricing-plan"
                                 class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
                                 Choose Package
                             </a>
@@ -103,7 +103,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 class="black d-flex justify-content-center mb-lg-4 mb-4 align-items-start fw-bold text-center">
                                 <span class="fs-two">$</span>480
                             </h2>
-                            <a href="pricing-plan.php"
+                            <a href="/pricing-plan"
                                 class="common-btn box-style cmn-style1 w-100 black d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 overflow-hidden bg-color rounded-3">
                                 Choose Package
                             </a>
@@ -157,7 +157,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -205,7 +205,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. We are an official SLED contractor (NAICS 541511, 541512, 541519, 541810 & 541910). Every engagement starts with a structured discovery call.
+                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -224,11 +224,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="section-title">
                     <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
                         digital delivery?</span>
-                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Commercial speed. Healthcare security. SLED-ready capabilities.
+                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        Commercial speed. Healthcare security. Enterprise-ready capabilities.
                     </h2>
                 </div>
-                <a href="contact.php"
+                <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
                     Get In Touch
                 </a>

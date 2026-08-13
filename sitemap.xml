@@ -7,103 +7,109 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/services.php</loc>
+    <loc>https://deweboo.com/services</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/contact.php</loc>
+    <loc>https://deweboo.com/real-estate-website-development</loc>
+    <lastmod>2026-08-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://deweboo.com/contact</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/about.php</loc>
+    <loc>https://deweboo.com/about</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/portfolio.php</loc>
+    <loc>https://deweboo.com/portfolio</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/collaboration.php</loc>
+    <loc>https://deweboo.com/collaboration</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/blog.php</loc>
+    <loc>https://deweboo.com/blog</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/faqs.php</loc>
+    <loc>https://deweboo.com/faqs</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/search.php</loc>
+    <loc>https://deweboo.com/search</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/privacy-policy.php</loc>
+    <loc>https://deweboo.com/privacy-policy</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/client-support.php</loc>
+    <loc>https://deweboo.com/client-support</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/help-center.php</loc>
+    <loc>https://deweboo.com/help-center</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/system-status.php</loc>
+    <loc>https://deweboo.com/system-status</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/feedback.php</loc>
+    <loc>https://deweboo.com/feedback</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/terms-and-conditions.php</loc>
+    <loc>https://deweboo.com/terms-and-conditions</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/testimonials.php</loc>
+    <loc>https://deweboo.com/testimonials</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/team.php</loc>
+    <loc>https://deweboo.com/team</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://deweboo.com/pricing-plan.php</loc>
+    <loc>https://deweboo.com/pricing-plan</loc>
     <lastmod>2026-06-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

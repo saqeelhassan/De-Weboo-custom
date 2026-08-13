@@ -6,8 +6,8 @@ require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/seo.php';
 
-$extra_stylesheets = ['assets/css/collaboration.css'];
-$extra_scripts = ['assets/js/collaboration.js'];
+$extra_stylesheets = ['/assets/css/collaboration.css'];
+$extra_scripts = ['/assets/js/collaboration.js'];
 
 dw_load_page_seo(basename(__FILE__, '.php'));
 require_once __DIR__ . '/includes/header.php';
@@ -18,14 +18,14 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
-                    <li><a href="index.php" class="p3-clr">Home</a></li>
+                    <li><a href="/" class="p3-clr">Home</a></li>
                     <li class="p3-clr">/</li>
                     <li class="white">Collaboration</li>
                 </ul>
                 <h1 class="white visible-from-right">CaddSight Group Collaboration</h1>
             </div>
         </div>
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="section-padding fix bg-color">
@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="section-title mb-4">
                         <h2 class="black fw-bold wow fadeInUp visible-slowly-right" data-wow-delay=".2s">
                             Integrated support across design, logistics &amp;
-                            <span class="collab-title-accent">digital solutions for enterprise &amp; SLED clients.</span>
+                            <span class="collab-title-accent">digital solutions for enterprise clients.</span>
                         </h2>
                     </div>
                     <p class="pra fs-seven mb-4">

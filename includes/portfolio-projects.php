@@ -30,9 +30,9 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/sindh-wdd/cover.jpg',
-                'card' => 'assets/img/portfolio/sindh-wdd/card.jpg',
+                'card' => 'assets/img/portfolio/sindh-wdd/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/sindh-wdd/gallery-1.jpg',
-                'gallery2' => 'assets/img/portfolio/sindh-wdd/card-1.png',
+                'gallery2' => 'assets/img/portfolio/sindh-wdd/gallery-2.jpg',
             ],
         ],
         'edustream-lms' => [
@@ -57,7 +57,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/edustream-lms/cover.jpg',
-                'card' => 'assets/img/portfolio/edustream-lms/card.jpg',
+                'card' => 'assets/img/portfolio/edustream-lms/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/edustream-lms/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/edustream-lms/gallery-2.jpg',
             ],
@@ -84,7 +84,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/de-weboo-platform/cover.jpg',
-                'card' => 'assets/img/portfolio/de-weboo-platform/card.jpg',
+                'card' => 'assets/img/portfolio/de-weboo-platform/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/de-weboo-platform/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/de-weboo-platform/gallery-2.jpg',
             ],
@@ -111,7 +111,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/dream-asa-homes/cover.jpg',
-                'card' => 'assets/img/portfolio/dream-asa-homes/card.jpg',
+                'card' => 'assets/img/portfolio/dream-asa-homes/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/dream-asa-homes/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/dream-asa-homes/gallery-2.jpg',
             ],
@@ -138,7 +138,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
-                'card' => 'assets/img/portfolio/ezfalcons-hub/card.jpg',
+                'card' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/ezfalcons-hub/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/ezfalcons-hub/gallery-2.jpg',
             ],
@@ -165,7 +165,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
-                'card' => 'assets/img/portfolio/ezfalcons-hub/card.jpg',
+                'card' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/ezfalcons-hub/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/ezfalcons-hub/gallery-2.jpg',
             ],
@@ -179,7 +179,7 @@ function dw_portfolio_projects(): array
             'techStack' => 'Google Analytics, Landing Page Optimization, CTA Funnels, Content Strategy, CRM-Ready Forms',
             'category' => 'Marketing',
             'projectDate' => 'Ongoing engagement',
-            'overview' => 'A standalone Digital Marketing engagement for EZ Falcons—distinct from the corporate theme build and technical SEO program. Mapped to NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research), we drive qualified lead generation and consumer-focused campaigns that convert traffic into corporate service inquiries.',
+            'overview' => 'A standalone Digital Marketing engagement for EZ Falcons—distinct from the corporate theme build and technical SEO program. We drive qualified lead generation and consumer-focused campaigns that convert traffic into corporate service inquiries.',
             'keyFeatures' => [
                 'Lead Generation Funnels: Landing pages and CTA pathways engineered for high-intent corporate inquiries.',
                 'Campaign & Content Strategy: Messaging, offers, and keyword-aligned content for EZ Falcons service lines.',
@@ -192,7 +192,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
-                'card' => 'assets/img/portfolio/ezfalcons-hub/card.jpg',
+                'card' => 'assets/img/portfolio/ezfalcons-hub/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/ezfalcons-hub/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/ezfalcons-hub/gallery-2.jpg',
             ],
@@ -219,7 +219,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/dr-yousef-pour-site/cover.jpg',
-                'card' => 'assets/img/portfolio/dr-yousef-pour-site/card.jpg',
+                'card' => 'assets/img/portfolio/dr-yousef-pour-site/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/dr-yousef-pour-site/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/dr-yousef-pour-site/gallery-2.jpg',
             ],
@@ -246,7 +246,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/new-super-prime/cover.jpg',
-                'card' => 'assets/img/portfolio/new-super-prime/card.jpg',
+                'card' => 'assets/img/portfolio/new-super-prime/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/new-super-prime/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/new-super-prime/gallery-2.jpg',
             ],
@@ -273,7 +273,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/new-super-prime/cover.jpg',
-                'card' => 'assets/img/portfolio/new-super-prime/card.jpg',
+                'card' => 'assets/img/portfolio/new-super-prime/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/new-super-prime/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/new-super-prime/gallery-2.jpg',
             ],
@@ -287,7 +287,7 @@ function dw_portfolio_projects(): array
             'techStack' => 'Google Analytics, Campaign Landing Pages, Multilingual Content, CTA Funnels',
             'category' => 'Marketing',
             'projectDate' => 'Ongoing engagement',
-            'overview' => 'A standalone Digital Marketing engagement for New Super Prime—distinct from the custom theme and technical SEO programs. Under NAICS 541810 (Advertising Agencies) and NAICS 541910 (Marketing Research), we deliver consumer marketing, lead generation, and campaign strategy to grow international corporate inquiries.',
+            'overview' => 'A standalone Digital Marketing engagement for New Super Prime—distinct from the custom theme and technical SEO programs. We deliver consumer marketing, lead generation, and campaign strategy to grow international corporate inquiries.',
             'keyFeatures' => [
                 'Brand Campaign Strategy: Coordinated messaging and promotional content aligned to New Super Prime global operations.',
                 'Lead Generation Funnels: High-converting landing flows and CTAs for corporate and partnership inquiries.',
@@ -300,7 +300,7 @@ function dw_portfolio_projects(): array
             ],
             'images' => [
                 'cover' => 'assets/img/portfolio/new-super-prime/cover.jpg',
-                'card' => 'assets/img/portfolio/new-super-prime/card.jpg',
+                'card' => 'assets/img/portfolio/new-super-prime/cover.jpg',
                 'gallery1' => 'assets/img/portfolio/new-super-prime/gallery-1.jpg',
                 'gallery2' => 'assets/img/portfolio/new-super-prime/gallery-2.jpg',
             ],
@@ -320,10 +320,10 @@ function dw_portfolio_image(string $path, string $fallback = 'assets/img/service
 {
     $full = DW_ROOT . '/' . ltrim($path, '/');
 
-    return is_file($full) ? $path : $fallback;
+    return '/' . ltrim(is_file($full) ? $path : $fallback, '/');
 }
 
 function dw_portfolio_url(string $slug): string
 {
-    return 'portfolio-details.php?project=' . rawurlencode($slug);
+    return '/portfolio/' . rawurlencode($slug);
 }

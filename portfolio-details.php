@@ -9,7 +9,7 @@ require_once __DIR__ . '/includes/seo.php';
 $project = dw_portfolio_project($_GET['project'] ?? null);
 
 if ($project === null) {
-    header('Location: portfolio.php', true, 302);
+    header('Location: /portfolio', true, 302);
     exit;
 }
 
@@ -17,13 +17,14 @@ dw_load_page_seo('portfolio-details');
 $page_title = $project['shortName'] . ' | De-Weboo Portfolio';
 $page_description = mb_substr($project['overview'], 0, 155) . (mb_strlen($project['overview']) > 155 ? '…' : '');
 $page_keywords = $project['shortName'] . ', ' . $project['techStack'] . ', ' . $project['category'] . ', De-Weboo portfolio, custom web development';
+$page_canonical = rtrim(dw_site_url(), '/') . dw_portfolio_url($project['slug']);
 
 $coverImage = dw_portfolio_image($project['images']['cover'], 'assets/img/services/portfolio-details.png');
 $gallery1 = dw_portfolio_image($project['images']['gallery1'], 'assets/img/services/portfolio-middle1.png');
 $gallery2 = dw_portfolio_image($project['images']['gallery2'], 'assets/img/services/portfolio-middle2.png');
 $gallery1Alt = $project['images']['gallery1Alt'] ?? ($project['shortName'] . ' — project showcase');
 $gallery2Alt = $project['images']['gallery2Alt'] ?? ($project['shortName'] . ' — interface showcase');
-$extra_scripts = ['assets/js/portfolio-discuss.js'];
+$extra_scripts = ['/assets/js/portfolio-discuss.js'];
 
 require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/header.php';
@@ -35,11 +36,11 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li>
-                        <a href="portfolio.php" class="p3-clr">Our portfolio</a>
+                        <a href="/portfolio" class="p3-clr">Our portfolio</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white"><?php echo e($project['shortName']); ?></li>
@@ -48,7 +49,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -181,7 +182,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We operate as a contract-ready SLED bidder for B2B, B2C, and B2A frameworks.
+                                            De-Weboo is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We deliver for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>
@@ -197,7 +198,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Yes. We engineer secure web applications, database architecture, and dashboard UI for government agencies and public-sector authorities—including role-based access, audit-ready data pipelines, and regional data-entry workflows mapped to NAICS 541511 and 541512.
+                                            Yes. We engineer secure web applications, database architecture, and dashboard UI for government agencies and public-sector authorities—including role-based access, audit-ready data pipelines, and regional data-entry workflows.
                                         </p>
                                     </div>
                                 </div>
@@ -229,7 +230,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            Yes. Contact us for SLED capability documentation, NAICS-mapped service descriptions, and references for government web application and dashboard engagements.
+                                            Yes. Contact us for capability documentation, service descriptions, and references for government web application and dashboard engagements.
                                         </p>
                                     </div>
                                 </div>

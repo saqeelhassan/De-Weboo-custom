@@ -85,7 +85,7 @@ $dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
                     <div class="col-12 contact-from-grp">
                         <label class="form-label fs-eight fw-semibold black" for="inquiry_message">Additional notes</label>
                         <textarea name="inquiry_message" id="inquiry_message" rows="2"
-                            placeholder="Tech preferences, compliance (HIPAA, SLED), existing systems, or RFP references."></textarea>
+                            placeholder="Tech preferences, compliance (HIPAA), existing systems, or RFP references."></textarea>
                     </div>
                     <div class="col-12">
                         <p class="pra fs-eight mb-3">

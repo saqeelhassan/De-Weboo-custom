@@ -46,7 +46,7 @@ function dw_client_testimonials(): array
             'name' => 'Marcus Reed',
         ],
         [
-            'quote' => 'They mapped our scope to NAICS codes and delivered procurement-ready web assets our agency could sign off on.',
+            'quote' => 'They mapped our scope clearly and delivered procurement-ready web assets our agency could sign off on.',
             'role' => 'Program Manager · Richmond, VA, USA',
             'name' => 'Jennifer Walsh',
         ],

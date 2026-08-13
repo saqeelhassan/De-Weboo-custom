@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">Contact</li>
@@ -40,7 +40,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -51,11 +51,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-10">
                     <div class="contact-info-content">
                         <div class="thumb rounded-2">
-                            <img loading="lazy" src="assets/img/contact/contact-img.png" alt="Illustration" class="rounded-2">
+                            <img loading="lazy" src="/assets/img/contact/contact-img.png" alt="Illustration" class="rounded-2">
                         </div>
                         <div class="content">
                             <div class="mb-xxl-4 mb-4 pb-xxl-2">
-                                <h4 class="black mb-0 contact-info-heading">Enterprise software · SLED-ready bidder</h4>
+                                <h4 class="black mb-0 contact-info-heading">Enterprise software · Contract-ready delivery</h4>
                             </div>
                             <?php
                             $call_show_rep = false;
@@ -64,21 +64,17 @@ require_once __DIR__ . '/includes/navbar.php';
                             require __DIR__ . '/includes/contact-call-block.php';
                             ?>
                             <div class="d-grid gap-1 mb-xxl-4 mb-4 pb-xxl-2">
-                                <a href="mailto:<?php echo e($dw_org['email']); ?>" class="d-inline-flex align-items-center gap-2 black fw_500">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 10.2797 1.30049 11.4893 1.83477 12.562C1.97675 12.847 2.02401 13.1729 1.94169 13.4805L1.46521 15.2613C1.25836 16.0344 1.96561 16.7416 2.73868 16.5348L4.51951 16.0583C4.82715 15.976 5.15297 16.0233 5.43802 16.1652C6.51069 16.6995 7.72025 17 9 17Z"
-                                            stroke="#5135FF" stroke-width="1.5" />
-                                        <path d="M5.80078 7.80054H12.2008" stroke="#5135FF" stroke-width="1.5"
-                                            stroke-linecap="round" />
-                                        <path d="M5.80078 10.6006H10.2008" stroke="#5135FF" stroke-width="1.5"
-                                            stroke-linecap="round" />
-                                    </svg>
-                                    <?php echo e($dw_org['email']); ?>
+                                <?php
+                                $contact_svg = '<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 10.2797 1.30049 11.4893 1.83477 12.562C1.97675 12.847 2.02401 13.1729 1.94169 13.4805L1.46521 15.2613C1.25836 16.0344 1.96561 16.7416 2.73868 16.5348L4.51951 16.0583C4.82715 15.976 5.15297 16.0233 5.43802 16.1652C6.51069 16.6995 7.72025 17 9 17Z" stroke="#5135FF" stroke-width="1.5"/><path d="M5.80078 7.80054H12.2008" stroke="#5135FF" stroke-width="1.5" stroke-linecap="round"/><path d="M5.80078 10.6006H10.2008" stroke="#5135FF" stroke-width="1.5" stroke-linecap="round"/></svg>';
+                                foreach ($dw_org['inboundEmails'] as $em) :
+                                ?>
+                                <a href="mailto:<?php echo e($em); ?>" class="d-inline-flex align-items-center gap-2 black fw_500">
+                                    <?php echo $contact_svg; ?>
+                                    <?php echo e($em); ?>
                                 </a>
+                                <?php endforeach; ?>
                             </div>
-                            <a href="contact.php"
+                            <a href="/contact"
                                 class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
                                 Get a Consultation
                             </a>
@@ -108,7 +104,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <?php echo e($contact_alert['message']); ?>
                 </div>
 <?php endif; ?>
-                <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>"
+                <form method="post" action="<?php echo e(dw_self_path()); ?>"
                     class="row g-4" id="contact-main-form" autocomplete="on" novalidate>
                     <input type="hidden" name="contact_form" value="1">
                     <input type="text" name="website" value="" class="portfolio-discuss-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
@@ -129,19 +125,19 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                     <div class="col-lg-6 contact-from-grp">
                         <label class="visually-hidden" for="contact_subject">Project or RFP subject</label>
-                        <input type="text" name="contact_subject" id="contact_subject" placeholder="Project type, RFP reference, or NAICS scope"
+                        <input type="text" name="contact_subject" id="contact_subject" placeholder="Project type or RFP reference"
                             value="<?php echo e($contact_form['subject']); ?>">
                     </div>
                     <div class="col-lg-12 contact-from-grp">
                         <label class="visually-hidden" for="contact_message">Project or procurement details</label>
                         <textarea name="contact_message" id="contact_message" rows="5"
-                            placeholder="Share your goals—B2B platforms, B2C e-commerce, B2A/SLED procurement, or healthcare IT requirements."><?php echo e($contact_form['message']); ?></textarea>
+                            placeholder="Share your goals—B2B platforms, B2C e-commerce, B2A projects, or healthcare IT requirements."><?php echo e($contact_form['message']); ?></textarea>
                     </div>
                     <div class="col-lg-12">
                         <div
                             class="d-flex flex-lg-nowrap flex-wrap justify-content-lg-between justify-content-center align-items-center gap-3">
                             <p class="pra pragraph">
-                                Enterprise IT solutions with HIPAA-aligned security—for commercial brands, SLED buyers, and healthcare organizations. We protect your data and never share information without your explicit consent.
+                                Enterprise IT solutions with HIPAA-aligned security—for commercial brands and healthcare organizations. We protect your data and never share information without your explicit consent.
                             </p>
                             <button type="submit"
                                 class="border-0 common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">

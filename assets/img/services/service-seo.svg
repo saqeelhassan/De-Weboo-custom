@@ -1,0 +1,147 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0fff4;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0eeff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="rankGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffd700"/>
+      <stop offset="100%" style="stop-color:#ffaa00"/>
+    </linearGradient>
+    <linearGradient id="rankGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#5135ff"/>
+      <stop offset="100%" style="stop-color:#7c68ff"/>
+    </linearGradient>
+    <linearGradient id="searchGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#f8f6ff"/>
+    </linearGradient>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="6" flood-color="#5135ff" flood-opacity="0.12"/>
+    </filter>
+    <filter id="glowGreen">
+      <feDropShadow dx="0" dy="0" stdDeviation="5" flood-color="#00c853" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Background pattern circles -->
+  <circle cx="720" cy="80" r="80" fill="#5135ff" opacity="0.04"/>
+  <circle cx="80" cy="420" r="100" fill="#00bcd4" opacity="0.05"/>
+  <circle cx="400" cy="470" r="60" fill="#5135ff" opacity="0.04"/>
+
+  <!-- ===== SEARCH BAR ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="55" width="600" height="60" rx="30" fill="white"/>
+    <!-- Search icon -->
+    <circle cx="140" cy="85" r="14" fill="none" stroke="#5135ff" stroke-width="2.5"/>
+    <line x1="150" y1="95" x2="160" y2="105" stroke="#5135ff" stroke-width="2.5" stroke-linecap="round"/>
+    <text x="178" y="91" font-family="Arial,sans-serif" font-size="15" fill="#aaa">best enterprise software development agency</text>
+    <!-- Search button -->
+    <rect x="620" y="65" width="70" height="40" rx="20" fill="#5135ff"/>
+    <text x="655" y="90" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">Search</text>
+  </g>
+
+  <!-- ===== SEARCH RESULTS (Ranking positions) ===== -->
+  <!-- RANK #1 — De-Weboo (highlighted) -->
+  <g filter="url(#glowGreen)">
+    <rect x="100" y="135" width="420" height="90" rx="12" fill="white" stroke="#00c853" stroke-width="2"/>
+  </g>
+  <!-- Rank badge -->
+  <rect x="110" y="148" width="28" height="28" rx="6" fill="url(#rankGrad1)"/>
+  <text x="124" y="167" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="white">#1</text>
+  <!-- Content -->
+  <text x="150" y="162" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1a0dad">deweboo.com › services › seo</text>
+  <text x="150" y="178" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#1a1a2e">Technical SEO, AEO &amp; Healthcare SEO | De-Weboo</text>
+  <text x="150" y="196" font-family="Arial,sans-serif" font-size="11" fill="#666">Advanced SEO services for organic growth, AEO for AI search, and specialized</text>
+  <text x="150" y="210" font-family="Arial,sans-serif" font-size="11" fill="#666">healthcare SEO. Compliant content that ranks.</text>
+  <!-- Star rating -->
+  <text x="150" y="223" font-family="Arial,sans-serif" font-size="11" fill="#f5a623">★★★★★</text>
+  <text x="230" y="223" font-family="Arial,sans-serif" font-size="10" fill="#666">5.0 · 120+ reviews</text>
+
+  <!-- RANK #2 -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="238" width="420" height="70" rx="12" fill="white"/>
+  </g>
+  <rect x="110" y="250" width="28" height="28" rx="6" fill="url(#rankGrad2)" opacity="0.7"/>
+  <text x="124" y="269" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="white">#2</text>
+  <text x="150" y="263" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#1a1a2e">Technical SEO Audit Services — Competitor A</text>
+  <text x="150" y="280" font-family="Arial,sans-serif" font-size="10" fill="#888">Comprehensive SEO analysis and keyword research for enterprise websites...</text>
+  <text x="150" y="295" font-family="Arial,sans-serif" font-size="10" fill="#999">★★★★☆ 4.2 · 80+ reviews</text>
+
+  <!-- RANK #3 -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="320" width="420" height="70" rx="12" fill="white" opacity="0.9"/>
+  </g>
+  <rect x="110" y="332" width="28" height="28" rx="6" fill="#ccc"/>
+  <text x="124" y="351" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="white">#3</text>
+  <text x="150" y="345" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#1a1a2e">SEO Agency for Healthcare — Competitor B</text>
+  <text x="150" y="362" font-family="Arial,sans-serif" font-size="10" fill="#999">Medical SEO and digital marketing for healthcare providers...</text>
+  <text x="150" y="377" font-family="Arial,sans-serif" font-size="10" fill="#bbb">★★★☆☆ 3.8 · 40 reviews</text>
+
+  <!-- ===== RIGHT PANEL: SEO Metrics (width=240, x=540–780) ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="540" y="135" width="240" height="270" rx="14" fill="white"/>
+    <rect x="540" y="135" width="240" height="40" rx="14" fill="#5135ff"/>
+    <rect x="540" y="158" width="240" height="17" fill="#5135ff"/>
+    <text x="660" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">SEO Score</text>
+
+    <!-- Score ring -->
+    <circle cx="660" cy="222" r="45" fill="none" stroke="#f0eeff" stroke-width="8"/>
+    <circle cx="660" cy="222" r="45" fill="none" stroke="#5135ff" stroke-width="8"
+      stroke-dasharray="255 283" stroke-dashoffset="0" stroke-linecap="round"
+      transform="rotate(-90 660 222)"/>
+    <text x="660" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" font-weight="900" fill="#5135ff">96</text>
+    <text x="660" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#888">/100</text>
+
+    <!-- Metric rows: label(x=554,w=72) | bar(x=632,w=90) | pct(x=776,end) -->
+    <g>
+      <text x="554" y="288" font-family="Arial,sans-serif" font-size="10" fill="#555">Page Speed</text>
+      <rect x="634" y="280" width="90" height="8" rx="4" fill="#eee"/>
+      <rect x="634" y="280" width="83" height="8" rx="4" fill="#00c853"/>
+      <text x="774" y="288" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#00c853">92%</text>
+    </g>
+    <g>
+      <text x="554" y="312" font-family="Arial,sans-serif" font-size="10" fill="#555">Core Vitals</text>
+      <rect x="634" y="304" width="90" height="8" rx="4" fill="#eee"/>
+      <rect x="634" y="304" width="79" height="8" rx="4" fill="#5135ff"/>
+      <text x="774" y="312" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#5135ff">88%</text>
+    </g>
+    <g>
+      <text x="554" y="336" font-family="Arial,sans-serif" font-size="10" fill="#555">Backlinks</text>
+      <rect x="634" y="328" width="90" height="8" rx="4" fill="#eee"/>
+      <rect x="634" y="328" width="75" height="8" rx="4" fill="#00bcd4"/>
+      <text x="774" y="336" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#00bcd4">83%</text>
+    </g>
+    <g>
+      <text x="554" y="360" font-family="Arial,sans-serif" font-size="10" fill="#555">AEO Ready</text>
+      <rect x="634" y="352" width="90" height="8" rx="4" fill="#eee"/>
+      <rect x="634" y="352" width="86" height="8" rx="4" fill="#f5a623"/>
+      <text x="774" y="360" text-anchor="end" font-family="Arial,sans-serif" font-size="9" font-weight="700" fill="#f5a623">95%</text>
+    </g>
+
+    <!-- Tags -->
+    <rect x="552" y="375" width="62" height="20" rx="10" fill="#f0eeff"/>
+    <text x="583" y="389" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#5135ff">Technical</text>
+    <rect x="622" y="375" width="42" height="20" rx="10" fill="#e3f6ff"/>
+    <text x="643" y="389" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#00bcd4">AEO</text>
+    <rect x="672" y="375" width="96" height="20" rx="10" fill="#fff0f0"/>
+    <text x="720" y="389" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" font-weight="600" fill="#FF5455">Healthcare SEO</text>
+  </g>
+
+  <!-- AEO highlight badge -->
+  <g filter="url(#softShadow)">
+    <rect x="100" y="402" width="420" height="52" rx="12" fill="#5135ff"/>
+    <text x="170" y="426" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white">✦ AI Answer Engine Optimization</text>
+    <text x="170" y="444" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">Structured for AI-powered search, featured snippets &amp; Google SGE</text>
+    <!-- AI chip icon -->
+    <rect x="113" y="413" width="44" height="30" rx="6" fill="rgba(255,255,255,0.2)"/>
+    <text x="135" y="433" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" fill="white">AI</text>
+  </g>
+
+  <!-- Bottom label -->
+  <rect x="60" y="463" width="680" height="28" rx="8" fill="white" opacity="0.5"/>
+  <text x="400" y="481" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#3a1fd6">SEO · AEO · Healthcare SEO · Technical Audits · Rank #1</text>
+</svg>

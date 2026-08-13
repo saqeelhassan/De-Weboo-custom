@@ -23,13 +23,11 @@ $site_name = 'De-Weboo';
 
     <!-- AEO / GEO intent -->
     <meta name="abstract" content="<?php echo e($page_description); ?>">
-    <meta name="topic" content="Web and mobile development, AI automation, data pipeline engineering, digital marketing SEO, cloud services, healthcare IT, SLED procurement">
-    <meta name="classification" content="ProfessionalService, SoftwareDevelopment, AIAutomation, DataEngineering, GovernmentContractor, HealthcareIT">
-    <meta name="coverage" content="Worldwide; B2B; B2C; B2A; SLED; Healthcare">
-    <meta name="target" content="enterprise clients, healthcare organizations, SLED buyers, commercial brands">
-    <meta name="audience" content="businesses, public sector authorities, healthcare providers, startups">
-    <meta name="geo.region" content="PK-SD">
-    <meta name="geo.placename" content="Hyderabad, Sindh, Pakistan">
+    <meta name="topic" content="Web and mobile development, AI automation, data pipeline engineering, digital marketing SEO, cloud services, healthcare IT">
+    <meta name="classification" content="ProfessionalService, SoftwareDevelopment, AIAutomation, DataEngineering, HealthcareIT">
+    <meta name="coverage" content="Worldwide; B2B; B2C; B2A; Healthcare">
+    <meta name="target" content="enterprise clients, healthcare organizations, commercial brands">
+    <meta name="audience" content="businesses, healthcare providers, startups">
     <meta name="geo.position" content="<?php echo e((string) $org['geo']['latitude']); ?>;<?php echo e((string) $org['geo']['longitude']); ?>">
     <meta name="ICBM" content="<?php echo e((string) $org['geo']['latitude']); ?>, <?php echo e((string) $org['geo']['longitude']); ?>">
 
@@ -50,4 +48,4 @@ $site_name = 'De-Weboo';
     <meta name="twitter:title" content="<?php echo e($page_title); ?>">
     <meta name="twitter:description" content="<?php echo e($page_description); ?>">
     <meta name="twitter:image" content="<?php echo e($og_image); ?>">
-    <meta name="twitter:image:alt" content="<?php echo e($site_name); ?> — SLED-ready software & IT agency">
+    <meta name="twitter:image:alt" content="<?php echo e($site_name); ?> — enterprise software & IT agency">

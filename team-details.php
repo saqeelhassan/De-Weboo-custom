@@ -9,12 +9,13 @@ require_once __DIR__ . '/includes/seo.php';
 $member = dw_team_member($_GET['member'] ?? null);
 
 if ($member === null) {
-    header('Location: team.php', true, 302);
+    header('Location: /team', true, 302);
     exit;
 }
 
 dw_load_page_seo(basename(__FILE__, '.php'));
 $page_title = $member['name'] . ' | ' . $member['role'] . ' | De-Weboo';
+$page_canonical = rtrim(dw_site_url(), '/') . dw_team_member_url($member['slug']);
 $dw_org = dw_org_config();
 
 require_once __DIR__ . '/includes/header.php';
@@ -26,10 +27,10 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li><a href="team.php" class="p3-clr">Our team</a></li>
+                    <li><a href="/team" class="p3-clr">Our team</a></li>
                     <li class="p3-clr">/</li>
                     <li class="white"><?php echo e($member['name']); ?></li>
                 </ul>
@@ -37,7 +38,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -47,7 +48,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row g-4 align-items-xxl-center space-bottom">
                 <div class="col-md-6">
                     <div class="team-details-thumb rounded-3 w-100">
-                        <img loading="lazy" src="<?php echo e($member['detail_image']); ?>" alt="<?php echo e($member['name']); ?>, <?php echo e($member['role']); ?>" class="rounded-3 w-100">
+                        <img loading="lazy" src="<?php echo e('/' . ltrim($member['detail_image'], '/')); ?>" alt="<?php echo e($member['name']); ?>, <?php echo e($member['role']); ?>" class="rounded-3 w-100">
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -72,7 +73,11 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </li>
                                 <li>
                                     <span class="title">Email:</span>
-                                    <span class="text"><a href="mailto:<?php echo e($dw_org['email']); ?>" class="p1-clr"><?php echo e($dw_org['email']); ?></a></span>
+                                    <span class="text">
+                                        <?php foreach ($dw_org['inboundEmails'] as $em) : ?>
+                                        <a href="mailto:<?php echo e($em); ?>" class="p1-clr d-block"><?php echo e($em); ?></a>
+                                        <?php endforeach; ?>
+                                    </span>
                                 </li>
                                 <li>
                                     <span class="title">Qualification:</span>
@@ -137,9 +142,11 @@ require_once __DIR__ . '/includes/navbar.php';
                                         fill="white" />
                                 </svg>
                             </div>
-                            <a href="mailto:<?php echo e($dw_org['email']); ?>" class="fs-seven fw_600 black">
-                                <?php echo e($dw_org['email']); ?>
+                            <?php foreach ($dw_org['inboundEmails'] as $em) : ?>
+                            <a href="mailto:<?php echo e($em); ?>" class="fs-seven fw_600 black d-block">
+                                <?php echo e($em); ?>
                             </a>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-5">
@@ -174,11 +181,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="section-title">
                     <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
                         digital delivery?</span>
-                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Commercial speed. Healthcare security. SLED-ready capabilities.
+                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        Commercial speed. Healthcare security. Enterprise-ready capabilities.
                     </h2>
                 </div>
-                <a href="contact.php"
+                <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
                     Get In Touch
                 </a>

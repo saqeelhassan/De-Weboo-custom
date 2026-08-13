@@ -10,13 +10,13 @@ function localize_footer_html(string $html): string
 
     $html = preg_replace(
         '/<form action="#"\s+class="form-style1 form-style2/m',
-        '<form method="post" action="<?php echo e($_SERVER[\'PHP_SELF\'] ?? \'\'); ?>" class="form-style1 form-style2',
+        '<form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 form-style2',
         $html
     );
 
     $html = str_replace(
         '<form action="#" class="form-style1 d-flex align-items-center justify-content-between">',
-        '<form method="post" action="<?php echo e($_SERVER[\'PHP_SELF\'] ?? \'\'); ?>" class="form-style1 d-flex align-items-center justify-content-between">',
+        '<form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 d-flex align-items-center justify-content-between">',
         $html
     );
 

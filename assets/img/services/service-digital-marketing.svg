@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8f0;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#f0f4ff;stop-opacity:1"/>
+    </linearGradient>
+    <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#5135ff"/>
+      <stop offset="100%" style="stop-color:#3a1fd6"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" style="stop-color:#5135ff"/>
+      <stop offset="100%" style="stop-color:#a78bff"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="softShadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="3" stdDeviation="5" flood-color="#5135ff" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bgGrad)" rx="16"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.06" stroke="#5135ff" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="160" y1="0" x2="160" y2="500"/>
+    <line x1="320" y1="0" x2="320" y2="500"/>
+    <line x1="480" y1="0" x2="480" y2="500"/>
+    <line x1="640" y1="0" x2="640" y2="500"/>
+  </g>
+
+  <!-- ===== CENTER GROWTH CHART ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="220" y="80" width="360" height="270" rx="16" fill="white"/>
+    <!-- Chart title -->
+    <text x="400" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#1a1a2e">Campaign Performance</text>
+    <!-- Chart area -->
+    <line x1="250" y1="310" x2="560" y2="310" stroke="#eee" stroke-width="1.5"/>
+    <line x1="250" y1="270" x2="560" y2="270" stroke="#eee" stroke-width="1"/>
+    <line x1="250" y1="230" x2="560" y2="230" stroke="#eee" stroke-width="1"/>
+    <line x1="250" y1="190" x2="560" y2="190" stroke="#eee" stroke-width="1"/>
+    <line x1="250" y1="150" x2="560" y2="150" stroke="#eee" stroke-width="1"/>
+    <!-- Bars -->
+    <rect x="265" y="245" width="34" height="65" rx="5" fill="#c7bcff" opacity="0.9"/>
+    <rect x="313" y="225" width="34" height="85" rx="5" fill="#a78bff" opacity="0.9"/>
+    <rect x="361" y="195" width="34" height="115" rx="5" fill="#7c68ff" opacity="0.9"/>
+    <rect x="409" y="170" width="34" height="140" rx="5" fill="#5135ff"/>
+    <rect x="457" y="145" width="34" height="165" rx="5" fill="url(#barGrad)"/>
+    <rect x="505" y="125" width="34" height="185" rx="5" fill="#3a1fd6"/>
+    <!-- Trend line -->
+    <polyline points="282,238 330,215 378,183 426,158 474,136 522,116" stroke="#FF5455" stroke-width="2.5" fill="none" stroke-dasharray="5,3"/>
+    <circle cx="522" cy="116" r="5" fill="#FF5455"/>
+    <!-- Month labels -->
+    <text x="282" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">Feb</text>
+    <text x="330" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">Mar</text>
+    <text x="378" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">Apr</text>
+    <text x="426" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">May</text>
+    <text x="474" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">Jun</text>
+    <text x="522" y="325" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#888">Jul</text>
+    <!-- Legend -->
+    <rect x="295" y="338" width="10" height="10" rx="2" fill="#5135ff"/>
+    <text x="310" y="348" font-family="Arial,sans-serif" font-size="10" fill="#555">Leads</text>
+    <rect x="370" y="338" width="10" height="10" rx="2" fill="#FF5455"/>
+    <text x="385" y="348" font-family="Arial,sans-serif" font-size="10" fill="#555">Trend</text>
+    <rect x="445" y="338" width="10" height="10" rx="2" fill="#3a1fd6"/>
+    <text x="460" y="348" font-family="Arial,sans-serif" font-size="10" fill="#555">Conversions</text>
+  </g>
+
+  <!-- ===== CHANNEL CARDS (left) ===== -->
+  <!-- Social Media -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="100" width="160" height="72" rx="12" fill="white"/>
+    <rect x="42" y="116" width="36" height="36" rx="10" fill="#4267B2"/>
+    <text x="60" y="139" text-anchor="middle" font-family="Arial,sans-serif" font-size="18" font-weight="900" fill="white">f</text>
+    <text x="88" y="130" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1a1a2e">Social Media</text>
+    <text x="88" y="146" font-family="Arial,sans-serif" font-size="10" fill="#888">+32% reach</text>
+    <text x="172" y="138" font-family="Arial,sans-serif" font-size="12" fill="#5135ff">↑</text>
+  </g>
+  <!-- Email Marketing -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="186" width="160" height="72" rx="12" fill="white"/>
+    <rect x="42" y="202" width="36" height="36" rx="10" fill="#FF5455"/>
+    <!-- envelope icon -->
+    <rect x="46" y="207" width="28" height="22" rx="3" fill="none" stroke="white" stroke-width="2"/>
+    <polyline points="46,209 60,220 74,209" stroke="white" stroke-width="1.5" fill="none"/>
+    <text x="88" y="216" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1a1a2e">Email Marketing</text>
+    <text x="88" y="232" font-family="Arial,sans-serif" font-size="10" fill="#888">28% open rate</text>
+    <text x="172" y="224" font-family="Arial,sans-serif" font-size="12" fill="#5135ff">↑</text>
+  </g>
+  <!-- PPC Ads -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="272" width="160" height="72" rx="12" fill="white"/>
+    <rect x="42" y="288" width="36" height="36" rx="10" fill="#4285F4"/>
+    <text x="60" y="312" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="900" fill="white">G</text>
+    <text x="88" y="302" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1a1a2e">PPC / Google Ads</text>
+    <text x="88" y="318" font-family="Arial,sans-serif" font-size="10" fill="#888">3.2x ROAS</text>
+    <text x="172" y="310" font-family="Arial,sans-serif" font-size="12" fill="#5135ff">↑</text>
+  </g>
+  <!-- Content -->
+  <g filter="url(#softShadow)">
+    <rect x="30" y="358" width="160" height="72" rx="12" fill="white"/>
+    <rect x="42" y="374" width="36" height="36" rx="10" fill="#00bcd4"/>
+    <!-- doc icon -->
+    <rect x="48" y="379" width="22" height="28" rx="2" fill="none" stroke="white" stroke-width="1.8"/>
+    <line x1="52" y1="387" x2="66" y2="387" stroke="white" stroke-width="1.5"/>
+    <line x1="52" y1="393" x2="66" y2="393" stroke="white" stroke-width="1.5"/>
+    <line x1="52" y1="399" x2="60" y2="399" stroke="white" stroke-width="1.5"/>
+    <text x="88" y="388" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#1a1a2e">Content Strategy</text>
+    <text x="88" y="404" font-family="Arial,sans-serif" font-size="10" fill="#888">+180% traffic</text>
+    <text x="172" y="396" font-family="Arial,sans-serif" font-size="12" fill="#5135ff">↑</text>
+  </g>
+
+  <!-- ===== KPI CARDS (right) ===== -->
+  <g filter="url(#softShadow)">
+    <rect x="610" y="100" width="158" height="80" rx="12" fill="white"/>
+    <text x="689" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#5135ff">4.8×</text>
+    <text x="689" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#666">Avg. Return on Ad Spend</text>
+    <text x="689" y="165" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#5135ff">↑ 120% vs last quarter</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="610" y="198" width="158" height="80" rx="12" fill="white"/>
+    <text x="689" y="226" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#FF5455">92%</text>
+    <text x="689" y="246" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#666">Lead Qualify Rate</text>
+    <text x="689" y="263" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#FF5455">↑ Top industry score</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="610" y="296" width="158" height="80" rx="12" fill="white"/>
+    <text x="689" y="324" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" font-weight="800" fill="#00bcd4">50+</text>
+    <text x="689" y="344" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#666">Campaigns Delivered</text>
+    <text x="689" y="361" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#00bcd4">B2B · B2C · Healthcare</text>
+  </g>
+  <g filter="url(#softShadow)">
+    <rect x="610" y="394" width="158" height="70" rx="12" fill="#5135ff"/>
+    <text x="689" y="422" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white">Multi-Channel Strategy</text>
+    <text x="689" y="442" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">Data-Driven Campaigns</text>
+  </g>
+
+  <!-- Bottom label -->
+  <rect x="60" y="455" width="680" height="30" rx="8" fill="white" opacity="0.6"/>
+  <text x="400" y="475" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#3a1fd6">Digital Marketing · Lead Generation · Campaign Strategy · Performance Optimization</text>
+</svg>

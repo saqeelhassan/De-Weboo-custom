@@ -7,8 +7,8 @@ require_once __DIR__ . '/includes/blog-posts.php';
 require_once __DIR__ . '/includes/seo.php';
 
 dw_load_page_seo('blog');
-$page_title = 'Blog | Software, Healthcare IT & SLED Insights | De-Weboo';
-$page_description = 'Expert articles on web development, AI automation, data engineering, SLED procurement, cloud, SEO, AEO, GEO, and HIPAA medical systems from De-Weboo.';
+$page_title = 'Blog | Software & Healthcare IT Insights | De-Weboo';
+$page_description = 'Expert articles on web development, AI automation, data engineering, cloud, SEO, AEO, GEO, and HIPAA medical systems from De-Weboo.';
 
 $posts = dw_blog_posts_sorted();
 $byService = dw_blog_posts_by_service();
@@ -23,7 +23,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">Our blog</li>
@@ -31,7 +31,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <h1 class="white visible-from-right">Insights &amp; Resources</h1>
             </div>
         </div>
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="blog-section fix section-padding">
@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row justify-content-center mb-lg-5 mb-4">
                 <div class="col-lg-8 text-center">
                     <p class="pra fs-six mb-0">
-                        SEO, AEO, and GEO-friendly guides on enterprise software, SLED procurement, healthcare IT, and growth infrastructure—written by the De-Weboo engineering team in Hyderabad, Pakistan for worldwide B2B, B2C, and B2A buyers.
+                        SEO, AEO, and GEO-friendly guides on enterprise software, healthcare IT, and growth infrastructure—written by the De-Weboo engineering team for worldwide B2B, B2C, and B2A buyers.
                     </p>
                 </div>
             </div>

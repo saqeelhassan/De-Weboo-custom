@@ -62,7 +62,7 @@ Disallow: /build-extract-nav.php
 Disallow: /build-navbar-final.php
 
 # FAQs & legal pages
-Allow: /faqs.php
-Allow: /privacy-policy.php
+Allow: /faqs
+Allow: /privacy-policy
 
 Sitemap: https://deweboo.com/sitemap.xml

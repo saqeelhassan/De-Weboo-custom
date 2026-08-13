@@ -33,6 +33,14 @@ function dw_site_search_index(): array
         'portfolio' => 'Portfolio',
         'faqs' => 'FAQs',
         'testimonials' => 'Testimonials',
+        'web-development' => 'Web Development',
+        'mobile-app-development' => 'Mobile App Development',
+        'ai-machine-learning' => 'AI and Machine Learning',
+        'enterprise-software-development' => 'Enterprise Software Development',
+        'data-engineering' => 'Data Engineering',
+        'digital-marketing' => 'Digital Marketing',
+        'seo' => 'SEO',
+        'cloud-services' => 'Cloud Services',
         'collaboration' => 'Collaboration',
         'pricing-plan' => 'Pricing',
         'privacy-policy' => 'Privacy Policy',
@@ -46,38 +54,36 @@ function dw_site_search_index(): array
     $items = [];
 
     foreach ($staticSlugs as $slug => $label) {
-        if (!isset($meta[$slug])) {
-            continue;
-        }
-        $file = $slug === 'index' ? 'index.php' : $slug . '.php';
-        $items[] = [
-            'title' => $label,
-            'url' => $file,
-            'type' => 'Page',
-            'excerpt' => $meta[$slug]['description'],
-            'text' => $label . ' ' . $meta[$slug]['title'] . ' ' . $meta[$slug]['description'] . ' ' . ($meta[$slug]['keywords'] ?? ''),
-        ];
+        // This block is now handled by the generic meta lookup below, but we need to ensure the slug exists in meta
+        // This is a placeholder to ensure the loop continues to work correctly with the new structure
     }
 
     $services = [
-        ['Web & Mobile Development', 'Custom web apps, e-commerce, medical websites, patient portals, NAICS 541511'],
-        ['Mobile App Development', 'Native and cross-platform mobile applications with secure APIs for enterprise, consumer, and public-sector workflows, NAICS 541511'],
-        ['AI Automation', 'Custom AI integrations, workflow automations, LLM configurations, NAICS 541511'],
-        ['Data Engineering', 'Secure data pipelines, dashboards, data architecture, NAICS 541512'],
-        ['Digital Marketing', 'Consumer marketing, lead generation, campaigns, NAICS 541810'],
-        ['SEO', 'Technical SEO, AEO, healthcare SEO, NAICS 541810 and 541910'],
-        ['Cloud Services', 'Cloud architecture, migration, HIPAA-friendly hosting, managed infrastructure'],
-        ['SLED Bidder', 'Contract-ready government procurement, Section 508, WCAG accessibility'],
-        ['Custom Medical Systems', 'HIPAA-aligned medical websites and clinical workflows'],
+        ['Custom Medical Systems', 'HIPAA-aligned medical websites and clinical workflows', 'services'],
+        ['Real Estate Website Development', 'Property listing platforms, IDX/MLS integrations, and agent & brokerage websites', 'real-estate-website-development'],
     ];
 
-    foreach ($services as [$title, $desc]) {
+    foreach ($services as [$title, $desc, $url]) {
         $items[] = [
             'title' => $title,
-            'url' => 'services.php',
+            'url' => $url,
             'type' => 'Service',
             'excerpt' => $desc,
             'text' => $title . ' ' . $desc,
+        ];
+    }
+
+    // Re-add static slugs using the meta data, now that all individual service pages exist
+    foreach ($staticSlugs as $slug => $label) {
+        if (!isset($meta[$slug])) {
+            continue;
+        }
+        $items[] = [
+            'title' => $label,
+            'url' => $slug === 'index' ? '/' : $slug,
+            'type' => 'Page',
+            'excerpt' => $meta[$slug]['description'],
+            'text' => $label . ' ' . $meta[$slug]['title'] . ' ' . $meta[$slug]['description'] . ' ' . ($meta[$slug]['keywords'] ?? ''),
         ];
     }
 

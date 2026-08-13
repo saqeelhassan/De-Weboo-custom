@@ -53,7 +53,7 @@ $dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
                             <option value="Web Development">Web Development</option>
                             <option value="AI Automation">AI Automation</option>
                             <option value="Custom Medical Systems">Custom Medical Systems</option>
-                            <option value="SLED Bidder">SLED Bidder</option>
+                            <option value="Real Estate Website Development">Real Estate Website Development</option>
                             <option value="Data Engineering">Data Engineering</option>
                             <option value="Digital Marketing">Digital Marketing</option>
                             <option value="SEO">SEO</option>
@@ -75,11 +75,11 @@ $dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
                     <div class="col-12 contact-from-grp">
                         <label class="form-label fs-eight fw-semibold black" for="consultation_message">Project goals &amp; requirements *</label>
                         <textarea name="consultation_message" id="consultation_message" rows="4" required
-                            placeholder="Share your goals—B2B platforms, B2C e-commerce, B2A/SLED procurement, healthcare IT, AI automation, or other requirements."></textarea>
+                            placeholder="Share your goals—B2B platforms, B2C e-commerce, B2A projects, healthcare IT, AI automation, or other requirements."></textarea>
                     </div>
                     <div class="col-12">
                         <p class="pra fs-eight mb-3">
-                            Enterprise IT solutions with HIPAA-aligned security—for commercial brands, SLED buyers, and healthcare organizations. We protect your data and never share information without consent.
+                            Enterprise IT solutions with HIPAA-aligned security—for commercial brands and healthcare organizations. We protect your data and never share information without consent.
                         </p>
                         <button type="submit" id="consultation-submit"
                             class="border-0 w-100 common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">

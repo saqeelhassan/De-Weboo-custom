@@ -17,7 +17,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
                     <li>
-                        <a href="index.php" class="p3-clr">Home</a>
+                        <a href="/" class="p3-clr">Home</a>
                     </li>
                     <li class="p3-clr">/</li>
                     <li class="white">About Us</li>
@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
         <!-- bread Element -->
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 
@@ -53,7 +53,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span>%</span>
                         </div>
                         <p class="pra fs-seven">
-                            Web &amp; Mobile Development under NAICS 541511—custom web apps, mobile apps, e-commerce, and high-security medical websites for B2B, B2C, and B2A.
+                            Web &amp; Mobile Development—custom web apps, mobile apps, e-commerce, and high-security medical websites for B2B, B2C, and B2A.
                         </p>
                     </div>
                 </div>
@@ -67,7 +67,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span>+</span>
                         </div>
                         <p class="pra fs-seven">
-                            AI Automation under NAICS 541511 (custom AI integrations, workflow automations, LLM configurations) and Data Engineering under NAICS 541512 (secure data pipelines and administrative dashboards).
+                            AI Automation (custom AI integrations, workflow automations, LLM configurations) and Data Engineering (secure data pipelines and administrative dashboards).
                         </p>
                     </div>
                 </div>
@@ -81,7 +81,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span>+</span>
                         </div>
                         <p class="pra fs-seven">
-                            Growth &amp; Infrastructure lifecycle support—Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services for secure architecture, migration, and HIPAA-friendly hosting.
+                            Growth &amp; Infrastructure lifecycle support—Digital Marketing, SEO, and Cloud Services for secure architecture, migration, and HIPAA-friendly hosting.
                         </p>
                     </div>
                 </div>
@@ -104,13 +104,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <h2 class="mb-xxl-4 mb-3 wow fadeInUp black fw-bold visible-slowly-right about-agency-heading"
                                     data-wow-delay=".3s">
                                     Enterprise software firm<br>
-                                    SLED-ready delivery
+                                    Contract-ready delivery
                                 </h2>
                                 <p class="pra fs-seven">
                                     Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation, and Data Engineering. Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
                                 </p>
                                 <p class="pra fs-seven mt-3">
-                                    De-Weboo operates as a specialized division of <a href="https://caddsight.com/" target="_blank" rel="noopener noreferrer" class="p1-clr fw-semibold">CaddSight</a>, our parent company—delivering government-ready CAD drafting, BIM, and SLED construction documentation alongside our digital engineering services.
+                                    De-Weboo operates as a specialized division of <a href="https://caddsight.com/" target="_blank" rel="noopener noreferrer" class="p1-clr fw-semibold">CaddSight</a>, our parent company—delivering CAD drafting, BIM, and construction documentation alongside our digital engineering services.
                                 </p>
                             </div>
                             <ul
@@ -118,31 +118,31 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Web &amp; Mobile Development: custom web apps, mobile apps, e-commerce &amp; medical patient portals (NAICS 541511)
+                                        Web &amp; Mobile Development: custom web apps, mobile apps, e-commerce &amp; medical patient portals
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        AI Automation: custom AI integrations, workflow automations &amp; LLM configs (NAICS 541511)
+                                        AI Automation: custom AI integrations, workflow automations &amp; LLM configs
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Data Engineering: secure data pipelines &amp; administrative dashboards (NAICS 541512)
+                                        Data Engineering: secure data pipelines &amp; administrative dashboards
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        Digital Marketing: consumer marketing &amp; lead generation (NAICS 541810 &amp; 541910)
+                                        Digital Marketing: consumer marketing &amp; lead generation
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        SEO: technical SEO &amp; medical/healthcare SEO (NAICS 541810 &amp; 541910)
+                                        SEO: technical SEO &amp; medical/healthcare SEO
                                     </span>
                                 </li>
                                 <li class="d-flex align-items-center gap-2">
@@ -154,16 +154,25 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <li class="d-flex align-items-center gap-2">
                                     <span class="icon d-center"><i class="fa-solid fa-check p1-clr fs-eight"></i></span>
                                     <span class="pra fs-seven">
-                                        SLED bidder · Section 508 / WCAG accessibility
+                                        Medical Software: PACS, RIS, DICOM &amp; teleradiology systems · Section 508 / WCAG
                                     </span>
                                 </li>
                             </ul>
                             <div class="custom-circle-progress-bar">
                                 <div class="inner d-flex align-items-center gap-xxl-4 gap-sm-3 gap-2">
                                     <div class="card-custom">
-                                        <div class="circle percentage1">
-                                            <div class="bar"></div>
-                                            <div class="box"><span></span></div>
+                                        <div class="dw-cp" aria-label="98 percent client satisfaction">
+                                            <svg class="dw-cp-svg" viewBox="0 0 36 36">
+                                                <defs>
+                                                    <linearGradient id="dw-g1" x1="0" y1="0" x2="1" y2="1">
+                                                        <stop offset="0%" stop-color="#5135FF"/>
+                                                        <stop offset="100%" stop-color="#FF5455"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <circle class="dw-cp-track" cx="18" cy="18" r="15.9155"/>
+                                                <circle class="dw-cp-arc" cx="18" cy="18" r="15.9155" stroke="url(#dw-g1)" stroke-dasharray="98 100"/>
+                                            </svg>
+                                            <span class="dw-cp-pct">98%</span>
                                         </div>
                                     </div>
                                     <span class="fs-six fw_500 pra">
@@ -173,9 +182,18 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </div>
                                 <div class="inner d-flex align-items-center gap-xxl-4 gap-sm-3 gap-2">
                                     <div class="card-custom">
-                                        <div class="circle percentage2">
-                                            <div class="bar"></div>
-                                            <div class="box"><span></span></div>
+                                        <div class="dw-cp" aria-label="95 percent on time project delivery">
+                                            <svg class="dw-cp-svg" viewBox="0 0 36 36">
+                                                <defs>
+                                                    <linearGradient id="dw-g2" x1="0" y1="0" x2="1" y2="1">
+                                                        <stop offset="0%" stop-color="#5135FF"/>
+                                                        <stop offset="100%" stop-color="#FF5455"/>
+                                                    </linearGradient>
+                                                </defs>
+                                                <circle class="dw-cp-track" cx="18" cy="18" r="15.9155"/>
+                                                <circle class="dw-cp-arc" cx="18" cy="18" r="15.9155" stroke="url(#dw-g2)" stroke-dasharray="95 100"/>
+                                            </svg>
+                                            <span class="dw-cp-pct">95%</span>
                                         </div>
                                     </div>
                                     <span class="fs-six fw_500 pra">
@@ -188,10 +206,10 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                     <div class="col-xl-6 col-lg-5">
                         <div class="about-thumb position-relative reveal-left w-100">
-                            <img loading="lazy" src="assets/img/about/about2-thumb.png" alt="SLED procurement team and CaddSight government-ready CAD documentation" class="w-100">
+                            <img loading="lazy" src="/assets/img/about/about2-thumb.png" alt="De-Weboo and CaddSight engineering team reviewing CAD documentation" class="w-100">
                             <!-- Ele -->
-                            <img loading="lazy" src="assets/img/element/dot-grp1.png" alt="Illustration" class="about-ele">
-                            <img loading="lazy" src="assets/img/about/about2-ele.png" alt="Illustration" class="about-ele2">
+                            <img loading="lazy" src="/assets/img/element/dot-grp1.png" alt="Illustration" class="about-ele">
+                            <img loading="lazy" src="/assets/img/about/about2-ele.png" alt="Illustration" class="about-ele2">
                         </div>
                     </div>
                 </div>
@@ -209,12 +227,12 @@ require_once __DIR__ . '/includes/navbar.php';
                 </a>
                 <h2 class="text-center white">
                     Enterprise-grade development.
-                    Contract-ready SLED delivery.
+                    Contract-ready delivery.
                 </h2>
             </div>
         </div>
         <!-- Ele -->
-        <img loading="lazy" src="assets/img/element/watch-ele.png" alt="Illustration" class="position-absolute end-0 bottom-0 watch-custom-ele">
+        <img loading="lazy" src="/assets/img/element/watch-ele.png" alt="Illustration" class="position-absolute end-0 bottom-0 watch-custom-ele">
     </section>
     <!-- Watch Full Section end -->
 
@@ -236,7 +254,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer, CEO &amp; Founder" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
@@ -260,7 +278,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
-                            <span class="fs-seven fw-medium d-block">Lead Developer, CEO &amp; Founder</span>
+                            <span class="fs-seven fw-medium d-block">CEO &amp; Founder</span>
                             <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
@@ -268,7 +286,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
@@ -300,7 +318,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, Project Manager" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, HR" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2">
@@ -324,7 +342,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('hajra')); ?>" class="black">Syeda Hajra Batool</a></h4>
-                            <span class="fs-seven fw-medium d-block">Project Manager</span>
+                            <span class="fs-seven fw-medium d-block">HR</span>
                             <?php $team_view_href = dw_team_member_url('hajra'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>
@@ -343,7 +361,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span>+</span>
                     </div>
                     <p class="fs-six pra">
-                        SLED & healthcare
+                        Enterprise & healthcare
                         projects delivered
                     </p>
                 </div>
@@ -384,7 +402,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         Our working steps
                     </h2>
                 </div>
-                <a href="blog.php"
+                <a href="/blog"
                     class="common-btn heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden border rounded100">
                     Learn More
                 </a>
@@ -394,13 +412,13 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author1.png" alt="Discussion — discovery session with client stakeholders" class="rounded-circle">
+                                <img loading="lazy" src="/assets/img/team/work-author1.png" alt="Discussion — discovery session with client stakeholders" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 01
                             </span>
                         </div>
-                        <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Discussion</a></h4>
+                        <h4 class="mb-xl-3 mb-2"><a href="/team-details" class="black">Discussion</a></h4>
                         <p class="fs-seven pra">
                             We start with a discovery session to define goals, audience, and project scope.
                         </p>
@@ -410,13 +428,13 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author2.png" alt="Ideas and concept — wireframes and UX planning" class="rounded-circle">
+                                <img loading="lazy" src="/assets/img/team/work-author2.png" alt="Ideas and concept — wireframes and UX planning" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 02
                             </span>
                         </div>
-                        <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Ideas & concept</a></h4>
+                        <h4 class="mb-xl-3 mb-2"><a href="/team-details" class="black">Ideas & concept</a></h4>
                         <p class="fs-seven pra">
                             We start with a discovery session to define goals, audience, and project scope.
                         </p>
@@ -426,13 +444,13 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author3.png" alt="Testing and trying — QA across devices" class="rounded-circle">
+                                <img loading="lazy" src="/assets/img/team/work-author3.png" alt="Testing and trying — QA across devices" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 03
                             </span>
                         </div>
-                        <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Testing & trying</a></h4>
+                        <h4 class="mb-xl-3 mb-2"><a href="/team-details" class="black">Testing & trying</a></h4>
                         <p class="fs-seven pra">
                             We start with a discovery session to define goals, audience, and project scope.
                         </p>
@@ -442,13 +460,13 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="work-learn-item text-center">
                         <div class="thumb-author d-center mb-xl-4 mb-3">
                             <div class="thumb rounded-circle">
-                                <img loading="lazy" src="assets/img/team/work-author4.png" alt="Execute and install — deployment and go-live" class="rounded-circle">
+                                <img loading="lazy" src="/assets/img/team/work-author4.png" alt="Execute and install — deployment and go-live" class="rounded-circle">
                             </div>
                             <span class="serial d-center rounded-circle">
                                 04
                             </span>
                         </div>
-                        <h4 class="mb-xl-3 mb-2"><a href="team-details.php" class="black">Execute & install</a></h4>
+                        <h4 class="mb-xl-3 mb-2"><a href="/team-details" class="black">Execute & install</a></h4>
                         <p class="fs-seven pra">
                             We start with a discovery session to define goals, audience, and project scope.
                         </p>
@@ -504,11 +522,11 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="section-title">
                     <span class="sub-badge white fs-seven text-uppercase d-block mb-2">Ready for enterprise-grade
                         digital delivery?</span>
-                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s">
-                        Commercial speed. Healthcare security. SLED-ready capabilities.
+                    <h2 class="wow fadeInUp white fw-bold visible-slowly-right" data-wow-delay=".3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                        Commercial speed. Healthcare security. Enterprise-ready capabilities.
                     </h2>
                 </div>
-                <a href="contact.php"
+                <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
                     Get In Touch
                 </a>

@@ -19,13 +19,13 @@ function dw_site_url(): string
 function dw_canonical_url(): string
 {
     $base = dw_site_url();
-    $script = basename($_SERVER['SCRIPT_NAME'] ?? 'index.php');
+    $slug = basename((string) ($_SERVER['SCRIPT_NAME'] ?? 'index.php'), '.php');
 
-    if ($script === 'index.php') {
+    if ($slug === 'index') {
         return $base . '/';
     }
 
-    return $base . '/' . $script;
+    return $base . '/' . $slug;
 }
 
 function dw_org_config(): array
@@ -44,9 +44,14 @@ function dw_org_config(): array
         /** Addresses that receive contact, consultation, portfolio, feedback, and teaming form submissions. */
         'inboundEmails' => [
             'Info@deweboo.com',
+            'lead@deweboo.com',
         ],
-        'telephone' => '+923367770349',
-        'telephoneDisplay' => '+92 (336) 7770349',
+        'telephone' => '+13058823730',
+        'telephoneDisplay' => '+1 305 882 3730',
+        'telephonePK' => '+923367770349',
+        'telephonePKDisplay' => '+92 336 7770349',
+        'whatsapp' => '+15512023922',
+        'whatsappDisplay' => '+1 551 202 3922',
         'address' => [
             'streetAddress' => 'Lucky Shanghai Trade Centre, Office 2016, 2nd Floor, Auto Bhan Road',
             'addressLocality' => 'Hyderabad',
@@ -58,7 +63,6 @@ function dw_org_config(): array
             'latitude' => 25.3924,
             'longitude' => 68.3737,
         ],
-        'naics' => ['541511', '541512', '541519', '541810', '541910'],
         'markets' => ['B2B', 'B2C', 'B2A'],
         'coreServices' => [
             'Web & Mobile Development',
@@ -67,7 +71,6 @@ function dw_org_config(): array
             'Digital Marketing',
             'SEO',
             'Cloud Services',
-            'SLED Public Sector Procurement',
         ],
         'aiTerms' => [
             'AI Automation',
@@ -78,14 +81,7 @@ function dw_org_config(): array
             'Secure Data Administration Systems',
             'Custom AI Integrations',
         ],
-        'naicsCapabilities' => [
-            '541511' => 'Custom computer programming: web and mobile applications, e-commerce, medical websites, custom AI integrations, LLM configurations, and workflow automation scripting',
-            '541512' => 'Computer systems design: data engineering, data architecture, secure data pipeline engineering, and cloud infrastructure',
-            '541519' => 'Other computer related services: data management, administrative dashboard pipelines, and managed IT lifecycle support',
-            '541810' => 'Advertising agencies: digital marketing, consumer lead generation, technical SEO, and specialized medical and healthcare SEO',
-            '541910' => 'Marketing research and public opinion polling: SEO analytics, campaign research, and AEO content strategy',
-        ],
-        'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services, SLED bidder, NAICS 541511, NAICS 541512, NAICS 541810, NAICS 541910',
+        'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services',
         'facebook' => 'https://www.facebook.com/deweboo',
         'sameAs' => [
             'https://caddsight.com/',
@@ -93,7 +89,7 @@ function dw_org_config(): array
         ],
         'primaryContactRep' => [
             'name' => 'Syed Aqeel Hassan Gillani',
-            'title' => 'Lead Developer, CEO & Founder',
+            'title' => 'CEO & Founder',
             'image' => 'assets/img/services/techgon-author.jpg',
         ],
     ];

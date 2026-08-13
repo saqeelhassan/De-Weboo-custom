@@ -21,8 +21,15 @@ function dw_support_pages(): array
     $org = dw_org_config();
     $tel = $org['telephone'];
     $telDisplay = $org['telephoneDisplay'];
+    $telPk = $org['telephonePK'];
+    $telPkDisplay = $org['telephonePKDisplay'];
+    $whatsappDisplay = $org['whatsappDisplay'];
     $email = $org['email'];
-    $whatsappUrl = 'https://wa.me/' . preg_replace('/\D+/', '', $tel);
+    $whatsappUrl = 'https://wa.me/' . preg_replace('/\D+/', '', $org['whatsapp']);
+    $emailsHtml = implode(' &middot; ', array_map(
+        fn(string $em) => '<a href="mailto:' . e($em) . '" class="p1-clr">' . e($em) . '</a>',
+        $org['inboundEmails']
+    ));
 
     return [
         'client-support' => [
@@ -42,7 +49,7 @@ function dw_support_pages(): array
                         'Deployment, staging, and environment access',
                         'CMS, dashboard, and integration troubleshooting',
                         'Security patching and backup verification',
-                        'SLED and healthcare compliance documentation requests',
+                        'Enterprise and healthcare compliance documentation requests',
                     ],
                 ],
                 [
@@ -51,11 +58,11 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => 'How to reach support',
-                    'body' => 'Email your project reference, environment URL, and a clear description of the issue. Include screenshots or logs when available so we can resolve faster.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a><br><strong>Email:</strong> <a href="mailto:' . e($email) . '" class="p1-clr">' . e($email) . '</a><br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($telDisplay) . '</a>',
+                    'body' => 'Email your project reference, environment URL, and a clear description of the issue. Include screenshots or logs when available so we can resolve faster.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a> &middot; <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
                 ],
             ],
             'cta_label' => 'Contact client support',
-            'cta_href' => 'contact.php',
+            'cta_href' => 'contact',
         ],
         'help-center' => [
             'title' => 'Help Center',
@@ -66,16 +73,16 @@ function dw_support_pages(): array
                     'heading' => 'Getting started',
                     'body' => 'New to De-Weboo? Review our services, portfolio, and FAQs to understand how we deliver custom software, AI automation, data engineering, and Growth & Infrastructure programs.',
                     'list' => [
-                        'Browse <a href="services.php" class="p1-clr">Services</a> for capability areas and NAICS alignment',
-                        'Read <a href="faqs.php" class="p1-clr">FAQs</a> for process, timelines, and procurement questions',
-                        'View <a href="portfolio.php" class="p1-clr">Portfolio</a> case studies by industry and delivery type',
+                        'Browse <a href="/services" class="p1-clr">Services</a> for capability areas',
+                        'Read <a href="/faqs" class="p1-clr">FAQs</a> for process, timelines, and procurement questions',
+                        'View <a href="/portfolio" class="p1-clr">Portfolio</a> case studies by industry and delivery type',
                     ],
                 ],
                 [
                     'heading' => 'Common topics',
                     'body' => 'Most visitors find answers in these areas before opening a ticket.',
                     'list' => [
-                        'Requesting a capability statement or SLED documentation',
+                        'Requesting a capability statement or compliance documentation',
                         'HIPAA-aligned hosting and medical system requirements',
                         'Multilingual websites and international SEO programs',
                         'Cloud migration, CI/CD, and managed hosting',
@@ -84,11 +91,11 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => 'Still need help?',
-                    'body' => 'If you cannot find what you need, contact our team with your organization name, project goals, and preferred timeline. We respond to qualified inquiries within one business day.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a><br><strong>Email:</strong> <a href="mailto:' . e($email) . '" class="p1-clr">' . e($email) . '</a><br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($telDisplay) . '</a>',
+                    'body' => 'If you cannot find what you need, contact our team with your organization name, project goals, and preferred timeline. We respond to qualified inquiries within one business day.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a> &middot; <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
                 ],
             ],
             'cta_label' => 'Contact De-Weboo',
-            'cta_href' => 'contact.php',
+            'cta_href' => 'contact',
         ],
         'system-status' => [
             'title' => 'System Status',
@@ -120,7 +127,7 @@ function dw_support_pages(): array
                 ],
             ],
             'cta_label' => 'Report an issue',
-            'cta_href' => 'client-support.php',
+            'cta_href' => 'client-support',
         ],
         'feedback' => [
             'title' => 'Feedback',
@@ -175,7 +182,7 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => '5. Confidentiality & data',
-                    'body' => 'Information submitted through contact forms is handled according to our <a href="privacy-policy.php" class="p1-clr">Privacy Policy</a>. Confidential client data shared under NDA or contract is protected per the applicable agreement.',
+                    'body' => 'Information submitted through contact forms is handled according to our <a href="/privacy-policy" class="p1-clr">Privacy Policy</a>. Confidential client data shared under NDA or contract is protected per the applicable agreement.',
                 ],
                 [
                     'heading' => '6. Limitation of liability',
@@ -187,7 +194,7 @@ function dw_support_pages(): array
                 ],
             ],
             'cta_label' => 'Questions about these terms',
-            'cta_href' => 'contact.php',
+            'cta_href' => 'contact',
         ],
     ];
 }
@@ -327,7 +334,7 @@ function dw_render_feedback_form(array $form, ?array $alert): void
                                 <?php echo e($alert['message']); ?>
                             </div>
 <?php endif; ?>
-                            <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? 'feedback.php'); ?>" class="row g-4" id="feedback-form" novalidate>
+                            <form method="post" action="<?php echo e(dw_self_path() ?: 'feedback'); ?>" class="row g-4" id="feedback-form" novalidate>
                                 <input type="hidden" name="feedback_form" value="1">
                                 <input type="text" name="website" value="" class="portfolio-discuss-honeypot" tabindex="-1" autocomplete="off" aria-hidden="true">
 
@@ -383,7 +390,7 @@ function dw_render_feedback_form(array $form, ?array $alert): void
                                         </label>
                                     </div>
                                     <p class="pra fs-eight mb-3">
-                                        We protect your data and never publish quotes without written approval. See our <a href="privacy-policy.php" class="p1-clr">Privacy Policy</a>.
+                                        We protect your data and never publish quotes without written approval. See our <a href="/privacy-policy" class="p1-clr">Privacy Policy</a>.
                                     </p>
                                     <button type="submit"
                                         class="border-0 common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
@@ -400,7 +407,7 @@ function dw_render_support_page(string $slug, ?array $feedbackForm = null, ?arra
 {
     $page = dw_support_page($slug);
     if ($page === null) {
-        header('Location: index.php', true, 302);
+        header('Location: /', true, 302);
         exit;
     }
 
@@ -409,14 +416,14 @@ function dw_render_support_page(string $slug, ?array $feedbackForm = null, ?arra
         <div class="container">
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
-                    <li><a href="index.php" class="p3-clr">Home</a></li>
+                    <li><a href="/" class="p3-clr">Home</a></li>
                     <li class="p3-clr">/</li>
                     <li class="white"><?php echo e($page['title']); ?></li>
                 </ul>
                 <h1 class="white visible-from-right"><?php echo e($page['title']); ?></h1>
             </div>
         </div>
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="blog-details-section fix section-padding">
@@ -447,7 +454,7 @@ function dw_render_support_page(string $slug, ?array $feedbackForm = null, ?arra
                         <?php dw_render_feedback_form($feedbackForm, $feedbackAlert); ?>
 <?php elseif (($page['show_cta'] ?? true) !== false) : ?>
                         <div class="mb-0">
-                            <a href="<?php echo e($page['cta_href'] ?? 'contact.php'); ?>"
+                            <a href="<?php echo e($page['cta_href'] ?? 'contact'); ?>"
                                 class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
                                 <?php echo e($page['cta_label'] ?? 'Contact De-Weboo'); ?>
                             </a>

@@ -23,14 +23,14 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="bread-content text-center">
                 <ul class="d-flex align-items-center gap-3 justify-content-center">
-                    <li><a href="index.php" class="p3-clr">Home</a></li>
+                    <li><a href="/" class="p3-clr">Home</a></li>
                     <li class="p3-clr">/</li>
                     <li class="white">Search</li>
                 </ul>
                 <h1 class="white visible-from-right">Search</h1>
             </div>
         </div>
-        <img loading="lazy" src="assets/img/element/bread-ele.png" alt="" class="bread-ele">
+        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="blog-details-section fix section-padding">
@@ -38,11 +38,11 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row justify-content-center">
                 <div class="col-lg-9">
                     <div class="blog-details-left">
-                        <form method="get" action="search.php" class="site-search-form mb-4 pb-2" role="search">
+                        <form method="get" action="/search" class="site-search-form mb-4 pb-2" role="search">
                             <label class="form-label black fw-semibold mb-2" for="site-search-input">Search the site</label>
                             <div class="d-flex flex-column flex-sm-row gap-3">
                                 <input type="search" name="q" id="site-search-input" class="form-control site-search-input flex-grow-1"
-                                    placeholder="Services, blog, portfolio, team, SLED, HIPAA…"
+                                    placeholder="Services, blog, portfolio, team, HIPAA…"
                                     value="<?php echo e($query); ?>" autocomplete="off" required>
                                 <button type="submit"
                                     class="border-0 common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg flex-shrink-0">
@@ -58,7 +58,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </p>
 <?php elseif ($results === []) : ?>
                         <p class="pra fs-seven mb-3">No results found for <strong class="black"><?php echo e($query); ?></strong>.</p>
-                        <p class="pra fs-seven mb-0">Try different keywords such as <em>web development</em>, <em>SLED</em>, <em>HIPAA</em>, <em>SEO</em>, or browse our <a href="services.php" class="p1-clr">services</a> and <a href="blog.php" class="p1-clr">blog</a>.</p>
+                        <p class="pra fs-seven mb-0">Try different keywords such as <em>web development</em>, <em>HIPAA</em>, <em>SEO</em>, or browse our <a href="/services" class="p1-clr">services</a> and <a href="/blog" class="p1-clr">blog</a>.</p>
 <?php else : ?>
                         <p class="pra fs-seven mb-4"><?php echo count($results); ?> result<?php echo count($results) === 1 ? '' : 's'; ?> for <strong class="black"><?php echo e($query); ?></strong></p>
                         <ul class="site-search-results list-unstyled d-grid gap-3 mb-0">

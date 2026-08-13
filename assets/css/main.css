@@ -7537,6 +7537,11 @@ input.main-search-input::placeholder {
 .testimonial-wrapper05 .swiper-slide-active .testimonial-items05 h6 {
   color: var(--white) !important;
 }
+
+.navbar-logo {
+  max-height: 50px; /* Adjust this value as needed */
+  width: auto; /* Maintain aspect ratio */
+}
 .testimonial-wrapper05 .swiper-slide-active .testimonial-items05::before {
   width: 100%;
 }/*# sourceMappingURL=main.css.map */

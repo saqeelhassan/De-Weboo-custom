@@ -8,7 +8,7 @@ $dw_contact = dw_org_config();
 
 $show_header_top = $show_header_top ?? true;
 $header_nav_class = $header_nav_class ?? 'header-1 w-100';
-$header_logo_src = $header_logo_src ?? 'assets/img/logo/logo.png';
+$header_logo_src = $header_logo_src ?? '/assets/img/logo/logo.png';
 $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
 ?>
 <!-- Preloader Start -->
@@ -99,8 +99,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 <div class="offcanvas__content">
                     <div class="offcanvas__top mb-4 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
-                            <a href="index.php">
-                                <img src="assets/img/logo/logo.png" loading="lazy" alt="De-Weboo logo">
+                            <a href="/">
+                                <img src="/assets/img/logo/logo.png" loading="lazy" alt="De-Weboo logo" class="navbar-logo">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -127,8 +127,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:Info@deweboo.com"><span
-                                            class="mailto:Info@deweboo.com">Info@deweboo.com</span></a>
+                                    <a href="mailto:Info@deweboo.com"><span>Info@deweboo.com</span></a><br>
+                                    <a href="mailto:lead@deweboo.com"><span>lead@deweboo.com</span></a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -136,7 +136,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/<?php echo e(preg_replace('/\D+/', '', $dw_contact['telephone'])); ?>">WhatsApp us · <?php echo e($dw_contact['telephoneDisplay']); ?></a>
+                                    <a target="_blank" rel="noopener noreferrer" href="https://wa.me/<?php echo e(preg_replace('/\D+/', '', $dw_contact['whatsapp'])); ?>">WhatsApp us · <?php echo e($dw_contact['whatsappDisplay']); ?></a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -144,12 +144,13 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>"><?php echo e($dw_contact['telephoneDisplay']); ?></a>
+                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>"><?php echo e($dw_contact['telephoneDisplay']); ?></a><br>
+                                    <a href="tel:<?php echo e($dw_contact['telephonePK']); ?>"><?php echo e($dw_contact['telephonePKDisplay']); ?></a>
                                 </div>
                             </li>
                         </ul>
                         <div class="header-button mt-4">
-                            <a href="contact.php" class="theme-btn p2-bg text-center">
+                            <a href="/contact" class="theme-btn p2-bg text-center">
                                 <span>
                                     Get A Quote
                                     <span class="ani-arrow">
@@ -178,8 +179,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 <div class="header-main">
                     <div class="header-left">
                         <div class="logo">
-                            <a href="index.php" class="header-logo">
-                                <img src="<?php echo e($header_logo_src); ?>" alt="De-Weboo logo">
+                            <a href="/" class="header-logo">
+                                <img src="<?php echo e($header_logo_src); ?>" alt="De-Weboo logo" class="navbar-logo">
                             </a>
                         </div>
                     </div>
@@ -189,24 +190,42 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                 <nav id="mobile-menu">
                                     <ul>
                                         <li class="active">
-                                            <a href="index.php">Home</a>
+                                            <a href="/">Home</a>
                                         </li>
                                         <li>
-                                            <a href="about.php">About Us</a>
+                                            <a href="/about">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="collaboration.php">Collaboration</a>
+                                            <a href="/collaboration">Collaboration</a>
                                         </li>
                                         <li>
-                                            <a href="services.php">Services</a>
+                                            <a href="/services">Services</a>
+                                            <ul class="submenu">
+                                                <li class="has-dropdown">
+                                                    <a href="#">Software Developers</a>
+                                                    <ul class="submenu">
+                                                        <li><a href="/web-development">Web Development</a></li>
+                                                        <li><a href="/mobile-app-development">Mobile App Development</a></li>
+                                                        <li><a href="/ai-machine-learning">AI and Machine Learning</a></li>
+                                                        <li><a href="/enterprise-software-development">Enterprise Software Development</a></li>
+                                                        <li><a href="/real-estate-website-development">Real Estate Website Development</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="/ai-machine-learning">AI Automation</a></li>
+                                                <li><a href="/data-engineering">Data Engineering</a></li>
+                                                <li><a href="/digital-marketing">Digital Marketing</a></li>
+                                                <li><a href="/seo">SEO</a></li>
+                                                <li><a href="/cloud-services">Cloud Services</a></li>
+                                                <!-- Other service categories can be added here if needed -->
+                                            </ul>
                                         </li>
 
                                         <li>
-                                            <a href="portfolio.php">Portfolio</a>
+                                            <a href="/portfolio">Portfolio</a>
                                         </li>
 
                                         <li>
-                                            <a href="blog.php">Blog</a>
+                                            <a href="/blog">Blog</a>
                                         </li>
 
                                     </ul>
@@ -218,7 +237,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                         </a>
                         <div class="header__hamburger d-xl-none d-block my-auto">
                             <div class="sidebar__toggle">
-                                <img src="assets/img/icon/menu.png" alt="icon">
+                                <img src="/assets/img/icon/menu.png" alt="icon">
                             </div>
                         </div>
 
@@ -227,13 +246,13 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                         <a href="#0" class="search-trigger search-icon d-xl-block d-none fs-five">
                             <i class="fa-solid fa-magnifying-glass <?php echo e($nav_search_icon_color_inner); ?>"></i>
                         </a>
-                        <a href="contact.php"
+                        <a href="/contact"
                             class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
                             Get Started
                         </a>
                         <div class="header__hamburger my-auto d-xl-none d-block">
                             <div class="sidebar__toggle">
-                                <img src="assets/img/icon/menu.png" alt="icon">
+                                <img src="/assets/img/icon/menu.png" alt="icon">
                             </div>
                         </div>
                     </div>

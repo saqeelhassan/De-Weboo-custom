@@ -10,7 +10,10 @@ require_once __DIR__ . '/seo-config.php';
 $dw_contact = dw_org_config();
 $dw_tel = $dw_contact['telephone'];
 $dw_tel_display = $dw_contact['telephoneDisplay'];
-$dw_whatsapp_url = 'https://wa.me/' . preg_replace('/\D+/', '', $dw_tel);
+$dw_tel_pk = $dw_contact['telephonePK'];
+$dw_tel_pk_display = $dw_contact['telephonePKDisplay'];
+$dw_whatsapp_display = $dw_contact['whatsappDisplay'];
+$dw_whatsapp_url = 'https://wa.me/' . preg_replace('/\D+/', '', $dw_contact['whatsapp']);
 
 if (($footer_variant ?? 'default') === 'style2') :
     ?>
@@ -21,12 +24,12 @@ if (($footer_variant ?? 'default') === 'style2') :
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="top-rated-pragraph">
                             <a href="#" class="d-block mb-4 pb-lg-2">
-                                <img src="assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
+                                <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
                             </a>
                             <p class="white65 mb-4 pb-lg-2">
-                                De-Weboo is an enterprise software engineering firm and contract-ready SLED bidder. Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation (NAICS 541511), and Data Engineering (NAICS 541512). Growth &amp; Infrastructure: Digital Marketing, SEO (NAICS 541810 &amp; 541910), and Cloud Services—for B2B, B2C, and B2A frameworks.
+                                De-Weboo is an enterprise software engineering firm. Medical Software, Web &amp; Mobile Dev · AI Automation, Data Engineering &amp; Cloud, Digital Marketing &amp; SEO—B2B, B2C &amp; B2A.
                             </p>
-                            <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
+                            <form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
                                 <i class="fa-regular fa-envelope envelop"></i>
                                 <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
                                 <button type="button" class="arrow"><i class="fas fa-chevron-right"></i></button>
@@ -41,33 +44,38 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="about.php">
+                                        <a href="/about">
                                             About us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="collaboration.php">
+                                        <a href="/collaboration">
                                             Collaboration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="team.php">
+                                        <a href="/team">
                                             Meet our team
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.php">
+                                        <a href="/blog">
                                             News and media
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="portfolio.php">
+                                        <a href="/portfolio">
                                             Our projects
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="/contact">
                                             Contacts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/career">
+                                            Careers
                                         </a>
                                     </li>
                                 </ul>
@@ -83,37 +91,37 @@ if (($footer_variant ?? 'default') === 'style2') :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="faqs.php">
+                                        <a href="/faqs">
                                             FAQs
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="privacy-policy.php">
+                                        <a href="/privacy-policy">
                                             Privacy Policy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="client-support.php">
+                                        <a href="/client-support">
                                             Client support
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="help-center.php">
+                                        <a href="/help-center">
                                             Help center
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="system-status.php">
+                                        <a href="/system-status">
                                             System status
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="feedback.php">
+                                        <a href="/feedback">
                                             Feedback
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="terms-and-conditions.php">
+                                        <a href="/terms-and-conditions">
                                             Terms & condition
                                         </a>
                                     </li>
@@ -145,8 +153,23 @@ if (($footer_variant ?? 'default') === 'style2') :
                                         <a href="tel:<?php echo e($dw_tel); ?>" class="white65 fw-semibold"><?php echo e($dw_tel_display); ?></a>
                                     </div>
                                     <div class="list-info-item d-flex align-items-center gap-2">
+                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M12.1113 1C12.1113 1 14.5558 1.22222 17.6669 4.33332C20.778 7.44442 21.0002 9.88886 21.0002 9.88886"
+                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
+                                            <path
+                                                d="M12.3418 4.92822C12.3418 4.92822 13.4417 5.24249 15.0916 6.8924C16.7416 8.54231 17.0558 9.64225 17.0558 9.64225"
+                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
+                                            <path
+                                                d="M7.70841 4.68653L8.42954 5.97867C9.08031 7.14475 8.81907 8.67446 7.7941 9.69943C7.7941 9.69944 7.7941 9.69943 7.7941 9.69944C7.79398 9.69955 6.55095 10.9428 8.80499 13.1968C11.0584 15.4502 12.3016 14.2086 12.3024 14.2077C12.3024 14.2077 12.3024 14.2077 12.3024 14.2077C13.3274 13.1828 14.8571 12.9215 16.0232 13.5723L17.3153 14.2934C19.0761 15.2761 19.2841 17.7455 17.7364 19.2932C16.8064 20.2232 15.6671 20.9468 14.4076 20.9946C12.2875 21.0749 8.68695 20.5384 5.07521 16.9266C1.46347 13.3149 0.926905 9.71435 1.00728 7.5942C1.05502 6.33478 1.77867 5.19549 2.70867 4.26549C4.25638 2.71777 6.72573 2.92572 7.70841 4.68653Z"
+                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
+                                        </svg>
+                                        <a href="tel:<?php echo e($dw_tel_pk); ?>" class="white65 fw-semibold"><?php echo e($dw_tel_pk_display); ?></a>
+                                    </div>
+                                    <div class="list-info-item d-flex align-items-center gap-2">
                                         <i class="fa-brands fa-whatsapp fs-five" style="color:#FF5455;"></i>
-                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white65 fw-semibold">WhatsApp us · <?php echo e($dw_tel_display); ?></a>
+                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white65 fw-semibold">WhatsApp us · <?php echo e($dw_whatsapp_display); ?></a>
                                     </div>
                                     <div class="list-info-item d-flex align-items-center gap-2">
                                         <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
@@ -160,6 +183,10 @@ if (($footer_variant ?? 'default') === 'style2') :
                                                 stroke-linecap="round" />
                                         </svg>
                                         <a href="mailto:Info@deweboo.com" class="white65 fw-semibold">Info@deweboo.com</a>
+                                    </div>
+                                    <div class="list-info-item d-flex align-items-center gap-2">
+                                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 10.2797 1.30049 11.4893 1.83477 12.562C1.97675 12.847 2.02401 13.1729 1.94169 13.4805L1.46521 15.2613C1.25836 16.0344 1.96561 16.7416 2.73868 16.5348L4.51951 16.0583C4.82715 15.976 5.15297 16.0233 5.43802 16.1652C6.51069 16.6995 7.72025 17 9 17Z" stroke="#FF5455" stroke-width="1.5"/><path d="M5.80078 7.80078H12.2008" stroke="#FF5455" stroke-width="1.5" stroke-linecap="round"/><path d="M5.80078 10.6006H10.2008" stroke="#FF5455" stroke-width="1.5" stroke-linecap="round"/></svg>
+                                        <a href="mailto:lead@deweboo.com" class="white65 fw-semibold">lead@deweboo.com</a>
                                     </div>
                                     <div class="list-info-item d-flex align-items-center gap-2">
                                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
@@ -188,7 +215,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                 <div
                     class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                     <p class="white65">
-                        &copy;<?php echo date('Y'); ?> <a href="index.php" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
+                        &copy;<?php echo date('Y'); ?> <a href="/" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
@@ -207,7 +234,7 @@ if (($footer_variant ?? 'default') === 'style2') :
         <div class="search-inner">
             <i class="fas fa-times search-close" id="search-close"></i>
             <div class="search-cell">
-                <form method="get" action="search.php">
+                <form method="get" action="/search">
                     <div class="search-field-holder">
                         <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>
@@ -216,104 +243,28 @@ if (($footer_variant ?? 'default') === 'style2') :
         </div>
     </div>
 
-    <!--<< All JS Plugins >>-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!--<< Viewport Js >>-->
-    <script src="assets/js/viewport.jquery.js"></script>
-    <!--<< Bootstrap Js >>-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!--<< Nice Select Js >>-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!--<< Waypoints Js >>-->
-    <script src="assets/js/jquery.waypoints.js"></script>
-    <!--<< Counterup Js >>-->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!--<< Swiper Slider Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--<< MeanMenu Js >>-->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!--<< Magnific Popup Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!--<< Wow Animation Js >>-->
-    <script src="assets/js/wow.min.js"></script>
-    <!--<< Gsap Js >>-->
-    <script src="assets/js/gsap.min.js"></script>
-    <!--<< Lenis Js >>-->
-    <script src="assets/js/lenis.min.js"></script>
-    <!--<< ScrollSmoother Js >>-->
-    <script src="assets/js/scrollSmoother.js"></script>
-    <!--<< ScrollTrigger Js >>-->
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!--<< Spalit Text Js >>-->
-    <script src="assets/js/spilitext-gsap.js"></script>
-    <!--<< Valina Tilt Js >>-->
-    <script src="assets/js/vanilla-tilt.min.js"></script>
-    <!--<< Circle Progress Js >>-->
-    <script src="assets/js/circle-progress.min.js"></script>
-    <!--<< Main.js >>-->
-    <script src="assets/js/main.js"></script>
+    <!--<< All JS Plugins — defer enables parallel download, order preserved >>-->
+    <script defer src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script defer src="/assets/js/viewport.jquery.js"></script>
+    <script defer src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/assets/js/jquery.nice-select.min.js"></script>
+    <script defer src="/assets/js/jquery.waypoints.js"></script>
+    <script defer src="/assets/js/jquery.counterup.min.js"></script>
+    <script defer src="/assets/js/swiper-bundle.min.js"></script>
+    <script defer src="/assets/js/jquery.meanmenu.min.js"></script>
+    <script defer src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script defer src="/assets/js/wow.min.js"></script>
+    <script defer src="/assets/js/gsap.min.js"></script>
+    <script defer src="/assets/js/ScrollTrigger.min.js"></script>
+    <script defer src="/assets/js/spilitext-gsap.js"></script>
+    <script defer src="/assets/js/vanilla-tilt.min.js"></script>
+    <script defer src="/assets/js/main.js"></script>
 <?php
 $extra_scripts = $extra_scripts ?? [];
 foreach ($extra_scripts as $script) :
     ?>
-    <script src="<?php echo e($script); ?>"></script>
+    <script defer src="<?php echo e($script); ?>"></script>
 <?php endforeach; ?>
-    <script>
-        // Custom Progress bar
-        let options = {
-            startAngle: -1.65,
-            size: 150,
-            value: 0,
-            thickness: 7,
-            emptyFill: "#D9D9D9",
-            fill: { gradient: ["#5135FF", "#FF5455"] },
-        };
-        $(".bar").each(function () {
-            $(this).circleProgress(options);
-        });
-        function animateProgress() {
-            let viewportTop = $(window).scrollTop();
-            let viewportBottom = viewportTop + $(window).height();
-
-            $(".bar").each(function () {
-                let elementTop = $(this).offset().top;
-                let elementBottom = elementTop + $(this).outerHeight();
-
-                // Check if the element is within the viewport (either entering from top or bottom)
-                if (
-                    elementTop < viewportBottom - 50 &&
-                    elementBottom > viewportTop + 50
-                ) {
-                    if (!$(this).data("animated")) {
-                        let value = $(this)
-                            .closest(".circle, .js, .node, .react")
-                            .data("value");
-                        $(this)
-                            .circleProgress({ value: value })
-                            .on(
-                                "circle-animation-progress",
-                                function (event, progress, stepValue) {
-                                    $(this)
-                                        .parent()
-                                        .find("span")
-                                        .text(
-                                            String(stepValue.toFixed(2).substr(2)) + "%"
-                                        );
-                                }
-                            );
-                        $(this).data("animated", true);
-                    }
-                }
-            });
-        }
-        $(".percentage1").data("value", 0.9);
-        $(".percentage2").data("value", 0.8);
-        $(".percentage3").data("value", 0.9);
-        $(".percentage4").data("value", 0.6);
-        $(window).on("scroll", animateProgress);
-        animateProgress();
-        // Custom Progress bar
-    </script>
 </body>
 </html>
 <?php else : ?>
@@ -326,7 +277,7 @@ foreach ($extra_scripts as $script) :
                             <h5 class="white mb-lg-5 mb-4">
                                 <span class="p3-clr">Stay ahead</span> with digital tips and project updates
                             </h5>
-                            <form method="post" action="<?php echo e($_SERVER['PHP_SELF'] ?? ''); ?>" class="form-style1 d-flex align-items-center justify-content-between">
+                            <form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 d-flex align-items-center justify-content-between">
                                 <input type="email" name="newsletter_email" autocomplete="email" placeholder="Your email address" value="<?php echo e($newsletter_email ?? ''); ?>">
                                 <button type="button"><i class="fa-regular fa-envelope"></i></button>
                             </form>
@@ -346,33 +297,38 @@ foreach ($extra_scripts as $script) :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="about.php">
+                                        <a href="/about">
                                             About us
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="collaboration.php">
+                                        <a href="/collaboration">
                                             Collaboration
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="team.php">
+                                        <a href="/team">
                                             Meet our team
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="blog.php">
+                                        <a href="/blog">
                                             News and media
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="portfolio.php">
+                                        <a href="/portfolio">
                                             Our projects
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="contact.php">
+                                        <a href="/contact">
                                             Contacts
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="/career">
+                                            Careers
                                         </a>
                                     </li>
                                 </ul>
@@ -388,37 +344,37 @@ foreach ($extra_scripts as $script) :
                                 </div>
                                 <ul class="list-area">
                                     <li>
-                                        <a href="faqs.php">
+                                        <a href="/faqs">
                                             FAQs
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="privacy-policy.php">
+                                        <a href="/privacy-policy">
                                             Privacy Policy
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="client-support.php">
+                                        <a href="/client-support">
                                             Client support
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="help-center.php">
+                                        <a href="/help-center">
                                             Help center
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="system-status.php">
+                                        <a href="/system-status">
                                             System status
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="feedback.php">
+                                        <a href="/feedback">
                                             Feedback
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="terms-and-conditions.php">
+                                        <a href="/terms-and-conditions">
                                             Terms & condition
                                         </a>
                                     </li>
@@ -439,8 +395,12 @@ foreach ($extra_scripts as $script) :
                                         <a href="tel:<?php echo e($dw_tel); ?>" class="white fw-semibold"><?php echo e($dw_tel_display); ?></a>
                                     </div>
                                     <div class="list-info-item">
+                                        <span class="fs-eight white65 d-block">Call Us Locally</span>
+                                        <a href="tel:<?php echo e($dw_tel_pk); ?>" class="white fw-semibold"><?php echo e($dw_tel_pk_display); ?></a>
+                                    </div>
+                                    <div class="list-info-item">
                                         <span class="fs-eight white65 d-block">WhatsApp us</span>
-                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white fw-semibold"><?php echo e($dw_tel_display); ?></a>
+                                        <a href="<?php echo e($dw_whatsapp_url); ?>" target="_blank" rel="noopener noreferrer" class="white fw-semibold"><?php echo e($dw_whatsapp_display); ?></a>
                                     </div>
                                 </div>
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
@@ -458,11 +418,11 @@ foreach ($extra_scripts as $script) :
             <div class="container">
                 <div
                     class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
-                    <a href="index.php" class="footer-logo">
-                        <img src="assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
+                    <a href="/" class="footer-logo">
+                        <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
                     </a>
                     <p class="white65">
-                        &copy;<?php echo date('Y'); ?> <a href="index.php" class="white fw_500">De-Weboo.</a> All Rights Reserved.
+                        &copy;<?php echo date('Y'); ?> <a href="/" class="white fw_500">De-Weboo.</a> All Rights Reserved.
                     </p>
                 </div>
             </div>
@@ -475,7 +435,7 @@ foreach ($extra_scripts as $script) :
         <div class="search-inner">
             <i class="fas fa-times search-close" id="search-close"></i>
             <div class="search-cell">
-                <form method="get" action="search.php">
+                <form method="get" action="/search">
                     <div class="search-field-holder">
                         <input type="search" name="q" class="main-search-input" placeholder="Search site..." value="<?php echo e($_GET['q'] ?? ''); ?>">
                     </div>
@@ -484,45 +444,27 @@ foreach ($extra_scripts as $script) :
         </div>
     </div>
 
-    <!--<< All JS Plugins >>-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!--<< Viewport Js >>-->
-    <script src="assets/js/viewport.jquery.js"></script>
-    <!--<< Bootstrap Js >>-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!--<< Nice Select Js >>-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!--<< Waypoints Js >>-->
-    <script src="assets/js/jquery.waypoints.js"></script>
-    <!--<< Counterup Js >>-->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!--<< Swiper Slider Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--<< MeanMenu Js >>-->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!--<< Magnific Popup Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!--<< Wow Animation Js >>-->
-    <script src="assets/js/wow.min.js"></script>
-    <!--<< Gsap Js >>-->
-    <script src="assets/js/gsap.min.js"></script>
-    <!--<< Lenis Js >>-->
-    <script src="assets/js/lenis.min.js"></script>
-    <!--<< ScrollSmoother Js >>-->
-    <script src="assets/js/scrollSmoother.js"></script>
-    <!--<< ScrollTrigger Js >>-->
-    <script src="assets/js/ScrollTrigger.min.js"></script>
-    <!--<< Spalit Text Js >>-->
-    <script src="assets/js/spilitext-gsap.js"></script>
-    <!--<< Valina Tilt Js >>-->
-    <script src="assets/js/vanilla-tilt.min.js"></script>
-    <!--<< Main.js >>-->
-    <script src="assets/js/main.js"></script>
+    <!--<< All JS Plugins — defer enables parallel download, order preserved >>-->
+    <script defer src="/assets/js/jquery-3.7.1.min.js"></script>
+    <script defer src="/assets/js/viewport.jquery.js"></script>
+    <script defer src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script defer src="/assets/js/jquery.nice-select.min.js"></script>
+    <script defer src="/assets/js/jquery.waypoints.js"></script>
+    <script defer src="/assets/js/jquery.counterup.min.js"></script>
+    <script defer src="/assets/js/swiper-bundle.min.js"></script>
+    <script defer src="/assets/js/jquery.meanmenu.min.js"></script>
+    <script defer src="/assets/js/jquery.magnific-popup.min.js"></script>
+    <script defer src="/assets/js/wow.min.js"></script>
+    <script defer src="/assets/js/gsap.min.js"></script>
+    <script defer src="/assets/js/ScrollTrigger.min.js"></script>
+    <script defer src="/assets/js/spilitext-gsap.js"></script>
+    <script defer src="/assets/js/vanilla-tilt.min.js"></script>
+    <script defer src="/assets/js/main.js"></script>
 <?php
 $extra_scripts = $extra_scripts ?? [];
 foreach ($extra_scripts as $script) :
     ?>
-    <script src="<?php echo e($script); ?>"></script>
+    <script defer src="<?php echo e($script); ?>"></script>
 <?php endforeach; ?>
 </body>
 </html>

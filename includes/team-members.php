@@ -26,7 +26,7 @@ function dw_team_members(): array
         'aqeel' => [
             'slug' => 'aqeel',
             'name' => 'Syed Aqeel Hassan Gillani',
-            'role' => 'Lead Developer, CEO & Founder',
+            'role' => 'CEO & Founder',
             'image' => 'assets/img/team/aqeel.jpg',
             'detail_image' => 'assets/img/team/team-details-aqeel.jpg',
             'intro' => 'Syed Aqeel Hassan Gillani leads software development projects, focusing on secure web, mobile, and enterprise architecture for B2B, B2C, and B2A delivery.',
@@ -34,16 +34,16 @@ function dw_team_members(): array
             'highlights' => [
                 'Architects secure web, mobile, and enterprise platforms for B2B, B2C, and B2A delivery.',
                 'Leads engineering sprints, code reviews, and Section 508 / WCAG accessibility implementation.',
-                'Specializes in NAICS-aligned custom development for SLED and healthcare buyers.',
+                'Specializes in custom development for enterprise and healthcare buyers.',
                 'Partners with DevOps and project teams to ship audit-ready releases on schedule.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Master Degree',
             'linkedin' => 'https://www.linkedin.com/in/aqeel-hassan-gilani/',
             'skills' => [
                 ['label' => 'Web & Mobile Development', 'percent' => 92],
                 ['label' => 'Enterprise Architecture', 'percent' => 88],
-                ['label' => 'SLED-Ready Delivery', 'percent' => 85],
+                ['label' => 'Contract-Ready Delivery', 'percent' => 85],
             ],
         ],
         'asad' => [
@@ -60,7 +60,7 @@ function dw_team_members(): array
                 'Supports migration, scaling, and uptime for enterprise and public-sector workloads.',
                 'Collaborates with developers on containerization, staging, and release governance.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Bachelor Degree',
             'linkedin' => 'https://www.linkedin.com/in/syed-ali-asad-jafri-34a98b225/',
             'skills' => [
@@ -83,7 +83,7 @@ function dw_team_members(): array
                 'Supports disaster recovery, backup strategy, and capacity planning for growing platforms.',
                 'Partners with DevOps and engineering teams on infrastructure readiness for client go-lives.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Master Degree',
             'linkedin' => 'https://www.linkedin.com/in/hfaisal/',
             'skills' => [
@@ -95,24 +95,24 @@ function dw_team_members(): array
         'hajra' => [
             'slug' => 'hajra',
             'name' => 'Syeda Hajra Batool',
-            'role' => 'Project Manager',
+            'role' => 'HR',
             'image' => 'assets/img/team/hajra.jpg',
             'detail_image' => 'assets/img/team/hajra.jpg',
-            'intro' => 'Syeda Hajra Batool coordinates delivery timelines, client communication, and cross-functional execution across De-Weboo software and marketing engagements.',
-            'bio' => 'Syeda Hajra Batool is Project Manager at De-Weboo, aligning stakeholders, sprint plans, and milestones for B2B, B2C, and SLED-ready projects from discovery through launch.',
+            'intro' => 'Syeda Hajra Batool leads people operations, hiring, and team culture across De-Weboo\'s engineering, marketing, and delivery teams.',
+            'bio' => 'Syeda Hajra Batool is HR at De-Weboo, managing recruitment, onboarding, and employee experience for B2B, B2C, and B2A project teams.',
             'highlights' => [
-                'Runs agile ceremonies, status reporting, and risk tracking for multi-disciplinary teams.',
-                'Translates RFP and procurement requirements into actionable delivery roadmaps.',
-                'Keeps clients informed with clear milestones, demos, and acceptance criteria.',
-                'Coordinates engineering, marketing, and QA for on-time, on-spec releases.',
+                'Leads recruitment and onboarding for engineering, marketing, and delivery teams.',
+                'Maintains policies, performance reviews, and employee engagement programs.',
+                'Supports managers with team structure, growth planning, and conflict resolution.',
+                'Coordinates culture, communication, and workplace operations across departments.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Master Degree',
             'linkedin' => 'https://www.linkedin.com/in/hajra-batool-syed/',
             'skills' => [
-                ['label' => 'Project Delivery', 'percent' => 92],
-                ['label' => 'Client Communication', 'percent' => 90],
-                ['label' => 'Agile Planning', 'percent' => 88],
+                ['label' => 'Talent Acquisition', 'percent' => 92],
+                ['label' => 'Employee Relations', 'percent' => 90],
+                ['label' => 'HR Operations', 'percent' => 88],
             ],
         ],
         'mehroz' => [
@@ -122,14 +122,14 @@ function dw_team_members(): array
             'image' => 'assets/img/team/mehroz.jpg',
             'detail_image' => 'assets/img/team/mehroz.jpg',
             'intro' => 'Mehroz Alam designs secure data pipelines, dashboards, and administrative systems that power analytics and compliance for De-Weboo clients.',
-            'bio' => 'Mehroz Alam is Senior Data Engineer at De-Weboo, building NAICS 541512-aligned data architecture, ETL workflows, and reporting layers for enterprise and healthcare organizations.',
+            'bio' => 'Mehroz Alam is Senior Data Engineer at De-Weboo, building secure data architecture, ETL workflows, and reporting layers for enterprise and healthcare organizations.',
             'highlights' => [
                 'Engineers secure data pipelines and warehouse models for operational reporting.',
                 'Builds administrative dashboards with role-based access and audit trails.',
                 'Integrates APIs, databases, and automation for reliable data flows.',
                 'Supports HIPAA-aligned data handling practices for regulated environments.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Master Degree',
             'linkedin' => 'https://www.linkedin.com/in/mehrozalam/',
             'skills' => [
@@ -145,20 +145,42 @@ function dw_team_members(): array
             'image' => 'assets/img/team/hamza.jpg',
             'detail_image' => 'assets/img/team/hamza.jpg',
             'intro' => 'Meer Hamza leads digital marketing campaigns, lead-generation funnels, and growth experiments for De-Weboo commercial and B2B clients.',
-            'bio' => 'Meer Hamza drives digital marketing at De-Weboo—consumer marketing, paid media, and conversion-focused content under NAICS 541810 and 541910 capabilities.',
+            'bio' => 'Meer Hamza drives digital marketing at De-Weboo—consumer marketing, paid media, and conversion-focused content.',
             'highlights' => [
                 'Plans and executes multi-channel campaigns for lead generation and brand growth.',
                 'Optimizes landing pages, ad creative, and funnel analytics for measurable ROI.',
                 'Coordinates with SEO and content teams on AEO-friendly campaign assets.',
                 'Reports performance metrics that tie marketing spend to qualified pipeline.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Bachelor Degree',
             'linkedin' => 'https://www.linkedin.com/in/meer-hamza-186a98171/',
             'skills' => [
                 ['label' => 'Digital Campaigns', 'percent' => 88],
                 ['label' => 'Lead Generation', 'percent' => 86],
                 ['label' => 'Analytics & Reporting', 'percent' => 84],
+            ],
+        ],
+        'naimatullah' => [
+            'slug' => 'naimatullah',
+            'name' => 'Naimat Ullah',
+            'role' => 'Senior PACS & Integration Engineer',
+            'image' => 'assets/img/team/naimatullah.jpg',
+            'detail_image' => 'assets/img/team/naimatullah.jpg',
+            'intro' => 'Naimat Ullah engineers PACS, RIS, and DICOM integrations, connecting imaging systems and clinical workflows for De-Weboo healthcare clients.',
+            'bio' => 'Naimat Ullah is Senior PACS & Integration Engineer at De-Weboo, building and integrating PACS, RIS, DICOM, and teleradiology systems for hospitals, clinics, and healthcare platforms.',
+            'highlights' => [
+                'Implements and integrates PACS, RIS, and DICOM systems for medical imaging workflows.',
+                'Connects teleradiology platforms with hospital and clinic information systems.',
+                'Ensures HIPAA-aligned data handling and secure image storage and transmission.',
+                'Partners with engineering teams to deliver reliable, audit-ready healthcare IT integrations.',
+            ],
+            'location' => 'Remote',
+            'qualification' => 'Master Degree',
+            'skills' => [
+                ['label' => 'PACS & DICOM Integration', 'percent' => 92],
+                ['label' => 'Healthcare IT Systems', 'percent' => 88],
+                ['label' => 'Teleradiology Platforms', 'percent' => 85],
             ],
         ],
         'naima' => [
@@ -175,7 +197,7 @@ function dw_team_members(): array
                 'Documents requirements and change requests for transparent delivery.',
                 'Supports QA handoffs and launch readiness for client go-lives.',
             ],
-            'location' => 'Pakistan',
+            'location' => 'Remote',
             'qualification' => 'Bachelor Degree',
             'linkedin' => 'https://www.linkedin.com/in/naima-shahzadi-5720a7251/',
             'skills' => [
@@ -200,5 +222,5 @@ function dw_team_member(?string $slug): ?array
 
 function dw_team_member_url(string $slug): string
 {
-    return 'team-details.php?member=' . rawurlencode($slug);
+    return '/team/' . rawurlencode($slug);
 }
