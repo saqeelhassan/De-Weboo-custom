@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Custom ERP, CRM & Enterprise-Grade Applications
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo specializes in developing robust, scalable, and secure enterprise software solutions, including custom ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), and other mission-critical applications. We understand the complexities of enterprise environments and build systems that streamline operations, improve data management, and support strategic growth.
+                                De-Weboo Dev specializes in developing robust, scalable, and secure enterprise software solutions, including custom ERP (Enterprise Resource Planning), CRM (Customer Relationship Management), and other mission-critical applications. We understand the complexities of enterprise environments and build systems that streamline operations, improve data management, and support strategic growth.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our approach involves deep analysis of your business processes, followed by the design and development of tailored software that integrates seamlessly with your existing infrastructure. We ensure high performance, data integrity, and compliance with industry standards for all enterprise-grade applications.
@@ -164,10 +164,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo delivers enterprise software that transforms operations, enhances productivity, and provides a solid foundation for your business's future.
+                                    De-Weboo Dev delivers enterprise software that transforms operations, enhances productivity, and provides a solid foundation for your business's future.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

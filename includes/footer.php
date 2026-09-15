@@ -24,10 +24,10 @@ if (($footer_variant ?? 'default') === 'style2') :
                     <div class="col-lg-4 col-md-6 col-sm-6">
                         <div class="top-rated-pragraph">
                             <a href="#" class="d-block mb-4 pb-lg-2">
-                                <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
+                                <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo Dev logo">
                             </a>
                             <p class="white65 mb-4 pb-lg-2">
-                                De-Weboo is an enterprise software engineering firm. Medical Software, Web &amp; Mobile Dev · AI Automation, Data Engineering &amp; Cloud, Digital Marketing &amp; SEO—B2B, B2C &amp; B2A.
+                                De-Weboo Dev is an enterprise software engineering firm. Medical Software, Web &amp; Mobile Dev · AI Automation, Data Engineering &amp; Cloud, Digital Marketing &amp; SEO—B2B, B2C &amp; B2A.
                             </p>
                             <form method="post" action="<?php echo e(dw_self_path()); ?>" class="form-style1 form-style2 d-flex align-items-center justify-content-between">
                                 <i class="fa-regular fa-envelope envelop"></i>
@@ -215,7 +215,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                 <div
                     class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                     <p class="white65">
-                        &copy;<?php echo date('Y'); ?> <a href="/" class="p3-clr fw_500">De-Weboo.</a> All Rights Reserved.
+                        &copy;<?php echo date('Y'); ?> <a href="/" class="p3-clr fw_500">De-Weboo Dev.</a> All Rights Reserved.
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
@@ -419,10 +419,10 @@ foreach ($extra_scripts as $script) :
                 <div
                     class="footer-wrapper d-flex flex-md-nowrap flex-wrap gap-3 align-items-center justify-content-md-between justify-content-center text-md-start text-center">
                     <a href="/" class="footer-logo">
-                        <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo logo">
+                        <img src="/assets/img/logo/logo-white.png" loading="lazy" alt="De-Weboo Dev logo">
                     </a>
                     <p class="white65">
-                        &copy;<?php echo date('Y'); ?> <a href="/" class="white fw_500">De-Weboo.</a> All Rights Reserved.
+                        &copy;<?php echo date('Y'); ?> <a href="/" class="white fw_500">De-Weboo Dev.</a> All Rights Reserved.
                     </p>
                 </div>
             </div>

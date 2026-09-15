@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * Site-wide SEO / AEO / GEO constants for De-Weboo.
+ * Site-wide SEO / AEO / GEO constants for De-Weboo Dev.
  */
 function dw_site_url(): string
 {
@@ -31,8 +31,8 @@ function dw_canonical_url(): string
 function dw_org_config(): array
 {
     return [
-        'name' => 'De-Weboo',
-        'legalName' => 'De-Weboo',
+        'name' => 'De-Weboo Dev',
+        'legalName' => 'De-Weboo Dev',
         'parentOrganization' => [
             '@type' => 'Organization',
             'name' => 'CaddSight',
@@ -89,7 +89,7 @@ function dw_org_config(): array
         ],
         'primaryContactRep' => [
             'name' => 'Syed Aqeel Hassan Gillani',
-            'title' => 'CEO & Founder',
+            'title' => 'Lead Developer',
             'image' => 'assets/img/services/techgon-author.jpg',
         ],
     ];

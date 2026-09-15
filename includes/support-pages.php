@@ -35,11 +35,11 @@ function dw_support_pages(): array
         'client-support' => [
             'title' => 'Client Support',
             'seo_slug' => 'client-support',
-            'intro' => 'Dedicated support for active De-Weboo clients across software delivery, cloud infrastructure, and Growth & Infrastructure engagements.',
+            'intro' => 'Dedicated support for active De-Weboo Dev clients across software delivery, cloud infrastructure, and Growth & Infrastructure engagements.',
             'sections' => [
                 [
                     'heading' => 'Who this is for',
-                    'body' => 'Client support is available to organizations with an active statement of work, maintenance agreement, or managed services plan with De-Weboo.',
+                    'body' => 'Client support is available to organizations with an active statement of work, maintenance agreement, or managed services plan with De-Weboo Dev.',
                 ],
                 [
                     'heading' => 'What we help with',
@@ -67,11 +67,11 @@ function dw_support_pages(): array
         'help-center' => [
             'title' => 'Help Center',
             'seo_slug' => 'help-center',
-            'intro' => 'Quick answers and resources for working with De-Weboo—from discovery and procurement to launch and ongoing care.',
+            'intro' => 'Quick answers and resources for working with De-Weboo Dev—from discovery and procurement to launch and ongoing care.',
             'sections' => [
                 [
                     'heading' => 'Getting started',
-                    'body' => 'New to De-Weboo? Review our services, portfolio, and FAQs to understand how we deliver custom software, AI automation, data engineering, and Growth & Infrastructure programs.',
+                    'body' => 'New to De-Weboo Dev? Review our services, portfolio, and FAQs to understand how we deliver custom software, AI automation, data engineering, and Growth & Infrastructure programs.',
                     'list' => [
                         'Browse <a href="/services" class="p1-clr">Services</a> for capability areas',
                         'Read <a href="/faqs" class="p1-clr">FAQs</a> for process, timelines, and procurement questions',
@@ -94,23 +94,23 @@ function dw_support_pages(): array
                     'body' => 'If you cannot find what you need, contact our team with your organization name, project goals, and preferred timeline. We respond to qualified inquiries within one business day.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a> &middot; <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
                 ],
             ],
-            'cta_label' => 'Contact De-Weboo',
+            'cta_label' => 'Contact De-Weboo Dev',
             'cta_href' => 'contact',
         ],
         'system-status' => [
             'title' => 'System Status',
             'seo_slug' => 'system-status',
-            'intro' => 'Current operational status for De-Weboo-managed platforms and public website services.',
+            'intro' => 'Current operational status for De-Weboo Dev-managed platforms and public website services.',
             'sections' => [
                 [
                     'heading' => 'Overall status',
-                    'body' => '<span class="badge rounded-pill text-bg-success me-2">Operational</span> All monitored De-Weboo services are running normally as of the last review.',
+                    'body' => '<span class="badge rounded-pill text-bg-success me-2">Operational</span> All monitored De-Weboo Dev services are running normally as of the last review.',
                 ],
                 [
                     'heading' => 'Monitored services',
                     'body' => 'Status overview for core systems we operate for clients and public properties.',
                     'list' => [
-                        'De-Weboo website — Operational',
+                        'De-Weboo Dev website — Operational',
                         'Client production hosting (managed cloud) — Operational',
                         'Staging & deployment pipelines — Operational',
                         'Backup & disaster-recovery jobs — Operational',
@@ -162,23 +162,23 @@ function dw_support_pages(): array
         'terms-and-conditions' => [
             'title' => 'Terms & Condition',
             'seo_slug' => 'terms-and-conditions',
-            'intro' => 'These terms govern use of the De-Weboo website and general engagement with our services. Project-specific contracts, statements of work, and procurement agreements take precedence where signed.',
+            'intro' => 'These terms govern use of the De-Weboo Dev website and general engagement with our services. Project-specific contracts, statements of work, and procurement agreements take precedence where signed.',
             'sections' => [
                 [
                     'heading' => '1. Acceptance of terms',
-                    'body' => 'By accessing deweboo.com or contacting De-Weboo, you agree to these Terms & Condition. If you do not agree, please do not use this website.',
+                    'body' => 'By accessing deweboo.com or contacting De-Weboo Dev, you agree to these Terms & Condition. If you do not agree, please do not use this website.',
                 ],
                 [
                     'heading' => '2. Services',
-                    'body' => 'De-Weboo provides enterprise software engineering, AI automation, data engineering, digital marketing, SEO, and cloud services. Scope, fees, and deliverables for paid work are defined in separate written agreements.',
+                    'body' => 'De-Weboo Dev provides enterprise software engineering, AI automation, data engineering, digital marketing, SEO, and cloud services. Scope, fees, and deliverables for paid work are defined in separate written agreements.',
                 ],
                 [
                     'heading' => '3. Website use',
-                    'body' => 'You may not misuse the site, attempt unauthorized access, scrape content for competitive reuse, or submit unlawful material through our forms. Content on this site is owned by De-Weboo or used with permission.',
+                    'body' => 'You may not misuse the site, attempt unauthorized access, scrape content for competitive reuse, or submit unlawful material through our forms. Content on this site is owned by De-Weboo Dev or used with permission.',
                 ],
                 [
                     'heading' => '4. Intellectual property',
-                    'body' => 'Unless otherwise agreed in writing, custom work product ownership and license terms are specified in each client contract. Pre-existing tools, frameworks, and methodologies remain De-Weboo property.',
+                    'body' => 'Unless otherwise agreed in writing, custom work product ownership and license terms are specified in each client contract. Pre-existing tools, frameworks, and methodologies remain De-Weboo Dev property.',
                 ],
                 [
                     'heading' => '5. Confidentiality & data',
@@ -186,7 +186,7 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => '6. Limitation of liability',
-                    'body' => 'To the fullest extent permitted by law, De-Weboo is not liable for indirect or consequential damages arising from use of this website. Service warranties and liability caps for paid engagements are defined in signed contracts.',
+                    'body' => 'To the fullest extent permitted by law, De-Weboo Dev is not liable for indirect or consequential damages arising from use of this website. Service warranties and liability caps for paid engagements are defined in signed contracts.',
                 ],
                 [
                     'heading' => '7. Changes',
@@ -293,7 +293,7 @@ function dw_process_feedback_form(array $form): array
         implode("\n", $bodyLines),
         $form['name'],
         $form['email'],
-        'De-Weboo Feedback'
+        'De-Weboo Dev Feedback'
     );
 
     if (!$sent) {
@@ -386,7 +386,7 @@ function dw_render_feedback_form(array $form, ?array $alert): void
                                     <div class="form-check mb-3">
                                         <input class="form-check-input" type="checkbox" name="feedback_testimonial_ok" id="feedback_testimonial_ok" value="1"<?php echo !empty($form['testimonial_ok']) ? ' checked' : ''; ?>>
                                         <label class="form-check-label fs-eight pra" for="feedback_testimonial_ok">
-                                            I give permission for De-Weboo to contact me and use my feedback as a testimonial with my approval.
+                                            I give permission for De-Weboo Dev to contact me and use my feedback as a testimonial with my approval.
                                         </label>
                                     </div>
                                     <p class="pra fs-eight mb-3">
@@ -456,7 +456,7 @@ function dw_render_support_page(string $slug, ?array $feedbackForm = null, ?arra
                         <div class="mb-0">
                             <a href="<?php echo e($page['cta_href'] ?? 'contact'); ?>"
                                 class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
-                                <?php echo e($page['cta_label'] ?? 'Contact De-Weboo'); ?>
+                                <?php echo e($page['cta_label'] ?? 'Contact De-Weboo Dev'); ?>
                             </a>
                         </div>
 <?php endif; ?>

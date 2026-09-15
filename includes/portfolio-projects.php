@@ -66,14 +66,14 @@ function dw_portfolio_projects(): array
         ],
         'de-weboo-platform' => [
             'slug' => 'de-weboo-platform',
-            'shortName' => 'De Weboo Platform',
-            'fullName' => 'De Weboo Core Agency Site',
+            'shortName' => 'De Weboo Dev Platform',
+            'fullName' => 'De Weboo Dev Core Agency Site',
             'client' => 'Internal Agency Project',
             'services' => 'Full-Stack Development, Vibe Coding, High-Performance UI Architecture',
             'techStack' => 'Next.js / React, Tailwind CSS, Framer Motion, Node.js',
             'category' => 'Agency',
             'projectDate' => 'Flagship deployment',
-            'overview' => 'The flagship, production-grade custom web application for De Weboo. Engineered prioritizing elite performance, seamless modern animations, and ironclad security, this platform serves as both a primary corporate hub and a live showcase of cutting-edge full-stack capabilities.',
+            'overview' => 'The flagship, production-grade custom web application for De Weboo Dev. Engineered prioritizing elite performance, seamless modern animations, and ironclad security, this platform serves as both a primary corporate hub and a live showcase of cutting-edge full-stack capabilities.',
             'keyFeatures' => [
                 'Dynamic Portfolio Hub: A highly structured, interactive showcase grid utilizing fluid layouts and custom asset placeholders.',
                 'Interactive UI Elements: Modern, smooth visual interactions (such as concentric-ring status cards and custom-timed micro-interactions).',

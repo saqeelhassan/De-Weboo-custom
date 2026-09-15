@@ -35,7 +35,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <img loading="lazy" src="/assets/img/error/erro.png" alt="Illustration" class="w-100">
                 </div>
                 <h2 class="black mb-4 pb-xxl-4">
-                    This page could not be found. Return home or contact De-Weboo for web, cloud, and healthcare IT support.
+                    This page could not be found. Return home or contact De-Weboo Dev for web, cloud, and healthcare IT support.
                 </h2>
                 <a href="/"
                     class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">

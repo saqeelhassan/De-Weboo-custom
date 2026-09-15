@@ -14,9 +14,9 @@ if ($project === null) {
 }
 
 dw_load_page_seo('portfolio-details');
-$page_title = $project['shortName'] . ' | De-Weboo Portfolio';
+$page_title = $project['shortName'] . ' | De-Weboo Dev Portfolio';
 $page_description = mb_substr($project['overview'], 0, 155) . (mb_strlen($project['overview']) > 155 ? '…' : '');
-$page_keywords = $project['shortName'] . ', ' . $project['techStack'] . ', ' . $project['category'] . ', De-Weboo portfolio, custom web development';
+$page_keywords = $project['shortName'] . ', ' . $project['techStack'] . ', ' . $project['category'] . ', De-Weboo Dev portfolio, custom web development';
 $page_canonical = rtrim(dw_site_url(), '/') . dw_portfolio_url($project['slug']);
 
 $coverImage = dw_portfolio_image($project['images']['cover'], 'assets/img/services/portfolio-details.png');
@@ -173,7 +173,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             OUR QUESTIONS AND ANSWER
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Answers about working with De-Weboo
+                            Answers about working with De-Weboo Dev
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
@@ -189,13 +189,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What services does De-Weboo offer?
+                                    What services does De-Weboo Dev offer?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We deliver for B2B, B2C, and B2A frameworks.
+                                            De-Weboo Dev is an enterprise software engineering firm organized in two service categories. Development &amp; AI Engineering (Web &amp; Mobile Development, AI Automation, and Data Engineering). Growth &amp; Infrastructure (Digital Marketing, SEO, and Cloud Services). We deliver for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>

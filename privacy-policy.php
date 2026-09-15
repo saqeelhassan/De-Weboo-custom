@@ -39,7 +39,7 @@ $privacyPolicyLastUpdated = '2026-06-25';
                         <div class="mb-4">
                             <h2 class="black fs-five fw-bold mb-3">1. Who we are</h2>
                             <p class="pra mb-3">
-                                <?php echo e($org['name']); ?> (“De-Weboo”, “we”, “us”) is an enterprise software engineering firm. Our registered office is at <?php echo e($fullAddress); ?>.
+                                <?php echo e($org['name']); ?> (“De-Weboo Dev”, “we”, “us”) is an enterprise software engineering firm. Our registered office is at <?php echo e($fullAddress); ?>.
                             </p>
                             <p class="pra mb-0">
                                 Contact:
@@ -65,7 +65,7 @@ $privacyPolicyLastUpdated = '2026-06-25';
                         <div class="mb-4">
                             <h2 class="black fs-five fw-bold mb-3">3. How we use your information</h2>
                             <p class="pra mb-0">
-                                We use personal information to respond to inquiries, deliver services, improve our website, meet contractual and legal obligations, and—where permitted—share relevant updates about De-Weboo services. We do not sell your personal data.
+                                We use personal information to respond to inquiries, deliver services, improve our website, meet contractual and legal obligations, and—where permitted—share relevant updates about De-Weboo Dev services. We do not sell your personal data.
                             </p>
                         </div>
 
@@ -104,7 +104,7 @@ $privacyPolicyLastUpdated = '2026-06-25';
                             </p>
                             <a href="/contact"
                                 class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
-                                Contact De-Weboo
+                                Contact De-Weboo Dev
                             </a>
                         </div>
                     </div>

@@ -19,7 +19,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <li class="p3-clr">/</li>
                     <li class="white">Careers</li>
                 </ul>
-                <h1 class="white visible-from-right">Careers at De-Weboo</h1>
+                <h1 class="white visible-from-right">Careers at De-Weboo Dev</h1>
             </div>
         </div>
         <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
@@ -33,7 +33,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-8">
                     <div class="section-title">
                         <h6 class="sub-badge4 p1-clr fw-bold fs-seven text-uppercase d-block mb-xl-3 mb-2">
-                            Why De-Weboo
+                            Why De-Weboo Dev
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-from-bottom" data-wow-delay=".3s">
                             Build real products. Grow fast. Work remotely.
@@ -190,7 +190,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
                         </div>
                         <p class="pra fs-seven mb-3">
-                            Drive organic growth for De-Weboo's clients across B2B, medical, and e-commerce verticals. Own technical SEO audits, content strategies, and paid digital campaigns.
+                            Drive organic growth for De-Weboo Dev's clients across B2B, medical, and e-commerce verticals. Own technical SEO audits, content strategies, and paid digital campaigns.
                         </p>
                         <ul class="pra fs-seven mb-4 ps-3">
                             <li>Proven track record with technical SEO and link building</li>

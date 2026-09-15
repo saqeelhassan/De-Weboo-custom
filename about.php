@@ -22,7 +22,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <li class="p3-clr">/</li>
                     <li class="white">About Us</li>
                 </ul>
-                <h1 class="white visible-from-right">About De-Weboo</h1>
+                <h1 class="white visible-from-right">About De-Weboo Dev</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -108,9 +108,6 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </h2>
                                 <p class="pra fs-seven">
                                     Development &amp; AI Engineering: Web &amp; Mobile Development, AI Automation, and Data Engineering. Growth &amp; Infrastructure: Digital Marketing, SEO, and Cloud Services.
-                                </p>
-                                <p class="pra fs-seven mt-3">
-                                    De-Weboo operates as a specialized division of <a href="https://caddsight.com/" target="_blank" rel="noopener noreferrer" class="p1-clr fw-semibold">CaddSight</a>, our parent company—delivering CAD drafting, BIM, and construction documentation alongside our digital engineering services.
                                 </p>
                             </div>
                             <ul
@@ -206,7 +203,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     </div>
                     <div class="col-xl-6 col-lg-5">
                         <div class="about-thumb position-relative reveal-left w-100">
-                            <img loading="lazy" src="/assets/img/about/about2-thumb.png" alt="De-Weboo and CaddSight engineering team reviewing CAD documentation" class="w-100">
+                            <img loading="lazy" src="/assets/img/about/about2-thumb.png" alt="De-Weboo Dev engineering team reviewing project documentation" class="w-100">
                             <!-- Ele -->
                             <img loading="lazy" src="/assets/img/element/dot-grp1.png" alt="Illustration" class="about-ele">
                             <img loading="lazy" src="/assets/img/about/about2-ele.png" alt="Illustration" class="about-ele2">
@@ -254,7 +251,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
@@ -278,7 +275,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
-                            <span class="fs-seven fw-medium d-block">CEO &amp; Founder</span>
+                            <span class="fs-seven fw-medium d-block">Lead Developer</span>
                             <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>

@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Property Listing Platforms &amp; Agent Websites
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo builds real estate websites that turn browsers into leads—property listing platforms, agent and brokerage sites, and rental portals with fast search, map-based browsing, and mobile-friendly listing pages.
+                                De-Weboo Dev builds real estate websites that turn browsers into leads—property listing platforms, agent and brokerage sites, and rental portals with fast search, map-based browsing, and mobile-friendly listing pages.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 We integrate with IDX/MLS feeds, CRM and lead-routing tools, and virtual tour or 3D walkthrough providers, so your listings stay current and every inquiry reaches the right agent.
@@ -164,10 +164,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo delivers reliable real estate websites with ongoing support, performance monitoring, and clear communication throughout your project.
+                                    De-Weboo Dev delivers reliable real estate websites with ongoing support, performance monitoring, and clear communication throughout your project.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

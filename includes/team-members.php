@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * De-Weboo team profiles for cards and team-details.php.
+ * De-Weboo Dev team profiles for cards and team-details.php.
  *
  * @return array<string, array{
  *     slug: string,
@@ -26,11 +26,11 @@ function dw_team_members(): array
         'aqeel' => [
             'slug' => 'aqeel',
             'name' => 'Syed Aqeel Hassan Gillani',
-            'role' => 'CEO & Founder',
+            'role' => 'Lead Developer',
             'image' => 'assets/img/team/aqeel.jpg',
             'detail_image' => 'assets/img/team/team-details-aqeel.jpg',
             'intro' => 'Syed Aqeel Hassan Gillani leads software development projects, focusing on secure web, mobile, and enterprise architecture for B2B, B2C, and B2A delivery.',
-            'bio' => 'Syed Aqeel Hassan Gillani is Lead Developer at De-Weboo with 8+ years of experience building secure web applications, mobile apps, and custom software for enterprise and public-sector clients.',
+            'bio' => 'Syed Aqeel Hassan Gillani is Lead Developer at De-Weboo Dev with 8+ years of experience building secure web applications, mobile apps, and custom software for enterprise and public-sector clients.',
             'highlights' => [
                 'Architects secure web, mobile, and enterprise platforms for B2B, B2C, and B2A delivery.',
                 'Leads engineering sprints, code reviews, and Section 508 / WCAG accessibility implementation.',
@@ -52,8 +52,8 @@ function dw_team_members(): array
             'role' => 'DevOps Engineer',
             'image' => 'assets/img/team/asad.jpg',
             'detail_image' => 'assets/img/team/asad.jpg',
-            'intro' => 'Syed Ali Asad Jafri manages cloud infrastructure, CI/CD pipelines, and secure deployment workflows that keep De-Weboo platforms reliable in production.',
-            'bio' => 'Syed Ali Asad Jafri is DevOps Engineer at De-Weboo, ensuring HIPAA-friendly hosting, automated releases, and resilient infrastructure for web, mobile, and data platforms.',
+            'intro' => 'Syed Ali Asad Jafri manages cloud infrastructure, CI/CD pipelines, and secure deployment workflows that keep De-Weboo Dev platforms reliable in production.',
+            'bio' => 'Syed Ali Asad Jafri is DevOps Engineer at De-Weboo Dev, ensuring HIPAA-friendly hosting, automated releases, and resilient infrastructure for web, mobile, and data platforms.',
             'highlights' => [
                 'Builds and maintains CI/CD pipelines for rapid, low-risk production releases.',
                 'Implements monitoring, backups, and security hardening across cloud environments.',
@@ -75,8 +75,8 @@ function dw_team_members(): array
             'role' => 'IT Infrastructure & Cloud Systems Specialist',
             'image' => 'assets/img/team/faisal.jpg',
             'detail_image' => 'assets/img/team/faisal.jpg',
-            'intro' => 'Faisal Mukhtar designs and maintains cloud infrastructure, enterprise networks, and production systems that keep De-Weboo platforms secure, scalable, and highly available.',
-            'bio' => 'Faisal Mukhtar is IT Infrastructure & Cloud Systems Specialist at De-Weboo, delivering resilient hosting, virtualization, and cloud architecture for web, mobile, and data workloads across commercial and public-sector engagements.',
+            'intro' => 'Faisal Mukhtar designs and maintains cloud infrastructure, enterprise networks, and production systems that keep De-Weboo Dev platforms secure, scalable, and highly available.',
+            'bio' => 'Faisal Mukhtar is IT Infrastructure & Cloud Systems Specialist at De-Weboo Dev, delivering resilient hosting, virtualization, and cloud architecture for web, mobile, and data workloads across commercial and public-sector engagements.',
             'highlights' => [
                 'Architects and manages cloud environments for secure, high-availability production workloads.',
                 'Implements network, server, and storage solutions aligned with enterprise security standards.',
@@ -98,8 +98,8 @@ function dw_team_members(): array
             'role' => 'HR',
             'image' => 'assets/img/team/hajra.jpg',
             'detail_image' => 'assets/img/team/hajra.jpg',
-            'intro' => 'Syeda Hajra Batool leads people operations, hiring, and team culture across De-Weboo\'s engineering, marketing, and delivery teams.',
-            'bio' => 'Syeda Hajra Batool is HR at De-Weboo, managing recruitment, onboarding, and employee experience for B2B, B2C, and B2A project teams.',
+            'intro' => 'Syeda Hajra Batool leads people operations, hiring, and team culture across De-Weboo Dev\'s engineering, marketing, and delivery teams.',
+            'bio' => 'Syeda Hajra Batool is HR at De-Weboo Dev, managing recruitment, onboarding, and employee experience for B2B, B2C, and B2A project teams.',
             'highlights' => [
                 'Leads recruitment and onboarding for engineering, marketing, and delivery teams.',
                 'Maintains policies, performance reviews, and employee engagement programs.',
@@ -121,8 +121,8 @@ function dw_team_members(): array
             'role' => 'Senior Data Engineer',
             'image' => 'assets/img/team/mehroz.jpg',
             'detail_image' => 'assets/img/team/mehroz.jpg',
-            'intro' => 'Mehroz Alam designs secure data pipelines, dashboards, and administrative systems that power analytics and compliance for De-Weboo clients.',
-            'bio' => 'Mehroz Alam is Senior Data Engineer at De-Weboo, building secure data architecture, ETL workflows, and reporting layers for enterprise and healthcare organizations.',
+            'intro' => 'Mehroz Alam designs secure data pipelines, dashboards, and administrative systems that power analytics and compliance for De-Weboo Dev clients.',
+            'bio' => 'Mehroz Alam is Senior Data Engineer at De-Weboo Dev, building secure data architecture, ETL workflows, and reporting layers for enterprise and healthcare organizations.',
             'highlights' => [
                 'Engineers secure data pipelines and warehouse models for operational reporting.',
                 'Builds administrative dashboards with role-based access and audit trails.',
@@ -144,8 +144,8 @@ function dw_team_members(): array
             'role' => 'Digital Marketing',
             'image' => 'assets/img/team/hamza.jpg',
             'detail_image' => 'assets/img/team/hamza.jpg',
-            'intro' => 'Meer Hamza leads digital marketing campaigns, lead-generation funnels, and growth experiments for De-Weboo commercial and B2B clients.',
-            'bio' => 'Meer Hamza drives digital marketing at De-Weboo—consumer marketing, paid media, and conversion-focused content.',
+            'intro' => 'Meer Hamza leads digital marketing campaigns, lead-generation funnels, and growth experiments for De-Weboo Dev commercial and B2B clients.',
+            'bio' => 'Meer Hamza drives digital marketing at De-Weboo Dev—consumer marketing, paid media, and conversion-focused content.',
             'highlights' => [
                 'Plans and executes multi-channel campaigns for lead generation and brand growth.',
                 'Optimizes landing pages, ad creative, and funnel analytics for measurable ROI.',
@@ -167,8 +167,8 @@ function dw_team_members(): array
             'role' => 'Senior PACS & Integration Engineer',
             'image' => 'assets/img/team/naimatullah.jpg',
             'detail_image' => 'assets/img/team/naimatullah.jpg',
-            'intro' => 'Naimat Ullah engineers PACS, RIS, and DICOM integrations, connecting imaging systems and clinical workflows for De-Weboo healthcare clients.',
-            'bio' => 'Naimat Ullah is Senior PACS & Integration Engineer at De-Weboo, building and integrating PACS, RIS, DICOM, and teleradiology systems for hospitals, clinics, and healthcare platforms.',
+            'intro' => 'Naimat Ullah engineers PACS, RIS, and DICOM integrations, connecting imaging systems and clinical workflows for De-Weboo Dev healthcare clients.',
+            'bio' => 'Naimat Ullah is Senior PACS & Integration Engineer at De-Weboo Dev, building and integrating PACS, RIS, DICOM, and teleradiology systems for hospitals, clinics, and healthcare platforms.',
             'highlights' => [
                 'Implements and integrates PACS, RIS, and DICOM systems for medical imaging workflows.',
                 'Connects teleradiology platforms with hospital and clinic information systems.',
@@ -189,8 +189,8 @@ function dw_team_members(): array
             'role' => 'Project Manager',
             'image' => 'assets/img/team/naima.jpg',
             'detail_image' => 'assets/img/team/naima.jpg',
-            'intro' => 'Naima Shahzadi supports project planning, client onboarding, and delivery coordination for De-Weboo software engagements.',
-            'bio' => 'Naima Shahzadi is Project Manager at De-Weboo, helping teams stay aligned on scope, schedules, and client expectations across web and IT projects.',
+            'intro' => 'Naima Shahzadi supports project planning, client onboarding, and delivery coordination for De-Weboo Dev software engagements.',
+            'bio' => 'Naima Shahzadi is Project Manager at De-Weboo Dev, helping teams stay aligned on scope, schedules, and client expectations across web and IT projects.',
             'highlights' => [
                 'Tracks milestones, dependencies, and deliverables across active engagements.',
                 'Facilitates stand-ups, retrospectives, and stakeholder check-ins.',

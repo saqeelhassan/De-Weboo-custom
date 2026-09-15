@@ -98,7 +98,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Custom web design & development
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo builds fast, mobile-friendly websites that reflect your brand and convert visitors into customers. We handle strategy, UI/UX, development, and launch—so you get a professional site without the technical headaches.
+                                De-Weboo Dev builds fast, mobile-friendly websites that reflect your brand and convert visitors into customers. We handle strategy, UI/UX, development, and launch—so you get a professional site without the technical headaches.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 From landing pages to full e-commerce platforms, we use modern frameworks, clean code, and SEO best practices. Every project includes responsive design, performance optimization, and post-launch support options.
@@ -154,10 +154,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo delivers reliable websites with ongoing support, performance monitoring, and clear communication throughout your project.
+                                    De-Weboo Dev delivers reliable websites with ongoing support, performance monitoring, and clear communication throughout your project.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>
@@ -174,7 +174,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                             data-bs-target="#collapseOne001" aria-expanded="true"
                                             aria-controls="collapseOne001">
-                                            Can De-Weboo help improve my Google rankings?
+                                            Can De-Weboo Dev help improve my Google rankings?
                                         </button>
                                         <div id="collapseOne001" class="accordion-collapse collapse show"
                                             aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">

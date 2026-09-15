@@ -28,7 +28,7 @@ function dw_mail_config(): array
 
     $defaults = [
         'fromEmail' => $serverEmail,
-        'fromName' => 'De-Weboo',
+        'fromName' => 'De-Weboo Dev',
         'transport' => 'mail',
         'smtp' => [
             'host' => 'mail.deweboo.com',

@@ -135,7 +135,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             OUR QUESTIONS AND ANSWER
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Answers about working with De-Weboo
+                            Answers about working with De-Weboo Dev
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
@@ -151,13 +151,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What services does De-Weboo offer?
+                                    What services does De-Weboo Dev offer?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
+                                            De-Weboo Dev delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -173,7 +173,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
+                                            De-Weboo Dev delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -189,7 +189,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
+                                            De-Weboo Dev delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>
@@ -205,7 +205,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p>
-                                            De-Weboo delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
+                                            De-Weboo Dev delivers web development, mobile apps, secure cloud architecture, digital marketing, SEO, managed IT, and HIPAA-aligned healthcare IT. Every engagement starts with a structured discovery call.
                                         </p>
                                     </div>
                                 </div>

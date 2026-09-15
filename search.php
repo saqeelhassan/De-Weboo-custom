@@ -11,8 +11,8 @@ $results = dw_site_search($query);
 
 dw_load_page_seo('search');
 if ($query !== '') {
-    $page_title = 'Search: ' . $query . ' | De-Weboo';
-    $page_description = count($results) . ' result(s) for “' . $query . '” on De-Weboo — services, blog, portfolio, team, and support pages.';
+    $page_title = 'Search: ' . $query . ' | De-Weboo Dev';
+    $page_description = count($results) . ' result(s) for “' . $query . '” on De-Weboo Dev — services, blog, portfolio, team, and support pages.';
     $page_robots = 'noindex, follow';
 }
 
@@ -54,7 +54,7 @@ require_once __DIR__ . '/includes/navbar.php';
 
 <?php if ($query === '') : ?>
                         <p class="pra fs-seven mb-0">
-                            Search across De-Weboo pages, services, blog articles, portfolio case studies, team profiles, and support resources.
+                            Search across De-Weboo Dev pages, services, blog articles, portfolio case studies, team profiles, and support resources.
                         </p>
 <?php elseif ($results === []) : ?>
                         <p class="pra fs-seven mb-3">No results found for <strong class="black"><?php echo e($query); ?></strong>.</p>

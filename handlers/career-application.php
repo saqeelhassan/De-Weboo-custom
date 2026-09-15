@@ -72,7 +72,7 @@ $bodyLines = [
 
 $body = implode("\n", $bodyLines);
 
-$sent = dw_send_inbound_mail($subject, $body, $name, $email, 'De-Weboo Careers');
+$sent = dw_send_inbound_mail($subject, $body, $name, $email, 'De-Weboo Dev Careers');
 
 if (!$sent) {
     http_response_code(500);

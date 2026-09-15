@@ -128,7 +128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Secure Data Pipelines & Administrative Dashboards
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo specializes in Data Engineering, designing and implementing secure data pipelines, robust data architectures, and intuitive administrative dashboards. We ensure your data is accurately collected, transformed, and made accessible for informed decision-making, all while maintaining the highest standards of security and compliance.
+                                De-Weboo Dev specializes in Data Engineering, designing and implementing secure data pipelines, robust data architectures, and intuitive administrative dashboards. We ensure your data is accurately collected, transformed, and made accessible for informed decision-making, all while maintaining the highest standards of security and compliance.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our services cover the entire data lifecycle, from ingestion and processing to storage and visualization. We build scalable solutions that integrate with your existing systems, providing real-time insights and supporting complex analytical needs for enterprise and public-sector clients.
@@ -184,10 +184,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo transforms complex data into clear, actionable intelligence, empowering your organization with reliable and secure data solutions.
+                                    De-Weboo Dev transforms complex data into clear, actionable intelligence, empowering your organization with reliable and secure data solutions.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

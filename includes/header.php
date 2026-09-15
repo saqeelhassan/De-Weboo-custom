@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/helpers.php';
 
-$page_title = $page_title ?? 'De-Weboo | Custom Software, Web, Mobile & IT Solutions';
+$page_title = $page_title ?? 'De-Weboo Dev | Custom Software, Web, Mobile & IT Solutions';
 $page_description = $page_description ?? 'Enterprise software firm: Development & AI Engineering (web, mobile, AI, data) plus Growth & Infrastructure (marketing, SEO, cloud).';
-$page_author = $page_author ?? 'De-Weboo';
+$page_author = $page_author ?? 'De-Weboo Dev';
 ?>
 <!DOCTYPE html>
 <html lang="en">

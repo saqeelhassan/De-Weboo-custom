@@ -80,7 +80,7 @@ $schema = [
             'sameAs' => $org['sameAs'],
             'hasOfferCatalog' => [
                 '@type' => 'OfferCatalog',
-                'name' => 'De-Weboo Software & IT Services',
+                'name' => 'De-Weboo Dev Software & IT Services',
                 'itemListElement' => $serviceOffers,
             ],
             'contactPoint' => [

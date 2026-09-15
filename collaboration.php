@@ -43,7 +43,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </h2>
                     </div>
                     <p class="pra fs-seven mb-4">
-                        De-Weboo operates as a specialized division of <strong>CaddSight Group</strong>—an enterprise software engineering firm delivering software, web, mobile, and custom medical systems for B2B, B2C, and B2A frameworks, with lifecycle cloud, SEO, and marketing as secondary services.
+                        De-Weboo Dev operates as a specialized division of <strong>CaddSight Group</strong>—an enterprise software engineering firm delivering software, web, mobile, and custom medical systems for B2B, B2C, and B2A frameworks, with lifecycle cloud, SEO, and marketing as secondary services.
                     </p>
                     <div class="d-flex flex-wrap gap-3">
                         <a href="#collab-intake"
@@ -76,7 +76,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <text x="205" y="162" fill="#1E1B1B" font-size="10" font-weight="900" font-family="sans-serif" text-anchor="middle">EZ Falcons</text>
                             <text x="200" y="176" fill="#64748B" font-size="7" font-weight="bold" font-family="sans-serif" text-anchor="middle">U.S. Logistics Support</text>
                             <rect x="280" y="140" width="100" height="50" rx="8" fill="#FFF" stroke="#1E40AF" stroke-width="3"/>
-                            <text x="330" y="162" fill="#1E40AF" font-size="10" font-weight="900" font-family="sans-serif" text-anchor="middle">De-Weboo</text>
+                            <text x="330" y="162" fill="#1E40AF" font-size="10" font-weight="900" font-family="sans-serif" text-anchor="middle">De-Weboo Dev</text>
                             <text x="330" y="176" fill="#64748B" font-size="7" font-weight="bold" font-family="sans-serif" text-anchor="middle">Software &amp; IT</text>
                         </svg>
                         <div class="collab-org-legend">

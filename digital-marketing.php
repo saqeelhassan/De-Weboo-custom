@@ -128,7 +128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Lead Generation & Campaign Strategy
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo offers comprehensive Digital Marketing services focused on driving measurable results for your business. We specialize in lead generation, crafting effective campaign strategies, and optimizing your online presence to attract and convert your target audience.
+                                De-Weboo Dev offers comprehensive Digital Marketing services focused on driving measurable results for your business. We specialize in lead generation, crafting effective campaign strategies, and optimizing your online presence to attract and convert your target audience.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our approach combines data-driven insights with creative execution across various channels, including paid advertising, content marketing, and social media. We work to enhance your brand visibility, engage potential customers, and build strong digital relationships that translate into business growth.
@@ -184,10 +184,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo crafts digital marketing strategies that connect you with your audience, drive engagement, and deliver measurable business growth.
+                                    De-Weboo Dev crafts digital marketing strategies that connect you with your audience, drive engagement, and deliver measurable business growth.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

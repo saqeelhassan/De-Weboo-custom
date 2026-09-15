@@ -134,6 +134,45 @@
   min-height: 32px;
 }
 
+/* Homepage/blog cards — keep the "Read More" button aligned across cards
+   regardless of how many lines the title/excerpt wrap to. */
+.news-single-items {
+  display: flex;
+  flex-direction: column;
+}
+.news-single-items .news-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.news-single-items .blog-card-excerpt {
+  flex: 1;
+}
+.news-single-items .blog-card-footer {
+  margin-top: auto;
+}
+
+/* Contact page — two maps side by side */
+.map-area-row {
+  margin: 0;
+}
+.map-area-col {
+  padding: 0;
+}
+.map-area-col iframe {
+  display: block;
+}
+@media (max-width: 767px) {
+  .map-area-col + .map-area-col iframe {
+    border-top: 2px solid var(--white, #fff);
+  }
+}
+@media (min-width: 768px) {
+  .map-area-col:first-child iframe {
+    border-right: 2px solid var(--white, #fff);
+  }
+}
+
 /* Swiper pagination dots stay visually small, but the actual clickable
    area is expanded via a pseudo-element (clicks anywhere in it still
    register on the real bullet element). */

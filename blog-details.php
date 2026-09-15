@@ -15,7 +15,7 @@ if ($post === null) {
 }
 
 dw_load_page_seo('blog-details');
-$page_title = $post['title'] . ' | De-Weboo Blog';
+$page_title = $post['title'] . ' | De-Weboo Dev Blog';
 $page_description = $post['excerpt'];
 $page_keywords = $post['keywords'];
 $page_canonical = rtrim(dw_site_url(), '/') . dw_blog_url($post['slug']);
@@ -85,13 +85,13 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </div>
                             </div>
                             <div class="box border-top pt-4">
-                                <h3 class="black mb-lg-3 mb-2">Discuss this topic with De-Weboo</h3>
+                                <h3 class="black mb-lg-3 mb-2">Discuss this topic with De-Weboo Dev</h3>
                                 <p class="fs-eight pra mb-4">
                                     Request a consultation on <?php echo e($post['service']); ?>—commercial projects or healthcare IT briefings.
                                 </p>
                                 <a href="/contact"
                                     class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">
-                                    Contact De-Weboo
+                                    Contact De-Weboo Dev
                                 </a>
                             </div>
                         </div>

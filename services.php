@@ -441,10 +441,10 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                     <div class="techgon-content">
                         <div class="mb-lg-5 mb-4">
                             <h3 class="black mb-lg-3 mb-2 wow fadeInUp" data-wow-delay=".3s">
-                                De-Weboo is an enterprise software engineering firm
+                                De-Weboo Dev is an enterprise software engineering firm
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo specializes in custom software development, including full-stack web, native mobile apps, advanced AI/ML solutions, and robust enterprise software (ERP, CRM).
+                                De-Weboo Dev specializes in custom software development, including full-stack web, native mobile apps, advanced AI/ML solutions, and robust enterprise software (ERP, CRM).
                             </p>
                         </div>
                         <ul class="d-grid gap-3">

@@ -35,7 +35,7 @@ function dw_send_inbound_mail(
     string $body,
     string $replyName,
     string $replyEmail,
-    string $fromLabel = 'De-Weboo'
+    string $fromLabel = 'De-Weboo Dev'
 ): bool {
     $recipients = dw_form_inbox_emails();
     if ($recipients === []) {
@@ -165,7 +165,7 @@ function dw_process_contact_form(array $form): array
         implode("\n", $bodyLines),
         $form['name'],
         $form['email'],
-        'De-Weboo Contact'
+        'De-Weboo Dev Contact'
     );
 
     if (!$sent) {

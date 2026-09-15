@@ -7,8 +7,8 @@ require_once __DIR__ . '/includes/blog-posts.php';
 require_once __DIR__ . '/includes/seo.php';
 
 dw_load_page_seo('blog');
-$page_title = 'Blog | Software & Healthcare IT Insights | De-Weboo';
-$page_description = 'Expert articles on web development, AI automation, data engineering, cloud, SEO, AEO, GEO, and HIPAA medical systems from De-Weboo.';
+$page_title = 'Blog | Software & Healthcare IT Insights | De-Weboo Dev';
+$page_description = 'Expert articles on web development, AI automation, data engineering, cloud, SEO, AEO, GEO, and HIPAA medical systems from De-Weboo Dev.';
 
 $posts = dw_blog_posts_sorted();
 $byService = dw_blog_posts_by_service();
@@ -39,7 +39,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row justify-content-center mb-lg-5 mb-4">
                 <div class="col-lg-8 text-center">
                     <p class="pra fs-six mb-0">
-                        SEO, AEO, and GEO-friendly guides on enterprise software, healthcare IT, and growth infrastructure—written by the De-Weboo engineering team for worldwide B2B, B2C, and B2A buyers.
+                        SEO, AEO, and GEO-friendly guides on enterprise software, healthcare IT, and growth infrastructure—written by the De-Weboo Dev engineering team for worldwide B2B, B2C, and B2A buyers.
                     </p>
                 </div>
             </div>

@@ -72,7 +72,7 @@ $sent = dw_send_inbound_mail(
     implode("\n", $bodyLines),
     $name,
     $email,
-    'De-Weboo Teaming'
+    'De-Weboo Dev Teaming'
 );
 
 if (!$sent) {

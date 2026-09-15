@@ -11,7 +11,7 @@ $page_robots = $page_robots ?? 'index, follow, max-image-preview:large, max-snip
 $page_og_type = $page_og_type ?? 'website';
 $og_image = $page_og_image ?? ($org['logo']);
 $page_twitter_card = $page_twitter_card ?? 'summary_large_image';
-$site_name = 'De-Weboo';
+$site_name = 'De-Weboo Dev';
 ?>
     <meta name="keywords" content="<?php echo e($page_keywords); ?>">
     <meta name="robots" content="<?php echo e($page_robots); ?>">

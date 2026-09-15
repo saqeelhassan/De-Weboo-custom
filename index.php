@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -222,7 +222,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -241,7 +241,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -260,7 +260,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/portfolio-details" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -277,7 +277,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="vission-wrapper">
                 <div class="vission-left">
                     <p class="white65 fs-seven mb-4 pb-xxl-1 wow fadeInUp" data-wow-delay=".2s">
-                        What is De-Weboo? An enterprise software engineering firm that engineers custom, secure, and compliant web software for B2B, B2C, and B2A frameworks.
+                        What is De-Weboo Dev? An enterprise software engineering firm that engineers custom, secure, and compliant web software for B2B, B2C, and B2A frameworks.
                     </p>
                     <ul class="d-grid gap-2 mb-xl-5 mb-4">
                         <li class="fs-seven fw_600 white d-flex align-items-center gap-2 wow fadeInUp"
@@ -403,7 +403,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="techgon-content">
                         <div class="mb-lg-5 mb-4">
                             <h3 class="black mb-lg-3 mb-2 wow fadeInUp" data-wow-delay=".3s">
-                                De-Weboo is an enterprise software engineering firm
+                                De-Weboo Dev is an enterprise software engineering firm
                             </h3>
                             <p class="fs-seven pra wow fadeInUp" data-wow-delay=".4s">
                                 Development &amp; AI Engineering: Web Development, Mobile App Development, AI and Machine Learning, and Enterprise Software Development.
@@ -826,7 +826,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
@@ -850,7 +850,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
-                            <span class="fs-seven fw-medium d-block">CEO &amp; Founder</span>
+                            <span class="fs-seven fw-medium d-block">Lead Developer</span>
                             <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>

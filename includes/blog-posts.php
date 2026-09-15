@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 /**
- * De-Weboo blog posts — SEO, AEO & GEO optimized content per service.
+ * De-Weboo Dev blog posts — SEO, AEO & GEO optimized content per service.
  * Images: assets/img/blog/{slug}/cover.png
  */
 function dw_blog_posts(): array
@@ -12,24 +12,24 @@ function dw_blog_posts(): array
         'enterprise-web-development-section-508-wcag' => [
             'slug' => 'enterprise-web-development-section-508-wcag',
             'title' => 'Enterprise Web Development with Section 508 & WCAG Built In',
-            'excerpt' => 'How De-Weboo engineers accessible, audit-ready web platforms for B2B, B2C, and public-sector buyers worldwide.',
+            'excerpt' => 'How De-Weboo Dev engineers accessible, audit-ready web platforms for B2B, B2C, and public-sector buyers worldwide.',
             'service' => 'Web Development',
             'category' => 'WEB DEVELOPMENT',
-            'author' => 'De-Weboo Engineering Team',
+            'author' => 'De-Weboo Dev Engineering Team',
             'published' => '2025-06-02',
             'tags' => ['Web Development', 'Section 508', 'WCAG', 'Enterprise'],
-            'keywords' => 'enterprise web development, Section 508, WCAG accessibility, custom web applications, De-Weboo',
+            'keywords' => 'enterprise web development, Section 508, WCAG accessibility, custom web applications, De-Weboo Dev',
             'images' => [
                 'card' => 'assets/img/blog/enterprise-web-development-section-508-wcag/cover.png',
                 'hero' => 'assets/img/blog/enterprise-web-development-section-508-wcag/cover.png',
             ],
-            'intro' => 'Enterprise web development means building custom web applications that are secure, performant, and accessible from day one—not retrofitting compliance after launch. De-Weboo delivers web engineering for clients in the United States and worldwide, with Section 508 and WCAG 2.1 AA accessibility embedded in every sprint.',
+            'intro' => 'Enterprise web development means building custom web applications that are secure, performant, and accessible from day one—not retrofitting compliance after launch. De-Weboo Dev delivers web engineering for clients in the United States and worldwide, with Section 508 and WCAG 2.1 AA accessibility embedded in every sprint.',
             'sections' => [
                 [
                     'heading' => 'What is enterprise web development?',
                     'paragraphs' => [
                         'Enterprise web development is the design and engineering of custom web platforms—portals, dashboards, e-commerce systems, and patient-facing sites—that support complex business rules, role-based access, integrations, and long-term maintainability. Unlike template websites, enterprise builds prioritize security architecture, API design, and procurement-ready documentation.',
-                        'De-Weboo delivers this work using custom computer programming disciplines that government buyers and enterprise procurement teams expect when sourcing custom web and mobile application vendors.',
+                        'De-Weboo Dev delivers this work using custom computer programming disciplines that government buyers and enterprise procurement teams expect when sourcing custom web and mobile application vendors.',
                     ],
                 ],
                 [
@@ -42,7 +42,7 @@ function dw_blog_posts(): array
                     ],
                 ],
                 [
-                    'heading' => 'How De-Weboo delivers audit-ready web builds',
+                    'heading' => 'How De-Weboo Dev delivers audit-ready web builds',
                     'paragraphs' => [
                         'Our engineers work in Laravel, React, and modern PHP stacks with automated accessibility checks, structured content models, and version-controlled release notes. For public-sector and healthcare clients, we pair technical delivery with VPAT-ready documentation and HIPAA-aligned security controls where required.',
                         'Whether you are a commercial brand in Karachi or a U.S. education authority evaluating RFP responses, the same engineering discipline applies: measurable performance, documented accessibility, and clear scope statements.',
@@ -51,16 +51,16 @@ function dw_blog_posts(): array
             ],
             'faqs' => [
                 [
-                    'question' => 'What does De-Weboo cover in custom web development?',
-                    'answer' => 'Custom computer programming, including custom web applications, e-commerce platforms, and medical patient portals. De-Weboo lists this capability on statements for government and enterprise procurement.',
+                    'question' => 'What does De-Weboo Dev cover in custom web development?',
+                    'answer' => 'Custom computer programming, including custom web applications, e-commerce platforms, and medical patient portals. De-Weboo Dev lists this capability on statements for government and enterprise procurement.',
                 ],
                 [
                     'question' => 'What is the difference between Section 508 and WCAG?',
-                    'answer' => 'Section 508 is the U.S. federal accessibility standard for ICT. WCAG (Web Content Accessibility Guidelines) provides technical success criteria widely adopted by Section 508 and public-sector RFPs. De-Weboo targets WCAG 2.1 AA as the engineering baseline.',
+                    'answer' => 'Section 508 is the U.S. federal accessibility standard for ICT. WCAG (Web Content Accessibility Guidelines) provides technical success criteria widely adopted by Section 508 and public-sector RFPs. De-Weboo Dev targets WCAG 2.1 AA as the engineering baseline.',
                 ],
                 [
-                    'question' => 'Where is De-Weboo located?',
-                    'answer' => 'De-Weboo serves B2B, B2C, and B2A clients globally. See our contact page for full address details.',
+                    'question' => 'Where is De-Weboo Dev located?',
+                    'answer' => 'De-Weboo Dev serves B2B, B2C, and B2A clients globally. See our contact page for full address details.',
                 ],
             ],
         ],
@@ -70,15 +70,15 @@ function dw_blog_posts(): array
             'excerpt' => 'A practical guide to choosing architecture, integrations, and procurement language for multi-audience web platforms.',
             'service' => 'Web Development',
             'category' => 'WEB DEVELOPMENT',
-            'author' => 'De-Weboo Engineering Team',
+            'author' => 'De-Weboo Dev Engineering Team',
             'published' => '2025-06-08',
             'tags' => ['B2B', 'B2C', 'B2A', 'Custom Web Apps'],
-            'keywords' => 'custom web apps, B2B portal, B2C e-commerce, B2A government, De-Weboo web development',
+            'keywords' => 'custom web apps, B2B portal, B2C e-commerce, B2A government, De-Weboo Dev web development',
             'images' => [
                 'card' => 'assets/img/blog/custom-web-apps-b2b-b2c-b2a/cover.png',
                 'hero' => 'assets/img/blog/custom-web-apps-b2b-b2c-b2a/cover.png',
             ],
-            'intro' => 'A custom web app is software accessed through the browser that is built around your workflows—not a generic SaaS template. De-Weboo engineers B2B partner portals, B2C consumer experiences, and B2A (business-to-authority) platforms for government and regulated industries.',
+            'intro' => 'A custom web app is software accessed through the browser that is built around your workflows—not a generic SaaS template. De-Weboo Dev engineers B2B partner portals, B2C consumer experiences, and B2A (business-to-authority) platforms for government and regulated industries.',
             'sections' => [
                 [
                     'heading' => 'B2B vs B2C vs B2A: what changes in the build',
@@ -92,24 +92,24 @@ function dw_blog_posts(): array
                     'heading' => 'Architecture decisions that protect scale',
                     'paragraphs' => [
                         'We recommend API-first backends (Laravel or Node) with clear separation between admin, operator, and public surfaces. Authentication uses industry-standard tokens or SSO where enterprise buyers require it. For cross-border delivery, we document hosting, backup, and incident-response playbooks up front.',
-                        'De-Weboo maintains international commercial delivery capacity for clients worldwide.',
+                        'De-Weboo Dev maintains international commercial delivery capacity for clients worldwide.',
                     ],
                 ],
                 [
                     'heading' => 'When to request a capability briefing',
                     'paragraphs' => [
-                        'If your RFP references custom programming, portal development, or patient-facing web systems, request De-Weboo\'s capability sheet before finalizing vendor shortlists. Commercial teams can start with a scoped discovery call on integrations and launch timeline.',
+                        'If your RFP references custom programming, portal development, or patient-facing web systems, request De-Weboo Dev\'s capability sheet before finalizing vendor shortlists. Commercial teams can start with a scoped discovery call on integrations and launch timeline.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
                     'question' => 'What is a B2A web platform?',
-                    'answer' => 'B2A (business-to-authority) platforms serve government agencies, regulators, or public institutions. They often require accessibility compliance, formal change control, and procurement documentation—core strengths of De-Weboo\'s delivery process.',
+                    'answer' => 'B2A (business-to-authority) platforms serve government agencies, regulators, or public institutions. They often require accessibility compliance, formal change control, and procurement documentation—core strengths of De-Weboo Dev\'s delivery process.',
                 ],
                 [
                     'question' => 'Can one codebase serve B2B and B2C audiences?',
-                    'answer' => 'Yes, with multi-tenant or multi-portal architecture. De-Weboo designs shared cores with audience-specific UI layers to reduce duplication while keeping security boundaries strict.',
+                    'answer' => 'Yes, with multi-tenant or multi-portal architecture. De-Weboo Dev designs shared cores with audience-specific UI layers to reduce duplication while keeping security boundaries strict.',
                 ],
             ],
         ],
@@ -119,15 +119,15 @@ function dw_blog_posts(): array
             'excerpt' => 'How enterprises deploy secure AI automations—custom integrations, LLM guardrails, and measurable ROI.',
             'service' => 'AI Automation',
             'category' => 'AI AUTOMATION',
-            'author' => 'De-Weboo AI Practice',
+            'author' => 'De-Weboo Dev AI Practice',
             'published' => '2025-06-14',
             'tags' => ['AI Automation', 'LLM', 'Workflow'],
-            'keywords' => 'AI automation, LLM integration, workflow automation, enterprise AI, De-Weboo',
+            'keywords' => 'AI automation, LLM integration, workflow automation, enterprise AI, De-Weboo Dev',
             'images' => [
                 'card' => 'assets/img/blog/ai-automation-workflow-llm/cover.png',
                 'hero' => 'assets/img/blog/ai-automation-workflow-llm/cover.png',
             ],
-            'intro' => 'AI automation connects large language models (LLMs), APIs, and business rules to eliminate repetitive work—without bypassing security or compliance. De-Weboo delivers custom AI integrations and workflow automations for commercial and enterprise clients.',
+            'intro' => 'AI automation connects large language models (LLMs), APIs, and business rules to eliminate repetitive work—without bypassing security or compliance. De-Weboo Dev delivers custom AI integrations and workflow automations for commercial and enterprise clients.',
             'sections' => [
                 [
                     'heading' => 'What problems AI automation solves',
@@ -147,11 +147,11 @@ function dw_blog_posts(): array
             ],
             'faqs' => [
                 [
-                    'question' => 'What does De-Weboo cover in AI automation services?',
-                    'answer' => 'Custom AI integrations and automation scripting delivered as bespoke programming services. De-Weboo lists this capability for enterprise buyers.',
+                    'question' => 'What does De-Weboo Dev cover in AI automation services?',
+                    'answer' => 'Custom AI integrations and automation scripting delivered as bespoke programming services. De-Weboo Dev lists this capability for enterprise buyers.',
                 ],
                 [
-                    'question' => 'Which LLM platforms does De-Weboo support?',
+                    'question' => 'Which LLM platforms does De-Weboo Dev support?',
                     'answer' => 'We integrate OpenAI, Azure OpenAI, Anthropic, and open-weight models depending on data residency, cost, and client security policies.',
                 ],
             ],
@@ -162,15 +162,15 @@ function dw_blog_posts(): array
             'excerpt' => 'Design principles for reliable data architecture, ETL pipelines, and executive dashboards that public-sector and enterprise teams can audit.',
             'service' => 'Data Engineering',
             'category' => 'DATA ENGINEERING',
-            'author' => 'De-Weboo Data Team',
+            'author' => 'De-Weboo Dev Data Team',
             'published' => '2025-06-16',
             'tags' => ['Data Engineering', 'ETL', 'Dashboards'],
-            'keywords' => 'data engineering, data pipelines, secure dashboards, De-Weboo',
+            'keywords' => 'data engineering, data pipelines, secure dashboards, De-Weboo Dev',
             'images' => [
                 'card' => 'assets/img/blog/data-engineering-secure-pipelines/cover.png',
                 'hero' => 'assets/img/blog/data-engineering-secure-pipelines/cover.png',
             ],
-            'intro' => 'Data engineering is the discipline of moving, transforming, and governing data so decision-makers trust what they see on screen. De-Weboo architects pipelines and administrative dashboards for government, healthcare, and commercial enterprises.',
+            'intro' => 'Data engineering is the discipline of moving, transforming, and governing data so decision-makers trust what they see on screen. De-Weboo Dev architects pipelines and administrative dashboards for government, healthcare, and commercial enterprises.',
             'sections' => [
                 [
                     'heading' => 'Core components of a production pipeline',
@@ -184,14 +184,14 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'Why documented scope matters in RFPs',
                     'paragraphs' => [
-                        'Procurement officers evaluate systems design, data architecture, and cloud data platforms on documented scope. De-Weboo aligns proposals and staffing plans accordingly when scopes include analytics platforms, regional reporting, or multi-agency data sharing.',
+                        'Procurement officers evaluate systems design, data architecture, and cloud data platforms on documented scope. De-Weboo Dev aligns proposals and staffing plans accordingly when scopes include analytics platforms, regional reporting, or multi-agency data sharing.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
                     'question' => 'What is the difference between data engineering and managed IT?',
-                    'answer' => 'Data engineering focuses on pipeline architecture and analytics readiness (often 541512). Managed IT covers ongoing infrastructure support (541519). De-Weboo offers both with clear scope boundaries.',
+                    'answer' => 'Data engineering focuses on pipeline architecture and analytics readiness (often 541512). Managed IT covers ongoing infrastructure support (541519). De-Weboo Dev offers both with clear scope boundaries.',
                 ],
             ],
         ],
@@ -201,15 +201,15 @@ function dw_blog_posts(): array
             'excerpt' => 'Campaign architecture, attribution, and compliance-aware marketing for software firms and healthcare brands.',
             'service' => 'Digital Marketing',
             'category' => 'DIGITAL MARKETING',
-            'author' => 'De-Weboo Growth Team',
+            'author' => 'De-Weboo Dev Growth Team',
             'published' => '2025-06-18',
             'tags' => ['Digital Marketing', 'B2B', 'Lead Generation'],
-            'keywords' => 'digital marketing B2B, lead generation, De-Weboo marketing',
+            'keywords' => 'digital marketing B2B, lead generation, De-Weboo Dev marketing',
             'images' => [
                 'card' => 'assets/img/blog/digital-marketing-b2b-lead-generation/cover.png',
                 'hero' => 'assets/img/blog/digital-marketing-b2b-lead-generation/cover.png',
             ],
-            'intro' => 'B2B digital marketing turns qualified traffic into pipeline—not vanity metrics. De-Weboo plans and executes campaigns for technology, healthcare, and public-sector adjacent brands that need measurable lead generation.',
+            'intro' => 'B2B digital marketing turns qualified traffic into pipeline—not vanity metrics. De-Weboo Dev plans and executes campaigns for technology, healthcare, and public-sector adjacent brands that need measurable lead generation.',
             'sections' => [
                 [
                     'heading' => 'Channels that work for technical buyers',
@@ -223,32 +223,32 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'AEO and GEO alignment',
                     'paragraphs' => [
-                        'Campaigns perform better when landing pages answer direct questions (AEO) and declare service geography (GEO). De-Weboo pairs paid media with on-site content that names its worldwide commercial delivery—improving quality scores and AI citation potential.',
+                        'Campaigns perform better when landing pages answer direct questions (AEO) and declare service geography (GEO). De-Weboo Dev pairs paid media with on-site content that names its worldwide commercial delivery—improving quality scores and AI citation potential.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
-                    'question' => 'What does De-Weboo cover in digital advertising campaigns?',
-                    'answer' => 'De-Weboo manages the full campaign lifecycle for advertising agency work, including digital campaign management, marketing scopes, and analytics-heavy work.',
+                    'question' => 'What does De-Weboo Dev cover in digital advertising campaigns?',
+                    'answer' => 'De-Weboo Dev manages the full campaign lifecycle for advertising agency work, including digital campaign management, marketing scopes, and analytics-heavy work.',
                 ],
             ],
         ],
         'seo-aeo-geo-enterprise' => [
             'slug' => 'seo-aeo-geo-enterprise',
             'title' => 'SEO, AEO & GEO Strategy for Enterprise & Healthcare Brands',
-            'excerpt' => 'Technical SEO plus answer-engine and geographic optimization—how De-Weboo helps buyers find you in search and AI summaries.',
+            'excerpt' => 'Technical SEO plus answer-engine and geographic optimization—how De-Weboo Dev helps buyers find you in search and AI summaries.',
             'service' => 'SEO',
             'category' => 'SEO',
-            'author' => 'De-Weboo SEO Team',
+            'author' => 'De-Weboo Dev SEO Team',
             'published' => '2025-06-20',
             'tags' => ['SEO', 'AEO', 'GEO', 'Healthcare SEO'],
-            'keywords' => 'SEO AEO GEO, answer engine optimization, healthcare SEO, technical SEO, De-Weboo',
+            'keywords' => 'SEO AEO GEO, answer engine optimization, healthcare SEO, technical SEO, De-Weboo Dev',
             'images' => [
                 'card' => 'assets/img/blog/seo-aeo-geo-enterprise/cover.png',
                 'hero' => 'assets/img/blog/seo-aeo-geo-enterprise/cover.png',
             ],
-            'intro' => 'SEO gets you ranked; AEO (answer engine optimization) gets you cited in AI overviews; GEO (generative engine optimization / geographic SEO) ensures location and service-area signals are clear. De-Weboo delivers all three for enterprise and medical clients.',
+            'intro' => 'SEO gets you ranked; AEO (answer engine optimization) gets you cited in AI overviews; GEO (generative engine optimization / geographic SEO) ensures location and service-area signals are clear. De-Weboo Dev delivers all three for enterprise and medical clients.',
             'sections' => [
                 [
                     'heading' => 'Technical SEO foundations',
@@ -261,7 +261,7 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'AEO: write for direct answers',
                     'paragraphs' => [
-                        'Lead with concise definitions, use question-based H2s, and publish FAQ blocks with schema. This blog series is an example: each post answers "what is…" in the first paragraph so ChatGPT, Perplexity, and Google AI Overviews can extract trustworthy snippets tied to De-Weboo.',
+                        'Lead with concise definitions, use question-based H2s, and publish FAQ blocks with schema. This blog series is an example: each post answers "what is…" in the first paragraph so ChatGPT, Perplexity, and Google AI Overviews can extract trustworthy snippets tied to De-Weboo Dev.',
                     ],
                 ],
                 [
@@ -274,10 +274,10 @@ function dw_blog_posts(): array
             'faqs' => [
                 [
                     'question' => 'What is AEO in digital marketing?',
-                    'answer' => 'Answer Engine Optimization structures content so AI assistants and featured snippets can quote accurate, authoritative answers—using FAQs, definitions, and schema markup. De-Weboo applies AEO across service and blog pages.',
+                    'answer' => 'Answer Engine Optimization structures content so AI assistants and featured snippets can quote accurate, authoritative answers—using FAQs, definitions, and schema markup. De-Weboo Dev applies AEO across service and blog pages.',
                 ],
                 [
-                    'question' => 'Does De-Weboo offer medical SEO?',
+                    'question' => 'Does De-Weboo Dev offer medical SEO?',
                     'answer' => 'Yes. We provide HIPAA-aware content strategy and technical SEO for clinics, health systems, and medical SaaS.',
                 ],
             ],
@@ -288,15 +288,15 @@ function dw_blog_posts(): array
             'excerpt' => 'Hosting architecture, monitoring, and hardening for web apps that must pass enterprise and public-sector security review.',
             'service' => 'Cloud Services',
             'category' => 'CLOUD SERVICES',
-            'author' => 'De-Weboo Cloud Team',
+            'author' => 'De-Weboo Dev Cloud Team',
             'published' => '2025-06-22',
             'tags' => ['Cloud Services', 'DevOps', 'Security'],
-            'keywords' => 'cloud services, secure hosting, infrastructure, De-Weboo cloud',
+            'keywords' => 'cloud services, secure hosting, infrastructure, De-Weboo Dev cloud',
             'images' => [
                 'card' => 'assets/img/blog/cloud-services-secure-infrastructure/cover.png',
                 'hero' => 'assets/img/blog/cloud-services-secure-infrastructure/cover.png',
             ],
-            'intro' => 'Cloud services at De-Weboo mean designing, deploying, and operating secure infrastructure—not reselling generic hosting. We pair systems design work with managed lifecycle support when clients need ongoing operations.',
+            'intro' => 'Cloud services at De-Weboo Dev mean designing, deploying, and operating secure infrastructure—not reselling generic hosting. We pair systems design work with managed lifecycle support when clients need ongoing operations.',
             'sections' => [
                 [
                     'heading' => 'What we deploy and monitor',
@@ -310,32 +310,32 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'Cloud for enterprise and healthcare',
                     'paragraphs' => [
-                        'Public-sector and HIPAA workloads require encryption, access logging, and change control. De-Weboo documents architecture diagrams for assessors and aligns controls to buyer security questionnaires.',
+                        'Public-sector and HIPAA workloads require encryption, access logging, and change control. De-Weboo Dev documents architecture diagrams for assessors and aligns controls to buyer security questionnaires.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
-                    'question' => 'Can De-Weboo host government applications?',
-                    'answer' => 'We architect cloud environments to meet buyer-specific compliance requirements. Final authority-to-operate decisions rest with the agency, but De-Weboo supplies the technical controls and documentation they expect.',
+                    'question' => 'Can De-Weboo Dev host government applications?',
+                    'answer' => 'We architect cloud environments to meet buyer-specific compliance requirements. Final authority-to-operate decisions rest with the agency, but De-Weboo Dev supplies the technical controls and documentation they expect.',
                 ],
             ],
         ],
         'hipaa-patient-portals-medical-web' => [
             'slug' => 'hipaa-patient-portals-medical-web',
             'title' => 'HIPAA-Aligned Patient Portals & Medical Web Development',
-            'excerpt' => 'How De-Weboo builds secure medical websites and patient portals with accessibility and audit trails.',
+            'excerpt' => 'How De-Weboo Dev builds secure medical websites and patient portals with accessibility and audit trails.',
             'service' => 'Medical',
             'category' => 'MEDICAL IT',
-            'author' => 'De-Weboo Healthcare Practice',
+            'author' => 'De-Weboo Dev Healthcare Practice',
             'published' => '2025-06-24',
             'tags' => ['HIPAA', 'Patient Portal', 'Medical Web', 'Healthcare IT'],
-            'keywords' => 'HIPAA patient portal, medical web development, healthcare IT, De-Weboo medical',
+            'keywords' => 'HIPAA patient portal, medical web development, healthcare IT, De-Weboo Dev medical',
             'images' => [
                 'card' => 'assets/img/blog/hipaa-patient-portals-medical-web/cover.png',
                 'hero' => 'assets/img/blog/hipaa-patient-portals-medical-web/cover.png',
             ],
-            'intro' => 'Medical web development requires HIPAA-aligned security, accessible patient experiences, and integration with clinical workflows. De-Weboo engineers patient portals, provider dashboards, and public health sites—with Section 508 / WCAG accessibility for inclusive care access.',
+            'intro' => 'Medical web development requires HIPAA-aligned security, accessible patient experiences, and integration with clinical workflows. De-Weboo Dev engineers patient portals, provider dashboards, and public health sites—with Section 508 / WCAG accessibility for inclusive care access.',
             'sections' => [
                 [
                     'heading' => 'Patient portal essentials',
@@ -349,18 +349,18 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'Bridging commercial healthcare and public programs',
                     'paragraphs' => [
-                        'Clinics and health systems in the United States and worldwide trust De-Weboo for consumer-facing medical SEO sites and secure portals. Public health departments benefit from the same engineering rigor plus procurement documentation.',
+                        'Clinics and health systems in the United States and worldwide trust De-Weboo Dev for consumer-facing medical SEO sites and secure portals. Public health departments benefit from the same engineering rigor plus procurement documentation.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
-                    'question' => 'Is De-Weboo a HIPAA business associate?',
-                    'answer' => 'For U.S. healthcare clients handling PHI, De-Weboo executes Business Associate Agreements (BAAs) when required and implements technical safeguards aligned to HIPAA Security Rule expectations.',
+                    'question' => 'Is De-Weboo Dev a HIPAA business associate?',
+                    'answer' => 'For U.S. healthcare clients handling PHI, De-Weboo Dev executes Business Associate Agreements (BAAs) when required and implements technical safeguards aligned to HIPAA Security Rule expectations.',
                 ],
                 [
                     'question' => 'Can medical sites also target SEO?',
-                    'answer' => 'Yes. De-Weboo combines HIPAA-aware development with specialized medical SEO so compliant sites still earn qualified organic traffic.',
+                    'answer' => 'Yes. De-Weboo Dev combines HIPAA-aware development with specialized medical SEO so compliant sites still earn qualified organic traffic.',
                 ],
             ],
         ],
@@ -370,7 +370,7 @@ function dw_blog_posts(): array
             'excerpt' => 'Everything agents and brokerages need to know about real estate website development—IDX/MLS integration, lead capture, SEO, and what a build actually costs.',
             'service' => 'Real Estate Website Development',
             'category' => 'REAL ESTATE',
-            'author' => 'De-Weboo Engineering Team',
+            'author' => 'De-Weboo Dev Engineering Team',
             'published' => '2026-08-11',
             'tags' => ['Real Estate Website Development', 'IDX', 'MLS', 'Property Listing Website', 'Real Estate Web Design'],
             'keywords' => 'real estate website development, real estate web design, property listing website, IDX website, MLS integration, real estate agent website, real estate website development company',
@@ -378,7 +378,7 @@ function dw_blog_posts(): array
                 'card' => 'assets/img/blog/real-estate-website-development-guide/cover.png',
                 'hero' => 'assets/img/blog/real-estate-website-development-guide/cover.png',
             ],
-            'intro' => 'Real estate website development is the process of building a property listing platform, agent portfolio site, or brokerage portal that turns visitors into qualified leads—not just a digital brochure. A modern real estate website needs fast property search, live IDX/MLS listings, mobile-first design, and lead-routing built in from day one. De-Weboo designs and builds real estate websites for single agents, teams, and multi-agent brokerages, for clients across the United States and worldwide.',
+            'intro' => 'Real estate website development is the process of building a property listing platform, agent portfolio site, or brokerage portal that turns visitors into qualified leads—not just a digital brochure. A modern real estate website needs fast property search, live IDX/MLS listings, mobile-first design, and lead-routing built in from day one. De-Weboo Dev designs and builds real estate websites for single agents, teams, and multi-agent brokerages, for clients across the United States and worldwide.',
             'sections' => [
                 [
                     'heading' => 'What makes real estate website development different',
@@ -406,13 +406,13 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'How much does a real estate website cost?',
                     'paragraphs' => [
-                        'Pricing depends on scope: a single-agent portfolio site with basic IDX is a smaller build than a multi-agent brokerage platform with role-based listing management, custom CRM integration, and multi-market search. De-Weboo scopes real estate website development projects after a discovery call and provides a transparent, fixed-scope proposal—no hidden fees for IDX setup or listing sync.',
+                        'Pricing depends on scope: a single-agent portfolio site with basic IDX is a smaller build than a multi-agent brokerage platform with role-based listing management, custom CRM integration, and multi-market search. De-Weboo Dev scopes real estate website development projects after a discovery call and provides a transparent, fixed-scope proposal—no hidden fees for IDX setup or listing sync.',
                     ],
                 ],
                 [
                     'heading' => 'Choosing a real estate website development company',
                     'paragraphs' => [
-                        'Look for a partner that has actually shipped IDX/MLS integrations, not just template themes with a "Real Estate" label. Ask about listing sync reliability, page speed on mobile, lead-routing setup, and post-launch support. De-Weboo pairs real estate website development with ongoing hosting, monitoring, and support so listings and lead forms keep working after launch.',
+                        'Look for a partner that has actually shipped IDX/MLS integrations, not just template themes with a "Real Estate" label. Ask about listing sync reliability, page speed on mobile, lead-routing setup, and post-launch support. De-Weboo Dev pairs real estate website development with ongoing hosting, monitoring, and support so listings and lead forms keep working after launch.',
                     ],
                 ],
             ],
@@ -423,7 +423,7 @@ function dw_blog_posts(): array
                 ],
                 [
                     'question' => 'Do I need IDX or MLS access before you start?',
-                    'answer' => 'Not necessarily. De-Weboo can help you evaluate and set up an IDX/MLS feed provider as part of the project, or integrate with an existing feed if you already have access.',
+                    'answer' => 'Not necessarily. De-Weboo Dev can help you evaluate and set up an IDX/MLS feed provider as part of the project, or integrate with an existing feed if you already have access.',
                 ],
                 [
                     'question' => 'Can you migrate my existing listings and content to a new site?',
@@ -431,7 +431,7 @@ function dw_blog_posts(): array
                 ],
                 [
                     'question' => 'Will my real estate website work well on mobile?',
-                    'answer' => 'Yes. Every De-Weboo real estate website is built mobile-first, since most property searches start on a phone—map search, filters, and lead forms are all optimized for small screens.',
+                    'answer' => 'Yes. Every De-Weboo Dev real estate website is built mobile-first, since most property searches start on a phone—map search, filters, and lead forms are all optimized for small screens.',
                 ],
             ],
         ],
@@ -441,7 +441,7 @@ function dw_blog_posts(): array
             'excerpt' => 'What IDX and MLS integration actually do, how they differ, and how to choose the right setup for your real estate website.',
             'service' => 'Real Estate Website Development',
             'category' => 'REAL ESTATE',
-            'author' => 'De-Weboo Engineering Team',
+            'author' => 'De-Weboo Dev Engineering Team',
             'published' => '2026-08-13',
             'tags' => ['IDX Integration', 'MLS Integration', 'Real Estate Website Development', 'Property Listing Website'],
             'keywords' => 'IDX integration, MLS integration, IDX website, real estate website development, property listing website, IDX vs MLS, real estate feed integration',
@@ -485,26 +485,26 @@ function dw_blog_posts(): array
                 [
                     'heading' => 'Common IDX integration mistakes to avoid',
                     'paragraphs' => [
-                        'The most common issues we see: choosing an IDX provider that is not approved for the local MLS, slow listing pages that hurt both SEO and conversion, and lead forms that capture inquiries but never route them to an agent. De-Weboo scopes IDX/MLS integration as part of real estate website development so the feed, the search experience, and the lead routing are built together—not bolted on after launch.',
+                        'The most common issues we see: choosing an IDX provider that is not approved for the local MLS, slow listing pages that hurt both SEO and conversion, and lead forms that capture inquiries but never route them to an agent. De-Weboo Dev scopes IDX/MLS integration as part of real estate website development so the feed, the search experience, and the lead routing are built together—not bolted on after launch.',
                     ],
                 ],
             ],
             'faqs' => [
                 [
                     'question' => 'Do I need to be a licensed agent to get IDX access?',
-                    'answer' => 'Yes. IDX access requires an active MLS membership, which is tied to a real estate license or brokerage affiliation. De-Weboo integrates with the IDX feed once you have MLS/IDX access set up.',
+                    'answer' => 'Yes. IDX access requires an active MLS membership, which is tied to a real estate license or brokerage affiliation. De-Weboo Dev integrates with the IDX feed once you have MLS/IDX access set up.',
                 ],
                 [
                     'question' => 'How much does IDX integration cost?',
-                    'answer' => 'IDX feed providers typically charge a separate monthly fee (paid to the feed provider, not the developer), plus the one-time cost of integrating and designing the search experience on your website. De-Weboo includes IDX integration scope in the real estate website development proposal.',
+                    'answer' => 'IDX feed providers typically charge a separate monthly fee (paid to the feed provider, not the developer), plus the one-time cost of integrating and designing the search experience on your website. De-Weboo Dev includes IDX integration scope in the real estate website development proposal.',
                 ],
                 [
                     'question' => 'Can I switch IDX providers later without rebuilding my site?',
-                    'answer' => 'In most cases, yes—if the website is built with a clean separation between the listing display layer and the feed source. De-Weboo architects real estate websites this way so a future provider switch does not require a full rebuild.',
+                    'answer' => 'In most cases, yes—if the website is built with a clean separation between the listing display layer and the feed source. De-Weboo Dev architects real estate websites this way so a future provider switch does not require a full rebuild.',
                 ],
                 [
                     'question' => 'Will IDX-powered listing pages hurt my site\'s SEO?',
-                    'answer' => 'Not if built correctly. De-Weboo builds unique, crawlable listing URLs with structured data and fast load times, so IDX listing pages contribute to SEO instead of creating thin or duplicate content.',
+                    'answer' => 'Not if built correctly. De-Weboo Dev builds unique, crawlable listing URLs with structured data and fast load times, so IDX listing pages contribute to SEO instead of creating thin or duplicate content.',
                 ],
             ],
         ],

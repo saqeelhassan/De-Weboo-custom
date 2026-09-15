@@ -56,7 +56,7 @@
                             <span class="collab-division-icon collab-division-icon--digital"><i class="fas fa-laptop-code"></i></span>
                             <span class="collab-division-tag" style="color:#1E40AF;">Division 03</span>
                         </div>
-                        <h4 class="black fw-six mb-1">De-Weboo Digital</h4>
+                        <h4 class="black fw-six mb-1">De-Weboo Dev Digital</h4>
                         <p class="fs-eight pra text-uppercase fw-semibold mb-3">Web, cloud, healthcare IT &amp; enterprise delivery</p>
                         <ul class="collab-list list-unstyled mb-4">
                             <li><i class="fas fa-check" style="color:#1E40AF;"></i><span>Custom software &amp; enterprise apps</span></li>
@@ -160,7 +160,7 @@
                                     <input type="checkbox" id="req-medical" checked onchange="calculateRFPScore()">
                                     <span>
                                         <strong class="d-block black fs-seven">Medical software &amp; IT systems</strong>
-                                        <span class="fs-eight pra">De-Weboo</span>
+                                        <span class="fs-eight pra">De-Weboo Dev</span>
                                     </span>
                                 </label>
                             </div>
@@ -230,7 +230,7 @@
                 </div>
                 <div class="col-lg-4 wow fadeInUp" data-wow-delay=".4s">
                     <div class="collab-performance-card">
-                        <span class="fs-eight fw-bold text-uppercase d-inline-block mb-3" style="color:#1E40AF;">De-Weboo</span>
+                        <span class="fs-eight fw-bold text-uppercase d-inline-block mb-3" style="color:#1E40AF;">De-Weboo Dev</span>
                         <h4 class="black fw-six mb-3">Custom software &amp; cyber hardening</h4>
                         <p class="pra fs-seven mb-4">ADA/Section 508 portals, secure medical databases, cloud architectures, and cybersecurity for state networks.</p>
                         <div class="d-flex justify-content-between fs-eight pra fw-semibold border-top pt-3">
@@ -288,8 +288,8 @@
                                         </div>
                                         <div class="col-md-4">
                                             <label class="collab-service-pill w-100 mb-0">
-                                                <input type="checkbox" name="services[]" value="De-Weboo" class="me-2" checked>
-                                                De-Weboo Digital
+                                                <input type="checkbox" name="services[]" value="De-Weboo Dev" class="me-2" checked>
+                                                De-Weboo Dev Digital
                                             </label>
                                         </div>
                                     </div>
@@ -326,7 +326,7 @@
         <div class="container text-center">
             <div class="section-title mb-4">
                 <h3 class="black fw-bold mb-3">CaddSight Group of companies</h3>
-                <p class="pra fs-seven">De-Weboo is proud to operate under CaddSight Group alongside our partner divisions.</p>
+                <p class="pra fs-seven">De-Weboo Dev is proud to operate under CaddSight Group alongside our partner divisions.</p>
             </div>
             <div class="collab-partners">
                 <a href="https://www.caddsight.com" target="_blank" rel="noopener noreferrer">www.caddsight.com</a>
@@ -347,7 +347,7 @@
                 </div>
                 <a href="/contact"
                     class="common-btn text-nowrap heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden bg-white rounded100">
-                    Contact De-Weboo
+                    Contact De-Weboo Dev
                 </a>
             </div>
         </div>

@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Advanced AI & Machine Learning Solutions
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo develops advanced AI and Machine Learning solutions to enhance business efficiency, automate processes, and unlock insights from your data. From predictive analytics to natural language processing, we leverage cutting-edge technologies to solve complex business challenges.
+                                De-Weboo Dev develops advanced AI and Machine Learning solutions to enhance business efficiency, automate processes, and unlock insights from your data. From predictive analytics to natural language processing, we leverage cutting-edge technologies to solve complex business challenges.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our AI services include custom model development, LLM integration, workflow automation, and intelligent data processing. We focus on building secure, scalable, and ethical AI systems that deliver measurable business value.
@@ -164,10 +164,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo empowers businesses with intelligent AI solutions that drive innovation, optimize operations, and provide a competitive edge.
+                                    De-Weboo Dev empowers businesses with intelligent AI solutions that drive innovation, optimize operations, and provide a competitive edge.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

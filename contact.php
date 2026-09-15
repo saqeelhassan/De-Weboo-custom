@@ -36,7 +36,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <li class="p3-clr">/</li>
                     <li class="white">Contact</li>
                 </ul>
-                <h1 class="white visible-from-right">Contact De-Weboo</h1>
+                <h1 class="white visible-from-right">Contact De-Weboo Dev</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -88,11 +88,22 @@ require_once __DIR__ . '/includes/navbar.php';
     <!-- Team Section Start -->
     <section class="map-section fix section-padding">
         <div class="map-area">
-            <iframe
-                title="De-Weboo — Hyderabad HQ &amp; global digital delivery"
-                src="https://www.google.com/maps?q=Lucky+Shanghai+Trade+Centre,+Auto+Bhan+Road,+Hyderabad,+Sindh,+Pakistan&amp;hl=en&amp;z=16&amp;output=embed"
-                style="border:0;" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="row g-0 map-area-row">
+                <div class="col-md-6 map-area-col">
+                    <iframe
+                        title="De-Weboo Dev — Hyderabad HQ &amp; global digital delivery"
+                        src="https://www.google.com/maps?q=Lucky+Shanghai+Trade+Centre,+Auto+Bhan+Road,+Hyderabad,+Sindh,+Pakistan&amp;hl=en&amp;z=16&amp;output=embed"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-md-6 map-area-col">
+                    <iframe
+                        title="De-Weboo Dev — Lahore office location"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.630939599171!2d74.3012025752125!3d31.47933697423285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x255501caa6cdd55%3A0x44c6ff34a7d80f14!2sTechnical%20Solutions!5e0!3m2!1sen!2s!4v1789466178715!5m2!1sen!2s"
+                        style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                </div>
+            </div>
         </div>
         <div class="container">
             <div class="contact-help-box">

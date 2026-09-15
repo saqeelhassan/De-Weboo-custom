@@ -128,7 +128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Secure Cloud Architecture & HIPAA-Friendly Hosting
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo provides comprehensive Cloud Services, specializing in secure cloud architecture, seamless migration, and HIPAA-friendly hosting solutions. We design, implement, and manage cloud environments that are scalable, resilient, and compliant with industry regulations, ensuring your digital platforms operate efficiently and securely.
+                                De-Weboo Dev provides comprehensive Cloud Services, specializing in secure cloud architecture, seamless migration, and HIPAA-friendly hosting solutions. We design, implement, and manage cloud environments that are scalable, resilient, and compliant with industry regulations, ensuring your digital platforms operate efficiently and securely.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our expertise covers a range of cloud providers, offering tailored strategies for infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS) deployments. We focus on optimizing performance, reducing operational costs, and enhancing the security posture of your cloud-based applications and data.
@@ -184,10 +184,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo delivers robust and secure cloud solutions, ensuring your infrastructure is optimized for performance, scalability, and compliance.
+                                    De-Weboo Dev delivers robust and secure cloud solutions, ensuring your infrastructure is optimized for performance, scalability, and compliance.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

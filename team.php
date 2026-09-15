@@ -35,7 +35,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 col-lg-6 col-xl-4">
                     <div class="team-items wow fadeInUp" data-wow-delay=".4s">
                         <div class="thumb position-relative w-100 mb-lg-4 mb-3">
-                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
+                            <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, Lead Developer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
                                 <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
@@ -59,7 +59,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="content">
                             <h4 class="black mb-1"><a href="<?php echo e(dw_team_member_url('aqeel')); ?>" class="black">Syed Aqeel Hassan Gillani</a></h4>
-                            <span class="fs-seven fw-medium d-block">CEO &amp; Founder</span>
+                            <span class="fs-seven fw-medium d-block">Lead Developer</span>
                             <?php $team_view_href = dw_team_member_url('aqeel'); require __DIR__ . '/includes/team-view-button.php'; ?>
                         </div>
                     </div>

@@ -128,7 +128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Technical SEO, AEO & Healthcare SEO
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo provides advanced SEO services designed to boost your organic visibility and drive qualified traffic. We specialize in technical SEO, optimizing your site's foundation for search engines, and implementing Answer Engine Optimization (AEO) strategies to get your content featured in AI search results.
+                                De-Weboo Dev provides advanced SEO services designed to boost your organic visibility and drive qualified traffic. We specialize in technical SEO, optimizing your site's foundation for search engines, and implementing Answer Engine Optimization (AEO) strategies to get your content featured in AI search results.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Our expertise extends to specialized medical and healthcare SEO, ensuring your compliant content ranks for critical queries. We focus on sustainable strategies that improve your search rankings, enhance user experience, and deliver long-term digital growth.
@@ -184,10 +184,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo ensures your website is not just found, but understood and trusted by both search engines and your target audience.
+                                    De-Weboo Dev ensures your website is not just found, but understood and trusted by both search engines and your target audience.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

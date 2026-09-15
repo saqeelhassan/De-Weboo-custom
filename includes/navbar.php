@@ -100,7 +100,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                     <div class="offcanvas__top mb-4 d-flex justify-content-between align-items-center">
                         <div class="offcanvas__logo">
                             <a href="/">
-                                <img src="/assets/img/logo/logo.png" loading="lazy" alt="De-Weboo logo" class="navbar-logo">
+                                <img src="/assets/img/logo/logo.png" loading="lazy" alt="De-Weboo Dev logo" class="navbar-logo">
                             </a>
                         </div>
                         <div class="offcanvas__close">
@@ -180,7 +180,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                     <div class="header-left">
                         <div class="logo">
                             <a href="/" class="header-logo">
-                                <img src="<?php echo e($header_logo_src); ?>" alt="De-Weboo logo" class="navbar-logo">
+                                <img src="<?php echo e($header_logo_src); ?>" alt="De-Weboo Dev logo" class="navbar-logo">
                             </a>
                         </div>
                     </div>

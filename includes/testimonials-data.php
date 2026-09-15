@@ -11,22 +11,22 @@ function dw_client_testimonials(): array
 {
     return [
         [
-            'quote' => 'De-Weboo strengthened EZ Falcons with technical SEO and marketing that drives qualified corporate inquiries across the U.S. market.',
+            'quote' => 'De-Weboo Dev strengthened EZ Falcons with technical SEO and marketing that drives qualified corporate inquiries across the U.S. market.',
             'role' => 'CEO · EZ Falcons · Arizona, USA',
             'name' => 'Dara',
         ],
         [
-            'quote' => 'From audit to launch, De-Weboo helped us rank for high-intent keywords and turn organic traffic into booked discovery calls.',
+            'quote' => 'From audit to launch, De-Weboo Dev helped us rank for high-intent keywords and turn organic traffic into booked discovery calls.',
             'role' => 'CEO · EZ Falcons · Arizona, USA',
             'name' => 'Dara',
         ],
         [
-            'quote' => 'New Super Prime was built fast and multilingual—De-Weboo delivered a premium site without page-builder bloat.',
+            'quote' => 'New Super Prime was built fast and multilingual—De-Weboo Dev delivered a premium site without page-builder bloat.',
             'role' => 'CEO · New Super Prime · KSA',
             'name' => 'Pervez Iqbal',
         ],
         [
-            'quote' => 'De-Weboo led our SEO and multilingual discoverability with clean technical work for international buyers.',
+            'quote' => 'De-Weboo Dev led our SEO and multilingual discoverability with clean technical work for international buyers.',
             'role' => 'CEO · New Super Prime · KSA',
             'name' => 'Pervez Iqbal',
         ],
@@ -41,7 +41,7 @@ function dw_client_testimonials(): array
             'name' => 'Pervez Iqbal',
         ],
         [
-            'quote' => 'De-Weboo rebuilt our patient intake flow with HIPAA-aware hosting and a faster, more accessible front end.',
+            'quote' => 'De-Weboo Dev rebuilt our patient intake flow with HIPAA-aware hosting and a faster, more accessible front end.',
             'role' => 'Operations Director · Dallas, TX, USA',
             'name' => 'Marcus Reed',
         ],
@@ -51,7 +51,7 @@ function dw_client_testimonials(): array
             'name' => 'Jennifer Walsh',
         ],
         [
-            'quote' => 'Our cloud migration and CI/CD pipeline cut release risk—De-Weboo kept engineering and DevOps aligned throughout.',
+            'quote' => 'Our cloud migration and CI/CD pipeline cut release risk—De-Weboo Dev kept engineering and DevOps aligned throughout.',
             'role' => 'CTO · Seattle, WA, USA',
             'name' => 'Robert Chen',
         ],

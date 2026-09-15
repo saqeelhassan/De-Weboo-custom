@@ -108,7 +108,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 Native & Cross-Platform Mobile App Development
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo engineers high-performance native and cross-platform mobile applications for iOS and Android. We focus on intuitive user experiences, robust backend integrations, and secure data handling to bring your app idea to life.
+                                De-Weboo Dev engineers high-performance native and cross-platform mobile applications for iOS and Android. We focus on intuitive user experiences, robust backend integrations, and secure data handling to bring your app idea to life.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
                                 Whether you need a consumer-facing app, an enterprise solution, or a secure B2B/B2C/B2A mobile portal, our team uses modern frameworks and best practices to deliver scalable and engaging mobile experiences.
@@ -164,10 +164,10 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo delivers innovative mobile solutions with a focus on user experience, security, and seamless integration with your existing systems.
+                                    De-Weboo Dev delivers innovative mobile solutions with a focus on user experience, security, and seamless integration with your existing systems.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">CEO &amp; Founder</span>
+                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

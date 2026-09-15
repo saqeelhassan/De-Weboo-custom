@@ -37,7 +37,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             OUR QUESTIONS AND ANSWER
                         </h6>
                         <h2 class="wow fadeInUp black fw-bold visible-slowly-right" data-wow-delay=".3s">
-                            Answers about working with De-Weboo
+                            Answers about working with De-Weboo Dev
                         </h2>
                     </div>
                     <div class="faq-stresh d-flex align-items-center">
@@ -53,13 +53,13 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What services does De-Weboo offer?
+                                    What services does De-Weboo Dev offer?
                                 </button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
                                         <p class="fs-seven pra">
-                                            De-Weboo is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We deliver for B2B, B2C, and B2A frameworks.
+                                            De-Weboo Dev is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We deliver for B2B, B2C, and B2A frameworks.
                                         </p>
                                     </div>
                                 </div>

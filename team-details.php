@@ -14,7 +14,7 @@ if ($member === null) {
 }
 
 dw_load_page_seo(basename(__FILE__, '.php'));
-$page_title = $member['name'] . ' | ' . $member['role'] . ' | De-Weboo';
+$page_title = $member['name'] . ' | ' . $member['role'] . ' | De-Weboo Dev';
 $page_canonical = rtrim(dw_site_url(), '/') . dw_team_member_url($member['slug']);
 $dw_org = dw_org_config();
 
@@ -92,7 +92,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <a href="<?php echo e($member['linkedin'] ?? '#'); ?>"<?php echo !empty($member['linkedin']) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                             </div>
-                            <a href="mailto:<?php echo e($dw_org['email']); ?>?subject=<?php echo rawurlencode('Message for ' . $member['name'] . ' — De-Weboo'); ?>" class="rounded-5 share-cmn-icon">
+                            <a href="mailto:<?php echo e($dw_org['email']); ?>?subject=<?php echo rawurlencode('Message for ' . $member['name'] . ' — De-Weboo Dev'); ?>" class="rounded-5 share-cmn-icon">
                                 <svg width="17" height="13" viewBox="0 0 17 13" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
@@ -128,7 +128,7 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="col-md-6 pe-xxl-5">
                         <h2 class="black mb-xxl-4 mb-sm-3 mb-2 visible-from-right">Check my skills</h2>
                         <p class="pra fs-seven mb-md-4 mb-3 pb-xxl-2 wow fadeInUp">
-                            Core strengths <?php echo e($member['name']); ?> brings to De-Weboo <?php echo e(strtolower($member['role'])); ?> engagements.
+                            Core strengths <?php echo e($member['name']); ?> brings to De-Weboo Dev <?php echo e(strtolower($member['role'])); ?> engagements.
                         </p>
                         <div class="teco-mail-box d-flex align-items-center gap-xxl-3 gap-2">
                             <div class="icon d-center rounded-circle">
