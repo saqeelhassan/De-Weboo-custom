@@ -22,6 +22,8 @@ function dw_smtp_send(
     $password = (string) ($cfg['password'] ?? '');
 
     if ($host === '' || $username === '' || $password === '' || $recipients === []) {
+        error_log('dw_smtp_send: missing host/username/password/recipients — check mail-config.local.php');
+
         return false;
     }
 
@@ -39,6 +41,8 @@ function dw_smtp_send(
     );
 
     if ($socket === false) {
+        error_log("dw_smtp_send: could not connect to {$remote} — [{$errno}] {$errstr}");
+
         return false;
     }
 
@@ -51,6 +55,8 @@ function dw_smtp_send(
         if ($encryption === 'tls') {
             dw_smtp_cmd($socket, 'STARTTLS', [220]);
             if (!@stream_socket_enable_crypto($socket, true, STREAM_CRYPTO_METHOD_TLS_CLIENT)) {
+                error_log('dw_smtp_send: STARTTLS handshake failed for ' . $host . ' — certificate/hostname mismatch or TLS not supported on this port');
+
                 return false;
             }
             dw_smtp_cmd($socket, 'EHLO ' . dw_smtp_client_host(), [250]);
@@ -96,7 +102,8 @@ function dw_smtp_send(
         fwrite($socket, $payload . "\r\n.\r\n");
         dw_smtp_expect($socket, [250]);
         dw_smtp_cmd($socket, 'QUIT', [221]);
-    } catch (Throwable) {
+    } catch (Throwable $e) {
+        error_log('dw_smtp_send: ' . $e->getMessage());
         @fclose($socket);
 
         return false;

@@ -20,6 +20,6 @@ return [
         'port' => 587,
         'encryption' => 'tls',
         'username' => 'Info@deweboo.com',
-        'password' => 'L^6T4c$m[jIB',
+        'password' => 'REPLACE_WITH_MAILBOX_PASSWORD',
     ],
 ];

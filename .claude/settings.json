@@ -35,7 +35,10 @@
       "Bash(curl -s \"http://localhost/De-weboo-webiste/\")",
       "Bash(curl -s \"http://localhost/De-weboo-webiste/about\" -o /dev/null -w \"about HTTP %{http_code}\\\\n\")",
       "Bash(curl -s \"http://localhost/De-weboo-webiste/contact\" -o /dev/null -w \"contact HTTP %{http_code}\\\\n\")",
-      "Bash(curl -s \"http://localhost/De-weboo-webiste/portfolio-details?project=de-weboo-platform\")"
+      "Bash(curl -s \"http://localhost/De-weboo-webiste/portfolio-details?project=de-weboo-platform\")",
+      "Bash(find /c/laragon/www/De-weboo-webiste -iname \"mail-config.local.php*\")",
+      "Bash(php -l /c/laragon/www/De-weboo-webiste/includes/mail.php)",
+      "Bash(php -l /c/laragon/www/De-weboo-webiste/includes/mail-smtp.php)"
     ]
   }
 }

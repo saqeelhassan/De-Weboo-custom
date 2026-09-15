@@ -48,6 +48,10 @@ function dw_send_inbound_mail(
     $replyToEmail = ($replyName !== '' && filter_var($replyEmail, FILTER_VALIDATE_EMAIL)) ? $replyEmail : null;
     $replyToName = $replyToEmail !== null ? $replyName : null;
 
+    if (($cfg = dw_mail_config()) && ($cfg['transport'] ?? 'mail') === 'smtp' && !dw_mail_use_smtp()) {
+        error_log('dw_send_inbound_mail: transport is "smtp" but host/username/password are incomplete in mail-config.local.php — falling back to PHP mail()');
+    }
+
     if (dw_mail_use_smtp()) {
         return dw_smtp_send(
             $recipients,
@@ -79,11 +83,16 @@ function dw_send_inbound_mail(
         $additionalParams = '-f' . escapeshellarg($fromEmail);
     }
 
-    if ($additionalParams !== '') {
-        return @mail($to, $subject, $body, $headers, $additionalParams);
+    $ok = $additionalParams !== ''
+        ? @mail($to, $subject, $body, $headers, $additionalParams)
+        : @mail($to, $subject, $body, $headers);
+
+    if (!$ok) {
+        $err = error_get_last();
+        error_log('dw_send_inbound_mail: PHP mail() failed — ' . ($err['message'] ?? 'no error captured') . '. On most VPS setups (no local MTA configured) mail() cannot send at all; use SMTP transport instead.');
     }
 
-    return @mail($to, $subject, $body, $headers);
+    return $ok;
 }
 
 /** @return array{form: array<string, string>, alert: ?array{type: string, message: string}} */
