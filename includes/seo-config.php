@@ -82,10 +82,10 @@ function dw_org_config(): array
             'Custom AI Integrations',
         ],
         'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services',
-        'facebook' => 'https://www.facebook.com/deweboo',
+        'facebook' => 'https://www.facebook.com/deweboodev/',
         'sameAs' => [
             'https://caddsight.com/',
-            'https://www.facebook.com/deweboo',
+            'https://www.facebook.com/deweboodev/',
         ],
         'primaryContactRep' => [
             'name' => 'Syed Aqeel Hassan Gillani',

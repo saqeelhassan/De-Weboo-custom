@@ -87,6 +87,19 @@ require_once __DIR__ . '/includes/navbar.php';
                             <?php echo e($project['techStack']); ?>
                         </h6>
                     </div>
+                    <?php if (!empty($project['liveUrl'])) : ?>
+                    <div class="line"></div>
+                    <div class="item wow fadeInUp" data-wow-delay=".7s">
+                        <span class="pra fs-eight d-block mb-1">
+                            Website
+                        </span>
+                        <h6 class="fs-six fw_600 black">
+                            <a href="<?php echo e($project['liveUrl']); ?>" target="_blank" rel="noopener noreferrer" class="p1-clr">
+                                Visit website <i class="fa-solid fa-arrow-up-right-from-square fs-8"></i>
+                            </a>
+                        </h6>
+                    </div>
+                    <?php endif; ?>
                     <div class="line"></div>
                     <div class="item wow fadeInUp" data-wow-delay=".8s">
                         <span class="pra fs-eight d-block mb-xxl-4 mb-3">

@@ -38,7 +38,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -70,7 +70,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -102,7 +102,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/naima.jpg" alt="Naima Shahzadi, Project Manager" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -134,7 +134,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/mehroz.jpg" alt="Mehroz Alam, Senior Data Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -166,7 +166,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, HR" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -198,7 +198,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hamza.jpg" alt="Meer Hamza, Digital Marketing" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -230,7 +230,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/faisal.jpg" alt="Faisal Mukhtar, IT Infrastructure &amp; Cloud Systems Specialist" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -262,7 +262,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/naimatullah.jpg" alt="Naimat Ullah, Senior PACS &amp; Integration Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">

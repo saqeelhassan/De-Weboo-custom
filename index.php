@@ -462,12 +462,12 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Web
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
                                         Development</a></h5>
                                 <p class="white mb-3">
                                     Custom web apps, e-commerce, and secure B2B/B2C/B2A portals, including high-security medical websites.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/web-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -485,13 +485,13 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Mobile
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
                                         App Development</a>
                                 </h5>
                                 <p class="white mb-3">
                                     Native and cross-platform mobile applications with secure APIs.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/mobile-app-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -504,17 +504,17 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Custom Medical Systems</h5>
-                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/services" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Custom
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/services" class="white">Custom
                                         Medical Systems</a></h5>
                                 <p class="white mb-3">
                                     PACS, RIS, DICOM viewers, teleradiology &amp; medical portals.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/services" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -829,7 +829,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/aqeel.jpg" alt="Syed Aqeel Hassan Gillani, CEO &amp; Founder" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -861,7 +861,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/asad.jpg" alt="Syed Ali Asad Jafri, DevOps Engineer" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">
@@ -893,7 +893,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/team/hajra.jpg" alt="Syeda Hajra Batool, HR" class="w-100">
                             <div
                                 class="social-wrapper2 d-flex justify-content-center align-items-center gap-lg-2 gap-1">
-                                <a href="https://www.facebook.com/deweboo" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
+                                <a href="https://www.facebook.com/deweboodev/" target="_blank" rel="noopener noreferrer" class="rounded-2" aria-label="Facebook">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                                 <a href="#" class="rounded-2" aria-label="X (Twitter)">

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(grep -n \"dw_contact\" /c/laragon/www/De-weboo-webiste/includes/navbar.php /c/laragon/www/De-weboo-webiste/includes/footer.php /c/laragon/www/De-weboo-webiste/includes/contact-call-block.php | head -20)",
+      "Read(//c/laragon/www/De-weboo-webiste/includes/**)",
+      "Read(//c/laragon/www/De-weboo-webiste/**)",
+      "Read(//c/laragon/www/De-weboo-webiste/assets/css/**)",
+      "Bash(grep -rn \"facebook.com/deweboo\" /c/laragon/www/De-weboo-webiste --include=\"*.php\" -i)",
+      "Bash(grep -n \"facebook.com\" /c/laragon/www/De-weboo-webiste/index.php -i)",
+      "Bash(php -l /c/laragon/www/De-weboo-webiste/includes/portfolio-projects.php)",
+      "Bash(php -l /c/laragon/www/De-weboo-webiste/portfolio-details.php)",
+      "Bash(curl -s \"http://localhost/De-weboo-webiste/portfolio-details?project=sindh-wdd-dashboard\")",
+      "Bash(curl -s \"http://localhost/De-weboo-webiste/portfolio-details?project=edustream-lms\")",
+      "Bash(curl -s \"http://localhost/De-weboo-webiste/portfolio-details?project=dream-asa-homes\")",
+      "Bash(curl -s -o /dev/null -w \"local HTTP %{http_code}\\\\n\" \"http://localhost/De-weboo-webiste/portfolio/edustream-lms\")"
+    ]
+  }
+}

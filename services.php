@@ -49,17 +49,17 @@ require_once __DIR__ . '/includes/navbar.php';
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
-                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/web-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Web
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
                                         Development</a></h5>
                                 <p class="white mb-3">
 Full-stack, front-end, and back-end development services using modern frameworks.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/web-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -72,18 +72,18 @@ Full-stack, front-end, and back-end development services using modern frameworks
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
-                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/mobile-app-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Mobile
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
                                         App Development</a>
                                 </h5>
                                 <p class="white mb-3">
 Native and cross-platform apps for iOS and Android.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/mobile-app-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -96,17 +96,17 @@ Native and cross-platform apps for iOS and Android.
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">AI and Machine Learning</h5>
-                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">AI &amp;
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI &amp;
                                         Machine Learning</a></h5>
                                 <p class="white mb-3">
 Advanced AI solutions to enhance business efficiency.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/ai-machine-learning" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -119,17 +119,17 @@ Advanced AI solutions to enhance business efficiency.
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
                             <h5 class="white mb-3 fs-five fw_500">Enterprise Software Development</h5>
-                            <a href="/services-details" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                            <a href="/enterprise-software-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services-details" class="white">Enterprise
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/enterprise-software-development" class="white">Enterprise
                                         Software Development</a></h5>
                                 <p class="white mb-3">
 ERP, CRM, and custom enterprise-grade applications.
                                 </p>
-                                <a href="/services-details" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                <a href="/enterprise-software-development" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
                                     <i class="fa-solid fa-arrow-right"></i>
                                 </a>
                             </div>
@@ -163,6 +163,142 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
         </div>
     </section>
     <!-- Service Dev Section end - Software Developers -->
+
+    <!-- Service Dev Section Start - Additional Services -->
+    <section class="services-development-section fix section-padding">
+        <div class="container">
+            <div class="row justify-content-center mb-lg-5 mb-sm-5 mb-4 pb-lg-1">
+                <div class="col-lg-7">
+                    <div class="section-title text-center">
+                        <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
+                            ADDITIONAL SERVICES
+                        </span>
+                        <p class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
+                            AI automation, data, marketing, SEO, and cloud services to grow your business
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-xl-4 g-3">
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img2 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
+                            <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI
+                                        Automation</a></h5>
+                                <p class="white mb-3">
+                                    Custom AI models, LLM integration, and workflow automation.
+                                </p>
+                                <a href="/ai-machine-learning" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img3 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">Data Engineering</h5>
+                            <a href="/data-engineering" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/data-engineering" class="white">Data
+                                        Engineering</a></h5>
+                                <p class="white mb-3">
+                                    Secure data pipelines, data architecture, and admin dashboards.
+                                </p>
+                                <a href="/data-engineering" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img4 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/indus-marketing.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">Digital Marketing</h5>
+                            <a href="/digital-marketing" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/indus-marketing.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/digital-marketing" class="white">Digital
+                                        Marketing</a></h5>
+                                <p class="white mb-3">
+                                    Lead generation, campaign strategy, and performance analytics.
+                                </p>
+                                <a href="/digital-marketing" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img5 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/se-dev6.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">SEO</h5>
+                            <a href="/seo" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/se-dev6.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/seo" class="white">SEO</a></h5>
+                                <p class="white mb-3">
+                                    Technical SEO, Answer Engine Optimization, and healthcare SEO.
+                                </p>
+                                <a href="/seo" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img6 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h5 class="white mb-3 fs-five fw_500">Cloud Services</h5>
+                            <a href="/cloud-services" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
+                                <h5 class="white mb-3 fs-five fw_500"><a href="/cloud-services" class="white">Cloud
+                                        Services</a></h5>
+                                <p class="white mb-3">
+                                    Secure cloud architecture, migration, and HIPAA-friendly hosting.
+                                </p>
+                                <a href="/cloud-services" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Service Dev Section end - Additional Services -->
+
     <section class="technology-section fix section-padding">
         <div class="container">
             <div class="row g-4 justify-content-center">
