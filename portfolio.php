@@ -10,6 +10,16 @@ require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 
 $portfolioProjects = dw_portfolio_projects();
+
+/** Collapse the granular per-project category into one of the three top-level filter groups. */
+function dw_portfolio_filter_group(string $category): string
+{
+    return match ($category) {
+        'SEO' => 'SEO',
+        'Marketing' => 'Digital Marketing',
+        default => 'Development',
+    };
+}
 ?>
 <!-- Banner Section Start -->
     <section class="breadcrumb-section position-relative fix">
@@ -33,13 +43,20 @@ $portfolioProjects = dw_portfolio_projects();
     <!-- Gateway Section Start -->
     <section class="gateway-sections section-padding fix">
         <div class="container custom-container">
-            <div class="row g-4 justify-content-center">
+            <div class="portfolio-filter d-flex flex-wrap justify-content-center gap-3 mb-5" role="tablist">
+                <button type="button" class="portfolio-filter-btn active" data-group="all">All</button>
+                <button type="button" class="portfolio-filter-btn" data-group="Development">Development</button>
+                <button type="button" class="portfolio-filter-btn" data-group="SEO">SEO</button>
+                <button type="button" class="portfolio-filter-btn" data-group="Digital Marketing">Digital Marketing</button>
+            </div>
+            <div class="row g-4 justify-content-center portfolio-grid">
                 <?php foreach ($portfolioProjects as $project) :
                     $cardImage = dw_portfolio_image($project['images']['card']);
                     $detailUrl = dw_portfolio_url($project['slug']);
                     $titleLines = explode(' ', $project['shortName'], 2);
+                    $filterGroup = dw_portfolio_filter_group($project['category']);
                     ?>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4 portfolio-grid-item" data-group="<?php echo e($filterGroup); ?>">
                     <div class="gateway-items rounded-4 w-100">
                         <img loading="lazy" src="<?php echo e($cardImage); ?>" alt="<?php echo e($project['shortName']); ?>" class="w-100 rounded-4">
                         <div class="content">
@@ -67,4 +84,7 @@ $portfolioProjects = dw_portfolio_projects();
             </div>
         </div>
     </section>
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php
+$extra_scripts = ['/assets/js/portfolio-filter.js'];
+require_once __DIR__ . '/includes/footer.php';
+?>

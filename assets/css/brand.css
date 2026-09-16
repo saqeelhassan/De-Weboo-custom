@@ -152,6 +152,28 @@
   margin-top: auto;
 }
 
+/* Portfolio page — category filter buttons */
+.portfolio-filter-btn {
+  padding: 10px 24px;
+  border-radius: 100px;
+  border: 1px solid #E4E4E4;
+  background: var(--white);
+  color: var(--black);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.portfolio-filter-btn:hover {
+  border-color: var(--p1-clr);
+  color: var(--p1-clr);
+}
+.portfolio-filter-btn.active {
+  background: var(--p1-clr);
+  border-color: var(--p1-clr);
+  color: var(--white);
+}
+
 /* Contact page — two maps side by side */
 .map-area-row {
   margin: 0;
