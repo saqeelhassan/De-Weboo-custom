@@ -23,8 +23,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 <span data-text-preloader="e" class="letters-loading">
                     e
                 </span>
-                <span data-text-preloader="-" class="letters-loading">
-                    -
+                <span data-text-preloader=" " class="letters-loading">
+                    &nbsp;
                 </span>
                 <span data-text-preloader="W" class="letters-loading">
                     W
@@ -40,6 +40,18 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 </span>
                 <span data-text-preloader="o" class="letters-loading">
                     o
+                </span>
+                <span data-text-preloader=" " class="letters-loading">
+                    &nbsp;
+                </span>
+                <span data-text-preloader="D" class="letters-loading">
+                    D
+                </span>
+                <span data-text-preloader="e" class="letters-loading">
+                    e
+                </span>
+                <span data-text-preloader="v" class="letters-loading">
+                    v
                 </span>
             </div>
             <p class="text-center">Loading</p>
