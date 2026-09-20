@@ -99,7 +99,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-md-6 map-area-col">
                     <iframe
                         title="De-Weboo Dev — Lahore office location"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.630939599171!2d74.3012025752125!3d31.47933697423285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x255501caa6cdd55%3A0x44c6ff34a7d80f14!2sTechnical%20Solutions!5e0!3m2!1sen!2s!4v1789466178715!5m2!1sen!2s"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3402.6312804745075!2d74.3037939!3d31.479327600000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39190393fbc22b1f%3A0x91b6bd8bef13abc8!2sDe%20Weboo%20Dev!5e0!3m2!1sen!2s!4v1789924228592!5m2!1sen!2s"
                         style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 </div>

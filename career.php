@@ -99,164 +99,20 @@ require_once __DIR__ . '/includes/navbar.php';
                 </div>
             </div>
 
-            <div class="row g-4">
-
-                <!-- Position: Full-Stack Developer -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">Engineering</span>
-                                <h4 class="black fw-bold">Full-Stack Developer</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Build and ship custom web applications for B2B and healthcare clients. You'll work across PHP/Laravel, React, and REST APIs with occasional DevOps responsibility on AWS or DigitalOcean.
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center wow fadeInUp" data-wow-delay=".3s">
+                    <div class="blog-card-item p-xl-5 p-4 border rounded-3">
+                        <h4 class="black fw-bold mb-2">No open positions right now</h4>
+                        <p class="pra fs-seven mb-4">
+                            We don't have any current openings, but we're always happy to hear from talented people. Send us your resume below and we'll reach out when a role fits.
                         </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>3+ years full-stack experience (PHP + JS/React)</li>
-                            <li>Experience with REST API design and MySQL/PostgreSQL</li>
-                            <li>Familiarity with Git workflows and CI/CD</li>
-                        </ul>
                         <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='Full-Stack Developer'">
-                            Apply Now
+                           onclick="document.getElementById('career_position').value='Other / General Application'">
+                            Submit Your Resume
                             <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
                         </a>
                     </div>
                 </div>
-
-                <!-- Position: AI / ML Engineer -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">AI Engineering</span>
-                                <h4 class="black fw-bold">AI / ML Engineer</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Design and deliver AI automation solutions and LLM integrations for enterprise clients. You'll build workflow automations, RAG pipelines, and AI-powered product features.
-                        </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>Strong Python background with LLM APIs (OpenAI, Anthropic)</li>
-                            <li>Experience with LangChain, vector databases, or RAG architectures</li>
-                            <li>Ability to scope and deliver AI features end-to-end</li>
-                        </ul>
-                        <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='AI / ML Engineer'">
-                            Apply Now
-                            <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Position: Mobile App Developer -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">Mobile</span>
-                                <h4 class="black fw-bold">Mobile App Developer</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Build cross-platform mobile apps for iOS and Android serving B2C and healthcare clients. You'll collaborate directly with clients on requirements and iterate quickly toward App Store releases.
-                        </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>2+ years React Native or Flutter experience</li>
-                            <li>Published apps on App Store or Google Play</li>
-                            <li>Comfort working with REST APIs and native device features</li>
-                        </ul>
-                        <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='Mobile App Developer'">
-                            Apply Now
-                            <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Position: SEO & Digital Marketing Specialist -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">Growth</span>
-                                <h4 class="black fw-bold">SEO &amp; Digital Marketing Specialist</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Drive organic growth for De-Weboo Dev's clients across B2B, medical, and e-commerce verticals. Own technical SEO audits, content strategies, and paid digital campaigns.
-                        </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>Proven track record with technical SEO and link building</li>
-                            <li>Experience with Google Ads, Meta Ads, or LinkedIn Ads</li>
-                            <li>Healthcare or medical SEO experience is a strong plus</li>
-                        </ul>
-                        <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='SEO & Digital Marketing Specialist'">
-                            Apply Now
-                            <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Position: Data Engineer -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">Data Engineering</span>
-                                <h4 class="black fw-bold">Data Engineer</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Contract</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Design and build secure data pipelines and administrative dashboards for enterprise and government clients. Work with structured and semi-structured datasets at scale.
-                        </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>Strong SQL and Python (Pandas, PySpark, or similar)</li>
-                            <li>Experience with ETL/ELT pipelines and data warehouses</li>
-                            <li>Cloud data services (AWS, GCP, or Azure)</li>
-                        </ul>
-                        <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='Data Engineer'">
-                            Apply Now
-                            <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Position: UI/UX Designer -->
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay=".5s">
-                    <div class="blog-card-item p-xl-4 p-3 border rounded-3 h-100">
-                        <div class="d-flex align-items-start justify-content-between gap-3 mb-3">
-                            <div>
-                                <span class="sub-badge4 p1-clr fw-bold fs-eight text-uppercase d-block mb-2">Design</span>
-                                <h4 class="black fw-bold">UI/UX Designer</h4>
-                            </div>
-                            <span class="badge bg-light text-dark fs-eight fw-semibold text-nowrap px-3 py-2 rounded-5">Remote · Full-time</span>
-                        </div>
-                        <p class="pra fs-seven mb-3">
-                            Create intuitive, accessible interfaces for web and mobile products used by commercial and government clients. You'll work closely with engineers from wireframe to production-ready Figma handoff.
-                        </p>
-                        <ul class="pra fs-seven mb-4 ps-3">
-                            <li>Strong Figma skills and a portfolio of shipped products</li>
-                            <li>Knowledge of WCAG accessibility standards</li>
-                            <li>Experience designing for complex dashboards or data-heavy UIs</li>
-                        </ul>
-                        <a href="#apply-form" class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg"
-                           onclick="document.getElementById('career_position').value='UI/UX Designer'">
-                            Apply Now
-                            <span class="ani-arrow"><i class="fa-solid fa-arrow-right-long"></i></span>
-                        </a>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
@@ -378,6 +234,31 @@ require_once __DIR__ . '/includes/navbar.php';
 #career-application-form .nice-select .option.selected {
     font-weight: 600;
     color: #222222;
+}
+#career-application-form select.form-control {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    box-sizing: border-box;
+    height: calc(1.5em + 0.75rem + 2px);
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #6c757d;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 0.375rem;
+    padding: 0.375rem 2.25rem 0.375rem 0.75rem;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%236c757d' d='M6 8 0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 12px 8px;
+}
+#career-application-form select.form-control:focus {
+    outline: none;
+    box-shadow: none;
+    border-color: #dee2e6;
 }
 </style>
 <script>

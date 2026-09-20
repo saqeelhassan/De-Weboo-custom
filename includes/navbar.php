@@ -92,9 +92,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 <div class="right-top-cont d-flex align-items-center gap-5">
                     <div class="social-custom d-flex align-items-center gap-xl-3 gap-3">
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
-                        <a href="#" class=" black" aria-label="X (Twitter)"><i class="fa-brands fa-twitter white65 fs-six"></i></a>
-                        <a href="#" class=" black" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
-                        <a href="#" class=" black" aria-label="Instagram"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Instagram"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
                     </div>
                 </div>
             </div>
@@ -173,9 +172,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                         </div>
                         <div class="social-icon d-flex align-items-center">
                             <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-                            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="<?php echo e($dw_contact['pinterest']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>

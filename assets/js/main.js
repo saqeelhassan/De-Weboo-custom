@@ -236,6 +236,46 @@
             $selects.niceSelect();
         }
 
+        /* ─ Newsletter Subscribe (footer forms) ─────────────────────────── */
+        $("form.form-style1").each(function () {
+            var $form = $(this);
+            var $input = $form.find('input[name="newsletter_email"]');
+            var $btn = $form.find("button");
+            var $msg = $('<div class="newsletter-msg fs-eight mt-2"></div>').insertAfter($form);
+
+            $form.on("submit", function (e) {
+                e.preventDefault();
+
+                var email = $.trim($input.val());
+                if (!email) {
+                    return;
+                }
+
+                $btn.prop("disabled", true);
+                $msg.removeClass("text-danger text-success").text("");
+
+                $.ajax({
+                    url: "/handlers/newsletter-subscribe.php",
+                    method: "POST",
+                    dataType: "json",
+                    data: $form.serialize(),
+                })
+                    .done(function (res) {
+                        $msg.addClass(res && res.success ? "text-success" : "text-danger")
+                            .text((res && res.message) || "Something went wrong. Please try again.");
+                        if (res && res.success) {
+                            $input.val("");
+                        }
+                    })
+                    .fail(function () {
+                        $msg.addClass("text-danger").text("Something went wrong. Please try again.");
+                    })
+                    .always(function () {
+                        $btn.prop("disabled", false);
+                    });
+            });
+        });
+
         /* ─ Swiper Sliders (guard-checked — no wasted init on missing elements) */
         if (document.querySelector(".banner-section-wrap")) {
             new Swiper(".banner-section-wrap", {

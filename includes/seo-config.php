@@ -83,9 +83,15 @@ function dw_org_config(): array
         ],
         'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services',
         'facebook' => 'https://www.facebook.com/deweboodev/',
+        'linkedin' => 'https://www.linkedin.com/company/de-weboo-dev/',
+        'instagram' => 'https://www.instagram.com/deweboodev/',
+        'pinterest' => 'https://www.pinterest.com/Deweboodev/',
         'sameAs' => [
             'https://caddsight.com/',
             'https://www.facebook.com/deweboodev/',
+            'https://www.linkedin.com/company/de-weboo-dev/',
+            'https://www.instagram.com/deweboodev/',
+            'https://www.pinterest.com/Deweboodev/',
         ],
         'primaryContactRep' => [
             'name' => 'Syed Aqeel Hassan Gillani',

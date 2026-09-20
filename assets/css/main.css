@@ -1492,6 +1492,10 @@ footer {
   padding: 16px 26px;
   outline: none;
 }
+
+.portfolio-discuss-honeypot {
+  display: none !important;
+}
 .contact-from-grp ::placeholder {
   color: var(--pra);
 }
