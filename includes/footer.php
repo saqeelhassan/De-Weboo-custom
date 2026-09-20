@@ -50,11 +50,6 @@ if (($footer_variant ?? 'default') === 'style2') :
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/collaboration">
-                                            Collaboration
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="/team">
                                             Meet our team
                                         </a>
@@ -304,11 +299,6 @@ foreach ($extra_scripts as $script) :
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="/collaboration">
-                                            Collaboration
-                                        </a>
-                                    </li>
-                                    <li>
                                         <a href="/team">
                                             Meet our team
                                         </a>
@@ -408,6 +398,7 @@ foreach ($extra_scripts as $script) :
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
                                     <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
                                     <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="LinkedIn"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
+                                    <a href="<?php echo e($dw_contact['pinterest']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p white65 fs-six"></i></a>
                                 </div>
                             </div>
                         </div>

@@ -206,9 +206,6 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                             <a href="/about">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="/collaboration">Collaboration</a>
-                                        </li>
-                                        <li>
                                             <a href="/services">Services</a>
                                             <ul class="submenu">
                                                 <li class="has-dropdown">
@@ -255,6 +252,10 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                     <div class="header-hamburger-inner d-xl-flex gap-xxl-4 gap-xl-3 align-items-center d-none">
                         <a href="#0" class="search-trigger search-icon d-xl-block d-none fs-five" aria-label="Search">
                             <i class="fa-solid fa-magnifying-glass <?php echo e($nav_search_icon_color_inner); ?>"></i>
+                        </a>
+                        <a href="https://www.fiverr.com/s/NeNr7DG" target="_blank" rel="noopener noreferrer"
+                            class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p1-bg">
+                            Hire Us on Fiverr
                         </a>
                         <a href="/contact"
                             class="common-btn box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p3-bg">

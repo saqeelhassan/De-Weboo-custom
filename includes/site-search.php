@@ -41,7 +41,6 @@ function dw_site_search_index(): array
         'digital-marketing' => 'Digital Marketing',
         'seo' => 'SEO',
         'cloud-services' => 'Cloud Services',
-        'collaboration' => 'Collaboration',
         'pricing-plan' => 'Pricing',
         'privacy-policy' => 'Privacy Policy',
         'client-support' => 'Client Support',

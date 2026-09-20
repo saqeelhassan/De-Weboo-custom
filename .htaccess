@@ -17,6 +17,9 @@ Options -Indexes
     # Never touch AJAX/handler endpoints — they must keep their real .php path
     RewriteRule ^handlers/ - [L]
 
+    # Removed page: /collaboration -> /contact
+    RewriteRule ^collaboration/?$ /contact [R=301,L]
+
     # Canonicalize: /page.php -> /page (skip POST so form/AJAX submissions aren't redirected)
     RewriteCond %{REQUEST_METHOD} GET
     RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]

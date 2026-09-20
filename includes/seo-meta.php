@@ -167,11 +167,6 @@ return [
         'description' => 'Client feedback from commercial brands and healthcare organizations on secure, enterprise-grade software delivery.',
         'keywords' => 'De-Weboo Dev reviews, client testimonials, software agency reviews',
     ],
-    'collaboration' => [
-        'title' => 'Collaboration | De-Weboo Dev & CaddSight Group',
-        'description' => 'De-Weboo Dev and CaddSight Group deliver integrated software engineering and CAD/BIM documentation for enterprise clients.',
-        'keywords' => 'CaddSight collaboration, De-Weboo Dev partnership, enterprise IT',
-    ],
     'pricing-plan' => [
         'title' => 'Pricing | Custom Software & IT Services',
         'description' => 'Transparent packages for custom software, web, mobile & medical builds—plus cloud, SEO & marketing to scale platforms we engineer.',
