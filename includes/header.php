@@ -38,14 +38,14 @@ foreach ($extra_preloads as $preload) :
     <link rel="shortcut icon" href="/assets/img/logo/favs.png">
 
     <!-- Self-hosted fonts (Inter, Plus Jakarta Sans) — no Google Fonts CDN -->
-    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/fonts.css')); ?>">
 
     <!-- Critical CSS — render-blocking (above-fold layout & icons) -->
     <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/assets/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <link rel="stylesheet" href="/assets/css/brand.css">
+    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/main.css')); ?>">
+    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/brand.css')); ?>">
 
     <!-- Non-critical CSS — async loaded to unblock render -->
     <link rel="preload" href="/assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">

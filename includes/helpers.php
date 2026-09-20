@@ -19,3 +19,16 @@ function dw_self_path(): string
 
     return preg_replace('/\.php$/', '', $path) ?? $path;
 }
+
+/**
+ * Append a cache-busting ?v= query string (file mtime) to a local static asset
+ * path, so CDN/browser caches fetch the new file the moment it's deployed
+ * instead of serving a stale copy until the cache TTL expires.
+ */
+function dw_asset(string $path): string
+{
+    $fsPath = __DIR__ . '/../' . ltrim($path, '/');
+    $mtime = @filemtime($fsPath);
+
+    return $path . ($mtime !== false ? '?v=' . $mtime : '');
+}
