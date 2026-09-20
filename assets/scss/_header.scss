@@ -84,7 +84,7 @@
 					width: 200px;
 					background: $white;
 					z-index: 99999;
-					visibility: hidden;
+					pointer-events: none;
 					opacity: 0;
 					transform-origin: top center;
 					color: $header-color;
@@ -120,7 +120,7 @@
 						.submenu {
 							inset-inline-start: 100%;
 							top: 0;
-							visibility: hidden;
+							pointer-events: none;
 							opacity: 0;
 						}
 						&:hover {
@@ -138,7 +138,7 @@
 								-ms-transform: translateY(1);
 								-o-transform: translateY(1);
 								transform: translateY(1);
-								visibility: visible;
+								pointer-events: auto;
 								opacity: 1;
 							}
 						}
@@ -165,7 +165,7 @@
 					padding: 30px 30px 10px 30px;
 					opacity: 0;
 					left: calc(100% - 300px);
-					visibility: hidden;
+					pointer-events: none;
 					padding: 20px 20px 20px 20px;
 
 					.homemenu-items {
@@ -192,7 +192,7 @@
 									justify-content: center;
 									flex-direction: column;
 									opacity: 0;
-									visibility: hidden;
+									pointer-events: none;
 									@include transition;
 									margin-top: 20px;
 									.theme-btn {
@@ -213,18 +213,18 @@
 								}
 								&:hover {
 									&::before {
-										visibility: visible;
+										pointer-events: auto;
 										opacity: 1;
 									}
 
 									.demo-button {
 										opacity: 1;
-										visibility: visible;
+										pointer-events: auto;
 										margin-top: 0;
 									}
 									&.homemenu-btn {
 										opacity: 1;
-										visibility: visible;
+										pointer-events: auto;
 										bottom: 50%;
 										transform: translateY(50%);
 									}
@@ -254,7 +254,7 @@
 						}
 					}
 					> .submenu {
-						visibility: visible;
+						pointer-events: auto;
 						opacity: 1;
 						transform: translateY(0px);
 					}
@@ -606,13 +606,13 @@
 	z-index: 900;
 	top: 0;
 	opacity: 0;
-	visibility: hidden;
+	pointer-events: none;
 	right: 0;
 }
 
 .offcanvas__overlay.overlay-open {
 	opacity: 0.8;
-	visibility: visible;
+	pointer-events: auto;
 }
 
 @media (max-width: 450px) {

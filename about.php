@@ -399,7 +399,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         Our working steps
                     </h2>
                 </div>
-                <a href="/blog"
+                <a href="/blog" aria-label="Learn more about our working steps on the blog"
                     class="common-btn heading-font box-style d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold black overflow-hidden border rounded100">
                     Learn More
                 </a>

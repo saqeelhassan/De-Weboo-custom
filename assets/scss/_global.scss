@@ -255,4 +255,14 @@
 		}
 	}
 }
+
+// Accessibility: WCAG 2.5.5 touch target size + spacing for standalone phone links
+.contact-phone-link {
+	display: inline-flex;
+	align-items: center;
+	min-height: 48px;
+	min-width: 48px;
+	padding: 6px 4px;
+	margin: 2px 0;
+}
 //Social Icon area

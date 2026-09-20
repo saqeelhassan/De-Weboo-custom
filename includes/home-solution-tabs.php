@@ -30,6 +30,8 @@ function dw_home_solution_tabs(): array
             'tab_label' => 'Web',
             'pane_id' => 'home',
             'image' => 'assets/img/services/solutio-web.jpg',
+            'image_width' => 1536,
+            'image_height' => 1024,
             'image_alt' => 'Web developers collaborating on custom applications and enterprise portals',
             'stat_count' => '120',
             'stat_suffix' => '+',
@@ -47,6 +49,8 @@ function dw_home_solution_tabs(): array
             'tab_label' => 'AI Automation',
             'pane_id' => 'ai-automation',
             'image' => 'assets/img/services/solutio-ai.jpg',
+            'image_width' => 1536,
+            'image_height' => 1024,
             'image_alt' => 'Engineer configuring AI workflow automation and LLM integrations',
             'stat_count' => '40',
             'stat_suffix' => '+',
@@ -65,6 +69,8 @@ function dw_home_solution_tabs(): array
             'tab_label' => 'Medical',
             'pane_id' => 'contact',
             'image' => 'assets/img/services/solutio-medical.jpg',
+            'image_width' => 1536,
+            'image_height' => 1024,
             'image_alt' => 'Healthcare team reviewing HIPAA-aligned patient portal on tablet',
             'stat_count' => '76',
             'stat_suffix' => '+',
@@ -83,6 +89,8 @@ function dw_home_solution_tabs(): array
             'tab_label' => 'Real Estate',
             'pane_id' => 'realestate',
             'image' => 'assets/img/services/service-detail-enterprise.jpg',
+            'image_width' => 792,
+            'image_height' => 400,
             'image_alt' => 'Real estate team reviewing a property listing platform dashboard',
             'stat_count' => '30',
             'stat_suffix' => '+',
@@ -103,7 +111,7 @@ function dw_render_solution_tab_thumb(array $tab): void
 {
     ?>
                             <div class="solutio-thumb position-relative rounded-3 w-100">
-                                <img loading="lazy" src="<?php echo e($tab['image']); ?>" alt="<?php echo e($tab['image_alt']); ?>" class="rounded-3 w-100 solutio-thumb-img">
+                                <img loading="lazy" width="<?php echo e((string) $tab['image_width']); ?>" height="<?php echo e((string) $tab['image_height']); ?>" src="<?php echo e($tab['image']); ?>" alt="<?php echo e($tab['image_alt']); ?>" class="rounded-3 w-100 solutio-thumb-img">
                                 <div class="contents whitebg rounded-4 p-xxl-5 p-4 m-xxl-5 m-xl-4 m-lg-3 m-2">
                                     <div class="cont d-flex align-items-center gap-0 mb-2">
                                         <span class="count fs-two black fw-semibold"><?php echo e($tab['stat_count']); ?></span>
@@ -111,9 +119,9 @@ function dw_render_solution_tab_thumb(array $tab): void
                                         <span class="fs-two black fw-semibold"><?php echo e($tab['stat_suffix']); ?></span>
 <?php endif; ?>
                                     </div>
-                                    <h5 class="fw_500 black">
+                                    <h4 class="fw_500 black fs-five">
                                         <?php echo e($tab['stat_label']); ?>
-                                    </h5>
+                                    </h4>
                                 </div>
                             </div>
     <?php

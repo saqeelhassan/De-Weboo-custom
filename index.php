@@ -84,8 +84,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                     </div>
                     <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2">
+                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335">
+                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" fetchpriority="high">
                 </div>
             </div>
             <div class="swiper-slide">
@@ -125,8 +125,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                     </div>
                     <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2">
+                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335" loading="lazy">
+                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" loading="lazy">
                 </div>
             </div>
             <div class="swiper-slide">
@@ -166,8 +166,8 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                     </div>
                     <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2">
+                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335" loading="lazy">
+                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" loading="lazy">
                 </div>
             </div>
         </div>
@@ -194,7 +194,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".3s">
                     <div class="event-work-items text-center">
                         <div class="boxes">
-                            <img loading="lazy" src="/assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
+                            <img loading="lazy" width="50" height="52" src="/assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">Development &amp; AI</span>
                             <h4 class="mb-3">
                                 <a href="/services" class="black">
@@ -203,7 +203,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn more about Web & Mobile Development">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -213,7 +213,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".5s">
                     <div class="event-work-items text-center">
                         <div class="boxes">
-                            <img loading="lazy" src="/assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
+                            <img loading="lazy" width="50" height="54" src="/assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">AI Automation</span>
                             <h4 class="mb-3">
                                 <a href="/services" class="black">
@@ -222,7 +222,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn more about AI & Machine Learning">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -232,7 +232,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".6s">
                     <div class="event-work-items text-center">
                         <div class="boxes">
-                            <img loading="lazy" src="/assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
+                            <img loading="lazy" width="50" height="54" src="/assets/img/icon/even2.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">Data Engineering</span>
                             <h4 class="mb-3">
                                 <a href="/services" class="black">
@@ -241,7 +241,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn more about Data Engineering & Cloud">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -251,7 +251,7 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-sm-6 col-lg-3 wow fadeInUp" data-wow-delay=".7s">
                     <div class="event-work-items text-center">
                         <div class="boxes">
-                            <img loading="lazy" src="/assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
+                            <img loading="lazy" width="50" height="52" src="/assets/img/icon/even1.png" alt="Illustration" class="mb-5 m-auto d-block">
                             <span class="pra fs-seven text-uppercase d-block mb-3">Digital Marketing &amp; SEO</span>
                             <h4 class="mb-3">
                                 <a href="/services" class="black">
@@ -260,7 +260,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             </h4>
                             <div class="arrow-area d-flex justify-content-center align-items-center gap-2">
                                 <span class="arrow-text p1-clr fs-seven fw_600">Learn More</span>
-                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn More">
+                                <a href="/services" class="d-center arrows rounded-circle" aria-label="Learn more about Digital Marketing & SEO">
                                     <i class="fa-solid fa-arrow-right black"></i>
                                 </a>
                             </div>
@@ -396,7 +396,7 @@ require_once __DIR__ . '/includes/navbar.php';
             <div class="row g-6 align-items-xxl-center">
                 <div class="col-xxl-8 col-xl-6 col-lg-6">
                     <div class="techgon-thumb">
-                        <img loading="lazy" src="/assets/img/services/techgon-thumb.png" alt="Illustration">
+                        <img loading="lazy" width="1152" height="726" src="/assets/img/services/techgon-thumb.png" alt="Illustration">
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-6 col-lg-6">
@@ -456,14 +456,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
+                            <h4 class="white mb-3 fs-five fw_500">Web Development</h4>
                             <a href="/web-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
-                                        Development</a></h5>
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
+                                        Development</a></h4>
                                 <p class="white mb-3">
                                     Custom web apps, e-commerce, and secure B2B/B2C/B2A portals, including high-security medical websites.
                                 </p>
@@ -479,15 +479,15 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
+                            <h4 class="white mb-3 fs-five fw_500">Mobile App Development</h4>
                             <a href="/mobile-app-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
                                         App Development</a>
-                                </h5>
+                                </h4>
                                 <p class="white mb-3">
                                     Native and cross-platform mobile applications with secure APIs.
                                 </p>
@@ -503,14 +503,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Custom Medical Systems</h5>
+                            <h4 class="white mb-3 fs-five fw_500">Custom Medical Systems</h4>
                             <a href="/services" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services" class="white">Custom
-                                        Medical Systems</a></h5>
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/services" class="white">Custom
+                                        Medical Systems</a></h4>
                                 <p class="white mb-3">
                                     PACS, RIS, DICOM viewers, teleradiology &amp; medical portals.
                                 </p>
@@ -526,14 +526,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
+                            <h4 class="white mb-3 fs-five fw_500">AI Automation</h4>
                             <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services" class="white">AI Automation</a>
-                                </h5>
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/services" class="white">AI Automation</a>
+                                </h4>
                                 <p class="white mb-3">
                                     AI Automation: custom AI integrations, workflow automations, and LLM configurations.
                                 </p>
@@ -549,15 +549,15 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">SEO</h5>
+                            <h4 class="white mb-3 fs-five fw_500">SEO</h4>
                             <a href="/seo" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/services"
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/services"
                                         class="white">SEO</a>
-                                </h5>
+                                </h4>
                                 <p class="white mb-3">
                                     SEO: technical SEO, AEO content strategy, and specialized medical/healthcare SEO.
                                 </p>
@@ -573,15 +573,15 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Real Estate Website Development</h5>
+                            <h4 class="white mb-3 fs-five fw_500">Real Estate Website Development</h4>
                             <a href="/real-estate-website-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/real-estate-website-development" class="white">Real Estate
+                                <h4 class="white mb-3 fs-five fw_500"><a href="/real-estate-website-development" class="white">Real Estate
                                         Website Development</a>
-                                </h5>
+                                </h4>
                                 <p class="white mb-3">
                                     Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage websites built for lead generation.
                                 </p>

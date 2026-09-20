@@ -36,9 +36,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
                             SOFTWARE DEVELOPERS
                         </span>
-                        <p class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
+                        <h2 class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
                             Full-stack engineering, mobile apps, AI/ML, and enterprise systems
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -48,14 +48,14 @@ require_once __DIR__ . '/includes/navbar.php';
                         <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Web Development</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Web Development</h3>
                             <a href="/web-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
-                                        Development</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/web-development" class="white">Web
+                                        Development</a></h3>
                                 <p class="white mb-3">
 Full-stack, front-end, and back-end development services using modern frameworks.
                                 </p>
@@ -71,15 +71,15 @@ Full-stack, front-end, and back-end development services using modern frameworks
                         <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Mobile App Development</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Mobile App Development</h3>
                             <a href="/mobile-app-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/mobile-app-development" class="white">Mobile
                                         App Development</a>
-                                </h5>
+                                </h3>
                                 <p class="white mb-3">
 Native and cross-platform apps for iOS and Android.
                                 </p>
@@ -95,14 +95,14 @@ Native and cross-platform apps for iOS and Android.
                         <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">AI and Machine Learning</h5>
+                            <h3 class="white mb-3 fs-five fw_500">AI and Machine Learning</h3>
                             <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI &amp;
-                                        Machine Learning</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI &amp;
+                                        Machine Learning</a></h3>
                                 <p class="white mb-3">
 Advanced AI solutions to enhance business efficiency.
                                 </p>
@@ -118,14 +118,14 @@ Advanced AI solutions to enhance business efficiency.
                         <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Enterprise Software Development</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Enterprise Software Development</h3>
                             <a href="/enterprise-software-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev4.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/enterprise-software-development" class="white">Enterprise
-                                        Software Development</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/enterprise-software-development" class="white">Enterprise
+                                        Software Development</a></h3>
                                 <p class="white mb-3">
 ERP, CRM, and custom enterprise-grade applications.
                                 </p>
@@ -141,14 +141,14 @@ ERP, CRM, and custom enterprise-grade applications.
                         <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Real Estate Website Development</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Real Estate Website Development</h3>
                             <a href="/real-estate-website-development" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev1.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/real-estate-website-development" class="white">Real Estate
-                                        Website Development</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/real-estate-website-development" class="white">Real Estate
+                                        Website Development</a></h3>
                                 <p class="white mb-3">
 Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage websites built for lead generation.
                                 </p>
@@ -173,9 +173,9 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <span class="sub-badge p1-clr fw-semibold fs-seven text-uppercase d-block mb-3">
                             ADDITIONAL SERVICES
                         </span>
-                        <p class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
+                        <h2 class="pra fs-six fw-semibold wow fadeInUp mb-0" data-wow-delay=".3s">
                             AI automation, data, marketing, SEO, and cloud services to grow your business
-                        </p>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -185,14 +185,14 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">AI Automation</h5>
+                            <h3 class="white mb-3 fs-five fw_500">AI Automation</h3>
                             <a href="/ai-machine-learning" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI
-                                        Automation</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/ai-machine-learning" class="white">AI
+                                        Automation</a></h3>
                                 <p class="white mb-3">
                                     Custom AI models, LLM integration, and workflow automation.
                                 </p>
@@ -208,14 +208,14 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Data Engineering</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Data Engineering</h3>
                             <a href="/data-engineering" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev5.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/data-engineering" class="white">Data
-                                        Engineering</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/data-engineering" class="white">Data
+                                        Engineering</a></h3>
                                 <p class="white mb-3">
                                     Secure data pipelines, data architecture, and admin dashboards.
                                 </p>
@@ -231,14 +231,14 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <img loading="lazy" src="/assets/img/icon/indus-marketing.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Digital Marketing</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Digital Marketing</h3>
                             <a href="/digital-marketing" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/indus-marketing.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/digital-marketing" class="white">Digital
-                                        Marketing</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/digital-marketing" class="white">Digital
+                                        Marketing</a></h3>
                                 <p class="white mb-3">
                                     Lead generation, campaign strategy, and performance analytics.
                                 </p>
@@ -254,13 +254,13 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <img loading="lazy" src="/assets/img/icon/se-dev6.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">SEO</h5>
+                            <h3 class="white mb-3 fs-five fw_500">SEO</h3>
                             <a href="/seo" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev6.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/seo" class="white">SEO</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/seo" class="white">SEO</a></h3>
                                 <p class="white mb-3">
                                     Technical SEO, Answer Engine Optimization, and healthcare SEO.
                                 </p>
@@ -276,14 +276,14 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration"
                             class="mb-4 position-absolute top-0 start-0 m-4">
                         <div class="text-statics px-5 pb-3">
-                            <h5 class="white mb-3 fs-five fw_500">Cloud Services</h5>
+                            <h3 class="white mb-3 fs-five fw_500">Cloud Services</h3>
                             <a href="/cloud-services" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
                         </div>
                         <div class="content2 d-center text-center">
                             <div class="boxes">
                                 <img loading="lazy" src="/assets/img/icon/se-dev2.png" alt="Illustration" class="mb-3 img-icon">
-                                <h5 class="white mb-3 fs-five fw_500"><a href="/cloud-services" class="white">Cloud
-                                        Services</a></h5>
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/cloud-services" class="white">Cloud
+                                        Services</a></h3>
                                 <p class="white mb-3">
                                     Secure cloud architecture, migration, and HIPAA-friendly hosting.
                                 </p>
@@ -434,7 +434,7 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
             <div class="row g-6 align-items-xxl-center">
                 <div class="col-xxl-8 col-xl-6 col-lg-6">
                     <div class="techgon-thumb">
-                        <img loading="lazy" src="/assets/img/services/techgon-thumb.png" alt="Illustration">
+                        <img loading="lazy" width="1152" height="726" src="/assets/img/services/techgon-thumb.png" alt="Illustration">
                     </div>
                 </div>
                 <div class="col-xxl-4 col-xl-6 col-lg-6">

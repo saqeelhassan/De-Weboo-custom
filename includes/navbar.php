@@ -91,9 +91,9 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                 </a>
                 <div class="right-top-cont d-flex align-items-center gap-5">
                     <div class="social-custom d-flex align-items-center gap-xl-3 gap-3">
-                        <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black"><i class="fab fa-facebook-f white65 fs-six"></i></a>
-                        <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
-                        <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Instagram"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our LinkedIn page"><i class="fa-brands fa-linkedin-in white65 fs-six"></i></a>
+                        <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram white65 fs-six"></i></a>
                     </div>
                 </div>
             </div>
@@ -155,8 +155,8 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>"><?php echo e($dw_contact['telephoneDisplay']); ?></a><br>
-                                    <a href="tel:<?php echo e($dw_contact['telephonePK']); ?>"><?php echo e($dw_contact['telephonePKDisplay']); ?></a>
+                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>" class="contact-phone-link"><?php echo e($dw_contact['telephoneDisplay']); ?></a><br>
+                                    <a href="tel:<?php echo e($dw_contact['telephonePK']); ?>" class="contact-phone-link"><?php echo e($dw_contact['telephonePKDisplay']); ?></a>
                                 </div>
                             </li>
                         </ul>
@@ -171,9 +171,9 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                             </a>
                         </div>
                         <div class="social-icon d-flex align-items-center">
-                            <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
-                            <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="<?php echo e($dw_contact['pinterest']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+                            <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
+                            <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="<?php echo e($dw_contact['pinterest']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our Pinterest page"><i class="fa-brands fa-pinterest-p"></i></a>
                         </div>
                     </div>
                 </div>
