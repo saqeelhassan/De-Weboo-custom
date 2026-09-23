@@ -7064,6 +7064,16 @@ input.main-search-input::placeholder {
   border-radius: 10px;
   overflow: hidden;
 }
+.team-items .team-icon {
+  width: 100%;
+  aspect-ratio: 4/3;
+  background: linear-gradient(180deg, rgba(81, 53, 255, 0.08) 0%, rgba(81, 53, 255, 0.16) 100%);
+  border-radius: 10px;
+}
+.team-items .team-icon i {
+  font-size: 48px;
+  color: var(--p1-clr);
+}
 .team-items .thumb {
   border-radius: 10px;
   overflow: hidden;
@@ -7204,6 +7214,15 @@ input.main-search-input::placeholder {
 }
 .plus-icon:hover .social-wrapper {
   transform: translateX(-50%);
+}
+
+.team-icon-thumb {
+  min-height: 360px;
+  background: linear-gradient(180deg, rgba(81, 53, 255, 0.08) 0%, rgba(81, 53, 255, 0.16) 100%);
+}
+.team-icon-thumb i {
+  font-size: 96px;
+  color: var(--p1-clr);
 }
 
 .team-details-content .more-details ul li {

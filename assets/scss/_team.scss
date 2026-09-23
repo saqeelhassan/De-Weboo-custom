@@ -2,6 +2,16 @@
 	background: $white;
 	border-radius: 10px;
 	overflow: hidden;
+	.team-icon{
+		width: 100%;
+		aspect-ratio: 4 / 3;
+		background: linear-gradient(180deg, rgba(81, 53, 255, 0.08) 0%, rgba(81, 53, 255, 0.16) 100%);
+		border-radius: 10px;
+		i{
+			font-size: 48px;
+			color: $p1-clr;
+		}
+	}
 	.thumb{
 		border-radius: 10px;
 		overflow: hidden;
@@ -168,7 +178,15 @@
 	}
 }
 
-//Team Details 
+//Team Details
+.team-icon-thumb{
+	min-height: 360px;
+	background: linear-gradient(180deg, rgba(81, 53, 255, 0.08) 0%, rgba(81, 53, 255, 0.16) 100%);
+	i{
+		font-size: 96px;
+		color: $p1-clr;
+	}
+}
 .team-details-content{
 	.more-details{
 		ul{

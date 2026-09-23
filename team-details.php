@@ -47,8 +47,8 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="row g-4 align-items-xxl-center space-bottom">
                 <div class="col-md-6">
-                    <div class="team-details-thumb rounded-3 w-100">
-                        <img loading="lazy" src="<?php echo e('/' . ltrim($member['detail_image'], '/')); ?>" alt="<?php echo e($member['name']); ?>, <?php echo e($member['role']); ?>" class="rounded-3 w-100">
+                    <div class="team-details-thumb team-icon-thumb rounded-3 w-100 d-center" role="img" aria-label="<?php echo e($member['name']); ?>">
+                        <i class="<?php echo e($member['icon']); ?>"></i>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     <span class="text"><?php echo e($member['location']); ?></span>
                                 </li>
                                 <li>
-                                    <span class="title">Position:</span>
+                                    <span class="title">Focus:</span>
                                     <span class="text"><?php echo e($member['role']); ?></span>
                                 </li>
                                 <li>
@@ -80,7 +80,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     </span>
                                 </li>
                                 <li>
-                                    <span class="title">Qualification:</span>
+                                    <span class="title">Team:</span>
                                     <span class="text"><?php echo e($member['qualification']); ?></span>
                                 </li>
                             </ul>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="social-icon d-flex align-items-center gap-2">
                                 <a href="<?php echo e($dw_org['facebook']); ?>" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
                                 <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-                                <a href="<?php echo e($member['linkedin'] ?? '#'); ?>"<?php echo !empty($member['linkedin']) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>><i class="fa-brands fa-linkedin"></i></a>
+                                <a href="<?php echo e($dw_org['linkedin'] ?? '#'); ?>"<?php echo !empty($dw_org['linkedin']) ? ' target="_blank" rel="noopener noreferrer"' : ''; ?>><i class="fa-brands fa-linkedin"></i></a>
                                 <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
                             </div>
                             <a href="mailto:<?php echo e($dw_org['email']); ?>?subject=<?php echo rawurlencode('Message for ' . $member['name'] . ' — De-Weboo Dev'); ?>" class="rounded-5 share-cmn-icon">
@@ -126,9 +126,9 @@ require_once __DIR__ . '/includes/navbar.php';
                 </div>
                 <div class="row g-4">
                     <div class="col-md-6 pe-xxl-5">
-                        <h2 class="black mb-xxl-4 mb-sm-3 mb-2 visible-from-right">Check my skills</h2>
+                        <h2 class="black mb-xxl-4 mb-sm-3 mb-2 visible-from-right">Core capabilities</h2>
                         <p class="pra fs-seven mb-md-4 mb-3 pb-xxl-2 wow fadeInUp">
-                            Core strengths <?php echo e($member['name']); ?> brings to De-Weboo Dev <?php echo e(strtolower($member['role'])); ?> engagements.
+                            Core strengths the <?php echo e($member['name']); ?> brings to De-Weboo Dev <?php echo e(strtolower($member['role'])); ?> engagements.
                         </p>
                         <div class="teco-mail-box d-flex align-items-center gap-xxl-3 gap-2">
                             <div class="icon d-center rounded-circle">
