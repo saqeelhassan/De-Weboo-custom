@@ -160,6 +160,121 @@
 					}
 				}
 
+				.submenu.services-mega {
+					width: min(880px, calc(100vw - 48px));
+					inset-inline-start: 50%;
+					transform: translateX(-50%) translateY(10px);
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr 1.1fr;
+					gap: 20px;
+					padding: 28px 28px 30px;
+					border-radius: 14px;
+
+					li {
+						display: block;
+					}
+
+					.mega-col-head {
+						display: flex;
+						align-items: center;
+						margin-bottom: 14px;
+					}
+					.mega-icon {
+						width: 36px;
+						height: 36px;
+						border-radius: 8px;
+						background: rgba(81, 53, 255, 0.1);
+						color: $p1-clr;
+						font-size: 15px;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						flex: none;
+					}
+					.mega-connector {
+						flex: 1;
+						height: 1px;
+						margin: 0 10px 0 14px;
+						border-top: 1.5px dotted $border-color;
+					}
+					.mega-col-title {
+						font-size: 13px;
+						font-weight: 600;
+						text-transform: uppercase;
+						letter-spacing: 0.02em;
+						color: $black;
+						font-family: $heading-font;
+						margin-bottom: 18px;
+					}
+					.mega-list {
+						display: flex;
+						flex-direction: column;
+						gap: 10px;
+						margin: 0;
+						padding: 0;
+
+						li {
+							margin: 0;
+							padding: 0;
+						}
+						li a {
+							display: block;
+							font-size: 14.5px;
+							font-weight: 500;
+							color: $pra;
+							padding: 0;
+							border-bottom: none;
+							background: none;
+
+							&:hover {
+								color: $p1-clr !important;
+								background: none;
+							}
+						}
+					}
+
+					.mega-cta {
+						background: $p1-clr;
+						border-radius: 10px;
+						min-height: 220px;
+						padding: 22px;
+						display: flex;
+						flex-direction: column;
+						justify-content: space-between;
+
+						p {
+							font-family: $heading-font;
+							font-size: 16px;
+							font-weight: 500;
+							color: $white;
+							line-height: 1.4;
+						}
+						a {
+							display: inline-flex;
+							align-items: center;
+							gap: 8px;
+							background: $white;
+							color: $p1-clr !important;
+							font-size: 14px;
+							font-weight: 600;
+							padding: 10px 16px;
+							border-radius: 30px;
+							width: fit-content;
+
+							&:hover {
+								background: $black;
+								color: $white !important;
+							}
+						}
+					}
+				}
+
+				&:hover {
+					> .submenu.services-mega {
+						transform: translateX(-50%) translateY(0px);
+					}
+				}
+
 				.has-homemenu {
 					width: 1100px;
 					padding: 30px 30px 10px 30px;

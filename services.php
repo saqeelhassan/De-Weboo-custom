@@ -294,6 +294,29 @@ Property listing platforms, IDX/MLS integrations, and agent &amp; brokerage webs
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="gateway-items d-center border style2 service-development-item bg-img2 rounded-4 w-100">
+                        <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration"
+                            class="mb-4 position-absolute top-0 start-0 m-4">
+                        <div class="text-statics px-5 pb-3">
+                            <h3 class="white mb-3 fs-five fw_500">AI Video and Content</h3>
+                            <a href="/ai-video-content" class="white right-arrow" aria-hidden="true" tabindex="-1"><i class="fa-solid fa-arrow-right white"></i></a>
+                        </div>
+                        <div class="content2 d-center text-center">
+                            <div class="boxes">
+                                <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="Illustration" class="mb-3 img-icon">
+                                <h3 class="white mb-3 fs-five fw_500"><a href="/ai-video-content" class="white">AI
+                                        Video and Content</a></h3>
+                                <p class="white mb-3">
+                                    AI-generated marketing videos, explainers, and written content with editorial review.
+                                </p>
+                                <a href="/ai-video-content" class="arrosses d-center rounded-circle whitebg" aria-hidden="true" tabindex="-1">
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

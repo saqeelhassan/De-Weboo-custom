@@ -206,24 +206,50 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                             <a href="/about">About Us</a>
                                         </li>
                                         <li>
-                                            <a href="/services">Services</a>
-                                            <ul class="submenu">
+                                            <a href="/services">What We Do</a>
+                                            <ul class="submenu services-mega">
                                                 <li class="has-dropdown">
-                                                    <a href="#">Software Developers</a>
-                                                    <ul class="submenu">
+                                                    <div class="mega-col-head">
+                                                        <span class="mega-icon"><i class="fa-solid fa-code"></i></span>
+                                                        <span class="mega-connector"></span>
+                                                    </div>
+                                                    <div class="mega-col-title">Software Development</div>
+                                                    <ul class="mega-list">
                                                         <li><a href="/web-development">Web Development</a></li>
                                                         <li><a href="/mobile-app-development">Mobile App Development</a></li>
-                                                        <li><a href="/ai-machine-learning">AI and Machine Learning</a></li>
                                                         <li><a href="/enterprise-software-development">Enterprise Software Development</a></li>
                                                         <li><a href="/real-estate-website-development">Real Estate Website Development</a></li>
                                                     </ul>
                                                 </li>
-                                                <li><a href="/ai-machine-learning">AI Automation</a></li>
-                                                <li><a href="/data-engineering">Data Engineering</a></li>
-                                                <li><a href="/digital-marketing">Digital Marketing</a></li>
-                                                <li><a href="/seo">SEO</a></li>
-                                                <li><a href="/cloud-services">Cloud Services</a></li>
-                                                <!-- Other service categories can be added here if needed -->
+                                                <li class="has-dropdown">
+                                                    <div class="mega-col-head">
+                                                        <span class="mega-icon"><i class="fa-solid fa-robot"></i></span>
+                                                        <span class="mega-connector"></span>
+                                                    </div>
+                                                    <div class="mega-col-title">AI &amp; Data</div>
+                                                    <ul class="mega-list">
+                                                        <li><a href="/ai-machine-learning">AI and Machine Learning</a></li>
+                                                        <li><a href="/ai-machine-learning">AI Automation</a></li>
+                                                        <li><a href="/data-engineering">Data Engineering</a></li>
+                                                        <li><a href="/ai-video-content">AI Video and Content</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-dropdown">
+                                                    <div class="mega-col-head">
+                                                        <span class="mega-icon"><i class="fa-solid fa-chart-line"></i></span>
+                                                        <span class="mega-connector"></span>
+                                                    </div>
+                                                    <div class="mega-col-title">Growth &amp; Cloud</div>
+                                                    <ul class="mega-list">
+                                                        <li><a href="/digital-marketing">Digital Marketing</a></li>
+                                                        <li><a href="/seo">SEO</a></li>
+                                                        <li><a href="/cloud-services">Cloud Services</a></li>
+                                                    </ul>
+                                                </li>
+                                                <li class="mega-cta">
+                                                    <p>Need something custom built for your business?</p>
+                                                    <a href="/contact">Let's talk <i class="fa-solid fa-arrow-right"></i></a>
+                                                </li>
                                             </ul>
                                         </li>
 

@@ -192,3 +192,38 @@
 	border-top: 0;
 	margin-bottom: 20px;
 }
+
+.mean-container .mean-nav ul li .services-mega {
+	.mega-col-head {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		margin: 10px 0 4px;
+	}
+	.mega-icon {
+		width: 26px;
+		height: 26px;
+		border-radius: 6px;
+		background: rgba(255, 255, 255, 0.12);
+		color: $white;
+		font-size: 13px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex: none;
+	}
+	.mega-connector {
+		display: none;
+	}
+	.mega-col-title {
+		font-size: 12px;
+		font-weight: 600;
+		text-transform: uppercase;
+		letter-spacing: 0.02em;
+		color: $white;
+		margin: 0;
+	}
+	.mega-cta {
+		display: none;
+	}
+}

@@ -71,6 +71,7 @@ function dw_org_config(): array
             'Digital Marketing',
             'SEO',
             'Cloud Services',
+            'AI Video and Content',
         ],
         'aiTerms' => [
             'AI Automation',

@@ -82,6 +82,11 @@ return [
         'description' => 'Secure cloud architecture, migration, and HIPAA-friendly hosting solutions that scale and protect your digital platforms.',
         'keywords' => 'cloud services, cloud architecture, cloud migration, HIPAA hosting, managed cloud',
     ],
+    'ai-video-content' => [
+        'title' => 'AI Video and Content | AI-Generated Video & Content Production',
+        'description' => 'AI-generated video and content production—marketing videos, explainers, social clips, and written content with editorial quality review.',
+        'keywords' => 'AI video generation, AI content creation, AI video production, generative AI content, AI marketing videos',
+    ],
     'contact' => [
         'title' => 'Contact De-Weboo Dev | Software Inquiries',
         'description' => 'Start a custom software, web, or healthcare IT project. Call +1 305 882 3730.',

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/seo.php';
-dw_load_page_seo('data-engineering'); // New SEO slug
+dw_load_page_seo('ai-video-content');
 require_once __DIR__ . '/includes/helpers.php';
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
@@ -22,9 +22,9 @@ require_once __DIR__ . '/includes/navbar.php';
                         <a href="/services" class="p3-clr">Services</a>
                     </li>
                     <li class="p3-clr">/</li>
-                    <li class="white">Data Engineering</li>
+                    <li class="white">AI Video and Content</li>
                 </ul>
-                <h1 class="white visible-from-right">Data Engineering</h1>
+                <h1 class="white visible-from-right">AI Video and Content</h1>
             </div>
         </div>
         <!-- bread Element -->
@@ -69,7 +69,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     Real Estate Website Development <i class="fa-solid fa-angle-right"></i>
                                 </a>
                                 <a href="/data-engineering"
-                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp active"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
                                     data-wow-delay=".7s">
                                     Data Engineering <i class="fa-solid fa-angle-right"></i>
                                 </a>
@@ -89,7 +89,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     Cloud Services <i class="fa-solid fa-angle-right"></i>
                                 </a>
                                 <a href="/ai-video-content"
-                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp active"
                                     data-wow-delay="1.05s">
                                     AI Video and Content <i class="fa-solid fa-angle-right"></i>
                                 </a>
@@ -126,17 +126,17 @@ require_once __DIR__ . '/includes/navbar.php';
                 <div class="col-lg-8">
                     <div class="service-details-content">
                         <div class="thumb rounded-3 mb-xl-5 mb-4 wow fadeInUp" data-wow-delay=".4s">
-                            <img loading="lazy" src="/assets/img/services/service-data-engineering.svg" alt="Data Engineering — Pipelines, Dashboards &amp; Security" class="w-100 rounded-3">
+                            <img loading="lazy" src="/assets/img/icon/se-dev3.png" alt="AI Video and Content — AI-Generated Video &amp; Content Production" class="w-100 rounded-3">
                         </div>
                         <div class="mb-xl-5 mb-4 pb-2">
                             <h3 class="black mb-xl-4 mb-lg-4 mb-3 wow fadeInUp" data-wow-delay=".3s">
-                                Secure Data Pipelines & Administrative Dashboards
+                                AI-Generated Video &amp; Content Production
                             </h3>
                             <p class="pra fs-seven mb-3 wow fadeInUp" data-wow-delay=".4s">
-                                De-Weboo Dev specializes in Data Engineering, designing and implementing secure data pipelines, robust data architectures, and intuitive administrative dashboards. We ensure your data is accurately collected, transformed, and made accessible for informed decision-making, all while maintaining the highest standards of security and compliance.
+                                De-Weboo Dev produces AI-generated video and content at scale, combining generative AI tools with editorial oversight to deliver marketing videos, product explainers, social clips, and written content for commercial and healthcare brands.
                             </p>
                             <p class="pra fs-seven wow fadeInUp" data-wow-delay=".5s">
-                                Our services cover the entire data lifecycle, from ingestion and processing to storage and visualization. We build scalable solutions that integrate with your existing systems, providing real-time insights and supporting complex analytical needs for enterprise and public-sector clients.
+                                We handle scripting, AI voiceover and avatar generation, video assembly, and brand-consistent content production, so teams can publish more content without expanding an in-house production team.
                             </p>
                         </div>
                         <div class="mb-xl-5 mb-4 pb-sm-2 mb-1">
@@ -150,10 +150,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                     </span>
                                     <div class="fw-semibold black">
                                         <div class="fs-six fw_700 d-block mb-1">
-                                            End-to-End Data Solutions:
+                                            AI Video Production:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            From raw data to actionable insights, we manage every step.
+                                            Marketing videos, explainers, and social clips generated with AI voiceover, avatars, and motion graphics.
                                         </p>
                                     </div>
                                 </li>
@@ -163,10 +163,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                     </span>
                                     <div class="fw-semibold black">
                                         <div class="fs-six fw_700 d-block mb-1">
-                                            Robust Security & Compliance:
+                                            AI Content Writing:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            Implementing industry best practices for data protection.
+                                            Blog articles, product copy, and campaign content generated and edited for brand voice and SEO/AEO visibility.
                                         </p>
                                     </div>
                                 </li>
@@ -176,10 +176,10 @@ require_once __DIR__ . '/includes/navbar.php';
                                     </span>
                                     <div class="fw-semibold black">
                                         <div class="fs-six fw_700 d-block mb-1">
-                                            Custom Dashboard Development:
+                                            Editorial Quality Control:
                                         </div>
                                         <p class="fs-seven fw_400 pra">
-                                            Tailored visualizations for clear and effective data presentation.
+                                            Human review of every AI-generated video and content asset before publishing for accuracy and brand fit.
                                         </p>
                                     </div>
                                 </li>
@@ -189,11 +189,8 @@ require_once __DIR__ . '/includes/navbar.php';
                             <img loading="lazy" src="/assets/img/icon/quot1.png" alt="Illustration" class="quote">
                             <div class="cont">
                                 <h4 class="black mb-sm-4 mb-3">
-                                    De-Weboo Dev transforms complex data into clear, actionable intelligence, empowering your organization with reliable and secure data solutions.
+                                    De-Weboo Dev pairs generative AI tools with editorial review to turn out video and content that stays on-brand and publish-ready.
                                 </h4>
-                                <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
-                                </div>
                             </div>
                         </div>
                         <div class="mb-0">
@@ -205,68 +202,68 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion accordion-custom05 border-0 d-flex flex-column"
                                 id="accordionExample1">
                                 <div class="accordion-item active">
-                                    <div class="accordion-header" id="headingOne001">
+                                    <div class="accordion-header" id="headingOne002">
                                         <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                            data-bs-target="#collapseOne001" aria-expanded="true"
-                                            aria-controls="collapseOne001">
-                                            What is Data Engineering?
+                                            data-bs-target="#collapseOne002" aria-expanded="true"
+                                            aria-controls="collapseOne002">
+                                            What kind of videos can you produce with AI?
                                         </button>
-                                        <div id="collapseOne001" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">
+                                        <div id="collapseOne002" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne002" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Data Engineering involves designing, building, and maintaining the infrastructure and systems for collecting, storing, processing, and analyzing large datasets.
+                                                    Marketing and explainer videos, product demos, social media clips, and internal training content using AI voiceover, avatars, and automated editing.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header" id="headingTwo001">
+                                    <div class="accordion-header" id="headingTwo002">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo001"
-                                            aria-expanded="false" aria-controls="collapseTwo001">
-                                            How do you ensure data security?
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo002"
+                                            aria-expanded="false" aria-controls="collapseTwo002">
+                                            Is AI-generated content reviewed before it's published?
                                         </button>
-                                        <div id="collapseTwo001" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo001" data-bs-parent="#accordionExample1">
+                                        <div id="collapseTwo002" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo002" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    We implement robust encryption, access controls, data masking, and regular security audits to protect your sensitive information throughout its lifecycle.
+                                                    Yes. Every AI-generated video and content asset goes through human editorial review for accuracy, brand voice, and quality before delivery.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header" id="headingThree001">
+                                    <div class="accordion-header" id="headingThree002">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapseThree001"
-                                            aria-expanded="false" aria-controls="collapseThree001">
-                                            Can you integrate with our existing data sources?
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree002"
+                                            aria-expanded="false" aria-controls="collapseThree002">
+                                            Can AI content be optimized for SEO and AEO?
                                         </button>
-                                        <div id="collapseThree001" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree001" data-bs-parent="#accordionExample1">
+                                        <div id="collapseThree002" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree002" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    Yes, we specialize in integrating data from various sources, including databases, APIs, cloud platforms, and legacy systems, to create a unified data view.
+                                                    Yes, we structure AI-generated articles and video scripts for technical SEO and Answer Engine Optimization alongside our SEO team.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header" id="headingfour001">
+                                    <div class="accordion-header" id="headingfour002">
                                         <button class="accordion-button collapsed" type="button"
-                                            data-bs-toggle="collapse" data-bs-target="#collapsefour001"
-                                            aria-expanded="false" aria-controls="collapsefour001">
-                                            What kind of dashboards do you build?
+                                            data-bs-toggle="collapse" data-bs-target="#collapsefour002"
+                                            aria-expanded="false" aria-controls="collapsefour002">
+                                            Do you handle healthcare or regulated-industry content?
                                         </button>
-                                        <div id="collapsefour001" class="accordion-collapse collapse"
-                                            aria-labelledby="headingfour001" data-bs-parent="#accordionExample1">
+                                        <div id="collapsefour002" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour002" data-bs-parent="#accordionExample1">
                                             <div class="accordion-body">
                                                 <p class="fs-seven pra">
-                                                    We develop custom administrative dashboards tailored to your specific KPIs and reporting needs, providing clear, interactive visualizations of your key data.
+                                                    Yes, with editorial review calibrated to healthcare marketing and compliance requirements for regulated content.
                                                 </p>
                                             </div>
                                         </div>
