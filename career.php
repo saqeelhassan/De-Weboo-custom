@@ -22,7 +22,6 @@ require_once __DIR__ . '/includes/navbar.php';
                 <h1 class="white visible-from-right">Careers at De-Weboo Dev</h1>
             </div>
         </div>
-        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section End -->
 

@@ -35,8 +35,6 @@ function dw_portfolio_filter_group(string $category): string
                 <h1 class="white visible-from-right">Our portfolio</h1>
             </div>
         </div>
-        <!-- bread Element -->
-        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="Illustration" class="bread-ele">
     </section>
     <!-- Banner Section Start -->
 

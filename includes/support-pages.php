@@ -423,7 +423,6 @@ function dw_render_support_page(string $slug, ?array $feedbackForm = null, ?arra
                 <h1 class="white visible-from-right"><?php echo e($page['title']); ?></h1>
             </div>
         </div>
-        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="blog-details-section fix section-padding">

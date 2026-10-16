@@ -30,7 +30,6 @@ require_once __DIR__ . '/includes/navbar.php';
                 <h1 class="white visible-from-right">Search</h1>
             </div>
         </div>
-        <img loading="lazy" src="/assets/img/element/bread-ele.png" alt="" class="bread-ele">
     </section>
 
     <section class="blog-details-section fix section-padding">

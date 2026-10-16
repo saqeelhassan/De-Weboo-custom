@@ -83,9 +83,6 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                     </div>
-                    <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" fetchpriority="high">
                 </div>
             </div>
             <div class="swiper-slide">
@@ -124,15 +121,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                     </div>
-                    <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335" loading="lazy">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" loading="lazy">
                 </div>
             </div>
             <div class="swiper-slide">
                 <div class="banner-bg-slide style3">
                     <picture>
-                        <source srcset="/assets/img/banner/banner1-slide1.avif" type="image/avif">
                         <source srcset="/assets/img/banner/banner1-slide1.webp" type="image/webp">
                         <img src="/assets/img/banner/banner1-slide1.png" alt="" class="banner-bg-media" width="1000" height="438" loading="lazy" decoding="async">
                     </picture>
@@ -165,9 +158,6 @@ require_once __DIR__ . '/includes/navbar.php';
                             </div>
                         </div>
                     </div>
-                    <!-- Ele -->
-                    <img src="/assets/img/element/banner3-ele2.png" alt="Illustration" class="hero-ele1 d-sm-block d-none" width="618" height="335" loading="lazy">
-                    <img src="/assets/img/element/banner3-ele1.png" alt="Illustration" class="hero-ele2" width="714" height="743" loading="lazy">
                 </div>
             </div>
         </div>
