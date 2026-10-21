@@ -8,8 +8,6 @@ $footer_variant = $footer_variant ?? 'default';
 $newsletter_email = $newsletter_email ?? '';
 require_once __DIR__ . '/seo-config.php';
 $dw_contact = dw_org_config();
-$dw_tel = $dw_contact['telephone'];
-$dw_tel_display = $dw_contact['telephoneDisplay'];
 $dw_tel_pk = $dw_contact['telephonePK'];
 $dw_tel_pk_display = $dw_contact['telephonePKDisplay'];
 $dw_whatsapp_display = $dw_contact['whatsappDisplay'];
@@ -133,21 +131,6 @@ if (($footer_variant ?? 'default') === 'style2') :
                                     <h3>Contact Us?</h3>
                                 </div>
                                 <div class="list-info d-grid gap-3">
-                                    <div class="list-info-item d-flex align-items-center gap-2">
-                                        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12.1113 1C12.1113 1 14.5558 1.22222 17.6669 4.33332C20.778 7.44442 21.0002 9.88886 21.0002 9.88886"
-                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
-                                            <path
-                                                d="M12.3418 4.92822C12.3418 4.92822 13.4417 5.24249 15.0916 6.8924C16.7416 8.54231 17.0558 9.64225 17.0558 9.64225"
-                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
-                                            <path
-                                                d="M7.70841 4.68653L8.42954 5.97867C9.08031 7.14475 8.81907 8.67446 7.7941 9.69943C7.7941 9.69944 7.7941 9.69943 7.7941 9.69944C7.79398 9.69955 6.55095 10.9428 8.80499 13.1968C11.0584 15.4502 12.3016 14.2086 12.3024 14.2077C12.3024 14.2077 12.3024 14.2077 12.3024 14.2077C13.3274 13.1828 14.8571 12.9215 16.0232 13.5723L17.3153 14.2934C19.0761 15.2761 19.2841 17.7455 17.7364 19.2932C16.8064 20.2232 15.6671 20.9468 14.4076 20.9946C12.2875 21.0749 8.68695 20.5384 5.07521 16.9266C1.46347 13.3149 0.926905 9.71435 1.00728 7.5942C1.05502 6.33478 1.77867 5.19549 2.70867 4.26549C4.25638 2.71777 6.72573 2.92572 7.70841 4.68653Z"
-                                                stroke="#FF5455" stroke-width="2" stroke-linecap="round" />
-                                        </svg>
-                                        <a href="tel:<?php echo e($dw_tel); ?>" class="white65 fw-semibold contact-phone-link"><?php echo e($dw_tel_display); ?></a>
-                                    </div>
                                     <div class="list-info-item d-flex align-items-center gap-2">
                                         <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
@@ -382,10 +365,6 @@ foreach ($extra_scripts as $script) :
                                     <h3>Need Help?</h3>
                                 </div>
                                 <div class="list-info d-grid gap-3 mb-4">
-                                    <div class="list-info-item">
-                                        <span class="fs-eight white65 d-block">Call Us Directly</span>
-                                        <a href="tel:<?php echo e($dw_tel); ?>" class="white fw-semibold contact-phone-link"><?php echo e($dw_tel_display); ?></a>
-                                    </div>
                                     <div class="list-info-item">
                                         <span class="fs-eight white65 d-block">Call Us Locally</span>
                                         <a href="tel:<?php echo e($dw_tel_pk); ?>" class="white fw-semibold contact-phone-link"><?php echo e($dw_tel_pk_display); ?></a>

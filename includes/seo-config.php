@@ -46,8 +46,6 @@ function dw_org_config(): array
             'Info@deweboo.com',
             'lead@deweboo.com',
         ],
-        'telephone' => '+13058823730',
-        'telephoneDisplay' => '+1 305 882 3730',
         'telephonePK' => '+923367770349',
         'telephonePKDisplay' => '+92 336 7770349',
         'whatsapp' => '+15512023922',

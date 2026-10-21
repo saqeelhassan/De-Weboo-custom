@@ -23,8 +23,6 @@ $call_rep_name = $call_rep_name ?? ($call_show_rep ? $rep['name'] : '');
 $call_rep_title = $call_rep_title ?? ($call_show_rep ? $rep['title'] : '');
 $call_rep_image = $call_rep_image ?? ($call_show_rep ? '/' . ltrim($rep['image'], '/') : '');
 
-$tel = $org['telephone'];
-$tel_display = $org['telephoneDisplay'];
 $tel_pk = $org['telephonePK'];
 $tel_pk_display = $org['telephonePKDisplay'];
 $whatsapp = $org['whatsapp'];
@@ -49,9 +47,6 @@ $whatsapp_url = 'https://wa.me/' . preg_replace('/\D+/', '', $whatsapp);
         <?php endif; ?>
         <?php if ($call_show_numbers) : ?>
         <span class="<?php echo e($label_class); ?>">Call us today</span>
-        <a href="tel:<?php echo e($tel); ?>" class="<?php echo e($number_class); ?>">
-            <?php echo e($tel_display); ?>
-        </a>
         <a href="tel:<?php echo e($tel_pk); ?>" class="<?php echo e($number_class); ?>">
             <?php echo e($tel_pk_display); ?>
         </a>

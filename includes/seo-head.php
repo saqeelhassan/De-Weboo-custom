@@ -41,7 +41,7 @@ $site_name = 'De-Weboo Dev';
     <meta property="og:image" content="<?php echo e($og_image); ?>">
     <meta property="og:image:alt" content="<?php echo e($site_name); ?> — custom software, AI automation & healthcare IT">
     <meta property="og:email" content="<?php echo e($org['email']); ?>">
-    <meta property="og:phone_number" content="<?php echo e($org['telephone']); ?>">
+    <meta property="og:phone_number" content="<?php echo e($org['telephonePK']); ?>">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="<?php echo e($page_twitter_card); ?>">

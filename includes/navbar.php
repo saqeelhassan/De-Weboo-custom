@@ -155,7 +155,6 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                     <i class="far fa-phone"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="tel:<?php echo e($dw_contact['telephone']); ?>" class="contact-phone-link"><?php echo e($dw_contact['telephoneDisplay']); ?></a><br>
                                     <a href="tel:<?php echo e($dw_contact['telephonePK']); ?>" class="contact-phone-link"><?php echo e($dw_contact['telephonePKDisplay']); ?></a>
                                 </div>
                             </li>

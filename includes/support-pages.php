@@ -19,8 +19,6 @@ require_once __DIR__ . '/mail.php';
 function dw_support_pages(): array
 {
     $org = dw_org_config();
-    $tel = $org['telephone'];
-    $telDisplay = $org['telephoneDisplay'];
     $telPk = $org['telephonePK'];
     $telPkDisplay = $org['telephonePKDisplay'];
     $whatsappDisplay = $org['whatsappDisplay'];
@@ -58,7 +56,7 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => 'How to reach support',
-                    'body' => 'Email your project reference, environment URL, and a clear description of the issue. Include screenshots or logs when available so we can resolve faster.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a> &middot; <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
+                    'body' => 'Email your project reference, environment URL, and a clear description of the issue. Include screenshots or logs when available so we can resolve faster.<br><br><strong>Phone:</strong> <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
                 ],
             ],
             'cta_label' => 'Contact client support',
@@ -91,7 +89,7 @@ function dw_support_pages(): array
                 ],
                 [
                     'heading' => 'Still need help?',
-                    'body' => 'If you cannot find what you need, contact our team with your organization name, project goals, and preferred timeline. We respond to qualified inquiries within one business day.<br><br><strong>Phone:</strong> <a href="tel:' . e($tel) . '" class="p1-clr">' . e($telDisplay) . '</a> &middot; <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
+                    'body' => 'If you cannot find what you need, contact our team with your organization name, project goals, and preferred timeline. We respond to qualified inquiries within one business day.<br><br><strong>Phone:</strong> <a href="tel:' . e($telPk) . '" class="p1-clr">' . e($telPkDisplay) . '</a><br><strong>Email:</strong> ' . $emailsHtml . '<br><strong>WhatsApp:</strong> <a href="' . e($whatsappUrl) . '" target="_blank" rel="noopener noreferrer" class="p1-clr">' . e($whatsappDisplay) . '</a>',
                 ],
             ],
             'cta_label' => 'Contact De-Weboo Dev',
@@ -325,7 +323,7 @@ function dw_process_feedback_form(array $form): array
 
 function dw_render_feedback_form(array $form, ?array $alert): void
 {
-    $phonePlaceholder = dw_org_config()['telephoneDisplay'];
+    $phonePlaceholder = dw_org_config()['telephonePKDisplay'];
     ?>
                         <div class="feedback-form-wrap mt-2 pt-2">
                             <h2 class="black fs-five fw-bold mb-3">Feedback form</h2>

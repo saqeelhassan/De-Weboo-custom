@@ -43,7 +43,7 @@ $schema = [
             'image' => $org['logo'],
             'description' => $page_description,
             'email' => $org['email'],
-            'telephone' => $org['telephone'],
+            'telephone' => $org['telephonePK'],
             'priceRange' => '$$$',
             'address' => [
                 '@type' => 'PostalAddress',
@@ -86,18 +86,10 @@ $schema = [
             'contactPoint' => [
                 [
                     '@type' => 'ContactPoint',
-                    'telephone' => $org['telephone'],
+                    'telephone' => $org['telephonePK'],
                     'contactType' => 'customer service',
                     'email' => $org['email'],
                     'areaServed' => 'Worldwide',
-                    'availableLanguage' => ['English'],
-                ],
-                [
-                    '@type' => 'ContactPoint',
-                    'telephone' => $org['telephone'],
-                    'contactType' => 'sales',
-                    'contactOption' => 'TollFree',
-                    'areaServed' => 'US',
                     'availableLanguage' => ['English'],
                 ],
             ],

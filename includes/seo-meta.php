@@ -89,7 +89,7 @@ return [
     ],
     'contact' => [
         'title' => 'Contact De-Weboo Dev | Software Inquiries',
-        'description' => 'Start a custom software, web, or healthcare IT project. Call +1 305 882 3730.',
+        'description' => 'Start a custom software, web, or healthcare IT project.',
         'keywords' => 'contact De-Weboo Dev, custom software quote, healthcare IT contact',
     ],
     'blog' => [

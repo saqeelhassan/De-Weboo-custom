@@ -20,7 +20,7 @@ $contact_alert = $contact_result['alert'];
 require_once __DIR__ . '/includes/seo.php';
 dw_load_page_seo(basename(__FILE__, '.php'));
 $dw_org = dw_org_config();
-$dw_phone_placeholder = $dw_org['telephoneDisplay'];
+$dw_phone_placeholder = $dw_org['telephonePKDisplay'];
 
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';

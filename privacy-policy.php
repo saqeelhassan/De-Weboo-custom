@@ -45,7 +45,6 @@ $privacyPolicyLastUpdated = '2026-06-25';
                                 <?php foreach ($org['inboundEmails'] as $em) : ?>
                                 <a href="mailto:<?php echo e($em); ?>" class="p1-clr"><?php echo e($em); ?></a><?php echo $em !== end($org['inboundEmails']) ? ' · ' : ''; ?>
                                 <?php endforeach; ?>
-                                · <a href="tel:<?php echo e($org['telephone']); ?>" class="p1-clr"><?php echo e($org['telephoneDisplay']); ?></a>
                                 · <a href="tel:<?php echo e($org['telephonePK']); ?>" class="p1-clr"><?php echo e($org['telephonePKDisplay']); ?></a>
                             </p>
                         </div>

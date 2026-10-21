@@ -5,7 +5,7 @@ declare(strict_types=1);
 if (!function_exists('dw_org_config')) {
     require_once __DIR__ . '/seo-config.php';
 }
-$dw_phone_placeholder = dw_org_config()['telephoneDisplay'];
+$dw_phone_placeholder = dw_org_config()['telephonePKDisplay'];
 ?>
 <div class="modal fade portfolio-discuss-modal consultation-modal" id="consultationModal" tabindex="-1"
     aria-labelledby="consultationModalLabel" aria-hidden="true">
