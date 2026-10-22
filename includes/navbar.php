@@ -215,9 +215,10 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                                                     <div class="mega-col-title">Software Development</div>
                                                     <ul class="mega-list">
                                                         <li><a href="/web-development">Web Development</a></li>
+                                                        <li><a href="/services/digital-wedding-card">Digital Wedding Cards</a></li>
                                                         <li><a href="/mobile-app-development">Mobile App Development</a></li>
-                                                        <li><a href="/enterprise-software-development">Enterprise Software Development</a></li>
-                                                        <li><a href="/real-estate-website-development">Real Estate Website Development</a></li>
+                                                        <li><a href="/enterprise-software-development">Enterprise Software</a></li>
+                                                        <li><a href="/real-estate-website-development">Real Estate Website</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="has-dropdown">
