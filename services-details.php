@@ -145,7 +145,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                     De-Weboo Dev delivers reliable websites with ongoing support, performance monitoring, and clear communication throughout your project.
                                 </h4>
                                 <div class="d-flex align-items-center gap-2">
-                                    <h5 class="black">Syed Aqeel Hassan Gillani</h5> <span class="fs-eight pra">Lead Developer</span>
+                                    <h5 class="black">Aqeel Hassan Gilani</h5> <span class="fs-eight pra">Lead Developer</span>
                                 </div>
                             </div>
                         </div>

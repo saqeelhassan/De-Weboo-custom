@@ -51,6 +51,7 @@ if (($footer_variant ?? 'default') === 'style2') :
                                         <a href="/team">
                                             Meet our team
                                         </a>
+                                        <a href="/aqeel-hassan-gilani">Aqeel Hassan Gilani</a>
                                     </li>
                                     <li>
                                         <a href="/blog">
@@ -285,6 +286,7 @@ foreach ($extra_scripts as $script) :
                                         <a href="/team">
                                             Meet our team
                                         </a>
+                                        <a href="/aqeel-hassan-gilani">Aqeel Hassan Gilani</a>
                                     </li>
                                     <li>
                                         <a href="/blog">

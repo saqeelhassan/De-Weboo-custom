@@ -39,7 +39,7 @@ $whatsapp_url = 'https://wa.me/' . preg_replace('/\D+/', '', $whatsapp);
     <div class="cont">
         <?php if ($call_rep_name !== '') : ?>
         <div class="contact-rep-heading mb-2">
-            <span class="black fw-semibold fs-six d-block contact-rep-name"><?php echo e($call_rep_name); ?></span>
+            <span class="black fw-semibold fs-six d-block contact-rep-name"><a href="<?php echo e($rep['url']); ?>"><?php echo e($call_rep_name); ?></a></span>
             <?php if ($call_rep_title !== '') : ?>
             <span class="fs-seven pra d-block"><?php echo e($call_rep_title); ?></span>
             <?php endif; ?>

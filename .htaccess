@@ -29,6 +29,8 @@ Options -Indexes
     RewriteCond %{THE_REQUEST} \s/+(.+)\.php[\s?] [NC]
     RewriteRule ^ /%1 [R=301,L]
 
+    RewriteRule ^services/digital-wedding-card/?$ digital-wedding-card.php [L,QSA]
+
     # Pretty detail routes
     RewriteRule ^blog/([^/]+)/?$ blog-details.php?post=$1 [L,QSA]
     RewriteRule ^portfolio/([^/]+)/?$ portfolio-details.php?project=$1 [L,QSA]

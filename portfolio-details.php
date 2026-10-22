@@ -14,8 +14,8 @@ if ($project === null) {
 }
 
 dw_load_page_seo('portfolio-details');
-$page_title = $project['shortName'] . ' | De-Weboo Dev Portfolio';
-$page_description = mb_substr($project['overview'], 0, 155) . (mb_strlen($project['overview']) > 155 ? '…' : '');
+$page_title = $project['metaTitle'] ?? ($project['shortName'] . ' | De-Weboo Dev Portfolio');
+$page_description = $project['metaDescription'] ?? mb_substr($project['overview'], 0, 155) . (mb_strlen($project['overview']) > 155 ? '…' : '');
 $page_keywords = $project['shortName'] . ', ' . $project['techStack'] . ', ' . $project['category'] . ', De-Weboo Dev portfolio, custom web development';
 $page_canonical = rtrim(dw_site_url(), '/') . dw_portfolio_url($project['slug']);
 
@@ -56,7 +56,7 @@ require_once __DIR__ . '/includes/navbar.php';
         <div class="container">
             <div class="space-bottom">
                 <div class="thumb rounded-3 w-100 mb-xl-5 mb-4 wow fadeInUp" data-wow-delay=".3s">
-                    <img loading="lazy" src="<?php echo e($coverImage); ?>" alt="<?php echo e($project['fullName']); ?>" class="rounded-3 w-100">
+                    <img loading="lazy" src="<?php echo e($coverImage); ?>" alt="<?php echo e($project['images']['coverAlt'] ?? $project['fullName']); ?>" class="rounded-3 w-100">
                 </div>
                 <div class="portfolio-details-info">
                     <div class="item wow fadeInUp" data-wow-delay=".3s">
@@ -103,11 +103,17 @@ require_once __DIR__ . '/includes/navbar.php';
                         <span class="pra fs-eight d-block mb-xxl-4 mb-3">
                             Project
                         </span>
+                        <?php if (!empty($project['projectContactUrl'])) : ?>
+                        <a href="<?php echo e($project['projectContactUrl']); ?>" class="common-btn text-nowrap box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p1-bg">
+                            Discuss a similar build <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <?php else : ?>
                         <button type="button"
                             class="common-btn text-nowrap box-style cmn-style1 d-inline-flex justify-content-center align-items-center gap-xxl-2 gap-2 fs18 fw-semibold white overflow-hidden rounded-5 p1-bg border-0"
                             data-bs-toggle="modal" data-bs-target="#portfolioDiscussModal">
                             Discuss a similar build <i class="fa-solid fa-arrow-right"></i>
                         </button>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
@@ -183,6 +189,21 @@ require_once __DIR__ . '/includes/navbar.php';
                 </div>
                 <div class="col-lg-6">
                     <div class="accordion border-0 d-flex flex-column gap-xxl-4 gap-3" id="accordionExample">
+                        <?php if (!empty($project['faqs'])) : ?>
+                        <?php foreach ($project['faqs'] as $index => $faq) : ?>
+                        <div class="accordion-item<?php echo $index === 0 ? ' active' : ''; ?>">
+                            <div class="accordion-header" id="projectFaqHeading<?php echo $index; ?>">
+                                <button class="accordion-button<?php echo $index === 0 ? '' : ' collapsed'; ?>" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#projectFaq<?php echo $index; ?>" aria-expanded="<?php echo $index === 0 ? 'true' : 'false'; ?>" aria-controls="projectFaq<?php echo $index; ?>">
+                                    <?php echo e($faq['question']); ?>
+                                </button>
+                                <div id="projectFaq<?php echo $index; ?>" class="accordion-collapse collapse<?php echo $index === 0 ? ' show' : ''; ?>" aria-labelledby="projectFaqHeading<?php echo $index; ?>" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body"><p class="fs-seven pra"><?php echo e($faq['answer']); ?></p></div>
+                                </div>
+                            </div>
+                        </div>
+                        <?php endforeach; ?>
+                        <?php else : ?>
                         <div class="accordion-item active">
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
@@ -247,6 +268,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </div>
                             </div>
                         </div>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>

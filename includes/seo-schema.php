@@ -116,6 +116,29 @@ $schema = [
     ],
 ];
 
+$rep = dw_contact_rep();
+$personUrl = rtrim($org['url'], '/') . $rep['url'];
+$personId = $personUrl . '#person';
+$schema['@graph'][0]['employee'] = ['@id' => $personId];
+$person = [
+    '@type' => 'Person',
+    '@id' => $personId,
+    'name' => $rep['name'],
+    'url' => $personUrl,
+    'image' => rtrim($org['url'], '/') . '/' . ltrim($rep['image'], '/'),
+    'jobTitle' => $rep['title'],
+    'worksFor' => ['@id' => $orgId],
+];
+if ($rep['sameAs'] !== []) {
+    $person['sameAs'] = $rep['sameAs'];
+}
+$schema['@graph'][] = $person;
+if (!empty($is_person_profile)) {
+    $schema['@graph'][2]['@type'] = 'ProfilePage';
+    $schema['@graph'][2]['mainEntity'] = ['@id' => $personId];
+    $schema['@graph'][2]['about'] = ['@id' => $personId];
+}
+
 $json = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
 if ($json === false) {
     return;

@@ -56,7 +56,7 @@ function dw_portfolio_filter_group(string $category): string
                     ?>
                 <div class="col-md-6 col-lg-4 portfolio-grid-item" data-group="<?php echo e($filterGroup); ?>">
                     <div class="gateway-items rounded-4 w-100">
-                        <img loading="lazy" src="<?php echo e($cardImage); ?>" alt="<?php echo e($project['shortName']); ?>" class="w-100 rounded-4">
+                        <img loading="lazy" src="<?php echo e($cardImage); ?>" alt="<?php echo e($project['images']['cardAlt'] ?? $project['shortName']); ?>" class="w-100 rounded-4">
                         <div class="content">
                             <div class="box-inner p1-bg rounded-circle d-center">
                                 <div class="box text-center">

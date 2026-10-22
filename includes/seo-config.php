@@ -93,7 +93,13 @@ function dw_org_config(): array
             'https://www.pinterest.com/Deweboodev/',
         ],
         'primaryContactRep' => [
-            'name' => 'Syed Aqeel Hassan Gillani',
+            'name' => 'Aqeel Hassan Gilani',
+            'url' => '/aqeel-hassan-gilani',
+            // Personal profile URLs only; keep company accounts in organization sameAs.
+            'sameAs' => [
+                'https://www.facebook.com/aqeelhassangillani',
+                'https://www.linkedin.com/in/aqeel-hassan-gillani/',
+            ],
             'title' => 'Lead Developer',
             'image' => 'assets/img/services/techgon-author.jpg',
         ],

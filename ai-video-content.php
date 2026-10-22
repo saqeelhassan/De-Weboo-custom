@@ -91,6 +91,11 @@ require_once __DIR__ . '/includes/navbar.php';
                                     data-wow-delay="1.05s">
                                     AI Video and Content <i class="fa-solid fa-angle-right"></i>
                                 </a>
+                                <a href="/services/digital-wedding-card"
+                                    class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
+                                    data-wow-delay=".7s">
+                                    Digital Wedding Cards <i class="fa-solid fa-angle-right"></i>
+                                </a>
                                 <a href="/services"
                                     class="cate-tags d-flex align-items-center justify-content-between gap-2 fs-seven pra wow fadeInUp"
                                     data-wow-delay="1.1s">
