@@ -1,0 +1,13 @@
+{
+  "web-development": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "mobile-app-development": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "ai-machine-learning": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "enterprise-software-development": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "real-estate-website-development": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "data-engineering": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "digital-marketing": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "seo": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "cloud-services": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "ai-video-content": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] },
+  "digital-wedding-card": { "included": "", "process": "", "tools": "", "results": "", "faqs": [] }
+}

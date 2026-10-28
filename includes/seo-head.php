@@ -13,7 +13,6 @@ $og_image = $page_og_image ?? ($org['logo']);
 $page_twitter_card = $page_twitter_card ?? 'summary_large_image';
 $site_name = 'De-Weboo Dev';
 ?>
-    <meta name="keywords" content="<?php echo e($page_keywords); ?>">
     <meta name="robots" content="<?php echo e($page_robots); ?>">
     <meta name="googlebot" content="<?php echo e($page_robots); ?>">
     <meta name="bingbot" content="<?php echo e($page_robots); ?>">

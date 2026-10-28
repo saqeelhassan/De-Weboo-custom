@@ -197,6 +197,9 @@ if (($footer_variant ?? 'default') === 'style2') :
                         &copy;<?php echo date('Y'); ?> <a href="/" class="p3-clr fw_500">De-Weboo Dev.</a> All Rights Reserved.
                     </p>
                     <div class="social-icon d-flex align-items-center gap-2">
+<?php if (!empty($dw_contact['youtube']) && preg_match('~^https://(?:www\.)?youtube\.com/(?:@|channel/|c/|user/)[^/?#]+~', $dw_contact['youtube'])): ?>
+<a href="<?php echo e($dw_contact['youtube']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel"><i class="fab fa-youtube"></i></a>
+<?php endif; ?>
                         <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f"></i></a>
                         <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our LinkedIn page"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="<?php echo e($dw_contact['instagram']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our Instagram page"><i class="fa-brands fa-instagram"></i></a>
@@ -223,21 +226,8 @@ if (($footer_variant ?? 'default') === 'style2') :
     </div>
 
     <!--<< All JS Plugins — defer enables parallel download, order preserved >>-->
-    <script defer src="/assets/js/jquery-3.7.1.min.js"></script>
-    <script defer src="/assets/js/viewport.jquery.js"></script>
-    <script defer src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script defer src="/assets/js/jquery.nice-select.min.js"></script>
-    <script defer src="/assets/js/jquery.waypoints.js"></script>
-    <script defer src="/assets/js/jquery.counterup.min.js"></script>
-    <script defer src="/assets/js/swiper-bundle.min.js"></script>
-    <script defer src="/assets/js/jquery.meanmenu.min.js"></script>
-    <script defer src="/assets/js/jquery.magnific-popup.min.js"></script>
-    <script defer src="/assets/js/wow.min.js"></script>
-    <script defer src="/assets/js/gsap.min.js"></script>
-    <script defer src="/assets/js/ScrollTrigger.min.js"></script>
-    <script defer src="/assets/js/spilitext-gsap.js"></script>
-    <script defer src="/assets/js/vanilla-tilt.min.js"></script>
-    <script defer src="/assets/js/main.js"></script>
+    <?php $assetManifest = json_decode(file_get_contents(__DIR__ . '/assets-manifest.json'), true, 512, JSON_THROW_ON_ERROR); ?>
+    <script defer src="<?php echo e($assetManifest['scripts']); ?>"></script>
 <?php
 $extra_scripts = $extra_scripts ?? [];
 foreach ($extra_scripts as $script) :
@@ -375,6 +365,9 @@ foreach ($extra_scripts as $script) :
                                     </div>
                                 </div>
                                 <div class="social-custom d-flex align-items-center gap-xl-4 gap-3">
+<?php if (!empty($dw_contact['youtube']) && preg_match('~^https://(?:www\.)?youtube\.com/(?:@|channel/|c/|user/)[^/?#]+~', $dw_contact['youtube'])): ?>
+                                    <a href="<?php echo e($dw_contact['youtube']); ?>" target="_blank" rel="noopener noreferrer" aria-label="Visit our YouTube channel"><i class="fab fa-youtube white65 fs-six"></i></a>
+<?php endif; ?>
                                     <a href="<?php echo e($dw_contact['facebook']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our Facebook page"><i class="fab fa-facebook-f white65 fs-six"></i></a>
                                     <a href="<?php echo e($dw_contact['linkedin']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our LinkedIn page"><i class="fab fa-linkedin-in white65 fs-six"></i></a>
                                     <a href="<?php echo e($dw_contact['pinterest']); ?>" target="_blank" rel="noopener noreferrer" class=" black" aria-label="Visit our Pinterest page"><i class="fa-brands fa-pinterest-p white65 fs-six"></i></a>
@@ -416,21 +409,8 @@ foreach ($extra_scripts as $script) :
     </div>
 
     <!--<< All JS Plugins — defer enables parallel download, order preserved >>-->
-    <script defer src="/assets/js/jquery-3.7.1.min.js"></script>
-    <script defer src="/assets/js/viewport.jquery.js"></script>
-    <script defer src="/assets/js/bootstrap.bundle.min.js"></script>
-    <script defer src="/assets/js/jquery.nice-select.min.js"></script>
-    <script defer src="/assets/js/jquery.waypoints.js"></script>
-    <script defer src="/assets/js/jquery.counterup.min.js"></script>
-    <script defer src="/assets/js/swiper-bundle.min.js"></script>
-    <script defer src="/assets/js/jquery.meanmenu.min.js"></script>
-    <script defer src="/assets/js/jquery.magnific-popup.min.js"></script>
-    <script defer src="/assets/js/wow.min.js"></script>
-    <script defer src="/assets/js/gsap.min.js"></script>
-    <script defer src="/assets/js/ScrollTrigger.min.js"></script>
-    <script defer src="/assets/js/spilitext-gsap.js"></script>
-    <script defer src="/assets/js/vanilla-tilt.min.js"></script>
-    <script defer src="/assets/js/main.js"></script>
+    <?php $assetManifest = json_decode(file_get_contents(__DIR__ . '/assets-manifest.json'), true, 512, JSON_THROW_ON_ERROR); ?>
+    <script defer src="<?php echo e($assetManifest['scripts']); ?>"></script>
 <?php
 $extra_scripts = $extra_scripts ?? [];
 foreach ($extra_scripts as $script) :

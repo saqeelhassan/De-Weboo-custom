@@ -44,11 +44,11 @@ foreach ($blogSectionPosts as $blogPost) :
                                 </span>
                             </a>
                             <div class="news-content pb-4 mb-lg-2 px-4">
-                                <h4 class="mb-0 blog-card-title">
+                                <h3 class="mb-0 blog-card-title">
                                     <a href="<?php echo e($blogPostUrl); ?>" class="black">
                                         <?php echo dw_blog_card_title($blogPost['title']); ?>
                                     </a>
-                                </h4>
+                                </h3>
                                 <p class="fs-seven pra blog-card-excerpt">
                                     <?php echo e($blogPost['excerpt']); ?>
                                 </p>

@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 require_once __DIR__ . '/helpers.php';
+$assetManifest = json_decode(file_get_contents(__DIR__ . '/assets-manifest.json'), true, 512, JSON_THROW_ON_ERROR);
 
 $page_title = $page_title ?? 'De-Weboo Dev | Custom Software, Web, Mobile & IT Solutions';
 $page_description = $page_description ?? 'Enterprise software firm: Development & AI Engineering (web, mobile, AI, data) plus Growth & Infrastructure (marketing, SEO, cloud).';
@@ -40,40 +41,20 @@ foreach ($extra_preloads as $preload) :
 <?php endforeach; ?>
 
     <!-- Resource hints for third-party origins used at runtime -->
-    <link rel="dns-prefetch" href="//www.youtube.com">
-    <link rel="preconnect" href="https://www.youtube.com" crossorigin>
-    <link rel="dns-prefetch" href="//www.youtube-nocookie.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google-analytics.com" crossorigin>
 
     <link rel="shortcut icon" href="/assets/img/logo/favs.png">
 
-    <!-- Self-hosted fonts (Inter, Plus Jakarta Sans) — no Google Fonts CDN -->
-    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/fonts.css')); ?>">
-
-    <!-- Critical CSS — render-blocking (above-fold layout & icons) -->
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/all.min.css">
-    <link rel="stylesheet" href="/assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/main.css')); ?>">
-    <link rel="stylesheet" href="<?php echo e(dw_asset('/assets/css/brand.css')); ?>">
-
-    <!-- Non-critical CSS — async loaded to unblock render -->
-    <link rel="preload" href="/assets/css/animate.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/animate.css"></noscript>
-
-    <link rel="preload" href="/assets/css/magnific-popup.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/magnific-popup.css"></noscript>
-
-    <link rel="preload" href="/assets/css/meanmenu.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/meanmenu.css"></noscript>
-
-    <link rel="preload" href="/assets/css/nice-select.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/css/nice-select.css"></noscript>
+    <link rel="stylesheet" href="<?php echo e($assetManifest['critical']); ?>">
+    <link rel="preload" href="<?php echo e($assetManifest['deferred']); ?>" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="<?php echo e($assetManifest['deferred']); ?>"></noscript>
 
 <?php
 $extra_stylesheets = $extra_stylesheets ?? [];
 foreach ($extra_stylesheets as $stylesheet) :
     ?>
-    <link rel="stylesheet" href="<?php echo e($stylesheet); ?>">
+    <link rel="stylesheet" href="<?php echo e(dw_asset($stylesheet)); ?>">
 <?php endforeach; ?>
 </head>
 

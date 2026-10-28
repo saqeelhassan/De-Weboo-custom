@@ -31,7 +31,7 @@ $schema = [
     '@context' => 'https://schema.org',
     '@graph' => [
         [
-            '@type' => ['ProfessionalService', 'LocalBusiness', 'Corporation'],
+            '@type' => ['Organization', 'ProfessionalService'],
             '@id' => $orgId,
             'name' => $org['name'],
             'legalName' => $org['legalName'],
@@ -43,7 +43,7 @@ $schema = [
             'image' => $org['logo'],
             'description' => $page_description,
             'email' => $org['email'],
-            'telephone' => $org['telephonePK'],
+            'telephone' => [$org['telephonePK'], $org['whatsapp']],
             'priceRange' => '$$$',
             'address' => [
                 '@type' => 'PostalAddress',
@@ -59,7 +59,9 @@ $schema = [
                 'longitude' => $org['geo']['longitude'],
             ],
             'areaServed' => [
+                ['@type' => 'Country', 'name' => 'Pakistan'],
                 ['@type' => 'Country', 'name' => 'United States'],
+                'Worldwide',
             ],
             'knowsAbout' => array_merge($org['coreServices'], $org['aiTerms'], [
                 'HIPAA Compliance',
@@ -101,6 +103,11 @@ $schema = [
             'name' => $org['name'],
             'description' => 'Custom web & software development agency and healthcare IT specialist.',
             'publisher' => ['@id' => $orgId],
+            'potentialAction' => [
+                '@type' => 'SearchAction',
+                'target' => ['@type' => 'EntryPoint', 'urlTemplate' => $org['url'] . '/search?q={search_term_string}'],
+                'query-input' => 'required name=search_term_string',
+            ],
             'inLanguage' => 'en-US',
         ],
         [
@@ -139,7 +146,35 @@ if (!empty($is_person_profile)) {
     $schema['@graph'][2]['about'] = ['@id' => $personId];
 }
 
-$json = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+require_once __DIR__ . '/service-content.php';
+$schemaSlug = basename((string) ($_SERVER['SCRIPT_NAME'] ?? ''), '.php');
+$services = dw_service_content();
+$serviceData = $services[$schemaSlug] ?? null;
+if (!empty($org['openingHoursSpecification'])) {
+    $schema['@graph'][0]['openingHoursSpecification'] = $org['openingHoursSpecification'];
+}
+$schema['@graph'][0]['contactPoint'][] = [
+    '@type' => 'ContactPoint', 'telephone' => $org['whatsapp'], 'contactType' => 'sales',
+    'areaServed' => 'Worldwide', 'availableLanguage' => ['English'],
+];
+if (!empty($page_faqs)) { $schema['@graph'][] = dw_faq_schema($page_faqs, $canonical); }
+if (!empty($serviceData['faqs'])) { $schema['@graph'][] = dw_faq_schema($serviceData['faqs'], $canonical); }
+if ($serviceData !== null || in_array($schemaSlug, ['services-details', 'blog-details', 'portfolio-details'], true)) {
+    $group = $schemaSlug === 'blog-details' ? 'Blog' : ($schemaSlug === 'portfolio-details' ? 'Portfolio' : 'Services');
+    $name = $post['title'] ?? $project['shortName'] ?? $serviceData['name'] ?? 'Service details';
+    $schema['@graph'][] = ['@type' => 'BreadcrumbList', 'itemListElement' => [
+        ['@type' => 'ListItem', 'position' => 1, 'name' => 'Home', 'item' => $org['url'] . '/'],
+        ['@type' => 'ListItem', 'position' => 2, 'name' => $group, 'item' => $org['url'] . '/' . strtolower($group)],
+        ['@type' => 'ListItem', 'position' => 3, 'name' => $name, 'item' => $canonical],
+    ]];
+}
+if ($schemaSlug === 'testimonials') {
+    require_once __DIR__ . '/review-schema.php';
+    $reviewNode = dw_review_schema($org['reviewSchema'], $orgId);
+    if ($reviewNode !== null) { $schema['@graph'][] = $reviewNode; }
+}
+
+$json = json_encode($schema, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE | JSON_HEX_TAG | JSON_HEX_AMP);
 if ($json === false) {
     return;
 }

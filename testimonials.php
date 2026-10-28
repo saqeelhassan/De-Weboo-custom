@@ -58,4 +58,8 @@ foreach (dw_client_testimonials() as $i => $testimonial) {
             </div>
         </div>
     </section>
-<?php require_once __DIR__ . '/includes/footer.php'; ?>
+<?php
+require_once __DIR__ . '/includes/review-schema.php';
+dw_render_review_component(dw_org_config()['reviewSchema']);
+require_once __DIR__ . '/includes/footer.php';
+?>

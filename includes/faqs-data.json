@@ -1,0 +1,34 @@
+[
+  {
+    "question": "What services does De-Weboo Dev offer?",
+    "answer": "De-Weboo Dev is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We deliver for B2B, B2C, and B2A frameworks."
+  },
+  {
+    "question": "Do you provide website maintenance after launch?",
+    "answer": "Yes. After we build your platform, we provide managed hosting, security patching, and monitoring—secondary lifecycle support that scales the software and web systems we engineer."
+  },
+  {
+    "question": "How does your project process work?",
+    "answer": "We follow discovery, secure architecture, design, development, accessibility testing (Section 508/WCAG), QA, and launch—with documented milestones suitable for commercial and procurement reviews."
+  },
+  {
+    "question": "How much does a new website cost?",
+    "answer": "Pricing depends on scope, integrations, and compliance requirements. Contact us for a transparent proposal—whether you need a growth-focused commercial site or a procurement-ready healthcare portal."
+  },
+  {
+    "question": "Can you provide capability documentation?",
+    "answer": "Yes. <strong>AI Automation</strong> covers custom programming for AI integrations, workflow automations, and LLM configurations. <strong>Data Engineering</strong> covers data architecture and secure data pipeline systems design. Request our capabilities statement via the contact page."
+  },
+  {
+    "question": "Do you build HIPAA-compliant healthcare websites?",
+    "answer": "Yes. Web &amp; Mobile Development includes high-security medical websites, patient portals, clinical workflows, and HIPAA-aligned healthcare infrastructure."
+  },
+  {
+    "question": "Can you improve SEO and lead generation?",
+    "answer": "Yes. <strong>Digital Marketing</strong> and <strong>SEO</strong> are separate secondary Growth &amp; Infrastructure services—Digital Marketing covers consumer marketing and lead generation; SEO covers technical SEO, AEO content strategy, and specialized medical and healthcare SEO to scale the platforms we engineer."
+  },
+  {
+    "question": "How much does a new website cost?",
+    "answer": "Pricing varies by scope, compliance, and integrations. We provide clear proposals for commercial builds and can supply capability summaries on request."
+  }
+]

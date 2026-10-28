@@ -7,25 +7,16 @@ declare(strict_types=1);
  */
 function dw_site_url(): string
 {
-    if (!empty($_SERVER['HTTP_HOST'])) {
-        $scheme = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') ? 'https' : 'http';
-
-        return $scheme . '://' . rtrim((string) $_SERVER['HTTP_HOST'], '/');
-    }
-
     return 'https://deweboo.com';
 }
 
 function dw_canonical_url(): string
 {
-    $base = dw_site_url();
-    $slug = basename((string) ($_SERVER['SCRIPT_NAME'] ?? 'index.php'), '.php');
-
-    if ($slug === 'index') {
-        return $base . '/';
-    }
-
-    return $base . '/' . $slug;
+    $path = (string) (parse_url($_SERVER['REQUEST_URI'] ?? '/', PHP_URL_PATH) ?: '/');
+    $path = preg_replace('~/(?:index\.php)?$~', '/', $path) ?? $path;
+    $path = preg_replace('~\.php$~', '', $path) ?? $path;
+    if ($path === '/seo-services') { $path = '/seo'; }
+    return dw_site_url() . ($path === '/' ? '/' : rtrim($path, '/'));
 }
 
 function dw_org_config(): array
@@ -81,6 +72,11 @@ function dw_org_config(): array
             'Custom AI Integrations',
         ],
         'defaultKeywords' => 'web mobile development, AI automation, data engineering, data pipeline engineering, digital marketing, SEO, medical healthcare SEO, cloud services',
+        // Use UTC for opening/closing times. Populate only after hours are confirmed.
+        'openingHoursTimezone' => 'UTC',
+        'openingHoursSpecification' => [],
+        'reviewSchema' => ['enabled' => false, 'reviews' => []],
+        'youtube' => '',
         'facebook' => 'https://www.facebook.com/deweboodev/',
         'linkedin' => 'https://www.linkedin.com/company/de-weboo-dev/',
         'instagram' => 'https://www.instagram.com/deweboodev/',

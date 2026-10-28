@@ -1,0 +1,250 @@
+{
+  "routes": [
+    {
+      "route": "/",
+      "status": 200
+    },
+    {
+      "route": "/about",
+      "status": 200
+    },
+    {
+      "route": "/ai-machine-learning",
+      "status": 200
+    },
+    {
+      "route": "/ai-video-content",
+      "status": 200
+    },
+    {
+      "route": "/aqeel-hassan-gilani",
+      "status": 200
+    },
+    {
+      "route": "/blog",
+      "status": 200
+    },
+    {
+      "route": "/blog-sidebar",
+      "status": 200
+    },
+    {
+      "route": "/blog/ai-automation-workflow-llm",
+      "status": 200
+    },
+    {
+      "route": "/blog/cloud-services-secure-infrastructure",
+      "status": 200
+    },
+    {
+      "route": "/blog/custom-web-apps-b2b-b2c-b2a",
+      "status": 200
+    },
+    {
+      "route": "/blog/data-engineering-secure-pipelines",
+      "status": 200
+    },
+    {
+      "route": "/blog/digital-marketing-b2b-lead-generation",
+      "status": 200
+    },
+    {
+      "route": "/blog/enterprise-web-development-section-508-wcag",
+      "status": 200
+    },
+    {
+      "route": "/blog/hipaa-patient-portals-medical-web",
+      "status": 200
+    },
+    {
+      "route": "/blog/idx-mls-integration-real-estate-website",
+      "status": 200
+    },
+    {
+      "route": "/blog/real-estate-website-development-guide",
+      "status": 200
+    },
+    {
+      "route": "/blog/seo-aeo-geo-enterprise",
+      "status": 200
+    },
+    {
+      "route": "/career",
+      "status": 200
+    },
+    {
+      "route": "/client-support",
+      "status": 200
+    },
+    {
+      "route": "/cloud-services",
+      "status": 200
+    },
+    {
+      "route": "/contact",
+      "status": 200
+    },
+    {
+      "route": "/data-engineering",
+      "status": 200
+    },
+    {
+      "route": "/digital-marketing",
+      "status": 200
+    },
+    {
+      "route": "/enterprise-software-development",
+      "status": 200
+    },
+    {
+      "route": "/faqs",
+      "status": 200
+    },
+    {
+      "route": "/feedback",
+      "status": 200
+    },
+    {
+      "route": "/help-center",
+      "status": 200
+    },
+    {
+      "route": "/mobile-app-development",
+      "status": 200
+    },
+    {
+      "route": "/portfolio",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/de-weboo-platform",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/dr-yousef-pour-site",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/dream-asa-homes",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/edustream-lms",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/ezfalcons-digital-marketing",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/ezfalcons-hub",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/ezfalcons-seo",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/face-clinic",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/fazal-mobiles",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/new-super-prime",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/new-super-prime-digital-marketing",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/new-super-prime-seo",
+      "status": 200
+    },
+    {
+      "route": "/portfolio/sindh-wdd-dashboard",
+      "status": 200
+    },
+    {
+      "route": "/pricing-plan",
+      "status": 200
+    },
+    {
+      "route": "/privacy-policy",
+      "status": 200
+    },
+    {
+      "route": "/real-estate-website-development",
+      "status": 200
+    },
+    {
+      "route": "/seo",
+      "status": 200
+    },
+    {
+      "route": "/services",
+      "status": 200
+    },
+    {
+      "route": "/services-details",
+      "status": 200
+    },
+    {
+      "route": "/services/digital-wedding-card",
+      "status": 200
+    },
+    {
+      "route": "/system-status",
+      "status": 200
+    },
+    {
+      "route": "/team",
+      "status": 200
+    },
+    {
+      "route": "/team/data-engineering",
+      "status": 200
+    },
+    {
+      "route": "/team/development",
+      "status": 200
+    },
+    {
+      "route": "/team/devops-cloud",
+      "status": 200
+    },
+    {
+      "route": "/team/hr",
+      "status": 200
+    },
+    {
+      "route": "/team/marketing-seo",
+      "status": 200
+    },
+    {
+      "route": "/team/project-management",
+      "status": 200
+    },
+    {
+      "route": "/terms-and-conditions",
+      "status": 200
+    },
+    {
+      "route": "/testimonials",
+      "status": 200
+    },
+    {
+      "route": "/web-development",
+      "status": 200
+    }
+  ],
+  "homepage_cache_second_request": "HIT",
+  "cached_response_security_headers": {
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Content-Type-Options": "nosniff",
+    "Referrer-Policy": "strict-origin-when-cross-origin"
+  }
+}

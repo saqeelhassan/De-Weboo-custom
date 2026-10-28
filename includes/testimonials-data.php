@@ -83,7 +83,7 @@ function dw_render_testimonial_card(array $item, string $wrapperClass = 'col-md-
                 <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
                     <div class="cont">
                         <p class="fs-eight mb-1 p1-clr d-block"><?php echo e($item['role']); ?></p>
-                        <h6 class="black fw-six"><?php echo e($item['name']); ?></h6>
+                        <p class="black fw-six testimonial-name"><?php echo e($item['name']); ?></p>
                     </div>
                 </div>
             </div>
@@ -112,7 +112,7 @@ function dw_render_testimonial_slide(array $item): void
                 <div class="d-flex align-items-center gap-xxl-4 gap-xl-3 gap-3">
                     <div class="cont">
                         <p class="fs-eight mb-1 p1-clr d-block"><?php echo e($item['role']); ?></p>
-                        <h6 class="black fw-six"><?php echo e($item['name']); ?></h6>
+                        <p class="black fw-six testimonial-name"><?php echo e($item['name']); ?></p>
                     </div>
                 </div>
             </div>

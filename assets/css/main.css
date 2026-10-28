@@ -3767,7 +3767,7 @@ footer {
   background: linear-gradient(90deg, rgba(3, 23, 64, 0.5) 0%, rgba(3, 23, 64, 0) 100%);
   padding: 12px 15px;
 }
-.banner-bg-slide .banner-content h1 {
+.banner-bg-slide .banner-content .hero-headline-lines {
   font-size: 80px;
   font-weight: 700;
   line-height: 84px;
@@ -3811,7 +3811,7 @@ footer {
     padding: 8px 12px;
     font-size: 12px;
   }
-  .banner-bg-slide .banner-content h1 {
+  .banner-bg-slide .banner-content .hero-headline-lines {
     font-size: 60px;
     font-weight: 700;
     line-height: 70px;
@@ -3829,7 +3829,7 @@ footer {
     padding: 8px 12px;
     font-size: 12px;
   }
-  .banner-bg-slide .banner-content h1 {
+  .banner-bg-slide .banner-content .hero-headline-lines {
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
@@ -3912,7 +3912,7 @@ footer {
   .banner-bg-slide .banner-content {
     max-width: 630px;
   }
-  .banner-bg-slide .banner-content h1 {
+  .banner-bg-slide .banner-content .hero-headline-lines {
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
@@ -4847,7 +4847,7 @@ footer {
 .news-single-items.style2:hover .news-image .details-info {
   transform: scale(1);
 }
-.news-single-items.style3 .news-content h4 a {
+.news-single-items.style3 .news-content .blog-card-title a {
   font-size: 22px;
 }
 .news-single-items.style3 .blog-badge1 {
@@ -4890,7 +4890,7 @@ footer {
   background: var(--p3-clr) !important;
   color: var(--white);
 }
-.news-single-items:hover .news-content h4 a {
+.news-single-items:hover .news-content :is(h4, .blog-card-title) a {
   color: var(--p3-clr);
 }
 @media (max-width: 1399px) {

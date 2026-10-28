@@ -5,6 +5,7 @@ declare(strict_types=1);
 require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/includes/seo.php';
 dw_load_page_seo(basename(__FILE__, '.php'));
+$page_faqs = json_decode(file_get_contents(__DIR__ . '/includes/faqs-data.json'), true, 512, JSON_THROW_ON_ERROR);
 require_once __DIR__ . '/includes/header.php';
 require_once __DIR__ . '/includes/navbar.php';
 ?>
@@ -50,15 +51,11 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="accordion-item active">
                             <div class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    What services does De-Weboo Dev offer?
-                                </button>
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"><?php echo e($page_faqs[0]['question']); ?></button>
                                 <div id="collapseOne" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p class="fs-seven pra">
-                                            De-Weboo Dev is an enterprise software engineering firm organized in two service categories. <strong>Development &amp; AI Engineering:</strong> Web &amp; Mobile Development (custom web apps, mobile apps, e-commerce, and high-security medical websites and patient portals), <strong>AI Automation</strong> (custom AI integrations, workflow automations, and LLM configurations), and <strong>Data Engineering</strong> (secure data pipelines and administrative dashboards). <strong>Growth &amp; Infrastructure:</strong> <strong>Digital Marketing</strong> (consumer marketing and lead generation), <strong>SEO</strong> (technical SEO and specialized medical/healthcare SEO), and Cloud Services (secure cloud architecture, migration, and HIPAA-friendly hosting). We deliver for B2B, B2C, and B2A frameworks.
-                                        </p>
+                                        <p class="fs-seven pra"><?php echo $page_faqs[0]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -66,15 +63,11 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="accordion-item">
                             <div class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Do you provide website maintenance after launch?
-                                </button>
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"><?php echo e($page_faqs[1]['question']); ?></button>
                                 <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>
-                                            Yes. After we build your platform, we provide managed hosting, security patching, and monitoring—secondary lifecycle support that scales the software and web systems we engineer.
-                                        </p>
+                                        <p><?php echo $page_faqs[1]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -82,15 +75,11 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="accordion-item">
                             <div class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    How does your project process work?
-                                </button>
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree"><?php echo e($page_faqs[2]['question']); ?></button>
                                 <div id="collapseThree" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>
-                                            We follow discovery, secure architecture, design, development, accessibility testing (Section 508/WCAG), QA, and launch—with documented milestones suitable for commercial and procurement reviews.
-                                        </p>
+                                        <p><?php echo $page_faqs[2]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -98,15 +87,11 @@ require_once __DIR__ . '/includes/navbar.php';
                         <div class="accordion-item">
                             <div class="accordion-header" id="headingfour">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                    How much does a new website cost?
-                                </button>
+                                    data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour"><?php echo e($page_faqs[3]['question']); ?></button>
                                 <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingfour"
                                     data-bs-parent="#accordionExample">
                                     <div class="accordion-body">
-                                        <p>
-                                            Pricing depends on scope, integrations, and compliance requirements. Contact us for a transparent proposal—whether you need a growth-focused commercial site or a procurement-ready healthcare portal.
-                                        </p>
+                                        <p><?php echo $page_faqs[3]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -132,15 +117,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingOne001">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne001" aria-expanded="true"
-                                    aria-controls="collapseOne001">
-                                    Can you provide capability documentation?
-                                </button>
+                                    aria-controls="collapseOne001"><?php echo e($page_faqs[4]['question']); ?></button>
                                 <div id="collapseOne001" class="accordion-collapse collapse show"
                                     aria-labelledby="headingOne001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
-                                        <p class="fs-seven pra">
-                                            Yes. <strong>AI Automation</strong> covers custom programming for AI integrations, workflow automations, and LLM configurations. <strong>Data Engineering</strong> covers data architecture and secure data pipeline systems design. Request our capabilities statement via the contact page.
-                                        </p>
+                                        <p class="fs-seven pra"><?php echo $page_faqs[4]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -149,15 +130,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingTwo001">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo001" aria-expanded="false"
-                                    aria-controls="collapseTwo001">
-                                    Do you build HIPAA-compliant healthcare websites?
-                                </button>
+                                    aria-controls="collapseTwo001"><?php echo e($page_faqs[5]['question']); ?></button>
                                 <div id="collapseTwo001" class="accordion-collapse collapse"
                                     aria-labelledby="headingTwo001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
-                                        <p class="fs-seven pra">
-                                            Yes. Web &amp; Mobile Development includes high-security medical websites, patient portals, clinical workflows, and HIPAA-aligned healthcare infrastructure.
-                                        </p>
+                                        <p class="fs-seven pra"><?php echo $page_faqs[5]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -166,15 +143,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingThree001">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree001" aria-expanded="false"
-                                    aria-controls="collapseThree001">
-                                    Can you improve SEO and lead generation?
-                                </button>
+                                    aria-controls="collapseThree001"><?php echo e($page_faqs[6]['question']); ?></button>
                                 <div id="collapseThree001" class="accordion-collapse collapse"
                                     aria-labelledby="headingThree001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
-                                        <p class="fs-seven pra">
-                                            Yes. <strong>Digital Marketing</strong> and <strong>SEO</strong> are separate secondary Growth &amp; Infrastructure services—Digital Marketing covers consumer marketing and lead generation; SEO covers technical SEO, AEO content strategy, and specialized medical and healthcare SEO to scale the platforms we engineer.
-                                        </p>
+                                        <p class="fs-seven pra"><?php echo $page_faqs[6]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -183,15 +156,11 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="accordion-header" id="headingfour001">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapsefour001" aria-expanded="false"
-                                    aria-controls="collapsefour001">
-                                    How much does a new website cost?
-                                </button>
+                                    aria-controls="collapsefour001"><?php echo e($page_faqs[7]['question']); ?></button>
                                 <div id="collapsefour001" class="accordion-collapse collapse"
                                     aria-labelledby="headingfour001" data-bs-parent="#accordionExample1">
                                     <div class="accordion-body">
-                                        <p class="fs-seven pra">
-                                            Pricing varies by scope, compliance, and integrations. We provide clear proposals for commercial builds and can supply capability summaries on request.
-                                        </p>
+                                        <p class="fs-seven pra"><?php echo $page_faqs[7]['answer']; ?></p>
                                     </div>
                                 </div>
                             </div>

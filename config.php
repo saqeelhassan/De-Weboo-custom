@@ -20,6 +20,11 @@ if (PHP_SAPI !== 'cli' && !headers_sent()) {
     header('Permissions-Policy: geolocation=(), microphone=(), camera=()');
 }
 
+require_once __DIR__ . '/includes/page-cache.php';
+dw_start_page_cache();
+require_once __DIR__ . '/includes/image-output.php';
+ob_start('dw_optimize_image_output');
+
 /**
  * Detect a sub-folder deployment (e.g. local dev at /De-weboo-webiste/ instead
  * of the domain root) by diffing the project root against DOCUMENT_ROOT, then

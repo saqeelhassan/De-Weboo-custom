@@ -9,6 +9,36 @@ Options -Indexes
 <IfModule mod_rewrite.c>
     RewriteEngine On
 
+    # Canonical redirects run before internal routing. THE_REQUEST avoids loops.
+    # Only production hosts are forced to HTTPS, so local development still works.
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?deweboo\.com$ [NC]
+    RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
+    RewriteRule ^index\.php$ https://deweboo.com/ [R=301,L,NE]
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?deweboo\.com$ [NC]
+    RewriteRule ^seo-services(?:\.php)?/?$ https://deweboo.com/seo [R=301,L,NE]
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?deweboo\.com$ [NC]
+    RewriteRule ^digital-wedding-card(?:\.php)?/?$ https://deweboo.com/services/digital-wedding-card [R=301,L,NE]
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?deweboo\.com$ [NC]
+    RewriteCond %{REQUEST_URI} !^/(?:handlers|tools|includes)/ [NC]
+    RewriteCond %{REQUEST_METHOD} ^(?:GET|HEAD)$
+    RewriteCond %{THE_REQUEST} \s/+([^?\s]+)\.php[\s?] [NC]
+    RewriteRule ^ https://deweboo.com/%1 [R=301,L,NE]
+
+    RewriteCond %{HTTP_HOST} ^(?:www\.)?deweboo\.com$ [NC]
+    RewriteCond %{HTTP_HOST} ^www\. [NC,OR]
+    RewriteCond %{HTTPS} !=on
+    RewriteRule ^ https://deweboo.com%{REQUEST_URI} [R=301,L,NE]
+
+    RewriteRule ^seo-services/?$ /seo [R=301,L]
+    RewriteRule ^digital-wedding-card/?$ /services/digital-wedding-card [R=301,L]
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
+
+    # Internal build tools must not be publicly callable.
+    RewriteRule ^tools/ - [F,L]
+
     # Legacy .html URLs → clean URL (after migration)
     RewriteCond %{REQUEST_FILENAME} !-f
     RewriteCond %{REQUEST_FILENAME} !-d
@@ -23,7 +53,7 @@ Options -Indexes
     # Canonicalize: /page.php -> /page (skip POST so form/AJAX submissions aren't redirected)
     RewriteCond %{REQUEST_METHOD} GET
     RewriteCond %{THE_REQUEST} \s/+index\.php[\s?] [NC]
-    RewriteRule ^ /? [R=301,L]
+    RewriteRule ^ / [R=301,L]
 
     RewriteCond %{REQUEST_METHOD} GET
     RewriteCond %{THE_REQUEST} \s/+(.+)\.php[\s?] [NC]
@@ -52,3 +82,16 @@ Options -Indexes
         Deny from all
     </IfModule>
 </FilesMatch>
+
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json application/xml image/svg+xml
+</IfModule>
+<IfModule mod_headers.c>
+    <FilesMatch "\.(?:css|js|webp|avif|png|jpe?g|svg|woff2?)$">
+        Header set Cache-Control "public, max-age=86400"
+    </FilesMatch>
+    # Content-hashed bundles have immutable URLs.
+    <FilesMatch "\.[a-f0-9]{12}\.(?:css|js)$">
+        Header set Cache-Control "public, max-age=31536000, immutable"
+    </FilesMatch>
+</IfModule>

@@ -1,0 +1,60 @@
+[
+  {
+    "host": "deweboo.com",
+    "path": "/",
+    "status": 301,
+    "location": "https://deweboo.com/",
+    "passed": true
+  },
+  {
+    "host": "www.deweboo.com",
+    "path": "/",
+    "status": 301,
+    "location": "https://deweboo.com/",
+    "passed": true
+  },
+  {
+    "host": "www.deweboo.com",
+    "path": "/contact?from=a&x=2",
+    "status": 301,
+    "location": "https://deweboo.com/contact?from=a&x=2",
+    "passed": true
+  },
+  {
+    "host": "deweboo.com",
+    "path": "/index.php?x=1",
+    "status": 301,
+    "location": "https://deweboo.com/?x=1",
+    "passed": true
+  },
+  {
+    "host": "www.deweboo.com",
+    "path": "/seo-services?x=1",
+    "status": 301,
+    "location": "https://deweboo.com/seo?x=1",
+    "passed": true
+  },
+  {
+    "host": "www.deweboo.com",
+    "path": "/contact.php?x=1",
+    "status": 301,
+    "location": "https://deweboo.com/contact?x=1",
+    "passed": true
+  },
+  {
+    "path": "/tools/foo.php",
+    "status": 403,
+    "passed": true
+  },
+  {
+    "path": "/assets/site.012345abcdef.css",
+    "status": 200,
+    "passed": true,
+    "cache_control": "public, max-age=31536000, immutable"
+  },
+  {
+    "path": "/sitemap.xml",
+    "status": 200,
+    "passed": true
+  }
+]

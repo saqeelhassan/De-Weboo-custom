@@ -21,9 +21,5 @@ function dw_load_page_seo(string $slug): void
     $page_keywords = $data['keywords'] ?? $org['defaultKeywords'];
     $page_robots = $data['robots'] ?? 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 
-    if ($slug === 'index') {
-        $page_canonical = rtrim(dw_site_url(), '/') . '/';
-    } else {
-        $page_canonical = rtrim(dw_site_url(), '/') . '/' . $slug;
-    }
+    $page_canonical = dw_canonical_url();
 }

@@ -128,7 +128,7 @@ function dw_blog_article_schema(array $post): string
             'description' => $post['excerpt'],
             'image' => $imageUrl,
             'datePublished' => $post['published'],
-            'dateModified' => $post['published'],
+            'dateModified' => $post['modified'] ?? gmdate('c', (int) filemtime(__DIR__ . '/blog-posts.php')),
             'author' => [
                 '@type' => 'Organization',
                 'name' => $post['author'],

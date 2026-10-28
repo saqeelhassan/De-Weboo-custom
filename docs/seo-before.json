@@ -1,0 +1,13 @@
+{
+  "html_bytes": 142275,
+  "css_js_preload_urls": 29,
+  "image_elements": 62,
+  "h1_count": 3,
+  "missing_or_empty_alt": [
+    "/assets/img/icon/menu.png",
+    "/assets/img/banner/banner3-slide1.png",
+    "/assets/img/banner/banner3-slide2.png",
+    "/assets/img/banner/banner1-slide1.png"
+  ],
+  "note": "Template output counts, not browser network requests or mobile Lighthouse metrics."
+}

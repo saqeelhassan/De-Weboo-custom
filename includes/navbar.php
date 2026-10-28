@@ -270,7 +270,7 @@ $nav_search_icon_color_inner = $nav_search_icon_color_inner ?? 'black';
                         </a>
                         <div class="header__hamburger d-xl-none d-block my-auto">
                             <div class="sidebar__toggle" role="button" aria-label="Open menu" tabindex="0">
-                                <img src="/assets/img/icon/menu.png" alt="" aria-hidden="true">
+                                <img src="/assets/img/icon/menu.png" alt="Open navigation menu" aria-hidden="true">
                             </div>
                         </div>
 

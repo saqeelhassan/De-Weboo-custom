@@ -111,4 +111,5 @@ require_once __DIR__ . '/includes/navbar.php';
         </div>
     </section>
 </main>
+<?php require __DIR__ . '/includes/service-sections.php'; ?>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

@@ -1,0 +1,74 @@
+{
+  "before": {
+    "ttfb_ms": 20.899999998509884,
+    "lcp_ms": 14864,
+    "cls": 0.0031696533280318883,
+    "h1_count": 3,
+    "hero_font": "33.15px",
+    "initial_image_urls": [
+      "http://127.0.0.1:8101/assets/img/logo/logo.png",
+      "http://127.0.0.1:8101/assets/img/logo/logo-white.png",
+      "http://127.0.0.1:8101/assets/img/icon/menu.png",
+      "http://127.0.0.1:8101/assets/img/icon/menu.png",
+      "http://127.0.0.1:8101/assets/img/banner/banner3-slide1.avif",
+      "http://127.0.0.1:8101/assets/img/banner/banner3-slide2.avif",
+      "http://127.0.0.1:8101/assets/img/banner/banner1-slide1.webp",
+      "http://127.0.0.1:8101/assets/img/icon/even1.png",
+      "http://127.0.0.1:8101/assets/img/icon/even2.png",
+      "http://127.0.0.1:8101/assets/img/icon/even2.png",
+      "http://127.0.0.1:8101/assets/img/icon/even1.png",
+      "http://127.0.0.1:8101/assets/img/about/vision-customer1.png",
+      "http://127.0.0.1:8101/assets/img/about/vision-customer2.png",
+      "http://127.0.0.1:8101/assets/img/about/vision-customer3.png",
+      "http://127.0.0.1:8101/assets/img/about/vision-customer4.png",
+      "http://127.0.0.1:8101/assets/img/element/vission-ele.png",
+      "http://127.0.0.1:8101/assets/img/services/solutio-web.jpg"
+    ],
+    "horizontal_overflow": false,
+    "initial_requests": 61,
+    "total_requests_after_scroll": 86,
+    "resource_encoded_bytes": 8257089,
+    "js_errors": [],
+    "failed_http": [
+      {
+        "url": "http://127.0.0.1:8101/assets/img/blog/blog-grid1.png",
+        "status": 404
+      }
+    ]
+  },
+  "after": {
+    "ttfb_ms": 82.5,
+    "lcp_ms": 14024,
+    "cls": 0.0010754578453757635,
+    "h1_count": 1,
+    "hero_font": "33.15px",
+    "initial_image_urls": [
+      "http://127.0.0.1:8099/assets/img/optimized/logo.eaca2fd3c9e8-480.webp",
+      "http://127.0.0.1:8099/assets/img/optimized/logo-white.64aed211a7bb-480.webp",
+      "http://127.0.0.1:8099/assets/img/optimized/menu.e0a77878923c-480.webp",
+      "http://127.0.0.1:8099/assets/img/banner/banner3-slide1.avif",
+      "http://127.0.0.1:8099/assets/img/banner/banner3-slide2.avif",
+      "http://127.0.0.1:8099/assets/img/banner/banner1-slide1.webp",
+      "http://127.0.0.1:8099/assets/img/icon/even1.png",
+      "http://127.0.0.1:8099/assets/img/icon/even2.png",
+      "http://127.0.0.1:8099/assets/img/icon/even2.png",
+      "http://127.0.0.1:8099/assets/img/icon/even1.png",
+      "http://127.0.0.1:8099/assets/img/about/vision-customer1.png",
+      "http://127.0.0.1:8099/assets/img/about/vision-customer2.png",
+      "http://127.0.0.1:8099/assets/img/about/vision-customer3.png",
+      "http://127.0.0.1:8099/assets/img/about/vision-customer4.png",
+      "http://127.0.0.1:8099/assets/img/optimized/vission-ele.c55a4d91508c-349.webp",
+      "http://127.0.0.1:8099/assets/img/optimized/solutio-web.4808b77b6614-480.webp"
+    ],
+    "horizontal_overflow": false,
+    "initial_requests": 36,
+    "total_requests_after_scroll": 63,
+    "resource_encoded_bytes": 3566017,
+    "js_errors": [],
+    "failed_http": []
+  },
+  "faq_schema": {
+    "count": 8,
+    "matches": true
+  }
+}

@@ -119,9 +119,9 @@ function dw_render_solution_tab_thumb(array $tab): void
                                         <span class="fs-two black fw-semibold"><?php echo e($tab['stat_suffix']); ?></span>
 <?php endif; ?>
                                     </div>
-                                    <h4 class="fw_500 black fs-five">
+                                    <h3 class="fw_500 black fs-five">
                                         <?php echo e($tab['stat_label']); ?>
-                                    </h4>
+                                    </h3>
                                 </div>
                             </div>
     <?php

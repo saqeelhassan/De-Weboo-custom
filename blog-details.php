@@ -71,7 +71,14 @@ require_once __DIR__ . '/includes/navbar.php';
                                     <time class="fs-eight pra" datetime="<?php echo e($post['published']); ?>"><?php echo e(dw_blog_format_date($post['published'])); ?></time>
                                 </div>
                             </div>
-<?php dw_render_blog_article($post); ?>
+<?php dw_render_blog_article($post);
+require_once __DIR__ . '/includes/service-content.php';
+$relatedSlug = dw_related_service($post);
+$relatedService = dw_service_content()[$relatedSlug]; ?>
+                            <aside class="box border-top pt-4 mb-4" aria-label="Related service">
+                                <h2 class="black mb-3">Related service</h2>
+                                <a class="p1-clr" href="/<?php echo e($relatedSlug); ?>"><?php echo e($relatedService['name']); ?> — discuss your project</a>
+                            </aside>
                             <div
                                 class="tag-social-wrap d-flex justify-content-md-between flex-md-nowrap flex-wrap justify-content-center gap-3 align-items-center mb-lg-5 mb-4">
                                 <div class="tags d-flex align-items-center gap-xxl-4 gap-xl-3 gap-2 flex-wrap">

@@ -519,7 +519,7 @@ function dw_blog_post(?string $slug = null): ?array
     return $posts[$slug] ?? null;
 }
 
-function dw_blog_image(string $path, string $fallback = 'assets/img/blog/blog-grid1.png'): string
+function dw_blog_image(string $path, string $fallback = 'assets/img/blog/blog-grid68.png'): string
 {
     $full = DW_ROOT . '/' . ltrim($path, '/');
 

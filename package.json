@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "scripts": { "build:assets": "node tools/build-assets.cjs" },
+  "devDependencies": { "esbuild": "0.27.3" }
+}

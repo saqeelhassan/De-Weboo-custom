@@ -33,12 +33,12 @@ require_once __DIR__ . '/includes/navbar.php';
                     <div class="blog-details-left">
                         <div class="blog-details-box">
                             <a href="/blog-details" class="thumb1 rounded-3 w-100 mb-4">
-                                <img loading="lazy" src="/assets/img/blog/blog-sidebar1.png" alt="Illustration" class="w-100 rounded-3">
+                                <img loading="lazy" src="/assets/img/blog/blog-grid68.png" alt="Illustration" class="w-100 rounded-3">
                             </a>
                             <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
                                 data-wow-delay=".3s">
                                 <div class="d-flex algin-items-center gap-2">
-                                    <img loading="lazy" src="/assets/img/blog/common-richard.png" alt="Illustration" class="rounded-circle">
+                                    <img loading="lazy" src="/assets/img/logo/favs.png" alt="Illustration" class="rounded-circle">
                                     <p class="fs-eight pra">Richard Patillions</p>
                                 </div>
                                 <div class="d-flex algin-items-center gap-2">
@@ -68,7 +68,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <a href="/blog-details" class="thumb1 rounded-3 w-100 mb-4">
-                                            <img loading="lazy" src="/assets/img/blog/blog-sidebar2.png" alt="Illustration"
+                                            <img loading="lazy" src="/assets/img/blog/blog-grid69.png" alt="Illustration"
                                                 class="w-100 rounded-3">
                                         </a>
                                     </div>
@@ -85,7 +85,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
                                 data-wow-delay=".3s">
                                 <div class="d-flex algin-items-center gap-2">
-                                    <img loading="lazy" src="/assets/img/blog/common-richard.png" alt="Illustration" class="rounded-circle">
+                                    <img loading="lazy" src="/assets/img/logo/favs.png" alt="Illustration" class="rounded-circle">
                                     <p class="fs-eight pra">Richard Patillions</p>
                                 </div>
                                 <div class="d-flex algin-items-center gap-2">
@@ -112,7 +112,7 @@ require_once __DIR__ . '/includes/navbar.php';
                         </div>
                         <div class="blog-details-box">
                             <div class="thumb1 rounded-3 w-100 mb-4 position-relative d-center">
-                                <img loading="lazy" src="/assets/img/blog/blog-sidebar3.png" alt="Illustration" class="w-100 rounded-3">
+                                <img loading="lazy" src="/assets/img/blog/blog-grid7.png" alt="Illustration" class="w-100 rounded-3">
                                 <a href="https://www.youtube.com/watch?v=lMJImKo-eZU"
                                     class="portfolio-video rounded-circle d-center video-popup" aria-label="Play video">
                                     <i class="fa-solid fa-play"></i>
@@ -121,7 +121,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="d-flex align-items-center gap-lg-4 gap-3 mb-lg-4 mb-3 wow fadeInUp"
                                 data-wow-delay=".3s">
                                 <div class="d-flex algin-items-center gap-2">
-                                    <img loading="lazy" src="/assets/img/blog/common-richard.png" alt="Illustration" class="rounded-circle">
+                                    <img loading="lazy" src="/assets/img/logo/favs.png" alt="Illustration" class="rounded-circle">
                                     <p class="fs-eight pra">Richard Patillions</p>
                                 </div>
                                 <div class="d-flex algin-items-center gap-2">
@@ -171,7 +171,7 @@ require_once __DIR__ . '/includes/navbar.php';
                             <div class="blog-latest">
                                 <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.4s">
                                     <div class="thumb rounded-2">
-                                        <img loading="lazy" src="/assets/img/blog/latest-recent1.png" alt="Illustration" class="rounded-2">
+                                        <img loading="lazy" src="/assets/img/blog/blog-grid68.png" alt="Illustration" class="rounded-2">
                                     </div>
                                     <div class="content">
                                         <a href="/blog-details" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">
@@ -184,7 +184,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </div>
                                 <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.5s">
                                     <div class="thumb rounded-2">
-                                        <img loading="lazy" src="/assets/img/blog/latest-recent2.png" alt="Illustration" class="rounded-2">
+                                        <img loading="lazy" src="/assets/img/blog/blog-grid69.png" alt="Illustration" class="rounded-2">
                                     </div>
                                     <div class="content">
                                         <a href="/blog-details" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">
@@ -198,7 +198,7 @@ require_once __DIR__ . '/includes/navbar.php';
                                 </div>
                                 <div class="blog-latest-item p-xxl-3 p-2 wow fadeInUp" data-wow-delay="0.6s">
                                     <div class="thumb rounded-2">
-                                        <img loading="lazy" src="/assets/img/blog/latest-recent3.png" alt="Illustration" class="rounded-2">
+                                        <img loading="lazy" src="/assets/img/blog/blog-grid7.png" alt="Illustration" class="rounded-2">
                                     </div>
                                     <div class="content">
                                         <a href="/blog-details" class="fs-seven fw_500 d-block black mb-xl-2 mb-1">

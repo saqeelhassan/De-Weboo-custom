@@ -279,7 +279,7 @@
         /* ─ Swiper Sliders (guard-checked — no wasted init on missing elements) */
         if (document.querySelector(".banner-section-wrap")) {
             new Swiper(".banner-section-wrap", {
-                spaceBetween: 30, speed: 1500, loop: true, effect: "fade",
+                spaceBetween: 30, speed: 1500, loop: false, rewind: true, effect: "fade",
                 pagination:   { el: ".swiper-pagination", clickable: true },
                 breakpoints:  { 0: { slidesPerView: 1 } },
             });

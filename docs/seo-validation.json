@@ -1,0 +1,25 @@
+{
+  "routes_rendered": 60,
+  "php_lint": "passed",
+  "errors": [],
+  "image_findings": [
+    {
+      "route": "/",
+      "issue": "empty/missing alt",
+      "src": "/assets/img/banner/banner3-slide1.png",
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "issue": "empty/missing alt",
+      "src": "/assets/img/banner/banner3-slide2.png",
+      "decorative": true
+    },
+    {
+      "route": "/",
+      "issue": "empty/missing alt",
+      "src": "/assets/img/banner/banner1-slide1.png",
+      "decorative": true
+    }
+  ]
+}

@@ -292,4 +292,5 @@ require_once __DIR__ . '/includes/navbar.php';
             </div>
         </div>
     </section>
+<?php require __DIR__ . '/includes/service-sections.php'; ?>
 <?php require_once __DIR__ . '/includes/footer.php'; ?>

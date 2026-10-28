@@ -103,7 +103,7 @@
 }
 
 /* Service card headings â€” reduced from default h4 (25px) */
-.event-work-items h4 {
+.event-work-items :is(h3, h4) {
   font-size: 18px;
 }
 
@@ -210,3 +210,20 @@
   height: 24px;
   transform: translate(-50%, -50%);
 }
+
+/* Numeric counters are content, not section headings. */
+.b-title { font-family: var(--heading-font); font-weight: 700; }
+/* Intrinsic HTML dimensions reserve space while CSS controls rendered size. */
+:where(img[width][height]) { height: auto; }
+
+/* Preserve original card typography when correcting heading levels. */
+.business-items h3 { font-size: 25px; line-height: 130%; }
+@media (max-width: 1399px) { .business-items h3 { font-size: 22px; } }
+@media (max-width: 1199px) { .business-items h3 { font-size: 20px; } }
+
+.testimonial-name { font-family: "Plus Jakarta Sans", serif; font-size: 18px; line-height: 1.3; }
+.news-single-items .blog-card-title { font-size: 25px; line-height: 1.3; }
+@media (max-width: 1399px) { .news-single-items .blog-card-title { font-size: 22px; } }
+@media (max-width: 1199px) { .news-single-items .blog-card-title { font-size: 20px; } }
+
+.case-study-heading { font-size: 20px; }

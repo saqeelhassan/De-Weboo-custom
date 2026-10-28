@@ -18,8 +18,8 @@ return [
         'keywords' => 'web mobile development, AI automation, data engineering, digital marketing, SEO, cloud services',
     ],
     'index' => [
-        'title' => 'De-Weboo Dev | Development, AI Engineering & Cloud',
-        'description' => 'Web & Mobile Development, AI Automation & Data Engineering. Growth & Infrastructure: Digital Marketing, SEO & Cloud.',
+        'title' => 'Software Development & AI Automation Agency | De-Weboo Dev',
+        'description' => 'De-Weboo Dev builds web & mobile apps, AI automation and HIPAA-ready healthcare and real-estate platforms for clients worldwide from Pakistan. Get a quote.',
         'keywords' => 'web mobile development, AI automation, LLM integration, workflow automation, data pipelines, healthcare SEO, cloud services',
     ],
     'about' => [
@@ -139,6 +139,7 @@ return [
     ],
     'search' => [
         'title' => 'Search | De-Weboo Dev',
+        'robots' => 'noindex, follow',
         'description' => 'Search De-Weboo Dev for services, blog articles, portfolio case studies, team profiles, FAQs, and support pages.',
         'keywords' => 'De-Weboo Dev search, find services, site search',
     ],
